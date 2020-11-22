@@ -19,6 +19,7 @@ namespace kivsee_render
                     ConstValue *t = new ConstValue();
                     ConstValueFloatFunctionConfig config = ConstValueFloatFunctionConfig_init_zero;
                     if(!pb_decode(stream, ConstValueFloatFunctionConfig_fields, &config)) {
+                        delete t;
                         return false;
                     }
 

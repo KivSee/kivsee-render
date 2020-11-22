@@ -25,6 +25,7 @@ namespace kivsee_render
 
                     if (!pb_decode(stream, Comb2FloatFunctionConfig_fields, &config))
                     {
+                        delete t;
                         return false;
                     }
                     t->amount1 = config.amount1;

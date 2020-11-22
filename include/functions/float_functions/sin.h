@@ -22,6 +22,7 @@ namespace kivsee_render
                     SinFloatFunctionConfig config = SinFloatFunctionConfig_init_zero;
                     if (!pb_decode(stream, SinFloatFunctionConfig_fields, &config))
                     {
+                        delete t;
                         return false;
                     }
 

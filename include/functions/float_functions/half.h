@@ -25,6 +25,7 @@ namespace kivsee_render
 
                     if (!pb_decode(stream, HalfFloatFunctionConfig_fields, &config))
                     {
+                        delete t;
                         return false;
                     }
 

@@ -21,6 +21,7 @@ namespace kivsee_render
                     StepsFloatFunctionConfig config = StepsFloatFunctionConfig_init_zero;
                     if (!pb_decode(stream, StepsFloatFunctionConfig_fields, &config))
                     {
+                        delete t;
                         return false;
                     }
 

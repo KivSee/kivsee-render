@@ -24,6 +24,7 @@ namespace kivsee_render
                     Linear *t = new Linear();
                     LinearFloatFunctionConfig config = LinearFloatFunctionConfig_init_zero;
                     if(!pb_decode(stream, LinearFloatFunctionConfig_fields, &config)) {
+                        delete t;
                         return false;
                     }
 

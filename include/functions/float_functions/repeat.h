@@ -34,6 +34,7 @@ namespace kivsee_render
 
                     if (!pb_decode(stream, RepeatFloatFunctionConfig_fields, &config))
                     {
+                        delete t;
                         return false;
                     }
                     t->numberOfTimes = config.numberOfTimes;
@@ -42,7 +43,7 @@ namespace kivsee_render
                     *f = t;
                     return true;
                 }
-                
+
                 ~Repeat()
                 {
                     delete funcToRepeat;
