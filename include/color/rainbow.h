@@ -17,10 +17,6 @@ namespace kivsee_render
         class Rainbow : public Effect
         {
         public:
-            // Rainbow(const RainbowEffectConfig &config) : hue_start(float_functions::FloatFunctionFactory(config.hue_start)),
-            //                                              hue_end(float_functions::FloatFunctionFactory(config.hue_end))
-            // {
-            // }
 
             void InitFromPb(pb_istream_t *stream) {
                 RainbowEffectConfig config = RainbowEffectConfig_init_zero;
@@ -36,6 +32,13 @@ namespace kivsee_render
             }
 
             void Render(float rel_time, int cycle_index) override;
+
+            ~Rainbow() {
+                delete hue_start;
+                hue_start = nullptr;
+                delete hue_end;
+                hue_end = nullptr;
+            }
 
         private:
             const float_functions::IFloatFunction *hue_start = nullptr;
