@@ -1,0 +1,39 @@
+syntax = "proto3";
+import "functions.proto";
+
+message HSV {
+    float h = 1;
+    float s = 2;
+    float v = 3;
+}
+
+message ConstColorEffectConfig {
+    HSV color = 1;
+}
+
+message RainbowEffectConfig {
+    FloatFunction hue_start = 1;
+    FloatFunction hue_end = 2;
+}
+
+message Effect {
+    float start_time = 1;
+    float end_time = 2;
+    repeated string segments = 3;
+
+    float repeat_time = 4;
+    float repeat_start = 5;
+    float repeat_end = 6;
+
+    oneof effect_config {
+        ConstColorEffectConfig const_color = 10;
+        RainbowEffectConfig rainbow = 11;
+    }
+}
+
+message Animation {
+    uint64 epoch_time_ms = 1;
+    float duration = 2;
+    uint32 num_repeats = 3; // 0 means forever
+    repeated Effect effects = 4;
+}

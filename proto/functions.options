@@ -1,0 +1,14 @@
+FloatFunction.const_value type:FT_CALLBACK
+FloatFunction.linear type:FT_CALLBACK
+FloatFunction.sin type:FT_CALLBACK
+FloatFunction.steps type:FT_CALLBACK
+FloatFunction.repeat type:FT_CALLBACK
+FloatFunction.half type:FT_CALLBACK
+FloatFunction.comb2 type:FT_CALLBACK
+FloatFunction.function no_unions:true
+
+RepeatFloatFunctionConfig.funcToRepeat type:FT_CALLBACK
+HalfFloatFunctionConfig.f1 type:FT_CALLBACK
+HalfFloatFunctionConfig.f2 type:FT_CALLBACK
+Comb2FloatFunctionConfig.f1 type:FT_CALLBACK
+Comb2FloatFunctionConfig.f2 type:FT_CALLBACK

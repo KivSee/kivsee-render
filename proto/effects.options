@@ -1,0 +1,2 @@
+RainbowEffectConfig.hue_start type:FT_CALLBACK
+RainbowEffectConfig.hue_end type:FT_CALLBACK

@@ -1,0 +1,19 @@
+
+{
+    "name": "KivseeRender",
+    "keywords": "",
+    "description": "A rendering enginee for addressable LEDs",
+    "homepage": "https://github.com/blumamir/kivsee-render",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/blumamir/kivsee-render"
+    },
+    "version": "0.0.1",
+    "frameworks": "arduino",
+    "platforms": "*",
+    "dependencies": [
+      {
+          "name": "Nanopb"
+      }
+    ]
+  }

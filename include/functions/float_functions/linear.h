@@ -1,0 +1,44 @@
+#ifndef __LINEAR_FLOAT_FUNC_H__
+#define __LINEAR_FLOAT_FUNC_H__
+
+#include <functions/float_functions/float_functions.h>
+#include <functions.pb.h>
+
+namespace kivsee_render
+{
+    namespace functions
+    {
+        namespace float_functions
+        {
+
+            class Linear : public IFloatFunction
+            {
+            public:
+
+                float GetValue(float relTime) const override
+                {
+                    return start_value + relTime * diff_end_to_start;
+                }
+
+                static bool InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg) {
+                    Linear *t = new Linear();
+                    LinearFloatFunctionConfig config = LinearFloatFunctionConfig_init_zero;
+                    if(!pb_decode(stream, LinearFloatFunctionConfig_fields, &config)) {
+                        return false;
+                    }
+
+                    t->start_value = config.start;
+                    t->diff_end_to_start = config.end - config.start;
+                    *((IFloatFunction **)*arg) = t;
+                    return true;
+                }
+
+                float start_value = 0.0;
+                float diff_end_to_start = 1.0;
+            };
+
+        } // namespace float_functions
+    }     // namespace functions
+} // namespace kivsee_render
+
+#endif // __LINEAR_FLOAT_FUNC_H__
