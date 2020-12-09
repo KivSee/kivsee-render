@@ -8,12 +8,12 @@
 #define NUM_LEDS 25
 
 #include <color/const_color.h>
-#include <color/rainbow.h>
+#include <effect.h>
 #include <hsv.h>
 // ConstColorEffectConfig config {true, {0.5, 1.0, 1.0}};
 // kivsee_render::color::ConstColor *effect = new kivsee_render::color::ConstColor(config);
 
-kivsee_render::color::Rainbow *effect;
+kivsee_render::Effect *effect;
 kivsee_render::HSV leds[NUM_LEDS];
 std::vector<kivsee_render::HSV *> segment(NUM_LEDS);
 NeoPixelBus<NeoRgbFeature, Neo800KbpsMethod> leds_rgb(NUM_LEDS, DATA_PIN);
@@ -31,17 +31,17 @@ void setup()
     // config.hue_end.which_function = FloatFunction_linear_tag;
     // config.hue_end.function.linear = LinearFloatFunctionConfig{2.0, 0.0};
 
-    uint8_t buffer[100] = {10, 35, 58, 33, 10, 7, 18, 5, 21, 0, 0, 128, 63, 21, 0, 0, 128, 63, 26, 12, 34, 10, 13, 0, 0, 160, 64, 21, 0, 0, 128, 62, 37, 0, 0, 128, 63, 18, 7, 10, 5, 13, 0, 0, 128, 63
-};
+    uint8_t buffer[100] = {10, 33, 10, 6, 8, 232, 7, 16, 136, 39, 26, 23, 10, 7, 18, 5, 21, 0, 0, 128, 63, 18, 12, 18, 10, 13, 0, 0, 128, 63, 21, 0, 0, 0, 64};
     // pb_ostream_t stream = pb_ostream_from_buffer(buffer, sizeof(buffer));
     // pb_encode(&stream, RainbowEffectConfig_fields, &config);
     // printf("Encoded size is %d\n", stream.bytes_written);
 
     pb_istream_t in_stream = pb_istream_from_buffer(buffer, sizeof(buffer));
-
-    effect = new kivsee_render::color::Rainbow();
-    effect->InitFromPb(&in_stream);
-
+    AnimationProto animation;
+    animation.effects.funcs.decode = &kivsee_render::DecodeEffectFromPbStream;
+    animation.effects.arg = &effect;
+    pb_decode(&in_stream, AnimationProto_fields, &animation);
+    
     leds_rgb.Begin();
     for (int i = 0; i < NUM_LEDS; i++)
     {
@@ -53,7 +53,15 @@ void setup()
 void loop()
 {
     unsigned int time = millis();
-    effect->Render((time % 10000) / 10000.0, 0);
+    for (int i = 0; i < NUM_LEDS; i++)
+    {
+        kivsee_render::HSV &hsvVal = leds[i];
+        hsvVal.hue = 0.0;
+        hsvVal.sat = 0.0;
+        hsvVal.val = 0.0;
+    }
+
+    effect->Render(time % 10000);
     for (int i = 0; i < NUM_LEDS; i++)
     {
         const kivsee_render::HSV &hsvVal = leds[i];
