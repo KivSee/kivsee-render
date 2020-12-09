@@ -16,12 +16,20 @@ typedef struct _RainbowEffectConfig {
     pb_callback_t hue_end;
 } RainbowEffectConfig;
 
-typedef struct _Animation {
-    uint64_t epoch_time_ms;
+typedef struct _AnimationProto {
+    pb_callback_t effects;
     float duration;
     uint32_t num_repeats;
-    pb_callback_t effects;
-} Animation;
+} AnimationProto;
+
+typedef struct _EffectConfig {
+    uint32_t start_time;
+    uint32_t end_time;
+    pb_callback_t segments;
+    float repeat_num;
+    float repeat_start;
+    float repeat_end;
+} EffectConfig;
 
 typedef struct _HSV {
     float h;
@@ -34,19 +42,12 @@ typedef struct _ConstColorEffectConfig {
     HSV color;
 } ConstColorEffectConfig;
 
-typedef struct _Effect {
-    float start_time;
-    float end_time;
-    pb_callback_t segments;
-    float repeat_time;
-    float repeat_start;
-    float repeat_end;
-    pb_size_t which_effect_config;
-    union {
-        ConstColorEffectConfig const_color;
-        RainbowEffectConfig rainbow;
-    } effect_config;
-} Effect;
+typedef struct _EffectProto {
+    bool has_effect_config;
+    EffectConfig effect_config;
+    pb_callback_t const_color;
+    pb_callback_t rainbow;
+} EffectProto;
 
 
 #ifdef __cplusplus
@@ -57,33 +58,35 @@ extern "C" {
 #define HSV_init_default                         {0, 0, 0}
 #define ConstColorEffectConfig_init_default      {false, HSV_init_default}
 #define RainbowEffectConfig_init_default         {{{NULL}, NULL}, {{NULL}, NULL}}
-#define Effect_init_default                      {0, 0, {{NULL}, NULL}, 0, 0, 0, 0, {ConstColorEffectConfig_init_default}}
-#define Animation_init_default                   {0, 0, 0, {{NULL}, NULL}}
+#define EffectConfig_init_default                {0, 0, {{NULL}, NULL}, 0, 0, 0}
+#define EffectProto_init_default                 {false, EffectConfig_init_default, {{NULL}, NULL}, {{NULL}, NULL}}
+#define AnimationProto_init_default              {{{NULL}, NULL}, 0, 0}
 #define HSV_init_zero                            {0, 0, 0}
 #define ConstColorEffectConfig_init_zero         {false, HSV_init_zero}
 #define RainbowEffectConfig_init_zero            {{{NULL}, NULL}, {{NULL}, NULL}}
-#define Effect_init_zero                         {0, 0, {{NULL}, NULL}, 0, 0, 0, 0, {ConstColorEffectConfig_init_zero}}
-#define Animation_init_zero                      {0, 0, 0, {{NULL}, NULL}}
+#define EffectConfig_init_zero                   {0, 0, {{NULL}, NULL}, 0, 0, 0}
+#define EffectProto_init_zero                    {false, EffectConfig_init_zero, {{NULL}, NULL}, {{NULL}, NULL}}
+#define AnimationProto_init_zero                 {{{NULL}, NULL}, 0, 0}
 
 /* Field tags (for use in manual encoding/decoding) */
 #define RainbowEffectConfig_hue_start_tag        1
 #define RainbowEffectConfig_hue_end_tag          2
-#define Animation_epoch_time_ms_tag              1
-#define Animation_duration_tag                   2
-#define Animation_num_repeats_tag                3
-#define Animation_effects_tag                    4
+#define AnimationProto_effects_tag               1
+#define AnimationProto_duration_tag              2
+#define AnimationProto_num_repeats_tag           3
+#define EffectConfig_start_time_tag              1
+#define EffectConfig_end_time_tag                2
+#define EffectConfig_segments_tag                3
+#define EffectConfig_repeat_num_tag              4
+#define EffectConfig_repeat_start_tag            5
+#define EffectConfig_repeat_end_tag              6
 #define HSV_h_tag                                1
 #define HSV_s_tag                                2
 #define HSV_v_tag                                3
 #define ConstColorEffectConfig_color_tag         1
-#define Effect_start_time_tag                    1
-#define Effect_end_time_tag                      2
-#define Effect_segments_tag                      3
-#define Effect_repeat_time_tag                   4
-#define Effect_repeat_start_tag                  5
-#define Effect_repeat_end_tag                    6
-#define Effect_const_color_tag                   10
-#define Effect_rainbow_tag                       11
+#define EffectProto_effect_config_tag            1
+#define EffectProto_const_color_tag              2
+#define EffectProto_rainbow_tag                  3
 
 /* Struct field encoding specification for nanopb */
 #define HSV_FIELDLIST(X, a) \
@@ -107,48 +110,56 @@ X(a, CALLBACK, OPTIONAL, MESSAGE,  hue_end,           2)
 #define RainbowEffectConfig_hue_start_MSGTYPE FloatFunction
 #define RainbowEffectConfig_hue_end_MSGTYPE FloatFunction
 
-#define Effect_FIELDLIST(X, a) \
-X(a, STATIC,   SINGULAR, FLOAT,    start_time,        1) \
-X(a, STATIC,   SINGULAR, FLOAT,    end_time,          2) \
-X(a, CALLBACK, REPEATED, STRING,   segments,          3) \
-X(a, STATIC,   SINGULAR, FLOAT,    repeat_time,       4) \
+#define EffectConfig_FIELDLIST(X, a) \
+X(a, STATIC,   SINGULAR, UINT32,   start_time,        1) \
+X(a, STATIC,   SINGULAR, UINT32,   end_time,          2) \
+X(a, CALLBACK, SINGULAR, STRING,   segments,          3) \
+X(a, STATIC,   SINGULAR, FLOAT,    repeat_num,        4) \
 X(a, STATIC,   SINGULAR, FLOAT,    repeat_start,      5) \
-X(a, STATIC,   SINGULAR, FLOAT,    repeat_end,        6) \
-X(a, STATIC,   ONEOF,    MESSAGE,  (effect_config,const_color,effect_config.const_color),  10) \
-X(a, STATIC,   ONEOF,    MESSAGE,  (effect_config,rainbow,effect_config.rainbow),  11)
-#define Effect_CALLBACK pb_default_field_callback
-#define Effect_DEFAULT NULL
-#define Effect_effect_config_const_color_MSGTYPE ConstColorEffectConfig
-#define Effect_effect_config_rainbow_MSGTYPE RainbowEffectConfig
+X(a, STATIC,   SINGULAR, FLOAT,    repeat_end,        6)
+#define EffectConfig_CALLBACK pb_default_field_callback
+#define EffectConfig_DEFAULT NULL
 
-#define Animation_FIELDLIST(X, a) \
-X(a, STATIC,   SINGULAR, UINT64,   epoch_time_ms,     1) \
+#define EffectProto_FIELDLIST(X, a) \
+X(a, STATIC,   OPTIONAL, MESSAGE,  effect_config,     1) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  const_color,       2) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  rainbow,           3)
+#define EffectProto_CALLBACK pb_default_field_callback
+#define EffectProto_DEFAULT NULL
+#define EffectProto_effect_config_MSGTYPE EffectConfig
+#define EffectProto_const_color_MSGTYPE ConstColorEffectConfig
+#define EffectProto_rainbow_MSGTYPE RainbowEffectConfig
+
+#define AnimationProto_FIELDLIST(X, a) \
+X(a, CALLBACK, REPEATED, MESSAGE,  effects,           1) \
 X(a, STATIC,   SINGULAR, FLOAT,    duration,          2) \
-X(a, STATIC,   SINGULAR, UINT32,   num_repeats,       3) \
-X(a, CALLBACK, REPEATED, MESSAGE,  effects,           4)
-#define Animation_CALLBACK pb_default_field_callback
-#define Animation_DEFAULT NULL
-#define Animation_effects_MSGTYPE Effect
+X(a, STATIC,   SINGULAR, UINT32,   num_repeats,       3)
+#define AnimationProto_CALLBACK pb_default_field_callback
+#define AnimationProto_DEFAULT NULL
+#define AnimationProto_effects_MSGTYPE EffectProto
 
 extern const pb_msgdesc_t HSV_msg;
 extern const pb_msgdesc_t ConstColorEffectConfig_msg;
 extern const pb_msgdesc_t RainbowEffectConfig_msg;
-extern const pb_msgdesc_t Effect_msg;
-extern const pb_msgdesc_t Animation_msg;
+extern const pb_msgdesc_t EffectConfig_msg;
+extern const pb_msgdesc_t EffectProto_msg;
+extern const pb_msgdesc_t AnimationProto_msg;
 
 /* Defines for backwards compatibility with code written before nanopb-0.4.0 */
 #define HSV_fields &HSV_msg
 #define ConstColorEffectConfig_fields &ConstColorEffectConfig_msg
 #define RainbowEffectConfig_fields &RainbowEffectConfig_msg
-#define Effect_fields &Effect_msg
-#define Animation_fields &Animation_msg
+#define EffectConfig_fields &EffectConfig_msg
+#define EffectProto_fields &EffectProto_msg
+#define AnimationProto_fields &AnimationProto_msg
 
 /* Maximum encoded size of messages (where known) */
 #define HSV_size                                 15
 #define ConstColorEffectConfig_size              17
 /* RainbowEffectConfig_size depends on runtime parameters */
-/* Effect_size depends on runtime parameters */
-/* Animation_size depends on runtime parameters */
+/* EffectConfig_size depends on runtime parameters */
+/* EffectProto_size depends on runtime parameters */
+/* AnimationProto_size depends on runtime parameters */
 
 #ifdef __cplusplus
 } /* extern "C" */

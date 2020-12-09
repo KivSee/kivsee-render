@@ -17,23 +17,34 @@ namespace kivsee_render
         class Rainbow : public Effect
         {
         public:
-
-            void InitFromPb(pb_istream_t *stream) {
+            static bool InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg)
+            {
                 RainbowEffectConfig config = RainbowEffectConfig_init_zero;
 
-                config.hue_start.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
-                config.hue_start.arg = &(this->hue_start);
-                config.hue_end.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
-                config.hue_end.arg = &this->hue_end;
+                float_functions::IFloatFunction *hue_start;
+                float_functions::IFloatFunction *hue_end;
 
-                if(!pb_decode(stream, RainbowEffectConfig_fields, &config))
+                config.hue_start.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
+                config.hue_start.arg = &hue_start;
+                config.hue_end.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
+                config.hue_end.arg = &hue_end;
+
+                if (!pb_decode(stream, RainbowEffectConfig_fields, &config))
                 {
+                    return false;
                 }
+                *((Effect **)*arg) = new Rainbow(hue_start, hue_end);
+                return true;
             }
 
             void Render(float rel_time, int cycle_index) override;
 
-            ~Rainbow() {
+            Rainbow(
+                float_functions::IFloatFunction *hue_start,
+                float_functions::IFloatFunction *hue_end) : hue_start(hue_start), hue_end(hue_end) {}
+
+            ~Rainbow()
+            {
                 delete hue_start;
                 hue_start = nullptr;
                 delete hue_end;

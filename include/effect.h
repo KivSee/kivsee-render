@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <hsv.h>
+#include <pb_decode.h>
+#include <effects.pb.h>
 
 namespace kivsee_render
 {
@@ -22,30 +24,28 @@ namespace kivsee_render
     public:
         void Render(unsigned long curr_time);
 
-        void Init(const std::vector<HSV *> *pixels) {
+        void Init(const std::vector<HSV *> *pixels)
+        {
             this->pixels = pixels;
         }
-        //   void InitAnimation(const std::vector<HSV *> *pixels, const JsonObject &animationAsJsonObj) {
-        //     this->pixels = pixels;
-        //     this->start_time = animationAsJsonObj["s"];
-        //     this->end_time = animationAsJsonObj["e"];
-        //     this->repeatNum = animationAsJsonObj["rep_num"]; // will be 0.0f if missing
-        //     this->repeatStart = animationAsJsonObj["rep_s"]; // will be 0.0f if missing
-        //     this->repeatEnd = animationAsJsonObj["rep_e"]; // will be 0.0f if missing
-        //   }
 
-        bool IsActive(unsigned long curr_time)
-        {
-            return curr_time >= this->start_time && curr_time < this->end_time;
+        void InitTimingFromPb(const EffectConfig &effect_config) {
+            this->start_time = effect_config.start_time;
+            this->end_time = effect_config.end_time;
+            this->repeat_num = effect_config.repeat_num;
+            this->repeat_start = effect_config.repeat_start;
+            this->repeat_end = effect_config.repeat_end;
         }
 
     protected:
         unsigned long start_time, end_time;
-        float repeatNum, repeatStart, repeatEnd;
+        float repeat_num, repeat_start, repeat_end;
         const std::vector<HSV *> *pixels;
 
         int lastCycleIndex = -1;
     };
+
+    bool DecodeEffectFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg);
 
 } // namespace kivsee_render
 

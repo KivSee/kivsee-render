@@ -15,10 +15,13 @@ PB_BIND(ConstColorEffectConfig, ConstColorEffectConfig, AUTO)
 PB_BIND(RainbowEffectConfig, RainbowEffectConfig, AUTO)
 
 
-PB_BIND(Effect, Effect, AUTO)
+PB_BIND(EffectConfig, EffectConfig, AUTO)
 
 
-PB_BIND(Animation, Animation, AUTO)
+PB_BIND(EffectProto, EffectProto, AUTO)
+
+
+PB_BIND(AnimationProto, AnimationProto, AUTO)
 
 
 
