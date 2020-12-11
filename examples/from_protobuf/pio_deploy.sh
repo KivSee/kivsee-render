@@ -1,0 +1,2 @@
+python3 generate_animation.py
+pio ci --board=esp32doit-devkit-v1 --lib "../../" --project-option="lib_deps=nanopb" --project-option="lib_deps=NeoPixelBus" --project-option="targets=upload" from_protobuf.cpp msg.h

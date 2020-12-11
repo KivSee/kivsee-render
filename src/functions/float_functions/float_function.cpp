@@ -45,6 +45,8 @@ namespace kivsee_render
 
                 if(*dest == nullptr)
                     return false;
+
+                return true;
             }
 
         } // namespace float
