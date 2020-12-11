@@ -18,6 +18,8 @@ namespace kivsee_render {
                 num_repeats(num_repeats)
                  {}
 
+            ~Animation();
+
             bool Render(unsigned long curr_time);
 
         public:
