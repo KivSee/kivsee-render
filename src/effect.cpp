@@ -2,6 +2,9 @@
 
 #include <effects.pb.h>
 #include <cmath>
+#include <Arduino.h>
+
+#include <color/rainbow.h>
 
 #include <color/rainbow.h>
 
@@ -10,6 +13,9 @@ namespace kivsee_render
 
     void Effect::Render(unsigned long curr_time)
     {
+        if (curr_time < this->start_time || curr_time >= this->end_time)
+            return;
+
         if (curr_time < this->start_time || curr_time >= this->end_time)
             return;
 
