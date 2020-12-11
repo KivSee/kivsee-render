@@ -3,10 +3,10 @@
 #include <effects.pb.h>
 #include <cmath>
 #include <Arduino.h>
+#include <list>
 
 #include <color/rainbow.h>
 
-#include <color/rainbow.h>
 
 namespace kivsee_render
 {
@@ -52,11 +52,12 @@ namespace kivsee_render
         effectProto.rainbow.funcs.decode = &::kivsee_render::color::Rainbow::InitFromPb;
         effectProto.rainbow.arg = &newEffect;
 
-        pb_decode(stream, EffectProto_fields, &effectProto);
+        bool success = pb_decode(stream, EffectProto_fields, &effectProto);
+        if(!success) return false;
 
         newEffect->InitTimingFromPb(effectProto.effect_config);
-        *((Effect **)*arg) = newEffect;
-
+        std::list<Effect *> *effectsList = (std::list<Effect *> *)(*arg);
+        effectsList->push_back(newEffect);
         return true;
     }
 

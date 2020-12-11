@@ -9,9 +9,10 @@
 #define NUM_LEDS 25
 
 #include <effect.h>
+#include <animation.h>
 #include <hsv.h>
 
-kivsee_render::Effect *effect;
+kivsee_render::Animation *animation;
 kivsee_render::HSV leds[NUM_LEDS];
 std::vector<kivsee_render::HSV *> segment(NUM_LEDS);
 NeoPixelBus<NeoRgbFeature, Neo800KbpsMethod> leds_rgb(NUM_LEDS, DATA_PIN);
@@ -21,17 +22,18 @@ void setup()
     Serial.begin(115200);
 
     pb_istream_t in_stream = pb_istream_from_buffer(msg, sizeof(msg));
-    AnimationProto animation;
-    animation.effects.funcs.decode = &kivsee_render::DecodeEffectFromPbStream;
-    animation.effects.arg = &effect;
-    pb_decode(&in_stream, AnimationProto_fields, &animation);
-    
+    void *arg = &animation;
+    ::kivsee_render::DecodeAnimationFromPbStream(&in_stream, nullptr, &arg);
+
     leds_rgb.Begin();
     for (int i = 0; i < NUM_LEDS; i++)
     {
         segment[i] = &leds[i];
     }
-    effect->Init(&segment);
+    for(::kivsee_render::Animation::EffectsVec::iterator it = animation->effects.begin(); it != animation->effects.end(); ++it) {
+        ::kivsee_render::Effect *effect = *it;
+        effect->Init(&segment);
+    }
 }
 
 void loop()
@@ -45,7 +47,7 @@ void loop()
         hsvVal.val = 0.0;
     }
 
-    effect->Render(time % 10000);
+    animation->Render(time);
     for (int i = 0; i < NUM_LEDS; i++)
     {
         const kivsee_render::HSV &hsvVal = leds[i];

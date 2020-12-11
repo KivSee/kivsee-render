@@ -38,6 +38,6 @@ message EffectProto {
 
 message AnimationProto {
     repeated EffectProto effects = 1;
-    float duration = 2;
+    uint32 duration_ms = 2;
     uint32 num_repeats = 3; // 0 means forever
 }

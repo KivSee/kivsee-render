@@ -9,7 +9,6 @@ namespace kivsee_render
         void Rainbow::Render(float rel_time, int cycle_index)
         {
             const float curr_start_hue = hue_start->GetValue(rel_time);
-            Serial.println(rel_time);
             const float curr_end_hue = hue_end->GetValue(rel_time);
             const float curr_hue_diff = curr_end_hue - curr_start_hue;
 

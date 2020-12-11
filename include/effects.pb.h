@@ -18,7 +18,7 @@ typedef struct _RainbowEffectConfig {
 
 typedef struct _AnimationProto {
     pb_callback_t effects;
-    float duration;
+    uint32_t duration_ms;
     uint32_t num_repeats;
 } AnimationProto;
 
@@ -72,7 +72,7 @@ extern "C" {
 #define RainbowEffectConfig_hue_start_tag        1
 #define RainbowEffectConfig_hue_end_tag          2
 #define AnimationProto_effects_tag               1
-#define AnimationProto_duration_tag              2
+#define AnimationProto_duration_ms_tag           2
 #define AnimationProto_num_repeats_tag           3
 #define EffectConfig_start_time_tag              1
 #define EffectConfig_end_time_tag                2
@@ -132,7 +132,7 @@ X(a, CALLBACK, OPTIONAL, MESSAGE,  rainbow,           3)
 
 #define AnimationProto_FIELDLIST(X, a) \
 X(a, CALLBACK, REPEATED, MESSAGE,  effects,           1) \
-X(a, STATIC,   SINGULAR, FLOAT,    duration,          2) \
+X(a, STATIC,   SINGULAR, UINT32,   duration_ms,       2) \
 X(a, STATIC,   SINGULAR, UINT32,   num_repeats,       3)
 #define AnimationProto_CALLBACK pb_default_field_callback
 #define AnimationProto_DEFAULT NULL

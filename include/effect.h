@@ -1,5 +1,5 @@
-#ifndef __I_ANIMATIONS_H__
-#define __I_ANIMATIONS_H__
+#ifndef __EFFECT_H__
+#define __EFFECT_H__
 
 #include <vector>
 #include <hsv.h>
@@ -49,4 +49,4 @@ namespace kivsee_render
 
 } // namespace kivsee_render
 
-#endif // __I_ANIMATIONS_H__
+#endif // __EFFECT_H__

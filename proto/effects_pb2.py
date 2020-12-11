@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\reffects.proto\x1a\x0f\x66unctions.proto\"&\n\x03HSV\x12\t\n\x01h\x18\x01 \x01(\x02\x12\t\n\x01s\x18\x02 \x01(\x02\x12\t\n\x01v\x18\x03 \x01(\x02\"-\n\x16\x43onstColorEffectConfig\x12\x13\n\x05\x63olor\x18\x01 \x01(\x0b\x32\x04.HSV\"Y\n\x13RainbowEffectConfig\x12!\n\thue_start\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\x1f\n\x07hue_end\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"\x84\x01\n\x0c\x45\x66\x66\x65\x63tConfig\x12\x12\n\nstart_time\x18\x01 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x02 \x01(\r\x12\x10\n\x08segments\x18\x03 \x01(\t\x12\x12\n\nrepeat_num\x18\x04 \x01(\x02\x12\x14\n\x0crepeat_start\x18\x05 \x01(\x02\x12\x12\n\nrepeat_end\x18\x06 \x01(\x02\"\x96\x01\n\x0b\x45\x66\x66\x65\x63tProto\x12$\n\reffect_config\x18\x01 \x01(\x0b\x32\r.EffectConfig\x12.\n\x0b\x63onst_color\x18\x02 \x01(\x0b\x32\x17.ConstColorEffectConfigH\x00\x12\'\n\x07rainbow\x18\x03 \x01(\x0b\x32\x14.RainbowEffectConfigH\x00\x42\x08\n\x06\x65\x66\x66\x65\x63t\"V\n\x0e\x41nimationProto\x12\x1d\n\x07\x65\x66\x66\x65\x63ts\x18\x01 \x03(\x0b\x32\x0c.EffectProto\x12\x10\n\x08\x64uration\x18\x02 \x01(\x02\x12\x13\n\x0bnum_repeats\x18\x03 \x01(\rb\x06proto3'
+  serialized_pb=b'\n\reffects.proto\x1a\x0f\x66unctions.proto\"&\n\x03HSV\x12\t\n\x01h\x18\x01 \x01(\x02\x12\t\n\x01s\x18\x02 \x01(\x02\x12\t\n\x01v\x18\x03 \x01(\x02\"-\n\x16\x43onstColorEffectConfig\x12\x13\n\x05\x63olor\x18\x01 \x01(\x0b\x32\x04.HSV\"Y\n\x13RainbowEffectConfig\x12!\n\thue_start\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\x1f\n\x07hue_end\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"\x84\x01\n\x0c\x45\x66\x66\x65\x63tConfig\x12\x12\n\nstart_time\x18\x01 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x02 \x01(\r\x12\x10\n\x08segments\x18\x03 \x01(\t\x12\x12\n\nrepeat_num\x18\x04 \x01(\x02\x12\x14\n\x0crepeat_start\x18\x05 \x01(\x02\x12\x12\n\nrepeat_end\x18\x06 \x01(\x02\"\x96\x01\n\x0b\x45\x66\x66\x65\x63tProto\x12$\n\reffect_config\x18\x01 \x01(\x0b\x32\r.EffectConfig\x12.\n\x0b\x63onst_color\x18\x02 \x01(\x0b\x32\x17.ConstColorEffectConfigH\x00\x12\'\n\x07rainbow\x18\x03 \x01(\x0b\x32\x14.RainbowEffectConfigH\x00\x42\x08\n\x06\x65\x66\x66\x65\x63t\"Y\n\x0e\x41nimationProto\x12\x1d\n\x07\x65\x66\x66\x65\x63ts\x18\x01 \x03(\x0b\x32\x0c.EffectProto\x12\x13\n\x0b\x64uration_ms\x18\x02 \x01(\r\x12\x13\n\x0bnum_repeats\x18\x03 \x01(\rb\x06proto3'
   ,
   dependencies=[functions__pb2.DESCRIPTOR,])
 
@@ -278,9 +278,9 @@ _ANIMATIONPROTO = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='duration', full_name='AnimationProto.duration', index=1,
-      number=2, type=2, cpp_type=6, label=1,
-      has_default_value=False, default_value=float(0),
+      name='duration_ms', full_name='AnimationProto.duration_ms', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -304,7 +304,7 @@ _ANIMATIONPROTO = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=500,
-  serialized_end=586,
+  serialized_end=589,
 )
 
 _CONSTCOLOREFFECTCONFIG.fields_by_name['color'].message_type = _HSV
