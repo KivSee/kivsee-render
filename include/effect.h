@@ -6,6 +6,7 @@
 #include <pb_decode.h>
 #include <effects.pb.h>
 
+
 namespace kivsee_render
 {
     class Effect

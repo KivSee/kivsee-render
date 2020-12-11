@@ -6,6 +6,7 @@
 #include <list>
 
 #include <color/rainbow.h>
+#include <color/const_color.h>
 
 
 namespace kivsee_render
@@ -49,6 +50,8 @@ namespace kivsee_render
 
         Effect *newEffect = nullptr;
 
+        effectProto.const_color.funcs.decode = &::kivsee_render::color::ConstColor::InitFromPb;
+        effectProto.const_color.arg = &newEffect;
         effectProto.rainbow.funcs.decode = &::kivsee_render::color::Rainbow::InitFromPb;
         effectProto.rainbow.arg = &newEffect;
 

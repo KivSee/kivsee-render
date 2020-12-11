@@ -3,7 +3,6 @@
 
 #include <hsv.h>
 #include <effect.h>
-#include <effects.pb.h>
 
 namespace kivsee_render
 {
@@ -14,12 +13,14 @@ namespace kivsee_render
         {
         public:
 
-            ConstColor(const ConstColorEffectConfig &config): config(config) {}
+            static bool InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg);
+
+            ConstColor(const HSV &color): color(color) {}
 
             void Render(float rel_time, int cycle_index) override;
 
         private:
-            ConstColorEffectConfig config;
+            HSV color;
         };
 
     } // namespace color

@@ -1,11 +1,11 @@
 #include <color/rainbow.h>
 #include <Arduino.h>
+#include <effects.pb.h>
 
 namespace kivsee_render
 {
     namespace color
     {
-
         void Rainbow::Render(float rel_time, int cycle_index)
         {
             const float curr_start_hue = hue_start->GetValue(rel_time);
@@ -21,6 +21,26 @@ namespace kivsee_render
                 pixel->sat = 1.0f;
                 pixel->val = 1.0f;
             }
+        }
+
+        bool Rainbow::InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg)
+        {
+            RainbowEffectConfig config = RainbowEffectConfig_init_zero;
+
+            float_functions::IFloatFunction *hue_start;
+            float_functions::IFloatFunction *hue_end;
+
+            config.hue_start.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
+            config.hue_start.arg = &hue_start;
+            config.hue_end.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
+            config.hue_end.arg = &hue_end;
+
+            if (!pb_decode(stream, RainbowEffectConfig_fields, &config))
+            {
+                return false;
+            }
+            *((Effect **)*arg) = new Rainbow(hue_start, hue_end);
+            return true;
         }
 
     } // namespace color

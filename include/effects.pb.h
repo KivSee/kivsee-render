@@ -32,9 +32,9 @@ typedef struct _EffectConfig {
 } EffectConfig;
 
 typedef struct _HSV {
-    float h;
-    float s;
-    float v;
+    float hue;
+    float sat;
+    float val;
 } HSV;
 
 typedef struct _ConstColorEffectConfig {
@@ -80,9 +80,9 @@ extern "C" {
 #define EffectConfig_repeat_num_tag              4
 #define EffectConfig_repeat_start_tag            5
 #define EffectConfig_repeat_end_tag              6
-#define HSV_h_tag                                1
-#define HSV_s_tag                                2
-#define HSV_v_tag                                3
+#define HSV_hue_tag                              1
+#define HSV_sat_tag                              2
+#define HSV_val_tag                              3
 #define ConstColorEffectConfig_color_tag         1
 #define EffectProto_effect_config_tag            1
 #define EffectProto_const_color_tag              2
@@ -90,9 +90,9 @@ extern "C" {
 
 /* Struct field encoding specification for nanopb */
 #define HSV_FIELDLIST(X, a) \
-X(a, STATIC,   SINGULAR, FLOAT,    h,                 1) \
-X(a, STATIC,   SINGULAR, FLOAT,    s,                 2) \
-X(a, STATIC,   SINGULAR, FLOAT,    v,                 3)
+X(a, STATIC,   SINGULAR, FLOAT,    hue,               1) \
+X(a, STATIC,   SINGULAR, FLOAT,    sat,               2) \
+X(a, STATIC,   SINGULAR, FLOAT,    val,               3)
 #define HSV_CALLBACK NULL
 #define HSV_DEFAULT NULL
 

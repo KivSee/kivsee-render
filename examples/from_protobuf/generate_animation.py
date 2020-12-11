@@ -4,22 +4,29 @@ sys.path.append('../../proto')
 import effects_pb2
 
 animation = effects_pb2.AnimationProto()
-animation.duration_ms = 1000
-animation.num_repeats = 1
+animation.duration_ms = 5000
+animation.num_repeats = 5
 
 effect = animation.effects.add()
-effect.effect_config.start_time = 100
-effect.effect_config.end_time = 500
+effect.effect_config.start_time = 0
+effect.effect_config.end_time = 1000
 effect.rainbow.hue_start.linear.start = 0.0
 effect.rainbow.hue_start.linear.end = 1.0
 effect.rainbow.hue_end.linear.start = 1.0
 effect.rainbow.hue_end.linear.end = 2.0
 
 effect = animation.effects.add()
-effect.effect_config.start_time = 600
-effect.effect_config.end_time = 800
+effect.effect_config.start_time = 1000
+effect.effect_config.end_time = 2000
 effect.rainbow.hue_start.const_value.value = 0.0
 effect.rainbow.hue_end.const_value.value = 1.0
+
+effect = animation.effects.add()
+effect.effect_config.start_time = 2000
+effect.effect_config.end_time = 3000
+effect.const_color.color.hue = 0.5
+effect.const_color.color.sat = 1.0
+effect.const_color.color.val = 1.0
 
 
 # config = effects_pb2.RainbowEffectConfig()

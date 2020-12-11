@@ -2,9 +2,9 @@ syntax = "proto3";
 import "functions.proto";
 
 message HSV {
-    float h = 1;
-    float s = 2;
-    float v = 3;
+    float hue = 1;
+    float sat = 2;
+    float val = 3;
 }
 
 message ConstColorEffectConfig {
