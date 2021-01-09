@@ -5,7 +5,7 @@
 
 namespace kivsee_render {
 
-    ~Animation::Animation() {
+    Animation::~Animation() {
         for(EffectsVec::iterator it = effects.begin(); it != effects.end(); ++it) {
             Effect *effect = *it;
             delete effect;
