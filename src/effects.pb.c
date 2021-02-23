@@ -18,6 +18,9 @@ PB_BIND(RainbowEffectConfig, RainbowEffectConfig, AUTO)
 PB_BIND(BrightnessEffectConfig, BrightnessEffectConfig, AUTO)
 
 
+PB_BIND(HueEffectConfig, HueEffectConfig, AUTO)
+
+
 PB_BIND(EffectConfig, EffectConfig, AUTO)
 
 

@@ -20,6 +20,10 @@ message BrightnessEffectConfig {
     FloatFunction mult_factor = 1;
 }
 
+message HueEffectConfig {
+    FloatFunction offset_factor = 1;
+}
+
 message EffectConfig {
     uint32 start_time = 1;
     uint32 end_time = 2;
@@ -38,6 +42,7 @@ message EffectProto {
         ConstColorEffectConfig const_color = 2;
         RainbowEffectConfig rainbow = 3;
         BrightnessEffectConfig brightness = 4;
+        HueEffectConfig hue = 5;
     }
 }
 

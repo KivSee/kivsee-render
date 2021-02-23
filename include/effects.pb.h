@@ -15,6 +15,10 @@ typedef struct _BrightnessEffectConfig {
     pb_callback_t mult_factor;
 } BrightnessEffectConfig;
 
+typedef struct _HueEffectConfig {
+    pb_callback_t offset_factor;
+} HueEffectConfig;
+
 typedef struct _RainbowEffectConfig {
     pb_callback_t hue_start;
     pb_callback_t hue_end;
@@ -52,6 +56,7 @@ typedef struct _EffectProto {
     pb_callback_t const_color;
     pb_callback_t rainbow;
     pb_callback_t brightness;
+    pb_callback_t hue;
 } EffectProto;
 
 
@@ -64,19 +69,22 @@ extern "C" {
 #define ConstColorEffectConfig_init_default      {false, HSV_init_default}
 #define RainbowEffectConfig_init_default         {{{NULL}, NULL}, {{NULL}, NULL}}
 #define BrightnessEffectConfig_init_default      {{{NULL}, NULL}}
+#define HueEffectConfig_init_default             {{{NULL}, NULL}}
 #define EffectConfig_init_default                {0, 0, {{NULL}, NULL}, 0, 0, 0}
-#define EffectProto_init_default                 {false, EffectConfig_init_default, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
+#define EffectProto_init_default                 {false, EffectConfig_init_default, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
 #define AnimationProto_init_default              {{{NULL}, NULL}, 0, 0}
 #define HSV_init_zero                            {0, 0, 0}
 #define ConstColorEffectConfig_init_zero         {false, HSV_init_zero}
 #define RainbowEffectConfig_init_zero            {{{NULL}, NULL}, {{NULL}, NULL}}
 #define BrightnessEffectConfig_init_zero         {{{NULL}, NULL}}
+#define HueEffectConfig_init_zero                {{{NULL}, NULL}}
 #define EffectConfig_init_zero                   {0, 0, {{NULL}, NULL}, 0, 0, 0}
-#define EffectProto_init_zero                    {false, EffectConfig_init_zero, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
+#define EffectProto_init_zero                    {false, EffectConfig_init_zero, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
 #define AnimationProto_init_zero                 {{{NULL}, NULL}, 0, 0}
 
 /* Field tags (for use in manual encoding/decoding) */
 #define BrightnessEffectConfig_mult_factor_tag   1
+#define HueEffectConfig_offset_factor_tag        1
 #define RainbowEffectConfig_hue_start_tag        1
 #define RainbowEffectConfig_hue_end_tag          2
 #define AnimationProto_effects_tag               1
@@ -96,6 +104,7 @@ extern "C" {
 #define EffectProto_const_color_tag              2
 #define EffectProto_rainbow_tag                  3
 #define EffectProto_brightness_tag               4
+#define EffectProto_hue_tag                      5
 
 /* Struct field encoding specification for nanopb */
 #define HSV_FIELDLIST(X, a) \
@@ -125,6 +134,12 @@ X(a, CALLBACK, OPTIONAL, MESSAGE,  mult_factor,       1)
 #define BrightnessEffectConfig_DEFAULT NULL
 #define BrightnessEffectConfig_mult_factor_MSGTYPE FloatFunction
 
+#define HueEffectConfig_FIELDLIST(X, a) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  offset_factor,     1)
+#define HueEffectConfig_CALLBACK pb_default_field_callback
+#define HueEffectConfig_DEFAULT NULL
+#define HueEffectConfig_offset_factor_MSGTYPE FloatFunction
+
 #define EffectConfig_FIELDLIST(X, a) \
 X(a, STATIC,   SINGULAR, UINT32,   start_time,        1) \
 X(a, STATIC,   SINGULAR, UINT32,   end_time,          2) \
@@ -139,13 +154,15 @@ X(a, STATIC,   SINGULAR, FLOAT,    repeat_end,        6)
 X(a, STATIC,   OPTIONAL, MESSAGE,  effect_config,     1) \
 X(a, CALLBACK, OPTIONAL, MESSAGE,  const_color,       2) \
 X(a, CALLBACK, OPTIONAL, MESSAGE,  rainbow,           3) \
-X(a, CALLBACK, OPTIONAL, MESSAGE,  brightness,        4)
+X(a, CALLBACK, OPTIONAL, MESSAGE,  brightness,        4) \
+X(a, CALLBACK, OPTIONAL, MESSAGE,  hue,               5)
 #define EffectProto_CALLBACK pb_default_field_callback
 #define EffectProto_DEFAULT NULL
 #define EffectProto_effect_config_MSGTYPE EffectConfig
 #define EffectProto_const_color_MSGTYPE ConstColorEffectConfig
 #define EffectProto_rainbow_MSGTYPE RainbowEffectConfig
 #define EffectProto_brightness_MSGTYPE BrightnessEffectConfig
+#define EffectProto_hue_MSGTYPE HueEffectConfig
 
 #define AnimationProto_FIELDLIST(X, a) \
 X(a, CALLBACK, REPEATED, MESSAGE,  effects,           1) \
@@ -159,6 +176,7 @@ extern const pb_msgdesc_t HSV_msg;
 extern const pb_msgdesc_t ConstColorEffectConfig_msg;
 extern const pb_msgdesc_t RainbowEffectConfig_msg;
 extern const pb_msgdesc_t BrightnessEffectConfig_msg;
+extern const pb_msgdesc_t HueEffectConfig_msg;
 extern const pb_msgdesc_t EffectConfig_msg;
 extern const pb_msgdesc_t EffectProto_msg;
 extern const pb_msgdesc_t AnimationProto_msg;
@@ -168,6 +186,7 @@ extern const pb_msgdesc_t AnimationProto_msg;
 #define ConstColorEffectConfig_fields &ConstColorEffectConfig_msg
 #define RainbowEffectConfig_fields &RainbowEffectConfig_msg
 #define BrightnessEffectConfig_fields &BrightnessEffectConfig_msg
+#define HueEffectConfig_fields &HueEffectConfig_msg
 #define EffectConfig_fields &EffectConfig_msg
 #define EffectProto_fields &EffectProto_msg
 #define AnimationProto_fields &AnimationProto_msg
@@ -177,6 +196,7 @@ extern const pb_msgdesc_t AnimationProto_msg;
 #define ConstColorEffectConfig_size              17
 /* RainbowEffectConfig_size depends on runtime parameters */
 /* BrightnessEffectConfig_size depends on runtime parameters */
+/* HueEffectConfig_size depends on runtime parameters */
 /* EffectConfig_size depends on runtime parameters */
 /* EffectProto_size depends on runtime parameters */
 /* AnimationProto_size depends on runtime parameters */
