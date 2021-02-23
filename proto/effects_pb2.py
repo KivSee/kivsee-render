@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\reffects.proto\x1a\x0f\x66unctions.proto\",\n\x03HSV\x12\x0b\n\x03hue\x18\x01 \x01(\x02\x12\x0b\n\x03sat\x18\x02 \x01(\x02\x12\x0b\n\x03val\x18\x03 \x01(\x02\"-\n\x16\x43onstColorEffectConfig\x12\x13\n\x05\x63olor\x18\x01 \x01(\x0b\x32\x04.HSV\"Y\n\x13RainbowEffectConfig\x12!\n\thue_start\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\x1f\n\x07hue_end\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"=\n\x16\x42rightnessEffectConfig\x12#\n\x0bmult_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"\x84\x01\n\x0c\x45\x66\x66\x65\x63tConfig\x12\x12\n\nstart_time\x18\x01 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x02 \x01(\r\x12\x10\n\x08segments\x18\x03 \x01(\t\x12\x12\n\nrepeat_num\x18\x04 \x01(\x02\x12\x14\n\x0crepeat_start\x18\x05 \x01(\x02\x12\x12\n\nrepeat_end\x18\x06 \x01(\x02\"\xc5\x01\n\x0b\x45\x66\x66\x65\x63tProto\x12$\n\reffect_config\x18\x01 \x01(\x0b\x32\r.EffectConfig\x12.\n\x0b\x63onst_color\x18\x02 \x01(\x0b\x32\x17.ConstColorEffectConfigH\x00\x12\'\n\x07rainbow\x18\x03 \x01(\x0b\x32\x14.RainbowEffectConfigH\x00\x12-\n\nbrightness\x18\x04 \x01(\x0b\x32\x17.BrightnessEffectConfigH\x00\x42\x08\n\x06\x65\x66\x66\x65\x63t\"Y\n\x0e\x41nimationProto\x12\x1d\n\x07\x65\x66\x66\x65\x63ts\x18\x01 \x03(\x0b\x32\x0c.EffectProto\x12\x13\n\x0b\x64uration_ms\x18\x02 \x01(\r\x12\x13\n\x0bnum_repeats\x18\x03 \x01(\rb\x06proto3'
+  serialized_pb=b'\n\reffects.proto\x1a\x0f\x66unctions.proto\",\n\x03HSV\x12\x0b\n\x03hue\x18\x01 \x01(\x02\x12\x0b\n\x03sat\x18\x02 \x01(\x02\x12\x0b\n\x03val\x18\x03 \x01(\x02\"-\n\x16\x43onstColorEffectConfig\x12\x13\n\x05\x63olor\x18\x01 \x01(\x0b\x32\x04.HSV\"Y\n\x13RainbowEffectConfig\x12!\n\thue_start\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\x1f\n\x07hue_end\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"=\n\x16\x42rightnessEffectConfig\x12#\n\x0bmult_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"8\n\x0fHueEffectConfig\x12%\n\roffset_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"\x84\x01\n\x0c\x45\x66\x66\x65\x63tConfig\x12\x12\n\nstart_time\x18\x01 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x02 \x01(\r\x12\x10\n\x08segments\x18\x03 \x01(\t\x12\x12\n\nrepeat_num\x18\x04 \x01(\x02\x12\x14\n\x0crepeat_start\x18\x05 \x01(\x02\x12\x12\n\nrepeat_end\x18\x06 \x01(\x02\"\xe6\x01\n\x0b\x45\x66\x66\x65\x63tProto\x12$\n\reffect_config\x18\x01 \x01(\x0b\x32\r.EffectConfig\x12.\n\x0b\x63onst_color\x18\x02 \x01(\x0b\x32\x17.ConstColorEffectConfigH\x00\x12\'\n\x07rainbow\x18\x03 \x01(\x0b\x32\x14.RainbowEffectConfigH\x00\x12-\n\nbrightness\x18\x04 \x01(\x0b\x32\x17.BrightnessEffectConfigH\x00\x12\x1f\n\x03hue\x18\x05 \x01(\x0b\x32\x10.HueEffectConfigH\x00\x42\x08\n\x06\x65\x66\x66\x65\x63t\"Y\n\x0e\x41nimationProto\x12\x1d\n\x07\x65\x66\x66\x65\x63ts\x18\x01 \x03(\x0b\x32\x0c.EffectProto\x12\x13\n\x0b\x64uration_ms\x18\x02 \x01(\r\x12\x13\n\x0bnum_repeats\x18\x03 \x01(\rb\x06proto3'
   ,
   dependencies=[functions__pb2.DESCRIPTOR,])
 
@@ -176,6 +176,38 @@ _BRIGHTNESSEFFECTCONFIG = _descriptor.Descriptor(
 )
 
 
+_HUEEFFECTCONFIG = _descriptor.Descriptor(
+  name='HueEffectConfig',
+  full_name='HueEffectConfig',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='offset_factor', full_name='HueEffectConfig.offset_factor', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=281,
+  serialized_end=337,
+)
+
+
 _EFFECTCONFIG = _descriptor.Descriptor(
   name='EffectConfig',
   full_name='EffectConfig',
@@ -238,8 +270,8 @@ _EFFECTCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=282,
-  serialized_end=414,
+  serialized_start=340,
+  serialized_end=472,
 )
 
 
@@ -279,6 +311,13 @@ _EFFECTPROTO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='hue', full_name='EffectProto.hue', index=4,
+      number=5, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -296,8 +335,8 @@ _EFFECTPROTO = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=417,
-  serialized_end=614,
+  serialized_start=475,
+  serialized_end=705,
 )
 
 
@@ -342,18 +381,20 @@ _ANIMATIONPROTO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=616,
-  serialized_end=705,
+  serialized_start=707,
+  serialized_end=796,
 )
 
 _CONSTCOLOREFFECTCONFIG.fields_by_name['color'].message_type = _HSV
 _RAINBOWEFFECTCONFIG.fields_by_name['hue_start'].message_type = functions__pb2._FLOATFUNCTION
 _RAINBOWEFFECTCONFIG.fields_by_name['hue_end'].message_type = functions__pb2._FLOATFUNCTION
 _BRIGHTNESSEFFECTCONFIG.fields_by_name['mult_factor'].message_type = functions__pb2._FLOATFUNCTION
+_HUEEFFECTCONFIG.fields_by_name['offset_factor'].message_type = functions__pb2._FLOATFUNCTION
 _EFFECTPROTO.fields_by_name['effect_config'].message_type = _EFFECTCONFIG
 _EFFECTPROTO.fields_by_name['const_color'].message_type = _CONSTCOLOREFFECTCONFIG
 _EFFECTPROTO.fields_by_name['rainbow'].message_type = _RAINBOWEFFECTCONFIG
 _EFFECTPROTO.fields_by_name['brightness'].message_type = _BRIGHTNESSEFFECTCONFIG
+_EFFECTPROTO.fields_by_name['hue'].message_type = _HUEEFFECTCONFIG
 _EFFECTPROTO.oneofs_by_name['effect'].fields.append(
   _EFFECTPROTO.fields_by_name['const_color'])
 _EFFECTPROTO.fields_by_name['const_color'].containing_oneof = _EFFECTPROTO.oneofs_by_name['effect']
@@ -363,11 +404,15 @@ _EFFECTPROTO.fields_by_name['rainbow'].containing_oneof = _EFFECTPROTO.oneofs_by
 _EFFECTPROTO.oneofs_by_name['effect'].fields.append(
   _EFFECTPROTO.fields_by_name['brightness'])
 _EFFECTPROTO.fields_by_name['brightness'].containing_oneof = _EFFECTPROTO.oneofs_by_name['effect']
+_EFFECTPROTO.oneofs_by_name['effect'].fields.append(
+  _EFFECTPROTO.fields_by_name['hue'])
+_EFFECTPROTO.fields_by_name['hue'].containing_oneof = _EFFECTPROTO.oneofs_by_name['effect']
 _ANIMATIONPROTO.fields_by_name['effects'].message_type = _EFFECTPROTO
 DESCRIPTOR.message_types_by_name['HSV'] = _HSV
 DESCRIPTOR.message_types_by_name['ConstColorEffectConfig'] = _CONSTCOLOREFFECTCONFIG
 DESCRIPTOR.message_types_by_name['RainbowEffectConfig'] = _RAINBOWEFFECTCONFIG
 DESCRIPTOR.message_types_by_name['BrightnessEffectConfig'] = _BRIGHTNESSEFFECTCONFIG
+DESCRIPTOR.message_types_by_name['HueEffectConfig'] = _HUEEFFECTCONFIG
 DESCRIPTOR.message_types_by_name['EffectConfig'] = _EFFECTCONFIG
 DESCRIPTOR.message_types_by_name['EffectProto'] = _EFFECTPROTO
 DESCRIPTOR.message_types_by_name['AnimationProto'] = _ANIMATIONPROTO
@@ -400,6 +445,13 @@ BrightnessEffectConfig = _reflection.GeneratedProtocolMessageType('BrightnessEff
   # @@protoc_insertion_point(class_scope:BrightnessEffectConfig)
   })
 _sym_db.RegisterMessage(BrightnessEffectConfig)
+
+HueEffectConfig = _reflection.GeneratedProtocolMessageType('HueEffectConfig', (_message.Message,), {
+  'DESCRIPTOR' : _HUEEFFECTCONFIG,
+  '__module__' : 'effects_pb2'
+  # @@protoc_insertion_point(class_scope:HueEffectConfig)
+  })
+_sym_db.RegisterMessage(HueEffectConfig)
 
 EffectConfig = _reflection.GeneratedProtocolMessageType('EffectConfig', (_message.Message,), {
   'DESCRIPTOR' : _EFFECTCONFIG,

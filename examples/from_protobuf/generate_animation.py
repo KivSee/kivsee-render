@@ -28,13 +28,21 @@ effect.const_color.color.hue = 0.5
 effect.const_color.color.sat = 0.8
 effect.const_color.color.val = 1.0
 
+# effect = animation.effects.add()
+# effect.effect_config.start_time = 0
+# effect.effect_config.end_time = 4000
+# effect.brightness.mult_factor.sin.min = 0.5
+# effect.brightness.mult_factor.sin.max = 1
+# effect.brightness.mult_factor.sin.phase = -0.25
+# effect.brightness.mult_factor.sin.repeats = 3
+
+
 effect = animation.effects.add()
 effect.effect_config.start_time = 0
 effect.effect_config.end_time = 4000
-effect.brightness.mult_factor.sin.min = 0.5
-effect.brightness.mult_factor.sin.max = 1
-effect.brightness.mult_factor.sin.phase = -0.25
-effect.brightness.mult_factor.sin.repeats = 3
+effect.hue.offset_factor.steps.num_steps = 4
+effect.hue.offset_factor.steps.diff_per_step = 0.25
+effect.hue.offset_factor.steps.first_step_value = 0.0
 
 # config = effects_pb2.RainbowEffectConfig()
 # config.hue_start.const_value.value = 0.0

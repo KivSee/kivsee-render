@@ -11,3 +11,7 @@ RainbowEffectConfig.hue_end type:FT_CALLBACK
 // brightness
 EffectProto.brightness type:FT_CALLBACK
 BrightnessEffectConfig.mult_factor type:FT_CALLBACK
+
+// hue
+EffectProto.hue type:FT_CALLBACK
+HueEffectConfig.offset_factor type:FT_CALLBACK
