@@ -5,7 +5,7 @@
 
 #include <pb_decode.h>
 
-#define DATA_PIN 2
+#define DATA_PIN 0
 #define NUM_LEDS 25
 
 #include <effect.h>
@@ -20,6 +20,7 @@ NeoPixelBus<NeoRgbFeature, Neo800KbpsMethod> leds_rgb(NUM_LEDS, DATA_PIN);
 void setup()
 {
     Serial.begin(115200);
+    Serial.println("started");
 
     pb_istream_t in_stream = pb_istream_from_buffer(msg, sizeof(msg));
     void *arg = &animation;

@@ -16,6 +16,10 @@ message RainbowEffectConfig {
     FloatFunction hue_end = 2;
 }
 
+message BrightnessEffectConfig {
+    FloatFunction mult_factor = 1;
+}
+
 message EffectConfig {
     uint32 start_time = 1;
     uint32 end_time = 2;
@@ -33,6 +37,7 @@ message EffectProto {
     oneof effect {
         ConstColorEffectConfig const_color = 2;
         RainbowEffectConfig rainbow = 3;
+        BrightnessEffectConfig brightness = 4;
     }
 }
 
