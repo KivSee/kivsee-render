@@ -7,6 +7,7 @@
 
 #include <color/rainbow.h>
 #include <color/const_color.h>
+#include <color/brightness.h>
 
 
 namespace kivsee_render
@@ -54,6 +55,8 @@ namespace kivsee_render
         effectProto.const_color.arg = &newEffect;
         effectProto.rainbow.funcs.decode = &::kivsee_render::color::Rainbow::InitFromPb;
         effectProto.rainbow.arg = &newEffect;
+        effectProto.brightness.funcs.decode = &::kivsee_render::color::Brightness::InitFromPb;
+        effectProto.brightness.arg = &newEffect;
 
         bool success = pb_decode(stream, EffectProto_fields, &effectProto);
         if(!success) return false;

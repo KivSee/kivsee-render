@@ -1,9 +1,13 @@
 EffectProto.effect no_unions:true
 
 // const_color
-EffectProto.const_color type:FT_CALLBACK;
+EffectProto.const_color type:FT_CALLBACK
 
 // rainbow
-EffectProto.rainbow type:FT_CALLBACK;
+EffectProto.rainbow type:FT_CALLBACK
 RainbowEffectConfig.hue_start type:FT_CALLBACK
 RainbowEffectConfig.hue_end type:FT_CALLBACK
+
+// brightness
+EffectProto.brightness type:FT_CALLBACK
+BrightnessEffectConfig.mult_factor type:FT_CALLBACK

@@ -4,7 +4,7 @@
 #include <pb_encode.h>
 #include <pb_decode.h>
 
-#define DATA_PIN 2
+#define DATA_PIN 0
 #define NUM_LEDS 25
 
 #include <color/const_color.h>
