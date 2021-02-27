@@ -44,7 +44,7 @@ message SnakeEffectConfig {
 }
 
 message AlternateEffectConfig {
-    int numberOfPixels = 1;
+    uint32 numberOfPixels = 1;
     FloatFunction hue_offset = 2;
     FloatFunction sat_mult = 3;
     FloatFunction brightness_mult = 4;
