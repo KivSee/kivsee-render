@@ -1,4 +1,4 @@
-#include <color/brightness.h>
+#include <effect/brightness.h>
 #include <Arduino.h>
 #include <effects.pb.h>
 
