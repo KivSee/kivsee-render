@@ -7,7 +7,7 @@
 
 #include <color/rainbow.h>
 #include <color/const_color.h>
-#include <color/brightness.h>
+#include <effect/brightness.h>
 #include <effect/hue.h>
 
 
