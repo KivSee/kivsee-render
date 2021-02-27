@@ -15,3 +15,7 @@ BrightnessEffectConfig.mult_factor type:FT_CALLBACK
 // hue
 EffectProto.hue type:FT_CALLBACK
 HueEffectConfig.offset_factor type:FT_CALLBACK
+
+// saturation
+EffectProto.saturation type:FT_CALLBACK
+SatEffectConfig.mult_factor type:FT_CALLBACK
