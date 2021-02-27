@@ -24,6 +24,32 @@ message HueEffectConfig {
     FloatFunction offset_factor = 1;
 }
 
+message SatEffectConfig {
+    FloatFunction mult_factor = 1;
+}
+
+message SegmentEffectConfig {
+    FloatFunction start = 1;
+    FloatFunction end = 2;
+}
+
+message GlitterEffectConfig {
+    FloatFunction intensity = 1;
+    FloatFunction sat_mult_factor = 2;
+}
+
+message SnakeEffectConfig {
+    FloatFunction head = 1;
+    FloatFunction tail_length = 2;
+}
+
+message AlternateEffectConfig {
+    int numberOfPixels = 1;
+    FloatFunction hue_offset = 2;
+    FloatFunction sat_mult = 3;
+    FloatFunction brightness_mult = 4;
+}
+
 message EffectConfig {
     uint32 start_time = 1;
     uint32 end_time = 2;
@@ -43,6 +69,7 @@ message EffectProto {
         RainbowEffectConfig rainbow = 3;
         BrightnessEffectConfig brightness = 4;
         HueEffectConfig hue = 5;
+
     }
 }
 
