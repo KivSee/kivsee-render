@@ -24,7 +24,7 @@ message HueEffectConfig {
     FloatFunction offset_factor = 1;
 }
 
-message SatEffectConfig {
+message SaturationEffectConfig {
     FloatFunction mult_factor = 1;
 }
 
@@ -44,7 +44,7 @@ message SnakeEffectConfig {
 }
 
 message AlternateEffectConfig {
-    int numberOfPixels = 1;
+    uint32 numberOfPixels = 1;
     FloatFunction hue_offset = 2;
     FloatFunction sat_mult = 3;
     FloatFunction brightness_mult = 4;
@@ -69,7 +69,7 @@ message EffectProto {
         RainbowEffectConfig rainbow = 3;
         BrightnessEffectConfig brightness = 4;
         HueEffectConfig hue = 5;
-
+        SaturationEffectConfig saturation = 6;
     }
 }
 

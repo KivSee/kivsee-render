@@ -9,6 +9,7 @@
 #include <color/const_color.h>
 #include <effect/brightness.h>
 #include <effect/hue.h>
+#include <effect/saturation.h>
 
 
 namespace kivsee_render
@@ -56,11 +57,13 @@ namespace kivsee_render
         effectProto.const_color.arg = &newEffect;
         effectProto.rainbow.funcs.decode = &::kivsee_render::color::Rainbow::InitFromPb;
         effectProto.rainbow.arg = &newEffect;
-        effectProto.brightness.funcs.decode = &::kivsee_render::color::Brightness::InitFromPb;
+        effectProto.brightness.funcs.decode = &::kivsee_render::effect::Brightness::InitFromPb;
         effectProto.brightness.arg = &newEffect;
         effectProto.hue.funcs.decode = &::kivsee_render::effect::Hue::InitFromPb;
         effectProto.hue.arg = &newEffect;
-
+        effectProto.saturation.funcs.decode = &::kivsee_render::effect::Saturation::InitFromPb;
+        effectProto.saturation.arg = &newEffect;
+       
         bool success = pb_decode(stream, EffectProto_fields, &effectProto);
         if(!success) return false;
 
