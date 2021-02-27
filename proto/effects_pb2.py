@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\reffects.proto\x1a\x0f\x66unctions.proto\",\n\x03HSV\x12\x0b\n\x03hue\x18\x01 \x01(\x02\x12\x0b\n\x03sat\x18\x02 \x01(\x02\x12\x0b\n\x03val\x18\x03 \x01(\x02\"-\n\x16\x43onstColorEffectConfig\x12\x13\n\x05\x63olor\x18\x01 \x01(\x0b\x32\x04.HSV\"Y\n\x13RainbowEffectConfig\x12!\n\thue_start\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\x1f\n\x07hue_end\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"=\n\x16\x42rightnessEffectConfig\x12#\n\x0bmult_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"8\n\x0fHueEffectConfig\x12%\n\roffset_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"6\n\x0fSatEffectConfig\x12#\n\x0bmult_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"Q\n\x13SegmentEffectConfig\x12\x1d\n\x05start\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\x1b\n\x03\x65nd\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"a\n\x13GlitterEffectConfig\x12!\n\tintensity\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\'\n\x0fsat_mult_factor\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"V\n\x11SnakeEffectConfig\x12\x1c\n\x04head\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12#\n\x0btail_length\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"\x9e\x01\n\x15\x41lternateEffectConfig\x12\x16\n\x0enumberOfPixels\x18\x01 \x01(\r\x12\"\n\nhue_offset\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\x12 \n\x08sat_mult\x18\x03 \x01(\x0b\x32\x0e.FloatFunction\x12\'\n\x0f\x62rightness_mult\x18\x04 \x01(\x0b\x32\x0e.FloatFunction\"\x84\x01\n\x0c\x45\x66\x66\x65\x63tConfig\x12\x12\n\nstart_time\x18\x01 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x02 \x01(\r\x12\x10\n\x08segments\x18\x03 \x01(\t\x12\x12\n\nrepeat_num\x18\x04 \x01(\x02\x12\x14\n\x0crepeat_start\x18\x05 \x01(\x02\x12\x12\n\nrepeat_end\x18\x06 \x01(\x02\"\x8e\x02\n\x0b\x45\x66\x66\x65\x63tProto\x12$\n\reffect_config\x18\x01 \x01(\x0b\x32\r.EffectConfig\x12.\n\x0b\x63onst_color\x18\x02 \x01(\x0b\x32\x17.ConstColorEffectConfigH\x00\x12\'\n\x07rainbow\x18\x03 \x01(\x0b\x32\x14.RainbowEffectConfigH\x00\x12-\n\nbrightness\x18\x04 \x01(\x0b\x32\x17.BrightnessEffectConfigH\x00\x12\x1f\n\x03hue\x18\x05 \x01(\x0b\x32\x10.HueEffectConfigH\x00\x12&\n\nsaturation\x18\x06 \x01(\x0b\x32\x10.SatEffectConfigH\x00\x42\x08\n\x06\x65\x66\x66\x65\x63t\"Y\n\x0e\x41nimationProto\x12\x1d\n\x07\x65\x66\x66\x65\x63ts\x18\x01 \x03(\x0b\x32\x0c.EffectProto\x12\x13\n\x0b\x64uration_ms\x18\x02 \x01(\r\x12\x13\n\x0bnum_repeats\x18\x03 \x01(\rb\x06proto3'
+  serialized_pb=b'\n\reffects.proto\x1a\x0f\x66unctions.proto\",\n\x03HSV\x12\x0b\n\x03hue\x18\x01 \x01(\x02\x12\x0b\n\x03sat\x18\x02 \x01(\x02\x12\x0b\n\x03val\x18\x03 \x01(\x02\"-\n\x16\x43onstColorEffectConfig\x12\x13\n\x05\x63olor\x18\x01 \x01(\x0b\x32\x04.HSV\"Y\n\x13RainbowEffectConfig\x12!\n\thue_start\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\x1f\n\x07hue_end\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"=\n\x16\x42rightnessEffectConfig\x12#\n\x0bmult_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"8\n\x0fHueEffectConfig\x12%\n\roffset_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"=\n\x16SaturationEffectConfig\x12#\n\x0bmult_factor\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\"Q\n\x13SegmentEffectConfig\x12\x1d\n\x05start\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\x1b\n\x03\x65nd\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"a\n\x13GlitterEffectConfig\x12!\n\tintensity\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12\'\n\x0fsat_mult_factor\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"V\n\x11SnakeEffectConfig\x12\x1c\n\x04head\x18\x01 \x01(\x0b\x32\x0e.FloatFunction\x12#\n\x0btail_length\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\"\x9e\x01\n\x15\x41lternateEffectConfig\x12\x16\n\x0enumberOfPixels\x18\x01 \x01(\r\x12\"\n\nhue_offset\x18\x02 \x01(\x0b\x32\x0e.FloatFunction\x12 \n\x08sat_mult\x18\x03 \x01(\x0b\x32\x0e.FloatFunction\x12\'\n\x0f\x62rightness_mult\x18\x04 \x01(\x0b\x32\x0e.FloatFunction\"\x84\x01\n\x0c\x45\x66\x66\x65\x63tConfig\x12\x12\n\nstart_time\x18\x01 \x01(\r\x12\x10\n\x08\x65nd_time\x18\x02 \x01(\r\x12\x10\n\x08segments\x18\x03 \x01(\t\x12\x12\n\nrepeat_num\x18\x04 \x01(\x02\x12\x14\n\x0crepeat_start\x18\x05 \x01(\x02\x12\x12\n\nrepeat_end\x18\x06 \x01(\x02\"\x95\x02\n\x0b\x45\x66\x66\x65\x63tProto\x12$\n\reffect_config\x18\x01 \x01(\x0b\x32\r.EffectConfig\x12.\n\x0b\x63onst_color\x18\x02 \x01(\x0b\x32\x17.ConstColorEffectConfigH\x00\x12\'\n\x07rainbow\x18\x03 \x01(\x0b\x32\x14.RainbowEffectConfigH\x00\x12-\n\nbrightness\x18\x04 \x01(\x0b\x32\x17.BrightnessEffectConfigH\x00\x12\x1f\n\x03hue\x18\x05 \x01(\x0b\x32\x10.HueEffectConfigH\x00\x12-\n\nsaturation\x18\x06 \x01(\x0b\x32\x17.SaturationEffectConfigH\x00\x42\x08\n\x06\x65\x66\x66\x65\x63t\"Y\n\x0e\x41nimationProto\x12\x1d\n\x07\x65\x66\x66\x65\x63ts\x18\x01 \x03(\x0b\x32\x0c.EffectProto\x12\x13\n\x0b\x64uration_ms\x18\x02 \x01(\r\x12\x13\n\x0bnum_repeats\x18\x03 \x01(\rb\x06proto3'
   ,
   dependencies=[functions__pb2.DESCRIPTOR,])
 
@@ -208,16 +208,16 @@ _HUEEFFECTCONFIG = _descriptor.Descriptor(
 )
 
 
-_SATEFFECTCONFIG = _descriptor.Descriptor(
-  name='SatEffectConfig',
-  full_name='SatEffectConfig',
+_SATURATIONEFFECTCONFIG = _descriptor.Descriptor(
+  name='SaturationEffectConfig',
+  full_name='SaturationEffectConfig',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='mult_factor', full_name='SatEffectConfig.mult_factor', index=0,
+      name='mult_factor', full_name='SaturationEffectConfig.mult_factor', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -236,7 +236,7 @@ _SATEFFECTCONFIG = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=339,
-  serialized_end=393,
+  serialized_end=400,
 )
 
 
@@ -274,8 +274,8 @@ _SEGMENTEFFECTCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=395,
-  serialized_end=476,
+  serialized_start=402,
+  serialized_end=483,
 )
 
 
@@ -313,8 +313,8 @@ _GLITTEREFFECTCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=478,
-  serialized_end=575,
+  serialized_start=485,
+  serialized_end=582,
 )
 
 
@@ -352,8 +352,8 @@ _SNAKEEFFECTCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=577,
-  serialized_end=663,
+  serialized_start=584,
+  serialized_end=670,
 )
 
 
@@ -405,8 +405,8 @@ _ALTERNATEEFFECTCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=666,
-  serialized_end=824,
+  serialized_start=673,
+  serialized_end=831,
 )
 
 
@@ -472,8 +472,8 @@ _EFFECTCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=827,
-  serialized_end=959,
+  serialized_start=834,
+  serialized_end=966,
 )
 
 
@@ -544,8 +544,8 @@ _EFFECTPROTO = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=962,
-  serialized_end=1232,
+  serialized_start=969,
+  serialized_end=1246,
 )
 
 
@@ -590,8 +590,8 @@ _ANIMATIONPROTO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1234,
-  serialized_end=1323,
+  serialized_start=1248,
+  serialized_end=1337,
 )
 
 _CONSTCOLOREFFECTCONFIG.fields_by_name['color'].message_type = _HSV
@@ -599,7 +599,7 @@ _RAINBOWEFFECTCONFIG.fields_by_name['hue_start'].message_type = functions__pb2._
 _RAINBOWEFFECTCONFIG.fields_by_name['hue_end'].message_type = functions__pb2._FLOATFUNCTION
 _BRIGHTNESSEFFECTCONFIG.fields_by_name['mult_factor'].message_type = functions__pb2._FLOATFUNCTION
 _HUEEFFECTCONFIG.fields_by_name['offset_factor'].message_type = functions__pb2._FLOATFUNCTION
-_SATEFFECTCONFIG.fields_by_name['mult_factor'].message_type = functions__pb2._FLOATFUNCTION
+_SATURATIONEFFECTCONFIG.fields_by_name['mult_factor'].message_type = functions__pb2._FLOATFUNCTION
 _SEGMENTEFFECTCONFIG.fields_by_name['start'].message_type = functions__pb2._FLOATFUNCTION
 _SEGMENTEFFECTCONFIG.fields_by_name['end'].message_type = functions__pb2._FLOATFUNCTION
 _GLITTEREFFECTCONFIG.fields_by_name['intensity'].message_type = functions__pb2._FLOATFUNCTION
@@ -614,7 +614,7 @@ _EFFECTPROTO.fields_by_name['const_color'].message_type = _CONSTCOLOREFFECTCONFI
 _EFFECTPROTO.fields_by_name['rainbow'].message_type = _RAINBOWEFFECTCONFIG
 _EFFECTPROTO.fields_by_name['brightness'].message_type = _BRIGHTNESSEFFECTCONFIG
 _EFFECTPROTO.fields_by_name['hue'].message_type = _HUEEFFECTCONFIG
-_EFFECTPROTO.fields_by_name['saturation'].message_type = _SATEFFECTCONFIG
+_EFFECTPROTO.fields_by_name['saturation'].message_type = _SATURATIONEFFECTCONFIG
 _EFFECTPROTO.oneofs_by_name['effect'].fields.append(
   _EFFECTPROTO.fields_by_name['const_color'])
 _EFFECTPROTO.fields_by_name['const_color'].containing_oneof = _EFFECTPROTO.oneofs_by_name['effect']
@@ -636,7 +636,7 @@ DESCRIPTOR.message_types_by_name['ConstColorEffectConfig'] = _CONSTCOLOREFFECTCO
 DESCRIPTOR.message_types_by_name['RainbowEffectConfig'] = _RAINBOWEFFECTCONFIG
 DESCRIPTOR.message_types_by_name['BrightnessEffectConfig'] = _BRIGHTNESSEFFECTCONFIG
 DESCRIPTOR.message_types_by_name['HueEffectConfig'] = _HUEEFFECTCONFIG
-DESCRIPTOR.message_types_by_name['SatEffectConfig'] = _SATEFFECTCONFIG
+DESCRIPTOR.message_types_by_name['SaturationEffectConfig'] = _SATURATIONEFFECTCONFIG
 DESCRIPTOR.message_types_by_name['SegmentEffectConfig'] = _SEGMENTEFFECTCONFIG
 DESCRIPTOR.message_types_by_name['GlitterEffectConfig'] = _GLITTEREFFECTCONFIG
 DESCRIPTOR.message_types_by_name['SnakeEffectConfig'] = _SNAKEEFFECTCONFIG
@@ -681,12 +681,12 @@ HueEffectConfig = _reflection.GeneratedProtocolMessageType('HueEffectConfig', (_
   })
 _sym_db.RegisterMessage(HueEffectConfig)
 
-SatEffectConfig = _reflection.GeneratedProtocolMessageType('SatEffectConfig', (_message.Message,), {
-  'DESCRIPTOR' : _SATEFFECTCONFIG,
+SaturationEffectConfig = _reflection.GeneratedProtocolMessageType('SaturationEffectConfig', (_message.Message,), {
+  'DESCRIPTOR' : _SATURATIONEFFECTCONFIG,
   '__module__' : 'effects_pb2'
-  # @@protoc_insertion_point(class_scope:SatEffectConfig)
+  # @@protoc_insertion_point(class_scope:SaturationEffectConfig)
   })
-_sym_db.RegisterMessage(SatEffectConfig)
+_sym_db.RegisterMessage(SaturationEffectConfig)
 
 SegmentEffectConfig = _reflection.GeneratedProtocolMessageType('SegmentEffectConfig', (_message.Message,), {
   'DESCRIPTOR' : _SEGMENTEFFECTCONFIG,

@@ -24,7 +24,7 @@ message HueEffectConfig {
     FloatFunction offset_factor = 1;
 }
 
-message SatEffectConfig {
+message SaturationEffectConfig {
     FloatFunction mult_factor = 1;
 }
 
@@ -69,7 +69,7 @@ message EffectProto {
         RainbowEffectConfig rainbow = 3;
         BrightnessEffectConfig brightness = 4;
         HueEffectConfig hue = 5;
-        SatEffectConfig saturation = 6;
+        SaturationEffectConfig saturation = 6;
     }
 }
 

@@ -21,7 +21,7 @@ PB_BIND(BrightnessEffectConfig, BrightnessEffectConfig, AUTO)
 PB_BIND(HueEffectConfig, HueEffectConfig, AUTO)
 
 
-PB_BIND(SatEffectConfig, SatEffectConfig, AUTO)
+PB_BIND(SaturationEffectConfig, SaturationEffectConfig, AUTO)
 
 
 PB_BIND(SegmentEffectConfig, SegmentEffectConfig, 2)

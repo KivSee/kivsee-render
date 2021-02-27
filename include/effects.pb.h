@@ -24,9 +24,9 @@ typedef struct _RainbowEffectConfig {
     pb_callback_t hue_end;
 } RainbowEffectConfig;
 
-typedef struct _SatEffectConfig {
+typedef struct _SaturationEffectConfig {
     pb_callback_t mult_factor;
-} SatEffectConfig;
+} SaturationEffectConfig;
 
 typedef struct _AlternateEffectConfig {
     uint32_t numberOfPixels;
@@ -106,7 +106,7 @@ extern "C" {
 #define RainbowEffectConfig_init_default         {{{NULL}, NULL}, {{NULL}, NULL}}
 #define BrightnessEffectConfig_init_default      {{{NULL}, NULL}}
 #define HueEffectConfig_init_default             {{{NULL}, NULL}}
-#define SatEffectConfig_init_default             {{{NULL}, NULL}}
+#define SaturationEffectConfig_init_default      {{{NULL}, NULL}}
 #define SegmentEffectConfig_init_default         {false, FloatFunction_init_default, false, FloatFunction_init_default}
 #define GlitterEffectConfig_init_default         {false, FloatFunction_init_default, false, FloatFunction_init_default}
 #define SnakeEffectConfig_init_default           {false, FloatFunction_init_default, false, FloatFunction_init_default}
@@ -119,7 +119,7 @@ extern "C" {
 #define RainbowEffectConfig_init_zero            {{{NULL}, NULL}, {{NULL}, NULL}}
 #define BrightnessEffectConfig_init_zero         {{{NULL}, NULL}}
 #define HueEffectConfig_init_zero                {{{NULL}, NULL}}
-#define SatEffectConfig_init_zero                {{{NULL}, NULL}}
+#define SaturationEffectConfig_init_zero         {{{NULL}, NULL}}
 #define SegmentEffectConfig_init_zero            {false, FloatFunction_init_zero, false, FloatFunction_init_zero}
 #define GlitterEffectConfig_init_zero            {false, FloatFunction_init_zero, false, FloatFunction_init_zero}
 #define SnakeEffectConfig_init_zero              {false, FloatFunction_init_zero, false, FloatFunction_init_zero}
@@ -133,7 +133,7 @@ extern "C" {
 #define HueEffectConfig_offset_factor_tag        1
 #define RainbowEffectConfig_hue_start_tag        1
 #define RainbowEffectConfig_hue_end_tag          2
-#define SatEffectConfig_mult_factor_tag          1
+#define SaturationEffectConfig_mult_factor_tag   1
 #define AlternateEffectConfig_numberOfPixels_tag 1
 #define AlternateEffectConfig_hue_offset_tag     2
 #define AlternateEffectConfig_sat_mult_tag       3
@@ -198,11 +198,11 @@ X(a, CALLBACK, OPTIONAL, MESSAGE,  offset_factor,     1)
 #define HueEffectConfig_DEFAULT NULL
 #define HueEffectConfig_offset_factor_MSGTYPE FloatFunction
 
-#define SatEffectConfig_FIELDLIST(X, a) \
+#define SaturationEffectConfig_FIELDLIST(X, a) \
 X(a, CALLBACK, OPTIONAL, MESSAGE,  mult_factor,       1)
-#define SatEffectConfig_CALLBACK pb_default_field_callback
-#define SatEffectConfig_DEFAULT NULL
-#define SatEffectConfig_mult_factor_MSGTYPE FloatFunction
+#define SaturationEffectConfig_CALLBACK pb_default_field_callback
+#define SaturationEffectConfig_DEFAULT NULL
+#define SaturationEffectConfig_mult_factor_MSGTYPE FloatFunction
 
 #define SegmentEffectConfig_FIELDLIST(X, a) \
 X(a, STATIC,   OPTIONAL, MESSAGE,  start,             1) \
@@ -263,7 +263,7 @@ X(a, CALLBACK, OPTIONAL, MESSAGE,  saturation,        6)
 #define EffectProto_rainbow_MSGTYPE RainbowEffectConfig
 #define EffectProto_brightness_MSGTYPE BrightnessEffectConfig
 #define EffectProto_hue_MSGTYPE HueEffectConfig
-#define EffectProto_saturation_MSGTYPE SatEffectConfig
+#define EffectProto_saturation_MSGTYPE SaturationEffectConfig
 
 #define AnimationProto_FIELDLIST(X, a) \
 X(a, CALLBACK, REPEATED, MESSAGE,  effects,           1) \
@@ -278,7 +278,7 @@ extern const pb_msgdesc_t ConstColorEffectConfig_msg;
 extern const pb_msgdesc_t RainbowEffectConfig_msg;
 extern const pb_msgdesc_t BrightnessEffectConfig_msg;
 extern const pb_msgdesc_t HueEffectConfig_msg;
-extern const pb_msgdesc_t SatEffectConfig_msg;
+extern const pb_msgdesc_t SaturationEffectConfig_msg;
 extern const pb_msgdesc_t SegmentEffectConfig_msg;
 extern const pb_msgdesc_t GlitterEffectConfig_msg;
 extern const pb_msgdesc_t SnakeEffectConfig_msg;
@@ -293,7 +293,7 @@ extern const pb_msgdesc_t AnimationProto_msg;
 #define RainbowEffectConfig_fields &RainbowEffectConfig_msg
 #define BrightnessEffectConfig_fields &BrightnessEffectConfig_msg
 #define HueEffectConfig_fields &HueEffectConfig_msg
-#define SatEffectConfig_fields &SatEffectConfig_msg
+#define SaturationEffectConfig_fields &SaturationEffectConfig_msg
 #define SegmentEffectConfig_fields &SegmentEffectConfig_msg
 #define GlitterEffectConfig_fields &GlitterEffectConfig_msg
 #define SnakeEffectConfig_fields &SnakeEffectConfig_msg
@@ -308,7 +308,7 @@ extern const pb_msgdesc_t AnimationProto_msg;
 /* RainbowEffectConfig_size depends on runtime parameters */
 /* BrightnessEffectConfig_size depends on runtime parameters */
 /* HueEffectConfig_size depends on runtime parameters */
-/* SatEffectConfig_size depends on runtime parameters */
+/* SaturationEffectConfig_size depends on runtime parameters */
 #if defined(FloatFunction_size) && defined(FloatFunction_size)
 #define SegmentEffectConfig_size                 (12 + FloatFunction_size + FloatFunction_size)
 #endif

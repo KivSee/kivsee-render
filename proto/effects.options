@@ -18,4 +18,4 @@ HueEffectConfig.offset_factor type:FT_CALLBACK
 
 // saturation
 EffectProto.saturation type:FT_CALLBACK
-SatEffectConfig.mult_factor type:FT_CALLBACK
+SaturationEffectConfig.mult_factor type:FT_CALLBACK
