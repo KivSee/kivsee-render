@@ -2,7 +2,6 @@
 
 #include <effects.pb.h>
 #include <cmath>
-#include <Arduino.h>
 #include <list>
 
 #include <color/rainbow.h>

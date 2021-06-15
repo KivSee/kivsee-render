@@ -1,12 +1,12 @@
-#include <functions/float_functions/float_functions.h>
+#include "functions/float_functions/float_functions.h"
 
-#include <functions/float_functions/const_value.h>
-#include <functions/float_functions/linear.h>
-#include <functions/float_functions/sin.h>
-#include <functions/float_functions/steps.h>
-#include <functions/float_functions/repeat.h>
-#include <functions/float_functions/half.h>
-#include <functions/float_functions/comb2.h>
+#include "functions/float_functions/const_value.h"
+#include "functions/float_functions/linear.h"
+#include "functions/float_functions/sin.h"
+#include "functions/float_functions/steps.h"
+#include "functions/float_functions/repeat.h"
+#include "functions/float_functions/half.h"
+#include "functions/float_functions/comb2.h"
 
 namespace kivsee_render
 {
