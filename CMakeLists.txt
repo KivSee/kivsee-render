@@ -4,7 +4,7 @@ project(kiv)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-option(BUILD_TESTS "Build unit tests" OFF)
+option(BUILD_TESTS "Build unit tests" ON)
 option(WITH_DEBUG_PRINTS "enable debug print macros" OFF)
 
 # Set a default build type if none was specified
