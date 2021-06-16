@@ -53,9 +53,13 @@ target_link_libraries(simulation PUBLIC ${KIV_LIBS})
 
 # Unit Tests
 if (BUILD_TESTS)
+  find_package(GTest REQUIRED)
+  include_directories(${GTEST_INCLUDE_DIRS})
+
   add_executable(test1 test/test1.cpp)
   target_include_directories(test1 PUBLIC include)
-
+  target_link_libraries(test1 ${GTEST_LIBRARIES} pthread)
+  
   enable_testing()
   add_test(NAME test1 COMMAND test1)
 endif()
