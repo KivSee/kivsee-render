@@ -1,0 +1,17 @@
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "kivsee-render",
+    srcs = [
+        "src/segments/segments_map.cpp",
+        "src/segments.pb.c",
+    ],
+    hdrs=glob([
+        "include/**/*.h",
+    ]),
+    deps = [
+        "@nanopb//:nanopb"
+    ],
+    copts = ["-Iinclude", "-Iexternal/nanopb"],
+    visibility = ["//visibility:public"],
+)

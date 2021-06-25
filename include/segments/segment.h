@@ -2,7 +2,7 @@
 #define __SEGMENTS_SEGMENT_H__
 
 #include <vector>
-#include <hsv.h>
+#include "hsv.h"
 
 namespace kivsee_render {
     namespace segments {

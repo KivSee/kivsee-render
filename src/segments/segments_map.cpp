@@ -2,8 +2,6 @@
 
 #include "segments.pb.h"
 
-#include "Arduino.h"
-
 namespace kivsee_render {
     namespace segments {
 

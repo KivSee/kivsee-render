@@ -35,3 +35,6 @@
 .vscode
 
 __pycache__
+
+# Bazel
+bazel-*

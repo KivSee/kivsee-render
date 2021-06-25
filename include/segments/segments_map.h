@@ -2,8 +2,8 @@
 #define __SEGMENTS_MAP_H__
 
 #include <list>
-#include <segments/segment.h>
-#include <pb_decode.h>
+#include "segments/segment.h"
+#include "pb_decode.h"
 
 namespace kivsee_render
 {
