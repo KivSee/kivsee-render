@@ -11,14 +11,14 @@ namespace kivsee_render
     {
         /**
      * The segments map is a mapping from segment name (string),
-     * to a vector of LED indices.
+     * to a vector of LED pixels.
      */
         class SegmentsMap
         {
 
         public:
 
-            Indices *getIndicesForSegment(const char *segmentName) {
+            Pixels *getPixelsForSegment(const char *segmentName) {
                 for(std::list<Segment>::iterator it = segments.begin(); it != segments.end(); it++) {
                     if(strcmp(it->first, segmentName) == 0) {
                         return &(it->second);

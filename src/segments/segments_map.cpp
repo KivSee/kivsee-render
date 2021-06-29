@@ -6,7 +6,7 @@ namespace kivsee_render {
     namespace segments {
 
         struct DecodeSegmentIndexArgs {
-            Indices *indices;
+            Pixels *pixels;
             kivsee_render::HSV *leds;
         };
 
@@ -17,7 +17,7 @@ namespace kivsee_render {
             if (!pb_decode_varint32(stream, &index))
                 return false;
 
-            decodeSegmentIndexArgs->indices->push_back(decodeSegmentIndexArgs->leds + index);
+            decodeSegmentIndexArgs->pixels->push_back(decodeSegmentIndexArgs->leds + index);
             return true;
         }
 
@@ -34,7 +34,7 @@ namespace kivsee_render {
             SegmentConfig segment_config = SegmentConfig_init_zero;
             segment_config.indices.funcs.decode = &DecodeSegmentIndexFromPbStream;
             DecodeSegmentIndexArgs decodeSegmentIndexArgs {
-                .indices = &segment.second,
+                .pixels = &segment.second,
                 .leds = decodeSegmentArgs->leds,
             };
             segment_config.indices.arg = &decodeSegmentIndexArgs;

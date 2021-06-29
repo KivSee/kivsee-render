@@ -38,14 +38,14 @@ TEST(SegmentsMap, SingleSegment)
   ASSERT_TRUE(decodeSuccess);
 
   // check that segments_map initialized correectly according to message  
-  ::kivsee_render::segments::Indices *indices = segments_map->getIndicesForSegment("from_test");
-  ASSERT_EQ(indices->size(), 3);
-  ASSERT_EQ((*indices)[0], leds + 17);
-  ASSERT_EQ((*indices)[1], leds + 9);
-  ASSERT_EQ((*indices)[2], leds + 34);
+  ::kivsee_render::segments::Pixels *pixels = segments_map->getPixelsForSegment("from_test");
+  ASSERT_EQ(pixels->size(), 3);
+  ASSERT_EQ((*pixels)[0], leds + 17);
+  ASSERT_EQ((*pixels)[1], leds + 9);
+  ASSERT_EQ((*pixels)[2], leds + 34);
 
   // check negative case
-  ASSERT_EQ(segments_map->getIndicesForSegment("invalid"), nullptr);
+  ASSERT_EQ(segments_map->getPixelsForSegment("invalid"), nullptr);
 
   // cleanup
   delete msgBuffer;

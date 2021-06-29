@@ -12,8 +12,8 @@ namespace kivsee_render {
         // other location so they are aligned
         const int SEGMENT_NAME_MAX_LENGTH = 10;
 
-        typedef std::vector<HSV *> Indices;
-        typedef std::pair<char[SEGMENT_NAME_MAX_LENGTH], Indices> Segment;
+        typedef std::vector<HSV *> Pixels;
+        typedef std::pair<char[SEGMENT_NAME_MAX_LENGTH], Pixels> Segment;
     }
 }
 
