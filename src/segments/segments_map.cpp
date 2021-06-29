@@ -5,24 +5,39 @@
 namespace kivsee_render {
     namespace segments {
 
+        struct DecodeSegmentIndexArgs {
+            Indices *indices;
+            kivsee_render::HSV *leds;
+        };
+
         bool DecodeSegmentIndexFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg) {
+            DecodeSegmentIndexArgs *decodeSegmentIndexArgs = (DecodeSegmentIndexArgs *) *arg;
+
             uint32_t index;
             if (!pb_decode_varint32(stream, &index))
                 return false;
-            Segment *segment = (Segment *)*arg;
-            // segment->push_back(value);
+
+            decodeSegmentIndexArgs->indices->push_back(decodeSegmentIndexArgs->leds + index);
             return true;
         }
 
-        bool DecodeSegmentFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg) {
+        struct DecodeSegmentArgs {
+            SegmentsMap *segments_map;
+            kivsee_render::HSV *leds;
+        };
 
-            SegmentsMap *segments_map = (SegmentsMap *) *arg;
+        bool DecodeSegmentFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg) {
+            DecodeSegmentArgs *decodeSegmentArgs = (DecodeSegmentArgs *) *arg;
             
             Segment segment;
 
             SegmentConfig segment_config = SegmentConfig_init_zero;
             segment_config.indices.funcs.decode = &DecodeSegmentIndexFromPbStream;
-            segment_config.indices.arg = &segment.second;
+            DecodeSegmentIndexArgs decodeSegmentIndexArgs {
+                .indices = &segment.second,
+                .leds = decodeSegmentArgs->leds,
+            };
+            segment_config.indices.arg = &decodeSegmentIndexArgs;
 
             bool success = pb_decode(stream, SegmentConfig_fields, &segment_config);
             if(!success) return false;
@@ -30,7 +45,7 @@ namespace kivsee_render {
             strncpy(segment.first, segment_config.name, SEGMENT_NAME_MAX_LENGTH);
             segment.first[SEGMENT_NAME_MAX_LENGTH - 1] = '\0';
 
-            segments_map->segments.push_back(segment);
+            decodeSegmentArgs->segments_map->segments.push_back(segment);
 
             return true;
         }
@@ -41,7 +56,11 @@ namespace kivsee_render {
 
             SegmentsMapConfig segments_map_pb = SegmentsMapConfig_init_zero;
             segments_map_pb.segments.funcs.decode = &DecodeSegmentFromPbStream;
-            segments_map_pb.segments.arg = segments_map;
+            DecodeSegmentArgs args {
+                .segments_map = segments_map,
+                .leds = ((SegmentsMapDecodeArgs *) *arg)->leds_array
+            };
+            segments_map_pb.segments.arg = &args;
 
             bool success = pb_decode(stream, SegmentsMapConfig_fields, &segments_map_pb);
             if(!success) return false;

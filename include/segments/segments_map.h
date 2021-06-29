@@ -17,7 +17,15 @@ namespace kivsee_render
         {
 
         public:
-            // kivsee_render::HSV leds[NUM_LEDS];
+
+            Indices *getIndicesForSegment(const char *segmentName) {
+                for(std::list<Segment>::iterator it = segments.begin(); it != segments.end(); it++) {
+                    if(strcmp(it->first, segmentName) == 0) {
+                        return &(it->second);
+                    }
+                }
+                return nullptr;
+            }
 
             typedef std::list<Segment> SegmentsList;
             SegmentsList segments;

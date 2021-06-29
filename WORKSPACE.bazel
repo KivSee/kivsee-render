@@ -12,3 +12,14 @@ http_archive(
     strip_prefix = "nanopb-nanopb-0.4.5",
 )
 
+http_archive(
+    name = "com_google_protobuf",
+    url = "https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protobuf-all-3.14.0.zip",
+    strip_prefix = "protobuf-3.14.0",
+)
+
+# it looks like we shouldn't do it ourselves, but it doesn't work without it
+# TODO: understand how to use protobuf correctly
+load("@com_google_protobuf//:protobuf_deps.bzl", "protobuf_deps")
+protobuf_deps()
+
