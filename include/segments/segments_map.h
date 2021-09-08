@@ -37,7 +37,7 @@ namespace kivsee_render
         typedef struct SegmentsMapDecodeArgs {
             SegmentsMap** out_segments_map;
             HSV* leds_array;
-        };
+        } SegmentsMapDecodeArgs;
 
         bool DecodeSegmentsMapFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg);
 

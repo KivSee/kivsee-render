@@ -34,8 +34,8 @@ namespace kivsee_render {
             SegmentConfig segment_config = SegmentConfig_init_zero;
             segment_config.indices.funcs.decode = &DecodeSegmentIndexFromPbStream;
             DecodeSegmentIndexArgs decodeSegmentIndexArgs {
-                .pixels = &segment.second,
-                .leds = decodeSegmentArgs->leds,
+                &segment.second,
+                decodeSegmentArgs->leds,
             };
             segment_config.indices.arg = &decodeSegmentIndexArgs;
 
@@ -60,8 +60,8 @@ namespace kivsee_render {
             SegmentsMapConfig segments_map_pb = SegmentsMapConfig_init_zero;
             segments_map_pb.segments.funcs.decode = &DecodeSegmentFromPbStream;
             DecodeSegmentArgs args {
-                .segments_map = segments_map,
-                .leds = ledsArray
+                segments_map,
+                ledsArray
             };
             segments_map_pb.segments.arg = &args;
 
