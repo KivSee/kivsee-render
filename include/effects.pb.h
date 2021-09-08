@@ -47,7 +47,7 @@ typedef struct _AnimationProto {
 typedef struct _EffectConfig {
     uint32_t start_time;
     uint32_t end_time;
-    pb_callback_t segments;
+    char segments[10];
     float repeat_num;
     float repeat_start;
     float repeat_end;
@@ -111,7 +111,7 @@ extern "C" {
 #define GlitterEffectConfig_init_default         {false, FloatFunction_init_default, false, FloatFunction_init_default}
 #define SnakeEffectConfig_init_default           {false, FloatFunction_init_default, false, FloatFunction_init_default}
 #define AlternateEffectConfig_init_default       {0, false, FloatFunction_init_default, false, FloatFunction_init_default, false, FloatFunction_init_default}
-#define EffectConfig_init_default                {0, 0, {{NULL}, NULL}, 0, 0, 0}
+#define EffectConfig_init_default                {0, 0, "", 0, 0, 0}
 #define EffectProto_init_default                 {false, EffectConfig_init_default, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
 #define AnimationProto_init_default              {{{NULL}, NULL}, 0, 0}
 #define HSV_init_zero                            {0, 0, 0}
@@ -124,7 +124,7 @@ extern "C" {
 #define GlitterEffectConfig_init_zero            {false, FloatFunction_init_zero, false, FloatFunction_init_zero}
 #define SnakeEffectConfig_init_zero              {false, FloatFunction_init_zero, false, FloatFunction_init_zero}
 #define AlternateEffectConfig_init_zero          {0, false, FloatFunction_init_zero, false, FloatFunction_init_zero, false, FloatFunction_init_zero}
-#define EffectConfig_init_zero                   {0, 0, {{NULL}, NULL}, 0, 0, 0}
+#define EffectConfig_init_zero                   {0, 0, "", 0, 0, 0}
 #define EffectProto_init_zero                    {false, EffectConfig_init_zero, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}, {{NULL}, NULL}}
 #define AnimationProto_init_zero                 {{{NULL}, NULL}, 0, 0}
 
@@ -242,11 +242,11 @@ X(a, STATIC,   OPTIONAL, MESSAGE,  brightness_mult,   4)
 #define EffectConfig_FIELDLIST(X, a) \
 X(a, STATIC,   SINGULAR, UINT32,   start_time,        1) \
 X(a, STATIC,   SINGULAR, UINT32,   end_time,          2) \
-X(a, CALLBACK, SINGULAR, STRING,   segments,          3) \
+X(a, STATIC,   SINGULAR, STRING,   segments,          3) \
 X(a, STATIC,   SINGULAR, FLOAT,    repeat_num,        4) \
 X(a, STATIC,   SINGULAR, FLOAT,    repeat_start,      5) \
 X(a, STATIC,   SINGULAR, FLOAT,    repeat_end,        6)
-#define EffectConfig_CALLBACK pb_default_field_callback
+#define EffectConfig_CALLBACK NULL
 #define EffectConfig_DEFAULT NULL
 
 #define EffectProto_FIELDLIST(X, a) \
@@ -321,7 +321,7 @@ extern const pb_msgdesc_t AnimationProto_msg;
 #if defined(FloatFunction_size) && defined(FloatFunction_size) && defined(FloatFunction_size)
 #define AlternateEffectConfig_size               (24 + FloatFunction_size + FloatFunction_size + FloatFunction_size)
 #endif
-/* EffectConfig_size depends on runtime parameters */
+#define EffectConfig_size                        38
 /* EffectProto_size depends on runtime parameters */
 /* AnimationProto_size depends on runtime parameters */
 
