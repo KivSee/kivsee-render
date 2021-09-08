@@ -1,4 +1,5 @@
 EffectProto.effect no_unions:true
+EffectConfig.segments max_size:10
 
 // const_color
 EffectProto.const_color type:FT_CALLBACK

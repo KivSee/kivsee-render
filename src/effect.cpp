@@ -10,6 +10,7 @@
 #include <effect/brightness.h>
 #include <effect/hue.h>
 #include <effect/saturation.h>
+#include <segments/segments_map.h>
 
 
 namespace kivsee_render
@@ -49,6 +50,7 @@ namespace kivsee_render
 
     bool DecodeEffectFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg)
     {
+        kivsee_render::DecodeEffectArgs *effectArgs = (kivsee_render::DecodeEffectArgs *)(*arg);
         EffectProto effectProto = EffectProto_init_zero;
 
         Effect *newEffect = nullptr;
@@ -67,9 +69,11 @@ namespace kivsee_render
         bool success = pb_decode(stream, EffectProto_fields, &effectProto);
         if(!success) return false;
 
+        const char *segment = effectProto.effect_config.segments;
+        ::kivsee_render::segments::Pixels *pixels = effectArgs->segmentsMap->getPixelsForSegment(segment);
         newEffect->InitTimingFromPb(effectProto.effect_config);
-        std::list<Effect *> *effectsList = (std::list<Effect *> *)(*arg);
-        effectsList->push_back(newEffect);
+        newEffect->Init(pixels);
+        effectArgs->effects->push_back(newEffect);
         return true;
     }
 

@@ -5,7 +5,7 @@
 #include <hsv.h>
 #include <pb_decode.h>
 #include <effects.pb.h>
-
+#include "segments/segments_map.h"
 
 namespace kivsee_render
 {
@@ -44,6 +44,12 @@ namespace kivsee_render
         const std::vector<HSV *> *pixels;
 
         int lastCycleIndex = -1;
+    };
+
+    struct DecodeEffectArgs
+    {
+        kivsee_render::segments::SegmentsMap *segmentsMap;
+        std::list<Effect *> *effects;
     };
 
     bool DecodeEffectFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg);

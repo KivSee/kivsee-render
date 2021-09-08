@@ -26,11 +26,17 @@ namespace kivsee_render {
 
     bool DecodeAnimationFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg) {
 
+        kivsee_render::segments::SegmentsMap *segmentsMap = ((DecodeAnimationArgs *)(*arg))->segmentsMap;
+
         std::list<Effect *> effects;
 
         AnimationProto animation = AnimationProto_init_zero;
         animation.effects.funcs.decode = &kivsee_render::DecodeEffectFromPbStream;
-        animation.effects.arg = &effects;
+        kivsee_render::DecodeEffectArgs args = {
+            segmentsMap,
+            &effects
+        };
+        animation.effects.arg = &args;
 
         bool success = pb_decode(stream, AnimationProto_fields, &animation);
         if(!success) return false;
@@ -38,7 +44,7 @@ namespace kivsee_render {
         if(animation.duration_ms == 0) return false;
 
         Animation *newAnimation = new Animation(effects.begin(), effects.end(), animation.duration_ms, animation.num_repeats);
-        *((Animation **) *arg) = newAnimation;
+        *arg = (void *)newAnimation;
         return true;
     }
 
