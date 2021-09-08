@@ -52,13 +52,16 @@ namespace kivsee_render {
 
         bool DecodeSegmentsMapFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg) {
 
+            SegmentsMapDecodeArgs *segmentsMapArgs = (SegmentsMapDecodeArgs *) *arg;
+            HSV *ledsArray = segmentsMapArgs->leds_array;
+
             SegmentsMap *segments_map = new SegmentsMap();
 
             SegmentsMapConfig segments_map_pb = SegmentsMapConfig_init_zero;
             segments_map_pb.segments.funcs.decode = &DecodeSegmentFromPbStream;
             DecodeSegmentArgs args {
                 .segments_map = segments_map,
-                .leds = ((SegmentsMapDecodeArgs *) *arg)->leds_array
+                .leds = ledsArray
             };
             segments_map_pb.segments.arg = &args;
 
@@ -67,6 +70,13 @@ namespace kivsee_render {
 
             segments_map->guid = segments_map_pb.guid;
             segments_map->number_of_pixels = segments_map_pb.number_of_pixels;
+
+            Segment segment;
+            strncpy(segment.first, "all", 4);
+            for(int i=0; i<segments_map->number_of_pixels; i++) {
+                segment.second.push_back(&ledsArray[i]);
+            }
+            segments_map->segments.push_back(segment);
 
             *((*( (SegmentsMapDecodeArgs **) arg))->out_segments_map) = segments_map;
 
