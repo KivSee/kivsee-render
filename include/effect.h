@@ -3,8 +3,7 @@
 
 #include <vector>
 #include <hsv.h>
-#include <pb_decode.h>
-#include <effects.pb.h>
+#include "pb_decode.h"
 #include "segments/segments_map.h"
 
 namespace kivsee_render
@@ -25,18 +24,7 @@ namespace kivsee_render
     public:
         void Render(unsigned long curr_time);
 
-        void Init(const std::vector<HSV *> *pixels)
-        {
-            this->pixels = pixels;
-        }
-
-        void InitTimingFromPb(const EffectConfig &effect_config) {
-            this->start_time = effect_config.start_time;
-            this->end_time = effect_config.end_time;
-            this->repeat_num = effect_config.repeat_num;
-            this->repeat_start = effect_config.repeat_start;
-            this->repeat_end = effect_config.repeat_end;
-        }
+        void Init(const std::vector<HSV *> *pixels, void * &effect_config);
 
     protected:
         unsigned long start_time, end_time;

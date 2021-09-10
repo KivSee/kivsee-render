@@ -8,6 +8,7 @@
 #include <functions/float_functions/half.h>
 #include <functions/float_functions/comb2.h>
 
+
 namespace kivsee_render
 {
     namespace functions

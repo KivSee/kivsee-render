@@ -1,5 +1,6 @@
 
 #include "animation.h"
+#include <effects.pb.h>
 
 #include <list>
 

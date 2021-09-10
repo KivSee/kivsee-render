@@ -3,6 +3,7 @@
 
 #include <functions/float_functions/float_functions.h>
 #include <functions.pb.h>
+#define _USE_MATH_DEFINES
 #include <math.h>
 
 namespace kivsee_render

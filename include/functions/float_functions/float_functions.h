@@ -3,6 +3,7 @@
 
 #include <functions.pb.h>
 #include <pb_decode.h>
+#include <math.h>
 
 namespace kivsee_render
 {

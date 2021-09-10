@@ -1,7 +1,6 @@
 #include "msg.h"
 #include "segments_map_config.h"
 
-#include "Arduino.h"
 #include <NeoPixelBus.h>
 
 #include <pb_decode.h>

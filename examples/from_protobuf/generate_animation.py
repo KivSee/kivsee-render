@@ -73,6 +73,5 @@ msg = animation.SerializeToString();
 encoded_bytes = ", ".join(str(c) for c in msg)
 
 f = open("msg.h", "w")
-f.write('#include "Arduino.h"\n')
 f.write('uint8_t msg[] = {' + encoded_bytes + '};\n')
 f.close()

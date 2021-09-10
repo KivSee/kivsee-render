@@ -1,5 +1,4 @@
 #include <effect/brightness.h>
-#include <Arduino.h>
 #include <effects.pb.h>
 
 namespace kivsee_render

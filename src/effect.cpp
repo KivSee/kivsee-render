@@ -2,7 +2,6 @@
 
 #include <effects.pb.h>
 #include <cmath>
-#include <Arduino.h>
 #include <list>
 
 #include <color/rainbow.h>
@@ -48,10 +47,21 @@ namespace kivsee_render
         Render(relTime, currCycleIndex);
     }
 
+    void Effect::Init(const std::vector<HSV *> *pixels, void * &effect_config) {
+        EffectConfig *local_effect_config = static_cast<EffectConfig *>(effect_config); 
+        this->pixels = pixels;
+        this->start_time = local_effect_config->start_time;
+        this->end_time = local_effect_config->end_time;
+        this->repeat_num = local_effect_config->repeat_num;
+        this->repeat_start = local_effect_config->repeat_start;
+        this->repeat_end = local_effect_config->repeat_end;
+    }
+
     bool DecodeEffectFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg)
     {
         kivsee_render::DecodeEffectArgs *effectArgs = (kivsee_render::DecodeEffectArgs *)(*arg);
         EffectProto effectProto = EffectProto_init_zero;
+        void * effect_pv = NULL;
 
         Effect *newEffect = nullptr;
 
@@ -71,8 +81,8 @@ namespace kivsee_render
 
         const char *segment = effectProto.effect_config.segments;
         ::kivsee_render::segments::Pixels *pixels = effectArgs->segmentsMap->getPixelsForSegment(segment);
-        newEffect->InitTimingFromPb(effectProto.effect_config);
-        newEffect->Init(pixels);
+        effect_pv = (void *)(&(effectProto.effect_config));
+        newEffect->Init(pixels, effect_pv);
         effectArgs->effects->push_back(newEffect);
         return true;
     }

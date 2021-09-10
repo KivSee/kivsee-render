@@ -2,10 +2,11 @@ package(default_visibility = ["//visibility:public"])
 
 cc_library(
     name = "kivsee-render",
-    srcs = [
-        "src/segments/segments_map.cpp",
-        "src/segments.pb.c",
-    ],
+    srcs = glob([
+        "src/**/*.pb.c",
+        "src/**/*.cpp",
+        "src/**/*.pb.h",
+    ]),
     hdrs=glob([
         "include/**/*.h",
     ]),

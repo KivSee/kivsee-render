@@ -1,4 +1,4 @@
-#include "Arduino.h"
+
 #include <NeoPixelBus.h>
 
 #include <pb_encode.h>

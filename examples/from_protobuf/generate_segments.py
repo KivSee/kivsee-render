@@ -23,6 +23,5 @@ msg = segments_map.SerializeToString();
 encoded_bytes = ", ".join(str(c) for c in msg)
 
 f = open("segments_map_config.h", "w")
-f.write('#include "Arduino.h"\n')
 f.write('uint8_t segments_map_config[] = {' + encoded_bytes + '};\n')
 f.close()
