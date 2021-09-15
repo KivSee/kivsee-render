@@ -81,6 +81,11 @@ namespace kivsee_render
 
         const char *segment = effectProto.effect_config.segments;
         ::kivsee_render::segments::Pixels *pixels = effectArgs->segmentsMap->getPixelsForSegment(segment);
+        if(!pixels) {
+            stream->errmsg = "segment name not found in store";
+            delete newEffect;
+            return false;
+        }
         effect_pv = (void *)(&(effectProto.effect_config));
         newEffect->Init(pixels, effect_pv);
         effectArgs->effects->push_back(newEffect);
