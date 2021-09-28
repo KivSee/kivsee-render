@@ -11,7 +11,6 @@
 #include <effect/saturation.h>
 #include <segments/segments_map.h>
 
-
 namespace kivsee_render
 {
 
@@ -47,8 +46,9 @@ namespace kivsee_render
         Render(relTime, currCycleIndex);
     }
 
-    void Effect::Init(const std::vector<HSV *> *pixels, void * &effect_config) {
-        EffectConfig *local_effect_config = static_cast<EffectConfig *>(effect_config); 
+    void Effect::Init(const std::vector<HSV *> *pixels, void *&effect_config)
+    {
+        EffectConfig *local_effect_config = static_cast<EffectConfig *>(effect_config);
         this->pixels = pixels;
         this->start_time = local_effect_config->start_time;
         this->end_time = local_effect_config->end_time;
@@ -61,7 +61,7 @@ namespace kivsee_render
     {
         kivsee_render::DecodeEffectArgs *effectArgs = (kivsee_render::DecodeEffectArgs *)(*arg);
         EffectProto effectProto = EffectProto_init_zero;
-        void * effect_pv = NULL;
+        void *effect_pv = NULL;
 
         Effect *newEffect = nullptr;
 
@@ -75,13 +75,16 @@ namespace kivsee_render
         effectProto.hue.arg = &newEffect;
         effectProto.saturation.funcs.decode = &::kivsee_render::effect::Saturation::InitFromPb;
         effectProto.saturation.arg = &newEffect;
-       
+
         bool success = pb_decode(stream, EffectProto_fields, &effectProto);
-        if(!success) return false;
+        if (!success)
+            return false;
 
         const char *segment = effectProto.effect_config.segments;
-        ::kivsee_render::segments::Pixels *pixels = effectArgs->segmentsMap->getPixelsForSegment(segment);
-        if(!pixels) {
+        const char *segmentOrAll = segment[0] == '\0' ? "all" : segment;
+        ::kivsee_render::segments::Pixels *pixels = effectArgs->segmentsMap->getPixelsForSegment(segmentOrAll);
+        if (!pixels)
+        {
             stream->errmsg = "segment name not found in store";
             delete newEffect;
             return false;
