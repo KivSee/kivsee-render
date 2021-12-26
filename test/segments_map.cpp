@@ -50,3 +50,45 @@ TEST(SegmentsMap, SingleSegment)
   // cleanup
   delete msgBuffer;
 }
+
+TEST(SegmentsMap, SegmentWithNoIndices)
+{
+  SegmentsMapConfig segmentsMapConfig;
+  segmentsMapConfig.set_guid(1234);
+  segmentsMapConfig.set_number_of_pixels(50);
+  SegmentConfig *emptySegment = segmentsMapConfig.add_segments();
+  emptySegment->set_name("from_test");
+  SegmentConfig *nonEmptySegment = segmentsMapConfig.add_segments();
+  nonEmptySegment->set_name("nonempty");
+  nonEmptySegment->add_indices(17);
+
+  // encode it to buffer to refeed into nanopb
+  size_t size = segmentsMapConfig.ByteSizeLong(); 
+  uint8_t *msgBuffer = new uint8_t[size];
+  segmentsMapConfig.SerializeToArray(msgBuffer, size);
+
+  // data structures to use during segments map construction
+  kivsee_render::segments::SegmentsMap *segments_map = nullptr;
+  kivsee_render::HSV leds[50];
+
+  // define the decoder
+  pb_istream_t segments_map_stream = pb_istream_from_buffer(msgBuffer, size);
+  ::kivsee_render::segments::SegmentsMapDecodeArgs segments_map_decode_args;
+  segments_map_decode_args.out_segments_map = &segments_map;
+  segments_map_decode_args.leds_array = leds;
+  void *arg = &segments_map_decode_args;
+
+  // decode
+  bool decodeSuccess = ::kivsee_render::segments::DecodeSegmentsMapFromPbStream(&segments_map_stream, nullptr, &arg);
+  ASSERT_TRUE(decodeSuccess);
+
+  ::kivsee_render::segments::Pixels *pixelsEmpty = segments_map->getPixelsForSegment("from_test");
+  ASSERT_EQ(pixelsEmpty->size(), 0);
+
+  ::kivsee_render::segments::Pixels *pixelsNonEmpty = segments_map->getPixelsForSegment("nonempty");
+  ASSERT_EQ(pixelsNonEmpty->size(), 1);
+  
+
+  // cleanup
+  delete msgBuffer;
+}
