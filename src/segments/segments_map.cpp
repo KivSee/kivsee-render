@@ -14,8 +14,11 @@ namespace kivsee_render {
             DecodeSegmentIndexArgs *decodeSegmentIndexArgs = (DecodeSegmentIndexArgs *) *arg;
 
             uint32_t index;
-            if (!pb_decode_varint32(stream, &index))
-                return false;
+            if (!pb_decode_varint32(stream, &index)) {
+                // on empty array, the callback is still being called
+                // and failed pb_decode of the (non-existing) element
+                return true;
+            }
 
             decodeSegmentIndexArgs->pixels->push_back(decodeSegmentIndexArgs->leds + index);
             return true;
