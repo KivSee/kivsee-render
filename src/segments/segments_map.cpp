@@ -86,5 +86,12 @@ namespace kivsee_render {
             return true;
         }
 
+        uint16_t GetNumberOfPixels(pb_istream_t *stream, const pb_field_t *field, void **arg) {
+            SegmentsMapConfig segments_map_pb = SegmentsMapConfig_init_zero;
+            bool success = pb_decode(stream, SegmentsMapConfig_fields, &segments_map_pb);
+            if(!success) return 0;
+            return segments_map_pb.number_of_pixels;
+        }
+
     }
 }

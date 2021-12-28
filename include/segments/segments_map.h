@@ -40,6 +40,7 @@ namespace kivsee_render
         } SegmentsMapDecodeArgs;
 
         bool DecodeSegmentsMapFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg);
+        uint16_t GetNumberOfPixels(pb_istream_t *stream, const pb_field_t *field, void **arg);
 
     } // namespace segments
 } // namespace kivsee_render
