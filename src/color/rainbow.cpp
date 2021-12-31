@@ -11,11 +11,10 @@ namespace kivsee_render
             const float curr_end_hue = hue_end->GetValue(rel_time);
             const float curr_hue_diff = curr_end_hue - curr_start_hue;
 
-            float numberOfPixels = (float)pixels->size();
-            for (int i = 0; i < pixels->size(); i++)
+            for (::kivsee_render::segments::SegmentPixels::const_iterator it = segment_pixels->begin(); it != segment_pixels->end(); ++it)
             {
-                HSV *pixel = (*pixels)[i];
-                float rel_pos = ((float)i / numberOfPixels);
+                HSV *pixel = it->pixel;
+                float rel_pos = it->relativePositionInSegment;
                 pixel->hue = curr_start_hue + curr_hue_diff * rel_pos;
                 pixel->sat = 1.0f;
                 pixel->val = 1.0f;

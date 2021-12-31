@@ -14,188 +14,217 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_segments_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SegmentConfig_segments_2eproto;
-class SegmentConfigDefaultTypeInternal {
+extern PROTOBUF_INTERNAL_EXPORT_segments_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Pixel_segments_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_segments_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Segment_segments_2eproto;
+namespace kivsee {
+namespace proto {
+class PixelDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SegmentConfig> _instance;
-} _SegmentConfig_default_instance_;
-class SegmentsMapConfigDefaultTypeInternal {
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Pixel> _instance;
+} _Pixel_default_instance_;
+class SegmentDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SegmentsMapConfig> _instance;
-} _SegmentsMapConfig_default_instance_;
-static void InitDefaultsscc_info_SegmentConfig_segments_2eproto() {
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Segment> _instance;
+} _Segment_default_instance_;
+class ThingSegmentsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ThingSegments> _instance;
+} _ThingSegments_default_instance_;
+}  // namespace proto
+}  // namespace kivsee
+static void InitDefaultsscc_info_Pixel_segments_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_SegmentConfig_default_instance_;
-    new (ptr) ::SegmentConfig();
+    void* ptr = &::kivsee::proto::_Pixel_default_instance_;
+    new (ptr) ::kivsee::proto::Pixel();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SegmentConfig_segments_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SegmentConfig_segments_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Pixel_segments_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Pixel_segments_2eproto}, {}};
 
-static void InitDefaultsscc_info_SegmentsMapConfig_segments_2eproto() {
+static void InitDefaultsscc_info_Segment_segments_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_SegmentsMapConfig_default_instance_;
-    new (ptr) ::SegmentsMapConfig();
+    void* ptr = &::kivsee::proto::_Segment_default_instance_;
+    new (ptr) ::kivsee::proto::Segment();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SegmentsMapConfig_segments_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SegmentsMapConfig_segments_2eproto}, {
-      &scc_info_SegmentConfig_segments_2eproto.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Segment_segments_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Segment_segments_2eproto}, {
+      &scc_info_Pixel_segments_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_segments_2eproto[2];
+static void InitDefaultsscc_info_ThingSegments_segments_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::kivsee::proto::_ThingSegments_default_instance_;
+    new (ptr) ::kivsee::proto::ThingSegments();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ThingSegments_segments_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ThingSegments_segments_2eproto}, {
+      &scc_info_Segment_segments_2eproto.base,}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_segments_2eproto[3];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_segments_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_segments_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_segments_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::SegmentConfig, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::Pixel, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::SegmentConfig, name_),
-  PROTOBUF_FIELD_OFFSET(::SegmentConfig, indices_),
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::Pixel, index_),
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::Pixel, rel_pos_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::SegmentsMapConfig, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::Segment, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::SegmentsMapConfig, guid_),
-  PROTOBUF_FIELD_OFFSET(::SegmentsMapConfig, number_of_pixels_),
-  PROTOBUF_FIELD_OFFSET(::SegmentsMapConfig, segments_),
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::Segment, name_),
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::Segment, pixels_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::ThingSegments, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::ThingSegments, guid_),
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::ThingSegments, number_of_pixels_),
+  PROTOBUF_FIELD_OFFSET(::kivsee::proto::ThingSegments, segments_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::SegmentConfig)},
-  { 7, -1, sizeof(::SegmentsMapConfig)},
+  { 0, -1, sizeof(::kivsee::proto::Pixel)},
+  { 7, -1, sizeof(::kivsee::proto::Segment)},
+  { 14, -1, sizeof(::kivsee::proto::ThingSegments)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_SegmentConfig_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_SegmentsMapConfig_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::kivsee::proto::_Pixel_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::kivsee::proto::_Segment_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::kivsee::proto::_ThingSegments_default_instance_),
 };
 
 const char descriptor_table_protodef_segments_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\016segments.proto\".\n\rSegmentConfig\022\014\n\004nam"
-  "e\030\001 \001(\t\022\017\n\007indices\030\002 \003(\r\"]\n\021SegmentsMapC"
-  "onfig\022\014\n\004guid\030\001 \001(\007\022\030\n\020number_of_pixels\030"
-  "\002 \001(\r\022 \n\010segments\030\003 \003(\0132\016.SegmentConfigb"
-  "\006proto3"
+  "\n\016segments.proto\022\014kivsee.proto\"\'\n\005Pixel\022"
+  "\r\n\005index\030\001 \001(\r\022\017\n\007rel_pos\030\002 \001(\002\"<\n\007Segme"
+  "nt\022\014\n\004name\030\001 \001(\t\022#\n\006pixels\030\002 \003(\0132\023.kivse"
+  "e.proto.Pixel\"`\n\rThingSegments\022\014\n\004guid\030\001"
+  " \001(\007\022\030\n\020number_of_pixels\030\002 \001(\r\022\'\n\010segmen"
+  "ts\030\003 \003(\0132\025.kivsee.proto.Segmentb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_segments_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_segments_2eproto_sccs[2] = {
-  &scc_info_SegmentConfig_segments_2eproto.base,
-  &scc_info_SegmentsMapConfig_segments_2eproto.base,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_segments_2eproto_sccs[3] = {
+  &scc_info_Pixel_segments_2eproto.base,
+  &scc_info_Segment_segments_2eproto.base,
+  &scc_info_ThingSegments_segments_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_segments_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_segments_2eproto = {
-  false, false, descriptor_table_protodef_segments_2eproto, "segments.proto", 167,
-  &descriptor_table_segments_2eproto_once, descriptor_table_segments_2eproto_sccs, descriptor_table_segments_2eproto_deps, 2, 0,
+  false, false, descriptor_table_protodef_segments_2eproto, "segments.proto", 239,
+  &descriptor_table_segments_2eproto_once, descriptor_table_segments_2eproto_sccs, descriptor_table_segments_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_segments_2eproto::offsets,
-  file_level_metadata_segments_2eproto, 2, file_level_enum_descriptors_segments_2eproto, file_level_service_descriptors_segments_2eproto,
+  file_level_metadata_segments_2eproto, 3, file_level_enum_descriptors_segments_2eproto, file_level_service_descriptors_segments_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_segments_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_segments_2eproto)), true);
+namespace kivsee {
+namespace proto {
 
 // ===================================================================
 
-class SegmentConfig::_Internal {
+class Pixel::_Internal {
  public:
 };
 
-SegmentConfig::SegmentConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  indices_(arena) {
+Pixel::Pixel(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:SegmentConfig)
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.Pixel)
 }
-SegmentConfig::SegmentConfig(const SegmentConfig& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      indices_(from.indices_) {
+Pixel::Pixel(const Pixel& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_name().empty()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArena());
-  }
-  // @@protoc_insertion_point(copy_constructor:SegmentConfig)
+  ::memcpy(&index_, &from.index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&rel_pos_) -
+    reinterpret_cast<char*>(&index_)) + sizeof(rel_pos_));
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.Pixel)
 }
 
-void SegmentConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SegmentConfig_segments_2eproto.base);
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+void Pixel::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&index_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&rel_pos_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(rel_pos_));
 }
 
-SegmentConfig::~SegmentConfig() {
-  // @@protoc_insertion_point(destructor:SegmentConfig)
+Pixel::~Pixel() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.Pixel)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SegmentConfig::SharedDtor() {
+void Pixel::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void SegmentConfig::ArenaDtor(void* object) {
-  SegmentConfig* _this = reinterpret_cast< SegmentConfig* >(object);
+void Pixel::ArenaDtor(void* object) {
+  Pixel* _this = reinterpret_cast< Pixel* >(object);
   (void)_this;
 }
-void SegmentConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void Pixel::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void SegmentConfig::SetCachedSize(int size) const {
+void Pixel::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SegmentConfig& SegmentConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SegmentConfig_segments_2eproto.base);
+const Pixel& Pixel::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Pixel_segments_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void SegmentConfig::Clear() {
-// @@protoc_insertion_point(message_clear_start:SegmentConfig)
+void Pixel::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.Pixel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  indices_.Clear();
-  name_.ClearToEmpty();
+  ::memset(&index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rel_pos_) -
+      reinterpret_cast<char*>(&index_)) + sizeof(rel_pos_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SegmentConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Pixel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // string name = 1;
+      // uint32 index = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "SegmentConfig.name"));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated uint32 indices = 2;
+      // float rel_pos = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt32Parser(_internal_mutable_indices(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
-          _internal_add_indices(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
-          CHK_(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+          rel_pos_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
       default: {
@@ -220,9 +249,245 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SegmentConfig::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Pixel::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:SegmentConfig)
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.Pixel)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // uint32 index = 1;
+  if (this->index() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_index(), target);
+  }
+
+  // float rel_pos = 2;
+  if (!(this->rel_pos() <= 0 && this->rel_pos() >= 0)) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_rel_pos(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.Pixel)
+  return target;
+}
+
+size_t Pixel::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:kivsee.proto.Pixel)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // uint32 index = 1;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_index());
+  }
+
+  // float rel_pos = 2;
+  if (!(this->rel_pos() <= 0 && this->rel_pos() >= 0)) {
+    total_size += 1 + 4;
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Pixel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:kivsee.proto.Pixel)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Pixel* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Pixel>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:kivsee.proto.Pixel)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:kivsee.proto.Pixel)
+    MergeFrom(*source);
+  }
+}
+
+void Pixel::MergeFrom(const Pixel& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.Pixel)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.index() != 0) {
+    _internal_set_index(from._internal_index());
+  }
+  if (!(from.rel_pos() <= 0 && from.rel_pos() >= 0)) {
+    _internal_set_rel_pos(from._internal_rel_pos());
+  }
+}
+
+void Pixel::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:kivsee.proto.Pixel)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Pixel::CopyFrom(const Pixel& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.Pixel)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Pixel::IsInitialized() const {
+  return true;
+}
+
+void Pixel::InternalSwap(Pixel* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Pixel, rel_pos_)
+      + sizeof(Pixel::rel_pos_)
+      - PROTOBUF_FIELD_OFFSET(Pixel, index_)>(
+          reinterpret_cast<char*>(&index_),
+          reinterpret_cast<char*>(&other->index_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Pixel::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class Segment::_Internal {
+ public:
+};
+
+Segment::Segment(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  pixels_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.Segment)
+}
+Segment::Segment(const Segment& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      pixels_(from.pixels_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_name().empty()) {
+    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
+      GetArena());
+  }
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.Segment)
+}
+
+void Segment::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Segment_segments_2eproto.base);
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+Segment::~Segment() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.Segment)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void Segment::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void Segment::ArenaDtor(void* object) {
+  Segment* _this = reinterpret_cast< Segment* >(object);
+  (void)_this;
+}
+void Segment::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void Segment::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const Segment& Segment::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Segment_segments_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void Segment::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.Segment)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  pixels_.Clear();
+  name_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* Segment::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string name = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          auto str = _internal_mutable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "kivsee.proto.Segment.name"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .kivsee.proto.Pixel pixels = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_pixels(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Segment::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.Segment)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -231,49 +496,40 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "SegmentConfig.name");
+      "kivsee.proto.Segment.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
 
-  // repeated uint32 indices = 2;
-  {
-    int byte_size = _indices_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteUInt32Packed(
-          2, _internal_indices(), byte_size, target);
-    }
+  // repeated .kivsee.proto.Pixel pixels = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_pixels_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, this->_internal_pixels(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:SegmentConfig)
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.Segment)
   return target;
 }
 
-size_t SegmentConfig::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:SegmentConfig)
+size_t Segment::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:kivsee.proto.Segment)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated uint32 indices = 2;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      UInt32Size(this->indices_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _indices_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
+  // repeated .kivsee.proto.Pixel pixels = 2;
+  total_size += 1UL * this->_internal_pixels_size();
+  for (const auto& msg : this->pixels_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // string name = 1;
@@ -292,122 +548,122 @@ size_t SegmentConfig::ByteSizeLong() const {
   return total_size;
 }
 
-void SegmentConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SegmentConfig)
+void Segment::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:kivsee.proto.Segment)
   GOOGLE_DCHECK_NE(&from, this);
-  const SegmentConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SegmentConfig>(
+  const Segment* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Segment>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SegmentConfig)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:kivsee.proto.Segment)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SegmentConfig)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:kivsee.proto.Segment)
     MergeFrom(*source);
   }
 }
 
-void SegmentConfig::MergeFrom(const SegmentConfig& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:SegmentConfig)
+void Segment::MergeFrom(const Segment& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.Segment)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  indices_.MergeFrom(from.indices_);
+  pixels_.MergeFrom(from.pixels_);
   if (from.name().size() > 0) {
     _internal_set_name(from._internal_name());
   }
 }
 
-void SegmentConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SegmentConfig)
+void Segment::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:kivsee.proto.Segment)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void SegmentConfig::CopyFrom(const SegmentConfig& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:SegmentConfig)
+void Segment::CopyFrom(const Segment& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.Segment)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool SegmentConfig::IsInitialized() const {
+bool Segment::IsInitialized() const {
   return true;
 }
 
-void SegmentConfig::InternalSwap(SegmentConfig* other) {
+void Segment::InternalSwap(Segment* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  indices_.InternalSwap(&other->indices_);
+  pixels_.InternalSwap(&other->pixels_);
   name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata SegmentConfig::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata Segment::GetMetadata() const {
   return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-class SegmentsMapConfig::_Internal {
+class ThingSegments::_Internal {
  public:
 };
 
-SegmentsMapConfig::SegmentsMapConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+ThingSegments::ThingSegments(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   segments_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:SegmentsMapConfig)
+  // @@protoc_insertion_point(arena_constructor:kivsee.proto.ThingSegments)
 }
-SegmentsMapConfig::SegmentsMapConfig(const SegmentsMapConfig& from)
+ThingSegments::ThingSegments(const ThingSegments& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       segments_(from.segments_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&guid_, &from.guid_,
     static_cast<size_t>(reinterpret_cast<char*>(&number_of_pixels_) -
     reinterpret_cast<char*>(&guid_)) + sizeof(number_of_pixels_));
-  // @@protoc_insertion_point(copy_constructor:SegmentsMapConfig)
+  // @@protoc_insertion_point(copy_constructor:kivsee.proto.ThingSegments)
 }
 
-void SegmentsMapConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SegmentsMapConfig_segments_2eproto.base);
+void ThingSegments::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ThingSegments_segments_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&guid_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&number_of_pixels_) -
       reinterpret_cast<char*>(&guid_)) + sizeof(number_of_pixels_));
 }
 
-SegmentsMapConfig::~SegmentsMapConfig() {
-  // @@protoc_insertion_point(destructor:SegmentsMapConfig)
+ThingSegments::~ThingSegments() {
+  // @@protoc_insertion_point(destructor:kivsee.proto.ThingSegments)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SegmentsMapConfig::SharedDtor() {
+void ThingSegments::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void SegmentsMapConfig::ArenaDtor(void* object) {
-  SegmentsMapConfig* _this = reinterpret_cast< SegmentsMapConfig* >(object);
+void ThingSegments::ArenaDtor(void* object) {
+  ThingSegments* _this = reinterpret_cast< ThingSegments* >(object);
   (void)_this;
 }
-void SegmentsMapConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void ThingSegments::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void SegmentsMapConfig::SetCachedSize(int size) const {
+void ThingSegments::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SegmentsMapConfig& SegmentsMapConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SegmentsMapConfig_segments_2eproto.base);
+const ThingSegments& ThingSegments::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ThingSegments_segments_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void SegmentsMapConfig::Clear() {
-// @@protoc_insertion_point(message_clear_start:SegmentsMapConfig)
+void ThingSegments::Clear() {
+// @@protoc_insertion_point(message_clear_start:kivsee.proto.ThingSegments)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -419,7 +675,7 @@ void SegmentsMapConfig::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SegmentsMapConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThingSegments::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -440,7 +696,7 @@ const char* SegmentsMapConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .SegmentConfig segments = 3;
+      // repeated .kivsee.proto.Segment segments = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr -= 1;
@@ -474,9 +730,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SegmentsMapConfig::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* ThingSegments::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:SegmentsMapConfig)
+  // @@protoc_insertion_point(serialize_to_array_start:kivsee.proto.ThingSegments)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -492,7 +748,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_number_of_pixels(), target);
   }
 
-  // repeated .SegmentConfig segments = 3;
+  // repeated .kivsee.proto.Segment segments = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_segments_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -504,19 +760,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:SegmentsMapConfig)
+  // @@protoc_insertion_point(serialize_to_array_end:kivsee.proto.ThingSegments)
   return target;
 }
 
-size_t SegmentsMapConfig::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:SegmentsMapConfig)
+size_t ThingSegments::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:kivsee.proto.ThingSegments)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .SegmentConfig segments = 3;
+  // repeated .kivsee.proto.Segment segments = 3;
   total_size += 1UL * this->_internal_segments_size();
   for (const auto& msg : this->segments_) {
     total_size +=
@@ -544,23 +800,23 @@ size_t SegmentsMapConfig::ByteSizeLong() const {
   return total_size;
 }
 
-void SegmentsMapConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SegmentsMapConfig)
+void ThingSegments::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:kivsee.proto.ThingSegments)
   GOOGLE_DCHECK_NE(&from, this);
-  const SegmentsMapConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SegmentsMapConfig>(
+  const ThingSegments* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ThingSegments>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SegmentsMapConfig)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:kivsee.proto.ThingSegments)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SegmentsMapConfig)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:kivsee.proto.ThingSegments)
     MergeFrom(*source);
   }
 }
 
-void SegmentsMapConfig::MergeFrom(const SegmentsMapConfig& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:SegmentsMapConfig)
+void ThingSegments::MergeFrom(const ThingSegments& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:kivsee.proto.ThingSegments)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -575,48 +831,53 @@ void SegmentsMapConfig::MergeFrom(const SegmentsMapConfig& from) {
   }
 }
 
-void SegmentsMapConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SegmentsMapConfig)
+void ThingSegments::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:kivsee.proto.ThingSegments)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void SegmentsMapConfig::CopyFrom(const SegmentsMapConfig& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:SegmentsMapConfig)
+void ThingSegments::CopyFrom(const ThingSegments& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:kivsee.proto.ThingSegments)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool SegmentsMapConfig::IsInitialized() const {
+bool ThingSegments::IsInitialized() const {
   return true;
 }
 
-void SegmentsMapConfig::InternalSwap(SegmentsMapConfig* other) {
+void ThingSegments::InternalSwap(ThingSegments* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   segments_.InternalSwap(&other->segments_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SegmentsMapConfig, number_of_pixels_)
-      + sizeof(SegmentsMapConfig::number_of_pixels_)
-      - PROTOBUF_FIELD_OFFSET(SegmentsMapConfig, guid_)>(
+      PROTOBUF_FIELD_OFFSET(ThingSegments, number_of_pixels_)
+      + sizeof(ThingSegments::number_of_pixels_)
+      - PROTOBUF_FIELD_OFFSET(ThingSegments, guid_)>(
           reinterpret_cast<char*>(&guid_),
           reinterpret_cast<char*>(&other->guid_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata SegmentsMapConfig::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata ThingSegments::GetMetadata() const {
   return GetMetadataStatic();
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace proto
+}  // namespace kivsee
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::SegmentConfig* Arena::CreateMaybeMessage< ::SegmentConfig >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SegmentConfig >(arena);
+template<> PROTOBUF_NOINLINE ::kivsee::proto::Pixel* Arena::CreateMaybeMessage< ::kivsee::proto::Pixel >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::kivsee::proto::Pixel >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SegmentsMapConfig* Arena::CreateMaybeMessage< ::SegmentsMapConfig >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SegmentsMapConfig >(arena);
+template<> PROTOBUF_NOINLINE ::kivsee::proto::Segment* Arena::CreateMaybeMessage< ::kivsee::proto::Segment >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::kivsee::proto::Segment >(arena);
+}
+template<> PROTOBUF_NOINLINE ::kivsee::proto::ThingSegments* Arena::CreateMaybeMessage< ::kivsee::proto::ThingSegments >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::kivsee::proto::ThingSegments >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

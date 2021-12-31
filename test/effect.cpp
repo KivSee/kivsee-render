@@ -39,7 +39,7 @@ TEST(EffectSegments, SegmentFoundInStore)
     kivsee_render::segments::SegmentsMap segmentsMap;
     kivsee_render::segments::Segment segment;
     strcpy(segment.first, "seg");
-    segment.second.push_back(&leds[1]);
+    segment.second.push_back({&leds[1], 0.0});
     segmentsMap.segments.push_back(segment);
 
     // decode args
@@ -90,9 +90,9 @@ TEST(EffectSegments, EmptySegmentInProtoFetchAll)
     kivsee_render::segments::SegmentsMap segmentsMap;
     kivsee_render::segments::Segment segment;
     strcpy(segment.first, "all");
-    segment.second.push_back(&leds[0]);
-    segment.second.push_back(&leds[1]);
-    segment.second.push_back(&leds[2]);
+    segment.second.push_back({&leds[0], 0.0});
+    segment.second.push_back({&leds[1], 0.5});
+    segment.second.push_back({&leds[2], 1.0});
     segmentsMap.segments.push_back(segment);
 
     // decode args
@@ -125,7 +125,7 @@ TEST(EffectSegments, SegmentNameTooLong)
     kivsee_render::segments::SegmentsMap segmentsMap;
     kivsee_render::segments::Segment segment;
     strcpy(segment.first, segmentName);
-    segment.second.push_back(&leds[1]);
+    segment.second.push_back({&leds[1], 0.0});
     segmentsMap.segments.push_back(segment);
 
     // decode args

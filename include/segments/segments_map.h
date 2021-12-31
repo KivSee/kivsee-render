@@ -18,7 +18,7 @@ namespace kivsee_render
 
         public:
 
-            Pixels *getPixelsForSegment(const char *segmentName) {
+            SegmentPixels *getPixelsForSegment(const char *segmentName) {
                 for(std::list<Segment>::iterator it = segments.begin(); it != segments.end(); it++) {
                     if(strcmp(it->first, segmentName) == 0) {
                         return &(it->second);

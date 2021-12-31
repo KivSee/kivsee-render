@@ -24,12 +24,12 @@ namespace kivsee_render
     public:
         void Render(unsigned long curr_time);
 
-        void Init(const std::vector<HSV *> *pixels, void * &effect_config);
+        void Init(const ::kivsee_render::segments::SegmentPixels *segment_pixels, void * &effect_config);
 
     protected:
         unsigned long start_time, end_time;
         float repeat_num, repeat_start, repeat_end;
-        const std::vector<HSV *> *pixels;
+        const ::kivsee_render::segments::SegmentPixels *segment_pixels;
 
         int lastCycleIndex = -1;
     };

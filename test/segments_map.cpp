@@ -8,19 +8,26 @@ TEST(SegmentsMap, SingleSegment)
 {
 
   // create configuration with single segment
-  SegmentsMapConfig segmentsMapConfig;
-  segmentsMapConfig.set_guid(1234);
-  segmentsMapConfig.set_number_of_pixels(50);
-  SegmentConfig *singleSegment = segmentsMapConfig.add_segments();
+  ::kivsee::proto::ThingSegments thingSegments;
+  thingSegments.set_guid(1234);
+  thingSegments.set_number_of_pixels(50);
+  ::kivsee::proto::Segment *singleSegment = thingSegments.add_segments();
   singleSegment->set_name("from_test");
-  singleSegment->add_indices(17);
-  singleSegment->add_indices(9);
-  singleSegment->add_indices(34);
+  
+  ::kivsee::proto::Pixel *p1 = singleSegment->add_pixels();
+  p1->set_index(17);
+  p1->set_rel_pos(0.0);
+  ::kivsee::proto::Pixel *p2 = singleSegment->add_pixels();
+  p2->set_index(9);
+  p2->set_rel_pos(0.5);
+  ::kivsee::proto::Pixel *p3 = singleSegment->add_pixels();
+  p3->set_index(34);
+  p3->set_rel_pos(1.0);
 
   // encode it to buffer to feed into nanopb
-  size_t size = segmentsMapConfig.ByteSizeLong(); 
+  size_t size = thingSegments.ByteSizeLong(); 
   uint8_t *msgBuffer = new uint8_t[size];
-  segmentsMapConfig.SerializeToArray(msgBuffer, size);
+  thingSegments.SerializeToArray(msgBuffer, size);
 
   // data structures to use during segments map construction
   kivsee_render::segments::SegmentsMap *segments_map = nullptr;
@@ -38,11 +45,14 @@ TEST(SegmentsMap, SingleSegment)
   ASSERT_TRUE(decodeSuccess);
 
   // check that segments_map initialized correectly according to message  
-  ::kivsee_render::segments::Pixels *pixels = segments_map->getPixelsForSegment("from_test");
-  ASSERT_EQ(pixels->size(), 3);
-  ASSERT_EQ((*pixels)[0], leds + 17);
-  ASSERT_EQ((*pixels)[1], leds + 9);
-  ASSERT_EQ((*pixels)[2], leds + 34);
+  ::kivsee_render::segments::SegmentPixels *segmentPixels = segments_map->getPixelsForSegment("from_test");
+  ASSERT_EQ(segmentPixels->size(), 3);
+  ASSERT_EQ((*segmentPixels)[0].pixel, leds + 17);
+  ASSERT_EQ((*segmentPixels)[0].relativePositionInSegment, 0.0);
+  ASSERT_EQ((*segmentPixels)[1].pixel, leds + 9);
+  ASSERT_EQ((*segmentPixels)[1].relativePositionInSegment, 0.5);
+  ASSERT_EQ((*segmentPixels)[2].pixel, leds + 34);
+  ASSERT_EQ((*segmentPixels)[2].relativePositionInSegment, 1.0);
 
   // check negative case
   ASSERT_EQ(segments_map->getPixelsForSegment("invalid"), nullptr);
@@ -51,21 +61,23 @@ TEST(SegmentsMap, SingleSegment)
   delete msgBuffer;
 }
 
-TEST(SegmentsMap, SegmentWithNoIndices)
+TEST(SegmentsMap, SegmentWithNoPixels)
 {
-  SegmentsMapConfig segmentsMapConfig;
-  segmentsMapConfig.set_guid(1234);
-  segmentsMapConfig.set_number_of_pixels(50);
-  SegmentConfig *emptySegment = segmentsMapConfig.add_segments();
+  ::kivsee::proto::ThingSegments thingSegments;
+  thingSegments.set_guid(1234);
+  thingSegments.set_number_of_pixels(50);
+  ::kivsee::proto::Segment *emptySegment = thingSegments.add_segments();
   emptySegment->set_name("from_test");
-  SegmentConfig *nonEmptySegment = segmentsMapConfig.add_segments();
+  ::kivsee::proto::Segment *nonEmptySegment = thingSegments.add_segments();
   nonEmptySegment->set_name("nonempty");
-  nonEmptySegment->add_indices(17);
+  ::kivsee::proto::Pixel *p1 = nonEmptySegment->add_pixels();
+  p1->set_index(17);
+  p1->set_rel_pos(0.0);
 
   // encode it to buffer to refeed into nanopb
-  size_t size = segmentsMapConfig.ByteSizeLong(); 
+  size_t size = thingSegments.ByteSizeLong(); 
   uint8_t *msgBuffer = new uint8_t[size];
-  segmentsMapConfig.SerializeToArray(msgBuffer, size);
+  thingSegments.SerializeToArray(msgBuffer, size);
 
   // data structures to use during segments map construction
   kivsee_render::segments::SegmentsMap *segments_map = nullptr;
@@ -82,10 +94,10 @@ TEST(SegmentsMap, SegmentWithNoIndices)
   bool decodeSuccess = ::kivsee_render::segments::DecodeSegmentsMapFromPbStream(&segments_map_stream, nullptr, &arg);
   ASSERT_TRUE(decodeSuccess);
 
-  ::kivsee_render::segments::Pixels *pixelsEmpty = segments_map->getPixelsForSegment("from_test");
+  ::kivsee_render::segments::SegmentPixels *pixelsEmpty = segments_map->getPixelsForSegment("from_test");
   ASSERT_EQ(pixelsEmpty->size(), 0);
 
-  ::kivsee_render::segments::Pixels *pixelsNonEmpty = segments_map->getPixelsForSegment("nonempty");
+  ::kivsee_render::segments::SegmentPixels *pixelsNonEmpty = segments_map->getPixelsForSegment("nonempty");
   ASSERT_EQ(pixelsNonEmpty->size(), 1);
   
 

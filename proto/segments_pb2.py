@@ -15,34 +15,73 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='segments.proto',
-  package='',
+  package='kivsee.proto',
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0esegments.proto\".\n\rSegmentConfig\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0f\n\x07indices\x18\x02 \x03(\r\"]\n\x11SegmentsMapConfig\x12\x0c\n\x04guid\x18\x01 \x01(\x07\x12\x18\n\x10number_of_pixels\x18\x02 \x01(\r\x12 \n\x08segments\x18\x03 \x03(\x0b\x32\x0e.SegmentConfigb\x06proto3'
+  serialized_pb=b'\n\x0esegments.proto\x12\x0ckivsee.proto\"\'\n\x05Pixel\x12\r\n\x05index\x18\x01 \x01(\r\x12\x0f\n\x07rel_pos\x18\x02 \x01(\x02\"<\n\x07Segment\x12\x0c\n\x04name\x18\x01 \x01(\t\x12#\n\x06pixels\x18\x02 \x03(\x0b\x32\x13.kivsee.proto.Pixel\"`\n\rThingSegments\x12\x0c\n\x04guid\x18\x01 \x01(\x07\x12\x18\n\x10number_of_pixels\x18\x02 \x01(\r\x12\'\n\x08segments\x18\x03 \x03(\x0b\x32\x15.kivsee.proto.Segmentb\x06proto3'
 )
 
 
 
 
-_SEGMENTCONFIG = _descriptor.Descriptor(
-  name='SegmentConfig',
-  full_name='SegmentConfig',
+_PIXEL = _descriptor.Descriptor(
+  name='Pixel',
+  full_name='kivsee.proto.Pixel',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='name', full_name='SegmentConfig.name', index=0,
+      name='index', full_name='kivsee.proto.Pixel.index', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='rel_pos', full_name='kivsee.proto.Pixel.rel_pos', index=1,
+      number=2, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=32,
+  serialized_end=71,
+)
+
+
+_SEGMENT = _descriptor.Descriptor(
+  name='Segment',
+  full_name='kivsee.proto.Segment',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='name', full_name='kivsee.proto.Segment.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='indices', full_name='SegmentConfig.indices', index=1,
-      number=2, type=13, cpp_type=3, label=3,
+      name='pixels', full_name='kivsee.proto.Segment.pixels', index=1,
+      number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -59,35 +98,35 @@ _SEGMENTCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18,
-  serialized_end=64,
+  serialized_start=73,
+  serialized_end=133,
 )
 
 
-_SEGMENTSMAPCONFIG = _descriptor.Descriptor(
-  name='SegmentsMapConfig',
-  full_name='SegmentsMapConfig',
+_THINGSEGMENTS = _descriptor.Descriptor(
+  name='ThingSegments',
+  full_name='kivsee.proto.ThingSegments',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='guid', full_name='SegmentsMapConfig.guid', index=0,
+      name='guid', full_name='kivsee.proto.ThingSegments.guid', index=0,
       number=1, type=7, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='number_of_pixels', full_name='SegmentsMapConfig.number_of_pixels', index=1,
+      name='number_of_pixels', full_name='kivsee.proto.ThingSegments.number_of_pixels', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='segments', full_name='SegmentsMapConfig.segments', index=2,
+      name='segments', full_name='kivsee.proto.ThingSegments.segments', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -105,28 +144,37 @@ _SEGMENTSMAPCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=66,
-  serialized_end=159,
+  serialized_start=135,
+  serialized_end=231,
 )
 
-_SEGMENTSMAPCONFIG.fields_by_name['segments'].message_type = _SEGMENTCONFIG
-DESCRIPTOR.message_types_by_name['SegmentConfig'] = _SEGMENTCONFIG
-DESCRIPTOR.message_types_by_name['SegmentsMapConfig'] = _SEGMENTSMAPCONFIG
+_SEGMENT.fields_by_name['pixels'].message_type = _PIXEL
+_THINGSEGMENTS.fields_by_name['segments'].message_type = _SEGMENT
+DESCRIPTOR.message_types_by_name['Pixel'] = _PIXEL
+DESCRIPTOR.message_types_by_name['Segment'] = _SEGMENT
+DESCRIPTOR.message_types_by_name['ThingSegments'] = _THINGSEGMENTS
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-SegmentConfig = _reflection.GeneratedProtocolMessageType('SegmentConfig', (_message.Message,), {
-  'DESCRIPTOR' : _SEGMENTCONFIG,
+Pixel = _reflection.GeneratedProtocolMessageType('Pixel', (_message.Message,), {
+  'DESCRIPTOR' : _PIXEL,
   '__module__' : 'segments_pb2'
-  # @@protoc_insertion_point(class_scope:SegmentConfig)
+  # @@protoc_insertion_point(class_scope:kivsee.proto.Pixel)
   })
-_sym_db.RegisterMessage(SegmentConfig)
+_sym_db.RegisterMessage(Pixel)
 
-SegmentsMapConfig = _reflection.GeneratedProtocolMessageType('SegmentsMapConfig', (_message.Message,), {
-  'DESCRIPTOR' : _SEGMENTSMAPCONFIG,
+Segment = _reflection.GeneratedProtocolMessageType('Segment', (_message.Message,), {
+  'DESCRIPTOR' : _SEGMENT,
   '__module__' : 'segments_pb2'
-  # @@protoc_insertion_point(class_scope:SegmentsMapConfig)
+  # @@protoc_insertion_point(class_scope:kivsee.proto.Segment)
   })
-_sym_db.RegisterMessage(SegmentsMapConfig)
+_sym_db.RegisterMessage(Segment)
+
+ThingSegments = _reflection.GeneratedProtocolMessageType('ThingSegments', (_message.Message,), {
+  'DESCRIPTOR' : _THINGSEGMENTS,
+  '__module__' : 'segments_pb2'
+  # @@protoc_insertion_point(class_scope:kivsee.proto.ThingSegments)
+  })
+_sym_db.RegisterMessage(ThingSegments)
 
 
 # @@protoc_insertion_point(module_scope)
