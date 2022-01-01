@@ -9,9 +9,9 @@ namespace kivsee_render
         {
             const float curr_offset_factor = offset_factor->GetValue(rel_time);
 
-            for (int i = 0; i < pixels->size(); i++)
+            for (::kivsee_render::segments::SegmentPixels::const_iterator it = segment_pixels->begin(); it != segment_pixels->end(); ++it)
             {
-                HSV *pixel = (*pixels)[i];
+                HSV *pixel = it->pixel;
                 pixel->hue += curr_offset_factor;
             }
         }

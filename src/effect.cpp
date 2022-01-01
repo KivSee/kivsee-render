@@ -46,10 +46,10 @@ namespace kivsee_render
         Render(relTime, currCycleIndex);
     }
 
-    void Effect::Init(const std::vector<HSV *> *pixels, void *&effect_config)
+    void Effect::Init(const ::kivsee_render::segments::SegmentPixels *segment_pixels, void *&effect_config)
     {
         EffectConfig *local_effect_config = static_cast<EffectConfig *>(effect_config);
-        this->pixels = pixels;
+        this->segment_pixels = segment_pixels;
         this->start_time = local_effect_config->start_time;
         this->end_time = local_effect_config->end_time;
         this->repeat_num = local_effect_config->repeat_num;
@@ -82,15 +82,15 @@ namespace kivsee_render
 
         const char *segment = effectProto.effect_config.segments;
         const char *segmentOrAll = segment[0] == '\0' ? "all" : segment;
-        ::kivsee_render::segments::Pixels *pixels = effectArgs->segmentsMap->getPixelsForSegment(segmentOrAll);
-        if (!pixels)
+        ::kivsee_render::segments::SegmentPixels *segmentPixels = effectArgs->segmentsMap->getPixelsForSegment(segmentOrAll);
+        if (!segmentPixels)
         {
             stream->errmsg = "segment name not found in store";
             delete newEffect;
             return false;
         }
         effect_pv = (void *)(&(effectProto.effect_config));
-        newEffect->Init(pixels, effect_pv);
+        newEffect->Init(segmentPixels, effect_pv);
         effectArgs->effects->push_back(newEffect);
         return true;
     }

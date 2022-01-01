@@ -12,8 +12,18 @@ namespace kivsee_render {
         // other location so they are aligned
         const int SEGMENT_NAME_MAX_LENGTH = 10;
 
-        typedef std::vector<HSV *> Pixels;
-        typedef std::pair<char[SEGMENT_NAME_MAX_LENGTH], Pixels> Segment;
+        typedef struct {
+
+            // pixel is a pointer to the actual value.
+            // changing this HSV will affect the final buffer which is rendered
+            HSV *pixel;
+
+            // This value is the relative position of the pixel within the segment
+            float relativePositionInSegment;
+        } SegmentPixel;
+
+        typedef std::vector<SegmentPixel> SegmentPixels;
+        typedef std::pair<char[SEGMENT_NAME_MAX_LENGTH], SegmentPixels> Segment;
     }
 }
 

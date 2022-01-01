@@ -7,9 +7,9 @@ namespace kivsee_render
     {
         void ConstColor::Render(float rel_time, int cycle_index)
         {
-            for (std::vector<HSV *>::const_iterator it = pixels->begin(); it != pixels->end(); ++it)
+            for (::kivsee_render::segments::SegmentPixels::const_iterator it = segment_pixels->begin(); it != segment_pixels->end(); ++it)
             {
-                HSV *pixel = *it;
+                HSV *pixel = it->pixel;
                 pixel->hue = color.hue;
                 pixel->sat = color.sat;
                 pixel->val = color.val;

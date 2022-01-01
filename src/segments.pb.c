@@ -6,10 +6,13 @@
 #error Regenerate this file with the current version of nanopb generator.
 #endif
 
-PB_BIND(SegmentConfig, SegmentConfig, AUTO)
+PB_BIND(kivsee_proto_Pixel, kivsee_proto_Pixel, AUTO)
 
 
-PB_BIND(SegmentsMapConfig, SegmentsMapConfig, AUTO)
+PB_BIND(kivsee_proto_Segment, kivsee_proto_Segment, AUTO)
+
+
+PB_BIND(kivsee_proto_ThingSegments, kivsee_proto_ThingSegments, AUTO)
 
 
 
