@@ -19,9 +19,6 @@ namespace kivsee_render
         if (curr_time < this->start_time || curr_time >= this->end_time)
             return;
 
-        if (curr_time < this->start_time || curr_time >= this->end_time)
-            return;
-
         float relTime = ((float)(curr_time - start_time) / (float)(end_time - start_time));
         int currCycleIndex = -1;
         if (this->repeat_num > 0.0f)
