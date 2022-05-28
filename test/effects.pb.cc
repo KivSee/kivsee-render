@@ -14,262 +14,192 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_effects_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_BrightnessEffectConfig_effects_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_functions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_Comb2FloatFunctionConfig_functions_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_effects_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ConstColorEffectConfig_effects_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_effects_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EffectConfig_effects_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_effects_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<6> scc_info_EffectProto_effects_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_effects_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HSV_effects_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_effects_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_HueEffectConfig_effects_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_effects_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RainbowEffectConfig_effects_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_effects_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SaturationEffectConfig_effects_2eproto;
-class HSVDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HSV> _instance;
-} _HSV_default_instance_;
-class ConstColorEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ConstColorEffectConfig> _instance;
-} _ConstColorEffectConfig_default_instance_;
-class RainbowEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RainbowEffectConfig> _instance;
-} _RainbowEffectConfig_default_instance_;
-class BrightnessEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<BrightnessEffectConfig> _instance;
-} _BrightnessEffectConfig_default_instance_;
-class HueEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HueEffectConfig> _instance;
-} _HueEffectConfig_default_instance_;
-class SaturationEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SaturationEffectConfig> _instance;
-} _SaturationEffectConfig_default_instance_;
-class SegmentEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SegmentEffectConfig> _instance;
-} _SegmentEffectConfig_default_instance_;
-class GlitterEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GlitterEffectConfig> _instance;
-} _GlitterEffectConfig_default_instance_;
-class SnakeEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SnakeEffectConfig> _instance;
-} _SnakeEffectConfig_default_instance_;
-class AlternateEffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AlternateEffectConfig> _instance;
-} _AlternateEffectConfig_default_instance_;
-class EffectConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EffectConfig> _instance;
-} _EffectConfig_default_instance_;
-class EffectProtoDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EffectProto> _instance;
-} _EffectProto_default_instance_;
-class AnimationProtoDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AnimationProto> _instance;
-} _AnimationProto_default_instance_;
-static void InitDefaultsscc_info_AlternateEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  {
-    void* ptr = &::_AlternateEffectConfig_default_instance_;
-    new (ptr) ::AlternateEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AlternateEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_AlternateEffectConfig_effects_2eproto}, {
-      &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,}};
-
-static void InitDefaultsscc_info_AnimationProto_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_AnimationProto_default_instance_;
-    new (ptr) ::AnimationProto();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AnimationProto_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_AnimationProto_effects_2eproto}, {
-      &scc_info_EffectProto_effects_2eproto.base,}};
-
-static void InitDefaultsscc_info_BrightnessEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_BrightnessEffectConfig_default_instance_;
-    new (ptr) ::BrightnessEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_BrightnessEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_BrightnessEffectConfig_effects_2eproto}, {
-      &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,}};
-
-static void InitDefaultsscc_info_ConstColorEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ConstColorEffectConfig_default_instance_;
-    new (ptr) ::ConstColorEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ConstColorEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ConstColorEffectConfig_effects_2eproto}, {
-      &scc_info_HSV_effects_2eproto.base,}};
-
-static void InitDefaultsscc_info_EffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_EffectConfig_default_instance_;
-    new (ptr) ::EffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_EffectConfig_effects_2eproto}, {}};
-
-static void InitDefaultsscc_info_EffectProto_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_EffectProto_default_instance_;
-    new (ptr) ::EffectProto();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<6> scc_info_EffectProto_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 6, 0, InitDefaultsscc_info_EffectProto_effects_2eproto}, {
-      &scc_info_EffectConfig_effects_2eproto.base,
-      &scc_info_ConstColorEffectConfig_effects_2eproto.base,
-      &scc_info_RainbowEffectConfig_effects_2eproto.base,
-      &scc_info_BrightnessEffectConfig_effects_2eproto.base,
-      &scc_info_HueEffectConfig_effects_2eproto.base,
-      &scc_info_SaturationEffectConfig_effects_2eproto.base,}};
-
-static void InitDefaultsscc_info_GlitterEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_GlitterEffectConfig_default_instance_;
-    new (ptr) ::GlitterEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GlitterEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GlitterEffectConfig_effects_2eproto}, {
-      &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,}};
-
-static void InitDefaultsscc_info_HSV_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_HSV_default_instance_;
-    new (ptr) ::HSV();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_HSV_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_HSV_effects_2eproto}, {}};
-
-static void InitDefaultsscc_info_HueEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_HueEffectConfig_default_instance_;
-    new (ptr) ::HueEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_HueEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_HueEffectConfig_effects_2eproto}, {
-      &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,}};
-
-static void InitDefaultsscc_info_RainbowEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_RainbowEffectConfig_default_instance_;
-    new (ptr) ::RainbowEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RainbowEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RainbowEffectConfig_effects_2eproto}, {
-      &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,}};
-
-static void InitDefaultsscc_info_SaturationEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_SaturationEffectConfig_default_instance_;
-    new (ptr) ::SaturationEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SaturationEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SaturationEffectConfig_effects_2eproto}, {
-      &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,}};
-
-static void InitDefaultsscc_info_SegmentEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_SegmentEffectConfig_default_instance_;
-    new (ptr) ::SegmentEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SegmentEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SegmentEffectConfig_effects_2eproto}, {
-      &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,}};
-
-static void InitDefaultsscc_info_SnakeEffectConfig_effects_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_SnakeEffectConfig_default_instance_;
-    new (ptr) ::SnakeEffectConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SnakeEffectConfig_effects_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SnakeEffectConfig_effects_2eproto}, {
-      &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,}};
-
+PROTOBUF_PRAGMA_INIT_SEG
+constexpr HSV::HSV(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : hue_(0)
+  , sat_(0)
+  , val_(0){}
+struct HSVDefaultTypeInternal {
+  constexpr HSVDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HSVDefaultTypeInternal() {}
+  union {
+    HSV _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HSVDefaultTypeInternal _HSV_default_instance_;
+constexpr ConstColorEffectConfig::ConstColorEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : color_(nullptr){}
+struct ConstColorEffectConfigDefaultTypeInternal {
+  constexpr ConstColorEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ConstColorEffectConfigDefaultTypeInternal() {}
+  union {
+    ConstColorEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ConstColorEffectConfigDefaultTypeInternal _ConstColorEffectConfig_default_instance_;
+constexpr RainbowEffectConfig::RainbowEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : hue_start_(nullptr)
+  , hue_end_(nullptr){}
+struct RainbowEffectConfigDefaultTypeInternal {
+  constexpr RainbowEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~RainbowEffectConfigDefaultTypeInternal() {}
+  union {
+    RainbowEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT RainbowEffectConfigDefaultTypeInternal _RainbowEffectConfig_default_instance_;
+constexpr BrightnessEffectConfig::BrightnessEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : mult_factor_(nullptr){}
+struct BrightnessEffectConfigDefaultTypeInternal {
+  constexpr BrightnessEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~BrightnessEffectConfigDefaultTypeInternal() {}
+  union {
+    BrightnessEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT BrightnessEffectConfigDefaultTypeInternal _BrightnessEffectConfig_default_instance_;
+constexpr HueEffectConfig::HueEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : offset_factor_(nullptr){}
+struct HueEffectConfigDefaultTypeInternal {
+  constexpr HueEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HueEffectConfigDefaultTypeInternal() {}
+  union {
+    HueEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HueEffectConfigDefaultTypeInternal _HueEffectConfig_default_instance_;
+constexpr SaturationEffectConfig::SaturationEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : mult_factor_(nullptr){}
+struct SaturationEffectConfigDefaultTypeInternal {
+  constexpr SaturationEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SaturationEffectConfigDefaultTypeInternal() {}
+  union {
+    SaturationEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SaturationEffectConfigDefaultTypeInternal _SaturationEffectConfig_default_instance_;
+constexpr SnakeEffectConfig::SnakeEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : head_(nullptr)
+  , tail_length_(nullptr){}
+struct SnakeEffectConfigDefaultTypeInternal {
+  constexpr SnakeEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SnakeEffectConfigDefaultTypeInternal() {}
+  union {
+    SnakeEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SnakeEffectConfigDefaultTypeInternal _SnakeEffectConfig_default_instance_;
+constexpr SegmentEffectConfig::SegmentEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : start_(nullptr)
+  , end_(nullptr){}
+struct SegmentEffectConfigDefaultTypeInternal {
+  constexpr SegmentEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SegmentEffectConfigDefaultTypeInternal() {}
+  union {
+    SegmentEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SegmentEffectConfigDefaultTypeInternal _SegmentEffectConfig_default_instance_;
+constexpr GlitterEffectConfig::GlitterEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : intensity_(nullptr)
+  , sat_mult_factor_(nullptr){}
+struct GlitterEffectConfigDefaultTypeInternal {
+  constexpr GlitterEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~GlitterEffectConfigDefaultTypeInternal() {}
+  union {
+    GlitterEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GlitterEffectConfigDefaultTypeInternal _GlitterEffectConfig_default_instance_;
+constexpr AlternateEffectConfig::AlternateEffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : hue_offset_(nullptr)
+  , sat_mult_(nullptr)
+  , brightness_mult_(nullptr)
+  , numberofpixels_(0u){}
+struct AlternateEffectConfigDefaultTypeInternal {
+  constexpr AlternateEffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AlternateEffectConfigDefaultTypeInternal() {}
+  union {
+    AlternateEffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AlternateEffectConfigDefaultTypeInternal _AlternateEffectConfig_default_instance_;
+constexpr EffectConfig::EffectConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : segments_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
+  , start_time_(0u)
+  , end_time_(0u)
+  , repeat_num_(0)
+  , repeat_start_(0)
+  , repeat_end_(0){}
+struct EffectConfigDefaultTypeInternal {
+  constexpr EffectConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~EffectConfigDefaultTypeInternal() {}
+  union {
+    EffectConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT EffectConfigDefaultTypeInternal _EffectConfig_default_instance_;
+constexpr EffectProto::EffectProto(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : effect_config_(nullptr)
+  , _oneof_case_{}{}
+struct EffectProtoDefaultTypeInternal {
+  constexpr EffectProtoDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~EffectProtoDefaultTypeInternal() {}
+  union {
+    EffectProto _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT EffectProtoDefaultTypeInternal _EffectProto_default_instance_;
+constexpr AnimationProto::AnimationProto(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : effects_()
+  , duration_ms_(0u)
+  , num_repeats_(0u){}
+struct AnimationProtoDefaultTypeInternal {
+  constexpr AnimationProtoDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~AnimationProtoDefaultTypeInternal() {}
+  union {
+    AnimationProto _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AnimationProtoDefaultTypeInternal _AnimationProto_default_instance_;
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_effects_2eproto[13];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_effects_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_effects_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_effects_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_effects_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::HSV, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::HSV, hue_),
   PROTOBUF_FIELD_OFFSET(::HSV, sat_),
   PROTOBUF_FIELD_OFFSET(::HSV, val_),
@@ -278,12 +208,14 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_effects_2eproto::offsets[] PRO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::ConstColorEffectConfig, color_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::RainbowEffectConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::RainbowEffectConfig, hue_start_),
   PROTOBUF_FIELD_OFFSET(::RainbowEffectConfig, hue_end_),
   ~0u,  // no _has_bits_
@@ -291,24 +223,36 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_effects_2eproto::offsets[] PRO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::BrightnessEffectConfig, mult_factor_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::HueEffectConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::HueEffectConfig, offset_factor_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SaturationEffectConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SaturationEffectConfig, mult_factor_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, head_),
+  PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, tail_length_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SegmentEffectConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SegmentEffectConfig, start_),
   PROTOBUF_FIELD_OFFSET(::SegmentEffectConfig, end_),
   ~0u,  // no _has_bits_
@@ -316,20 +260,15 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_effects_2eproto::offsets[] PRO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::GlitterEffectConfig, intensity_),
   PROTOBUF_FIELD_OFFSET(::GlitterEffectConfig, sat_mult_factor_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, head_),
-  PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, tail_length_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::AlternateEffectConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::AlternateEffectConfig, numberofpixels_),
   PROTOBUF_FIELD_OFFSET(::AlternateEffectConfig, hue_offset_),
   PROTOBUF_FIELD_OFFSET(::AlternateEffectConfig, sat_mult_),
@@ -339,6 +278,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_effects_2eproto::offsets[] PRO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::EffectConfig, start_time_),
   PROTOBUF_FIELD_OFFSET(::EffectConfig, end_time_),
   PROTOBUF_FIELD_OFFSET(::EffectConfig, segments_),
@@ -350,7 +290,9 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_effects_2eproto::offsets[] PRO
   ~0u,  // no _extensions_
   PROTOBUF_FIELD_OFFSET(::EffectProto, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::EffectProto, effect_config_),
+  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
   ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
   ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
   ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
@@ -362,24 +304,25 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_effects_2eproto::offsets[] PRO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::AnimationProto, effects_),
   PROTOBUF_FIELD_OFFSET(::AnimationProto, duration_ms_),
   PROTOBUF_FIELD_OFFSET(::AnimationProto, num_repeats_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::HSV)},
-  { 8, -1, sizeof(::ConstColorEffectConfig)},
-  { 14, -1, sizeof(::RainbowEffectConfig)},
-  { 21, -1, sizeof(::BrightnessEffectConfig)},
-  { 27, -1, sizeof(::HueEffectConfig)},
-  { 33, -1, sizeof(::SaturationEffectConfig)},
-  { 39, -1, sizeof(::SegmentEffectConfig)},
-  { 46, -1, sizeof(::GlitterEffectConfig)},
-  { 53, -1, sizeof(::SnakeEffectConfig)},
-  { 60, -1, sizeof(::AlternateEffectConfig)},
-  { 69, -1, sizeof(::EffectConfig)},
-  { 80, -1, sizeof(::EffectProto)},
-  { 92, -1, sizeof(::AnimationProto)},
+  { 0, -1, -1, sizeof(::HSV)},
+  { 9, -1, -1, sizeof(::ConstColorEffectConfig)},
+  { 16, -1, -1, sizeof(::RainbowEffectConfig)},
+  { 24, -1, -1, sizeof(::BrightnessEffectConfig)},
+  { 31, -1, -1, sizeof(::HueEffectConfig)},
+  { 38, -1, -1, sizeof(::SaturationEffectConfig)},
+  { 45, -1, -1, sizeof(::SnakeEffectConfig)},
+  { 53, -1, -1, sizeof(::SegmentEffectConfig)},
+  { 61, -1, -1, sizeof(::GlitterEffectConfig)},
+  { 69, -1, -1, sizeof(::AlternateEffectConfig)},
+  { 79, -1, -1, sizeof(::EffectConfig)},
+  { 91, -1, -1, sizeof(::EffectProto)},
+  { 105, -1, -1, sizeof(::AnimationProto)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -389,9 +332,9 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_BrightnessEffectConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_HueEffectConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_SaturationEffectConfig_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_SnakeEffectConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_SegmentEffectConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_GlitterEffectConfig_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_SnakeEffectConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_AlternateEffectConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_EffectConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_EffectProto_default_instance_),
@@ -409,13 +352,13 @@ const char descriptor_table_protodef_effects_2eproto[] PROTOBUF_SECTION_VARIABLE
   "8\n\017HueEffectConfig\022%\n\roffset_factor\030\001 \001("
   "\0132\016.FloatFunction\"=\n\026SaturationEffectCon"
   "fig\022#\n\013mult_factor\030\001 \001(\0132\016.FloatFunction"
-  "\"Q\n\023SegmentEffectConfig\022\035\n\005start\030\001 \001(\0132\016"
-  ".FloatFunction\022\033\n\003end\030\002 \001(\0132\016.FloatFunct"
-  "ion\"a\n\023GlitterEffectConfig\022!\n\tintensity\030"
-  "\001 \001(\0132\016.FloatFunction\022\'\n\017sat_mult_factor"
-  "\030\002 \001(\0132\016.FloatFunction\"V\n\021SnakeEffectCon"
-  "fig\022\034\n\004head\030\001 \001(\0132\016.FloatFunction\022#\n\013tai"
-  "l_length\030\002 \001(\0132\016.FloatFunction\"\236\001\n\025Alter"
+  "\"V\n\021SnakeEffectConfig\022\034\n\004head\030\001 \001(\0132\016.Fl"
+  "oatFunction\022#\n\013tail_length\030\002 \001(\0132\016.Float"
+  "Function\"Q\n\023SegmentEffectConfig\022\035\n\005start"
+  "\030\001 \001(\0132\016.FloatFunction\022\033\n\003end\030\002 \001(\0132\016.Fl"
+  "oatFunction\"a\n\023GlitterEffectConfig\022!\n\tin"
+  "tensity\030\001 \001(\0132\016.FloatFunction\022\'\n\017sat_mul"
+  "t_factor\030\002 \001(\0132\016.FloatFunction\"\236\001\n\025Alter"
   "nateEffectConfig\022\026\n\016numberOfPixels\030\001 \001(\r"
   "\022\"\n\nhue_offset\030\002 \001(\0132\016.FloatFunction\022 \n\010"
   "sat_mult\030\003 \001(\0132\016.FloatFunction\022\'\n\017bright"
@@ -423,45 +366,34 @@ const char descriptor_table_protodef_effects_2eproto[] PROTOBUF_SECTION_VARIABLE
   "ctConfig\022\022\n\nstart_time\030\001 \001(\r\022\020\n\010end_time"
   "\030\002 \001(\r\022\020\n\010segments\030\003 \001(\t\022\022\n\nrepeat_num\030\004"
   " \001(\002\022\024\n\014repeat_start\030\005 \001(\002\022\022\n\nrepeat_end"
-  "\030\006 \001(\002\"\225\002\n\013EffectProto\022$\n\reffect_config\030"
+  "\030\006 \001(\002\"\272\002\n\013EffectProto\022$\n\reffect_config\030"
   "\001 \001(\0132\r.EffectConfig\022.\n\013const_color\030\002 \001("
   "\0132\027.ConstColorEffectConfigH\000\022\'\n\007rainbow\030"
   "\003 \001(\0132\024.RainbowEffectConfigH\000\022-\n\nbrightn"
   "ess\030\004 \001(\0132\027.BrightnessEffectConfigH\000\022\037\n\003"
   "hue\030\005 \001(\0132\020.HueEffectConfigH\000\022-\n\nsaturat"
-  "ion\030\006 \001(\0132\027.SaturationEffectConfigH\000B\010\n\006"
-  "effect\"Y\n\016AnimationProto\022\035\n\007effects\030\001 \003("
-  "\0132\014.EffectProto\022\023\n\013duration_ms\030\002 \001(\r\022\023\n\013"
-  "num_repeats\030\003 \001(\rb\006proto3"
+  "ion\030\006 \001(\0132\027.SaturationEffectConfigH\000\022#\n\005"
+  "snake\030\007 \001(\0132\022.SnakeEffectConfigH\000B\010\n\006eff"
+  "ect\"Y\n\016AnimationProto\022\035\n\007effects\030\001 \003(\0132\014"
+  ".EffectProto\022\023\n\013duration_ms\030\002 \001(\r\022\023\n\013num"
+  "_repeats\030\003 \001(\rb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_effects_2eproto_deps[1] = {
   &::descriptor_table_functions_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_effects_2eproto_sccs[13] = {
-  &scc_info_AlternateEffectConfig_effects_2eproto.base,
-  &scc_info_AnimationProto_effects_2eproto.base,
-  &scc_info_BrightnessEffectConfig_effects_2eproto.base,
-  &scc_info_ConstColorEffectConfig_effects_2eproto.base,
-  &scc_info_EffectConfig_effects_2eproto.base,
-  &scc_info_EffectProto_effects_2eproto.base,
-  &scc_info_GlitterEffectConfig_effects_2eproto.base,
-  &scc_info_HSV_effects_2eproto.base,
-  &scc_info_HueEffectConfig_effects_2eproto.base,
-  &scc_info_RainbowEffectConfig_effects_2eproto.base,
-  &scc_info_SaturationEffectConfig_effects_2eproto.base,
-  &scc_info_SegmentEffectConfig_effects_2eproto.base,
-  &scc_info_SnakeEffectConfig_effects_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_effects_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_effects_2eproto = {
-  false, false, descriptor_table_protodef_effects_2eproto, "effects.proto", 1345,
-  &descriptor_table_effects_2eproto_once, descriptor_table_effects_2eproto_sccs, descriptor_table_effects_2eproto_deps, 13, 1,
+  false, false, 1382, descriptor_table_protodef_effects_2eproto, "effects.proto", 
+  &descriptor_table_effects_2eproto_once, descriptor_table_effects_2eproto_deps, 1, 13,
   schemas, file_default_instances, TableStruct_effects_2eproto::offsets,
-  file_level_metadata_effects_2eproto, 13, file_level_enum_descriptors_effects_2eproto, file_level_service_descriptors_effects_2eproto,
+  file_level_metadata_effects_2eproto, file_level_enum_descriptors_effects_2eproto, file_level_service_descriptors_effects_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_effects_2eproto_getter() {
+  return &descriptor_table_effects_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_effects_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_effects_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_effects_2eproto(&descriptor_table_effects_2eproto);
 
 // ===================================================================
 
@@ -469,10 +401,13 @@ class HSV::_Internal {
  public:
 };
 
-HSV::HSV(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+HSV::HSV(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:HSV)
 }
 HSV::HSV(const HSV& from)
@@ -484,21 +419,22 @@ HSV::HSV(const HSV& from)
   // @@protoc_insertion_point(copy_constructor:HSV)
 }
 
-void HSV::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&hue_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&val_) -
-      reinterpret_cast<char*>(&hue_)) + sizeof(val_));
+inline void HSV::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&hue_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&val_) -
+    reinterpret_cast<char*>(&hue_)) + sizeof(val_));
 }
 
 HSV::~HSV() {
   // @@protoc_insertion_point(destructor:HSV)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void HSV::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void HSV::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void HSV::ArenaDtor(void* object) {
@@ -510,15 +446,10 @@ void HSV::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void HSV::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const HSV& HSV::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_HSV_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void HSV::Clear() {
 // @@protoc_insertion_point(message_clear_start:HSV)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -531,73 +462,88 @@ void HSV::Clear() {
 const char* HSV::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // float hue = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
           hue_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float sat = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
           sat_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float val = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 29)) {
           val_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* HSV::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* HSV::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:HSV)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float hue = 1;
-  if (!(this->hue() <= 0 && this->hue() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_hue = this->_internal_hue();
+  uint32_t raw_hue;
+  memcpy(&raw_hue, &tmp_hue, sizeof(tmp_hue));
+  if (raw_hue != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_hue(), target);
   }
 
   // float sat = 2;
-  if (!(this->sat() <= 0 && this->sat() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_sat = this->_internal_sat();
+  uint32_t raw_sat;
+  memcpy(&raw_sat, &tmp_sat, sizeof(tmp_sat));
+  if (raw_sat != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_sat(), target);
   }
 
   // float val = 3;
-  if (!(this->val() <= 0 && this->val() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_val = this->_internal_val();
+  uint32_t raw_val;
+  memcpy(&raw_val, &tmp_val, sizeof(tmp_val));
+  if (raw_val != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_val(), target);
   }
@@ -614,72 +560,81 @@ size_t HSV::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:HSV)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // float hue = 1;
-  if (!(this->hue() <= 0 && this->hue() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_hue = this->_internal_hue();
+  uint32_t raw_hue;
+  memcpy(&raw_hue, &tmp_hue, sizeof(tmp_hue));
+  if (raw_hue != 0) {
     total_size += 1 + 4;
   }
 
   // float sat = 2;
-  if (!(this->sat() <= 0 && this->sat() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_sat = this->_internal_sat();
+  uint32_t raw_sat;
+  memcpy(&raw_sat, &tmp_sat, sizeof(tmp_sat));
+  if (raw_sat != 0) {
     total_size += 1 + 4;
   }
 
   // float val = 3;
-  if (!(this->val() <= 0 && this->val() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_val = this->_internal_val();
+  uint32_t raw_val;
+  memcpy(&raw_val, &tmp_val, sizeof(tmp_val));
+  if (raw_val != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void HSV::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:HSV)
-  GOOGLE_DCHECK_NE(&from, this);
-  const HSV* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<HSV>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:HSV)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:HSV)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData HSV::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    HSV::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*HSV::GetClassData() const { return &_class_data_; }
+
+void HSV::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<HSV *>(to)->MergeFrom(
+      static_cast<const HSV &>(from));
 }
+
 
 void HSV::MergeFrom(const HSV& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:HSV)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!(from.hue() <= 0 && from.hue() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_hue = from._internal_hue();
+  uint32_t raw_hue;
+  memcpy(&raw_hue, &tmp_hue, sizeof(tmp_hue));
+  if (raw_hue != 0) {
     _internal_set_hue(from._internal_hue());
   }
-  if (!(from.sat() <= 0 && from.sat() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_sat = from._internal_sat();
+  uint32_t raw_sat;
+  memcpy(&raw_sat, &tmp_sat, sizeof(tmp_sat));
+  if (raw_sat != 0) {
     _internal_set_sat(from._internal_sat());
   }
-  if (!(from.val() <= 0 && from.val() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_val = from._internal_val();
+  uint32_t raw_val;
+  memcpy(&raw_val, &tmp_val, sizeof(tmp_val));
+  if (raw_val != 0) {
     _internal_set_val(from._internal_val());
   }
-}
-
-void HSV::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:HSV)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void HSV::CopyFrom(const HSV& from) {
@@ -695,7 +650,7 @@ bool HSV::IsInitialized() const {
 
 void HSV::InternalSwap(HSV* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(HSV, val_)
       + sizeof(HSV::val_)
@@ -705,9 +660,10 @@ void HSV::InternalSwap(HSV* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata HSV::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[0]);
 }
-
 
 // ===================================================================
 
@@ -720,10 +676,13 @@ const ::HSV&
 ConstColorEffectConfig::_Internal::color(const ConstColorEffectConfig* msg) {
   return *msg->color_;
 }
-ConstColorEffectConfig::ConstColorEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ConstColorEffectConfig::ConstColorEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:ConstColorEffectConfig)
 }
 ConstColorEffectConfig::ConstColorEffectConfig(const ConstColorEffectConfig& from)
@@ -737,19 +696,19 @@ ConstColorEffectConfig::ConstColorEffectConfig(const ConstColorEffectConfig& fro
   // @@protoc_insertion_point(copy_constructor:ConstColorEffectConfig)
 }
 
-void ConstColorEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ConstColorEffectConfig_effects_2eproto.base);
-  color_ = nullptr;
+inline void ConstColorEffectConfig::SharedCtor() {
+color_ = nullptr;
 }
 
 ConstColorEffectConfig::~ConstColorEffectConfig() {
   // @@protoc_insertion_point(destructor:ConstColorEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void ConstColorEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void ConstColorEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete color_;
 }
 
@@ -762,19 +721,14 @@ void ConstColorEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) 
 void ConstColorEffectConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ConstColorEffectConfig& ConstColorEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ConstColorEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void ConstColorEffectConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:ConstColorEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && color_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && color_ != nullptr) {
     delete color_;
   }
   color_ = nullptr;
@@ -784,47 +738,48 @@ void ConstColorEffectConfig::Clear() {
 const char* ConstColorEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .HSV color = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ConstColorEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ConstColorEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ConstColorEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .HSV color = 1;
-  if (this->has_color()) {
+  if (this->_internal_has_color()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -843,58 +798,43 @@ size_t ConstColorEffectConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ConstColorEffectConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .HSV color = 1;
-  if (this->has_color()) {
+  if (this->_internal_has_color()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *color_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void ConstColorEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ConstColorEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ConstColorEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ConstColorEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ConstColorEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ConstColorEffectConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ConstColorEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ConstColorEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ConstColorEffectConfig::GetClassData() const { return &_class_data_; }
+
+void ConstColorEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<ConstColorEffectConfig *>(to)->MergeFrom(
+      static_cast<const ConstColorEffectConfig &>(from));
 }
+
 
 void ConstColorEffectConfig::MergeFrom(const ConstColorEffectConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ConstColorEffectConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_color()) {
+  if (from._internal_has_color()) {
     _internal_mutable_color()->::HSV::MergeFrom(from._internal_color());
   }
-}
-
-void ConstColorEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ConstColorEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ConstColorEffectConfig::CopyFrom(const ConstColorEffectConfig& from) {
@@ -910,14 +850,15 @@ bool ConstColorEffectConfig::IsInitialized() const {
 
 void ConstColorEffectConfig::InternalSwap(ConstColorEffectConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(color_, other->color_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ConstColorEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[1]);
 }
-
 
 // ===================================================================
 
@@ -936,21 +877,24 @@ RainbowEffectConfig::_Internal::hue_end(const RainbowEffectConfig* msg) {
   return *msg->hue_end_;
 }
 void RainbowEffectConfig::clear_hue_start() {
-  if (GetArena() == nullptr && hue_start_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && hue_start_ != nullptr) {
     delete hue_start_;
   }
   hue_start_ = nullptr;
 }
 void RainbowEffectConfig::clear_hue_end() {
-  if (GetArena() == nullptr && hue_end_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && hue_end_ != nullptr) {
     delete hue_end_;
   }
   hue_end_ = nullptr;
 }
-RainbowEffectConfig::RainbowEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+RainbowEffectConfig::RainbowEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:RainbowEffectConfig)
 }
 RainbowEffectConfig::RainbowEffectConfig(const RainbowEffectConfig& from)
@@ -969,22 +913,22 @@ RainbowEffectConfig::RainbowEffectConfig(const RainbowEffectConfig& from)
   // @@protoc_insertion_point(copy_constructor:RainbowEffectConfig)
 }
 
-void RainbowEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RainbowEffectConfig_effects_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&hue_start_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&hue_end_) -
-      reinterpret_cast<char*>(&hue_start_)) + sizeof(hue_end_));
+inline void RainbowEffectConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&hue_start_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&hue_end_) -
+    reinterpret_cast<char*>(&hue_start_)) + sizeof(hue_end_));
 }
 
 RainbowEffectConfig::~RainbowEffectConfig() {
   // @@protoc_insertion_point(destructor:RainbowEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void RainbowEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void RainbowEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete hue_start_;
   if (this != internal_default_instance()) delete hue_end_;
 }
@@ -998,23 +942,18 @@ void RainbowEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void RainbowEffectConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const RainbowEffectConfig& RainbowEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RainbowEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void RainbowEffectConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:RainbowEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && hue_start_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && hue_start_ != nullptr) {
     delete hue_start_;
   }
   hue_start_ = nullptr;
-  if (GetArena() == nullptr && hue_end_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && hue_end_ != nullptr) {
     delete hue_end_;
   }
   hue_end_ = nullptr;
@@ -1024,54 +963,56 @@ void RainbowEffectConfig::Clear() {
 const char* RainbowEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .FloatFunction hue_start = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_hue_start(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .FloatFunction hue_end = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_hue_end(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RainbowEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RainbowEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:RainbowEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .FloatFunction hue_start = 1;
-  if (this->has_hue_start()) {
+  if (this->_internal_has_hue_start()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1079,7 +1020,7 @@ failure:
   }
 
   // .FloatFunction hue_end = 2;
-  if (this->has_hue_end()) {
+  if (this->_internal_has_hue_end()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1098,68 +1039,53 @@ size_t RainbowEffectConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:RainbowEffectConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction hue_start = 1;
-  if (this->has_hue_start()) {
+  if (this->_internal_has_hue_start()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *hue_start_);
   }
 
   // .FloatFunction hue_end = 2;
-  if (this->has_hue_end()) {
+  if (this->_internal_has_hue_end()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *hue_end_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void RainbowEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RainbowEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RainbowEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RainbowEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RainbowEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RainbowEffectConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RainbowEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    RainbowEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RainbowEffectConfig::GetClassData() const { return &_class_data_; }
+
+void RainbowEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<RainbowEffectConfig *>(to)->MergeFrom(
+      static_cast<const RainbowEffectConfig &>(from));
 }
+
 
 void RainbowEffectConfig::MergeFrom(const RainbowEffectConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:RainbowEffectConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_hue_start()) {
+  if (from._internal_has_hue_start()) {
     _internal_mutable_hue_start()->::FloatFunction::MergeFrom(from._internal_hue_start());
   }
-  if (from.has_hue_end()) {
+  if (from._internal_has_hue_end()) {
     _internal_mutable_hue_end()->::FloatFunction::MergeFrom(from._internal_hue_end());
   }
-}
-
-void RainbowEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RainbowEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void RainbowEffectConfig::CopyFrom(const RainbowEffectConfig& from) {
@@ -1175,7 +1101,7 @@ bool RainbowEffectConfig::IsInitialized() const {
 
 void RainbowEffectConfig::InternalSwap(RainbowEffectConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(RainbowEffectConfig, hue_end_)
       + sizeof(RainbowEffectConfig::hue_end_)
@@ -1185,9 +1111,10 @@ void RainbowEffectConfig::InternalSwap(RainbowEffectConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RainbowEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[2]);
 }
-
 
 // ===================================================================
 
@@ -1201,15 +1128,18 @@ BrightnessEffectConfig::_Internal::mult_factor(const BrightnessEffectConfig* msg
   return *msg->mult_factor_;
 }
 void BrightnessEffectConfig::clear_mult_factor() {
-  if (GetArena() == nullptr && mult_factor_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && mult_factor_ != nullptr) {
     delete mult_factor_;
   }
   mult_factor_ = nullptr;
 }
-BrightnessEffectConfig::BrightnessEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+BrightnessEffectConfig::BrightnessEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:BrightnessEffectConfig)
 }
 BrightnessEffectConfig::BrightnessEffectConfig(const BrightnessEffectConfig& from)
@@ -1223,19 +1153,19 @@ BrightnessEffectConfig::BrightnessEffectConfig(const BrightnessEffectConfig& fro
   // @@protoc_insertion_point(copy_constructor:BrightnessEffectConfig)
 }
 
-void BrightnessEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_BrightnessEffectConfig_effects_2eproto.base);
-  mult_factor_ = nullptr;
+inline void BrightnessEffectConfig::SharedCtor() {
+mult_factor_ = nullptr;
 }
 
 BrightnessEffectConfig::~BrightnessEffectConfig() {
   // @@protoc_insertion_point(destructor:BrightnessEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void BrightnessEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void BrightnessEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete mult_factor_;
 }
 
@@ -1248,19 +1178,14 @@ void BrightnessEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) 
 void BrightnessEffectConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const BrightnessEffectConfig& BrightnessEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_BrightnessEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void BrightnessEffectConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:BrightnessEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && mult_factor_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && mult_factor_ != nullptr) {
     delete mult_factor_;
   }
   mult_factor_ = nullptr;
@@ -1270,47 +1195,48 @@ void BrightnessEffectConfig::Clear() {
 const char* BrightnessEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .FloatFunction mult_factor = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_mult_factor(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* BrightnessEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* BrightnessEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:BrightnessEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .FloatFunction mult_factor = 1;
-  if (this->has_mult_factor()) {
+  if (this->_internal_has_mult_factor()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1329,58 +1255,43 @@ size_t BrightnessEffectConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:BrightnessEffectConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction mult_factor = 1;
-  if (this->has_mult_factor()) {
+  if (this->_internal_has_mult_factor()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *mult_factor_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void BrightnessEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:BrightnessEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const BrightnessEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<BrightnessEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:BrightnessEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:BrightnessEffectConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData BrightnessEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    BrightnessEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*BrightnessEffectConfig::GetClassData() const { return &_class_data_; }
+
+void BrightnessEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<BrightnessEffectConfig *>(to)->MergeFrom(
+      static_cast<const BrightnessEffectConfig &>(from));
 }
+
 
 void BrightnessEffectConfig::MergeFrom(const BrightnessEffectConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:BrightnessEffectConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_mult_factor()) {
+  if (from._internal_has_mult_factor()) {
     _internal_mutable_mult_factor()->::FloatFunction::MergeFrom(from._internal_mult_factor());
   }
-}
-
-void BrightnessEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:BrightnessEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void BrightnessEffectConfig::CopyFrom(const BrightnessEffectConfig& from) {
@@ -1396,14 +1307,15 @@ bool BrightnessEffectConfig::IsInitialized() const {
 
 void BrightnessEffectConfig::InternalSwap(BrightnessEffectConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(mult_factor_, other->mult_factor_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata BrightnessEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[3]);
 }
-
 
 // ===================================================================
 
@@ -1417,15 +1329,18 @@ HueEffectConfig::_Internal::offset_factor(const HueEffectConfig* msg) {
   return *msg->offset_factor_;
 }
 void HueEffectConfig::clear_offset_factor() {
-  if (GetArena() == nullptr && offset_factor_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && offset_factor_ != nullptr) {
     delete offset_factor_;
   }
   offset_factor_ = nullptr;
 }
-HueEffectConfig::HueEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+HueEffectConfig::HueEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:HueEffectConfig)
 }
 HueEffectConfig::HueEffectConfig(const HueEffectConfig& from)
@@ -1439,19 +1354,19 @@ HueEffectConfig::HueEffectConfig(const HueEffectConfig& from)
   // @@protoc_insertion_point(copy_constructor:HueEffectConfig)
 }
 
-void HueEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_HueEffectConfig_effects_2eproto.base);
-  offset_factor_ = nullptr;
+inline void HueEffectConfig::SharedCtor() {
+offset_factor_ = nullptr;
 }
 
 HueEffectConfig::~HueEffectConfig() {
   // @@protoc_insertion_point(destructor:HueEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void HueEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void HueEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete offset_factor_;
 }
 
@@ -1464,19 +1379,14 @@ void HueEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void HueEffectConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const HueEffectConfig& HueEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_HueEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void HueEffectConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:HueEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && offset_factor_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && offset_factor_ != nullptr) {
     delete offset_factor_;
   }
   offset_factor_ = nullptr;
@@ -1486,47 +1396,48 @@ void HueEffectConfig::Clear() {
 const char* HueEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .FloatFunction offset_factor = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_offset_factor(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* HueEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* HueEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:HueEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .FloatFunction offset_factor = 1;
-  if (this->has_offset_factor()) {
+  if (this->_internal_has_offset_factor()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1545,58 +1456,43 @@ size_t HueEffectConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:HueEffectConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction offset_factor = 1;
-  if (this->has_offset_factor()) {
+  if (this->_internal_has_offset_factor()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *offset_factor_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void HueEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:HueEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const HueEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<HueEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:HueEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:HueEffectConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData HueEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    HueEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*HueEffectConfig::GetClassData() const { return &_class_data_; }
+
+void HueEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<HueEffectConfig *>(to)->MergeFrom(
+      static_cast<const HueEffectConfig &>(from));
 }
+
 
 void HueEffectConfig::MergeFrom(const HueEffectConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:HueEffectConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_offset_factor()) {
+  if (from._internal_has_offset_factor()) {
     _internal_mutable_offset_factor()->::FloatFunction::MergeFrom(from._internal_offset_factor());
   }
-}
-
-void HueEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:HueEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void HueEffectConfig::CopyFrom(const HueEffectConfig& from) {
@@ -1612,14 +1508,15 @@ bool HueEffectConfig::IsInitialized() const {
 
 void HueEffectConfig::InternalSwap(HueEffectConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(offset_factor_, other->offset_factor_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata HueEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[4]);
 }
-
 
 // ===================================================================
 
@@ -1633,15 +1530,18 @@ SaturationEffectConfig::_Internal::mult_factor(const SaturationEffectConfig* msg
   return *msg->mult_factor_;
 }
 void SaturationEffectConfig::clear_mult_factor() {
-  if (GetArena() == nullptr && mult_factor_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && mult_factor_ != nullptr) {
     delete mult_factor_;
   }
   mult_factor_ = nullptr;
 }
-SaturationEffectConfig::SaturationEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SaturationEffectConfig::SaturationEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:SaturationEffectConfig)
 }
 SaturationEffectConfig::SaturationEffectConfig(const SaturationEffectConfig& from)
@@ -1655,19 +1555,19 @@ SaturationEffectConfig::SaturationEffectConfig(const SaturationEffectConfig& fro
   // @@protoc_insertion_point(copy_constructor:SaturationEffectConfig)
 }
 
-void SaturationEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SaturationEffectConfig_effects_2eproto.base);
-  mult_factor_ = nullptr;
+inline void SaturationEffectConfig::SharedCtor() {
+mult_factor_ = nullptr;
 }
 
 SaturationEffectConfig::~SaturationEffectConfig() {
   // @@protoc_insertion_point(destructor:SaturationEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SaturationEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SaturationEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete mult_factor_;
 }
 
@@ -1680,19 +1580,14 @@ void SaturationEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) 
 void SaturationEffectConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SaturationEffectConfig& SaturationEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SaturationEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SaturationEffectConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:SaturationEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && mult_factor_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && mult_factor_ != nullptr) {
     delete mult_factor_;
   }
   mult_factor_ = nullptr;
@@ -1702,47 +1597,48 @@ void SaturationEffectConfig::Clear() {
 const char* SaturationEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .FloatFunction mult_factor = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_mult_factor(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SaturationEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SaturationEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SaturationEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .FloatFunction mult_factor = 1;
-  if (this->has_mult_factor()) {
+  if (this->_internal_has_mult_factor()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1761,58 +1657,43 @@ size_t SaturationEffectConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SaturationEffectConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction mult_factor = 1;
-  if (this->has_mult_factor()) {
+  if (this->_internal_has_mult_factor()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *mult_factor_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SaturationEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SaturationEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SaturationEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SaturationEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SaturationEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SaturationEffectConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SaturationEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SaturationEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SaturationEffectConfig::GetClassData() const { return &_class_data_; }
+
+void SaturationEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SaturationEffectConfig *>(to)->MergeFrom(
+      static_cast<const SaturationEffectConfig &>(from));
 }
+
 
 void SaturationEffectConfig::MergeFrom(const SaturationEffectConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SaturationEffectConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_mult_factor()) {
+  if (from._internal_has_mult_factor()) {
     _internal_mutable_mult_factor()->::FloatFunction::MergeFrom(from._internal_mult_factor());
   }
-}
-
-void SaturationEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SaturationEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SaturationEffectConfig::CopyFrom(const SaturationEffectConfig& from) {
@@ -1828,554 +1709,15 @@ bool SaturationEffectConfig::IsInitialized() const {
 
 void SaturationEffectConfig::InternalSwap(SaturationEffectConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(mult_factor_, other->mult_factor_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SaturationEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[5]);
 }
-
-
-// ===================================================================
-
-class SegmentEffectConfig::_Internal {
- public:
-  static const ::FloatFunction& start(const SegmentEffectConfig* msg);
-  static const ::FloatFunction& end(const SegmentEffectConfig* msg);
-};
-
-const ::FloatFunction&
-SegmentEffectConfig::_Internal::start(const SegmentEffectConfig* msg) {
-  return *msg->start_;
-}
-const ::FloatFunction&
-SegmentEffectConfig::_Internal::end(const SegmentEffectConfig* msg) {
-  return *msg->end_;
-}
-void SegmentEffectConfig::clear_start() {
-  if (GetArena() == nullptr && start_ != nullptr) {
-    delete start_;
-  }
-  start_ = nullptr;
-}
-void SegmentEffectConfig::clear_end() {
-  if (GetArena() == nullptr && end_ != nullptr) {
-    delete end_;
-  }
-  end_ = nullptr;
-}
-SegmentEffectConfig::SegmentEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:SegmentEffectConfig)
-}
-SegmentEffectConfig::SegmentEffectConfig(const SegmentEffectConfig& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_start()) {
-    start_ = new ::FloatFunction(*from.start_);
-  } else {
-    start_ = nullptr;
-  }
-  if (from._internal_has_end()) {
-    end_ = new ::FloatFunction(*from.end_);
-  } else {
-    end_ = nullptr;
-  }
-  // @@protoc_insertion_point(copy_constructor:SegmentEffectConfig)
-}
-
-void SegmentEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SegmentEffectConfig_effects_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&start_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&end_) -
-      reinterpret_cast<char*>(&start_)) + sizeof(end_));
-}
-
-SegmentEffectConfig::~SegmentEffectConfig() {
-  // @@protoc_insertion_point(destructor:SegmentEffectConfig)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void SegmentEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete start_;
-  if (this != internal_default_instance()) delete end_;
-}
-
-void SegmentEffectConfig::ArenaDtor(void* object) {
-  SegmentEffectConfig* _this = reinterpret_cast< SegmentEffectConfig* >(object);
-  (void)_this;
-}
-void SegmentEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void SegmentEffectConfig::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const SegmentEffectConfig& SegmentEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SegmentEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void SegmentEffectConfig::Clear() {
-// @@protoc_insertion_point(message_clear_start:SegmentEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  if (GetArena() == nullptr && start_ != nullptr) {
-    delete start_;
-  }
-  start_ = nullptr;
-  if (GetArena() == nullptr && end_ != nullptr) {
-    delete end_;
-  }
-  end_ = nullptr;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* SegmentEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // .FloatFunction start = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_start(), ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // .FloatFunction end = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_end(), ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* SegmentEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:SegmentEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .FloatFunction start = 1;
-  if (this->has_start()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::start(this), target, stream);
-  }
-
-  // .FloatFunction end = 2;
-  if (this->has_end()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::end(this), target, stream);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:SegmentEffectConfig)
-  return target;
-}
-
-size_t SegmentEffectConfig::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:SegmentEffectConfig)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // .FloatFunction start = 1;
-  if (this->has_start()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *start_);
-  }
-
-  // .FloatFunction end = 2;
-  if (this->has_end()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *end_);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void SegmentEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SegmentEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SegmentEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SegmentEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SegmentEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SegmentEffectConfig)
-    MergeFrom(*source);
-  }
-}
-
-void SegmentEffectConfig::MergeFrom(const SegmentEffectConfig& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:SegmentEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.has_start()) {
-    _internal_mutable_start()->::FloatFunction::MergeFrom(from._internal_start());
-  }
-  if (from.has_end()) {
-    _internal_mutable_end()->::FloatFunction::MergeFrom(from._internal_end());
-  }
-}
-
-void SegmentEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SegmentEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void SegmentEffectConfig::CopyFrom(const SegmentEffectConfig& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:SegmentEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool SegmentEffectConfig::IsInitialized() const {
-  return true;
-}
-
-void SegmentEffectConfig::InternalSwap(SegmentEffectConfig* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, end_)
-      + sizeof(SegmentEffectConfig::end_)
-      - PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, start_)>(
-          reinterpret_cast<char*>(&start_),
-          reinterpret_cast<char*>(&other->start_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata SegmentEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class GlitterEffectConfig::_Internal {
- public:
-  static const ::FloatFunction& intensity(const GlitterEffectConfig* msg);
-  static const ::FloatFunction& sat_mult_factor(const GlitterEffectConfig* msg);
-};
-
-const ::FloatFunction&
-GlitterEffectConfig::_Internal::intensity(const GlitterEffectConfig* msg) {
-  return *msg->intensity_;
-}
-const ::FloatFunction&
-GlitterEffectConfig::_Internal::sat_mult_factor(const GlitterEffectConfig* msg) {
-  return *msg->sat_mult_factor_;
-}
-void GlitterEffectConfig::clear_intensity() {
-  if (GetArena() == nullptr && intensity_ != nullptr) {
-    delete intensity_;
-  }
-  intensity_ = nullptr;
-}
-void GlitterEffectConfig::clear_sat_mult_factor() {
-  if (GetArena() == nullptr && sat_mult_factor_ != nullptr) {
-    delete sat_mult_factor_;
-  }
-  sat_mult_factor_ = nullptr;
-}
-GlitterEffectConfig::GlitterEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GlitterEffectConfig)
-}
-GlitterEffectConfig::GlitterEffectConfig(const GlitterEffectConfig& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_intensity()) {
-    intensity_ = new ::FloatFunction(*from.intensity_);
-  } else {
-    intensity_ = nullptr;
-  }
-  if (from._internal_has_sat_mult_factor()) {
-    sat_mult_factor_ = new ::FloatFunction(*from.sat_mult_factor_);
-  } else {
-    sat_mult_factor_ = nullptr;
-  }
-  // @@protoc_insertion_point(copy_constructor:GlitterEffectConfig)
-}
-
-void GlitterEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GlitterEffectConfig_effects_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&intensity_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&sat_mult_factor_) -
-      reinterpret_cast<char*>(&intensity_)) + sizeof(sat_mult_factor_));
-}
-
-GlitterEffectConfig::~GlitterEffectConfig() {
-  // @@protoc_insertion_point(destructor:GlitterEffectConfig)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void GlitterEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete intensity_;
-  if (this != internal_default_instance()) delete sat_mult_factor_;
-}
-
-void GlitterEffectConfig::ArenaDtor(void* object) {
-  GlitterEffectConfig* _this = reinterpret_cast< GlitterEffectConfig* >(object);
-  (void)_this;
-}
-void GlitterEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void GlitterEffectConfig::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const GlitterEffectConfig& GlitterEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GlitterEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void GlitterEffectConfig::Clear() {
-// @@protoc_insertion_point(message_clear_start:GlitterEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  if (GetArena() == nullptr && intensity_ != nullptr) {
-    delete intensity_;
-  }
-  intensity_ = nullptr;
-  if (GetArena() == nullptr && sat_mult_factor_ != nullptr) {
-    delete sat_mult_factor_;
-  }
-  sat_mult_factor_ = nullptr;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* GlitterEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // .FloatFunction intensity = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_intensity(), ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // .FloatFunction sat_mult_factor = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_sat_mult_factor(), ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* GlitterEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:GlitterEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .FloatFunction intensity = 1;
-  if (this->has_intensity()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::intensity(this), target, stream);
-  }
-
-  // .FloatFunction sat_mult_factor = 2;
-  if (this->has_sat_mult_factor()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::sat_mult_factor(this), target, stream);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:GlitterEffectConfig)
-  return target;
-}
-
-size_t GlitterEffectConfig::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:GlitterEffectConfig)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // .FloatFunction intensity = 1;
-  if (this->has_intensity()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *intensity_);
-  }
-
-  // .FloatFunction sat_mult_factor = 2;
-  if (this->has_sat_mult_factor()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *sat_mult_factor_);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void GlitterEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:GlitterEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const GlitterEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GlitterEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:GlitterEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:GlitterEffectConfig)
-    MergeFrom(*source);
-  }
-}
-
-void GlitterEffectConfig::MergeFrom(const GlitterEffectConfig& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:GlitterEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.has_intensity()) {
-    _internal_mutable_intensity()->::FloatFunction::MergeFrom(from._internal_intensity());
-  }
-  if (from.has_sat_mult_factor()) {
-    _internal_mutable_sat_mult_factor()->::FloatFunction::MergeFrom(from._internal_sat_mult_factor());
-  }
-}
-
-void GlitterEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:GlitterEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void GlitterEffectConfig::CopyFrom(const GlitterEffectConfig& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:GlitterEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool GlitterEffectConfig::IsInitialized() const {
-  return true;
-}
-
-void GlitterEffectConfig::InternalSwap(GlitterEffectConfig* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, sat_mult_factor_)
-      + sizeof(GlitterEffectConfig::sat_mult_factor_)
-      - PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, intensity_)>(
-          reinterpret_cast<char*>(&intensity_),
-          reinterpret_cast<char*>(&other->intensity_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata GlitterEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
 
 // ===================================================================
 
@@ -2394,21 +1736,24 @@ SnakeEffectConfig::_Internal::tail_length(const SnakeEffectConfig* msg) {
   return *msg->tail_length_;
 }
 void SnakeEffectConfig::clear_head() {
-  if (GetArena() == nullptr && head_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && head_ != nullptr) {
     delete head_;
   }
   head_ = nullptr;
 }
 void SnakeEffectConfig::clear_tail_length() {
-  if (GetArena() == nullptr && tail_length_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && tail_length_ != nullptr) {
     delete tail_length_;
   }
   tail_length_ = nullptr;
 }
-SnakeEffectConfig::SnakeEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SnakeEffectConfig::SnakeEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:SnakeEffectConfig)
 }
 SnakeEffectConfig::SnakeEffectConfig(const SnakeEffectConfig& from)
@@ -2427,22 +1772,22 @@ SnakeEffectConfig::SnakeEffectConfig(const SnakeEffectConfig& from)
   // @@protoc_insertion_point(copy_constructor:SnakeEffectConfig)
 }
 
-void SnakeEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SnakeEffectConfig_effects_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&head_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&tail_length_) -
-      reinterpret_cast<char*>(&head_)) + sizeof(tail_length_));
+inline void SnakeEffectConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&head_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&tail_length_) -
+    reinterpret_cast<char*>(&head_)) + sizeof(tail_length_));
 }
 
 SnakeEffectConfig::~SnakeEffectConfig() {
   // @@protoc_insertion_point(destructor:SnakeEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SnakeEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SnakeEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete head_;
   if (this != internal_default_instance()) delete tail_length_;
 }
@@ -2456,23 +1801,18 @@ void SnakeEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void SnakeEffectConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SnakeEffectConfig& SnakeEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SnakeEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SnakeEffectConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:SnakeEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && head_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && head_ != nullptr) {
     delete head_;
   }
   head_ = nullptr;
-  if (GetArena() == nullptr && tail_length_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && tail_length_ != nullptr) {
     delete tail_length_;
   }
   tail_length_ = nullptr;
@@ -2482,54 +1822,56 @@ void SnakeEffectConfig::Clear() {
 const char* SnakeEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .FloatFunction head = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_head(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .FloatFunction tail_length = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_tail_length(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SnakeEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SnakeEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SnakeEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .FloatFunction head = 1;
-  if (this->has_head()) {
+  if (this->_internal_has_head()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -2537,7 +1879,7 @@ failure:
   }
 
   // .FloatFunction tail_length = 2;
-  if (this->has_tail_length()) {
+  if (this->_internal_has_tail_length()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -2556,68 +1898,53 @@ size_t SnakeEffectConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SnakeEffectConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction head = 1;
-  if (this->has_head()) {
+  if (this->_internal_has_head()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *head_);
   }
 
   // .FloatFunction tail_length = 2;
-  if (this->has_tail_length()) {
+  if (this->_internal_has_tail_length()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *tail_length_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SnakeEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SnakeEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SnakeEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SnakeEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SnakeEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SnakeEffectConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SnakeEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SnakeEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SnakeEffectConfig::GetClassData() const { return &_class_data_; }
+
+void SnakeEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SnakeEffectConfig *>(to)->MergeFrom(
+      static_cast<const SnakeEffectConfig &>(from));
 }
+
 
 void SnakeEffectConfig::MergeFrom(const SnakeEffectConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SnakeEffectConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_head()) {
+  if (from._internal_has_head()) {
     _internal_mutable_head()->::FloatFunction::MergeFrom(from._internal_head());
   }
-  if (from.has_tail_length()) {
+  if (from._internal_has_tail_length()) {
     _internal_mutable_tail_length()->::FloatFunction::MergeFrom(from._internal_tail_length());
   }
-}
-
-void SnakeEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SnakeEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SnakeEffectConfig::CopyFrom(const SnakeEffectConfig& from) {
@@ -2633,7 +1960,7 @@ bool SnakeEffectConfig::IsInitialized() const {
 
 void SnakeEffectConfig::InternalSwap(SnakeEffectConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SnakeEffectConfig, tail_length_)
       + sizeof(SnakeEffectConfig::tail_length_)
@@ -2643,9 +1970,522 @@ void SnakeEffectConfig::InternalSwap(SnakeEffectConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SnakeEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[6]);
 }
 
+// ===================================================================
+
+class SegmentEffectConfig::_Internal {
+ public:
+  static const ::FloatFunction& start(const SegmentEffectConfig* msg);
+  static const ::FloatFunction& end(const SegmentEffectConfig* msg);
+};
+
+const ::FloatFunction&
+SegmentEffectConfig::_Internal::start(const SegmentEffectConfig* msg) {
+  return *msg->start_;
+}
+const ::FloatFunction&
+SegmentEffectConfig::_Internal::end(const SegmentEffectConfig* msg) {
+  return *msg->end_;
+}
+void SegmentEffectConfig::clear_start() {
+  if (GetArenaForAllocation() == nullptr && start_ != nullptr) {
+    delete start_;
+  }
+  start_ = nullptr;
+}
+void SegmentEffectConfig::clear_end() {
+  if (GetArenaForAllocation() == nullptr && end_ != nullptr) {
+    delete end_;
+  }
+  end_ = nullptr;
+}
+SegmentEffectConfig::SegmentEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:SegmentEffectConfig)
+}
+SegmentEffectConfig::SegmentEffectConfig(const SegmentEffectConfig& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_start()) {
+    start_ = new ::FloatFunction(*from.start_);
+  } else {
+    start_ = nullptr;
+  }
+  if (from._internal_has_end()) {
+    end_ = new ::FloatFunction(*from.end_);
+  } else {
+    end_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:SegmentEffectConfig)
+}
+
+inline void SegmentEffectConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&start_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&end_) -
+    reinterpret_cast<char*>(&start_)) + sizeof(end_));
+}
+
+SegmentEffectConfig::~SegmentEffectConfig() {
+  // @@protoc_insertion_point(destructor:SegmentEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void SegmentEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete start_;
+  if (this != internal_default_instance()) delete end_;
+}
+
+void SegmentEffectConfig::ArenaDtor(void* object) {
+  SegmentEffectConfig* _this = reinterpret_cast< SegmentEffectConfig* >(object);
+  (void)_this;
+}
+void SegmentEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SegmentEffectConfig::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void SegmentEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:SegmentEffectConfig)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && start_ != nullptr) {
+    delete start_;
+  }
+  start_ = nullptr;
+  if (GetArenaForAllocation() == nullptr && end_ != nullptr) {
+    delete end_;
+  }
+  end_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* SegmentEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .FloatFunction start = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_start(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // .FloatFunction end = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_end(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* SegmentEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:SegmentEffectConfig)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .FloatFunction start = 1;
+  if (this->_internal_has_start()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::start(this), target, stream);
+  }
+
+  // .FloatFunction end = 2;
+  if (this->_internal_has_end()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        2, _Internal::end(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:SegmentEffectConfig)
+  return target;
+}
+
+size_t SegmentEffectConfig::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:SegmentEffectConfig)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .FloatFunction start = 1;
+  if (this->_internal_has_start()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *start_);
+  }
+
+  // .FloatFunction end = 2;
+  if (this->_internal_has_end()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *end_);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SegmentEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SegmentEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SegmentEffectConfig::GetClassData() const { return &_class_data_; }
+
+void SegmentEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SegmentEffectConfig *>(to)->MergeFrom(
+      static_cast<const SegmentEffectConfig &>(from));
+}
+
+
+void SegmentEffectConfig::MergeFrom(const SegmentEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:SegmentEffectConfig)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_start()) {
+    _internal_mutable_start()->::FloatFunction::MergeFrom(from._internal_start());
+  }
+  if (from._internal_has_end()) {
+    _internal_mutable_end()->::FloatFunction::MergeFrom(from._internal_end());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void SegmentEffectConfig::CopyFrom(const SegmentEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:SegmentEffectConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SegmentEffectConfig::IsInitialized() const {
+  return true;
+}
+
+void SegmentEffectConfig::InternalSwap(SegmentEffectConfig* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, end_)
+      + sizeof(SegmentEffectConfig::end_)
+      - PROTOBUF_FIELD_OFFSET(SegmentEffectConfig, start_)>(
+          reinterpret_cast<char*>(&start_),
+          reinterpret_cast<char*>(&other->start_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata SegmentEffectConfig::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[7]);
+}
+
+// ===================================================================
+
+class GlitterEffectConfig::_Internal {
+ public:
+  static const ::FloatFunction& intensity(const GlitterEffectConfig* msg);
+  static const ::FloatFunction& sat_mult_factor(const GlitterEffectConfig* msg);
+};
+
+const ::FloatFunction&
+GlitterEffectConfig::_Internal::intensity(const GlitterEffectConfig* msg) {
+  return *msg->intensity_;
+}
+const ::FloatFunction&
+GlitterEffectConfig::_Internal::sat_mult_factor(const GlitterEffectConfig* msg) {
+  return *msg->sat_mult_factor_;
+}
+void GlitterEffectConfig::clear_intensity() {
+  if (GetArenaForAllocation() == nullptr && intensity_ != nullptr) {
+    delete intensity_;
+  }
+  intensity_ = nullptr;
+}
+void GlitterEffectConfig::clear_sat_mult_factor() {
+  if (GetArenaForAllocation() == nullptr && sat_mult_factor_ != nullptr) {
+    delete sat_mult_factor_;
+  }
+  sat_mult_factor_ = nullptr;
+}
+GlitterEffectConfig::GlitterEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor();
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
+  // @@protoc_insertion_point(arena_constructor:GlitterEffectConfig)
+}
+GlitterEffectConfig::GlitterEffectConfig(const GlitterEffectConfig& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_intensity()) {
+    intensity_ = new ::FloatFunction(*from.intensity_);
+  } else {
+    intensity_ = nullptr;
+  }
+  if (from._internal_has_sat_mult_factor()) {
+    sat_mult_factor_ = new ::FloatFunction(*from.sat_mult_factor_);
+  } else {
+    sat_mult_factor_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:GlitterEffectConfig)
+}
+
+inline void GlitterEffectConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&intensity_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&sat_mult_factor_) -
+    reinterpret_cast<char*>(&intensity_)) + sizeof(sat_mult_factor_));
+}
+
+GlitterEffectConfig::~GlitterEffectConfig() {
+  // @@protoc_insertion_point(destructor:GlitterEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+inline void GlitterEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete intensity_;
+  if (this != internal_default_instance()) delete sat_mult_factor_;
+}
+
+void GlitterEffectConfig::ArenaDtor(void* object) {
+  GlitterEffectConfig* _this = reinterpret_cast< GlitterEffectConfig* >(object);
+  (void)_this;
+}
+void GlitterEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void GlitterEffectConfig::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+
+void GlitterEffectConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:GlitterEffectConfig)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArenaForAllocation() == nullptr && intensity_ != nullptr) {
+    delete intensity_;
+  }
+  intensity_ = nullptr;
+  if (GetArenaForAllocation() == nullptr && sat_mult_factor_ != nullptr) {
+    delete sat_mult_factor_;
+  }
+  sat_mult_factor_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* GlitterEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // .FloatFunction intensity = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_intensity(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // .FloatFunction sat_mult_factor = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_sat_mult_factor(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* GlitterEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:GlitterEffectConfig)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .FloatFunction intensity = 1;
+  if (this->_internal_has_intensity()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::intensity(this), target, stream);
+  }
+
+  // .FloatFunction sat_mult_factor = 2;
+  if (this->_internal_has_sat_mult_factor()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        2, _Internal::sat_mult_factor(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:GlitterEffectConfig)
+  return target;
+}
+
+size_t GlitterEffectConfig::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:GlitterEffectConfig)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .FloatFunction intensity = 1;
+  if (this->_internal_has_intensity()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *intensity_);
+  }
+
+  // .FloatFunction sat_mult_factor = 2;
+  if (this->_internal_has_sat_mult_factor()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *sat_mult_factor_);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GlitterEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    GlitterEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GlitterEffectConfig::GetClassData() const { return &_class_data_; }
+
+void GlitterEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<GlitterEffectConfig *>(to)->MergeFrom(
+      static_cast<const GlitterEffectConfig &>(from));
+}
+
+
+void GlitterEffectConfig::MergeFrom(const GlitterEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:GlitterEffectConfig)
+  GOOGLE_DCHECK_NE(&from, this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_intensity()) {
+    _internal_mutable_intensity()->::FloatFunction::MergeFrom(from._internal_intensity());
+  }
+  if (from._internal_has_sat_mult_factor()) {
+    _internal_mutable_sat_mult_factor()->::FloatFunction::MergeFrom(from._internal_sat_mult_factor());
+  }
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void GlitterEffectConfig::CopyFrom(const GlitterEffectConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:GlitterEffectConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GlitterEffectConfig::IsInitialized() const {
+  return true;
+}
+
+void GlitterEffectConfig::InternalSwap(GlitterEffectConfig* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, sat_mult_factor_)
+      + sizeof(GlitterEffectConfig::sat_mult_factor_)
+      - PROTOBUF_FIELD_OFFSET(GlitterEffectConfig, intensity_)>(
+          reinterpret_cast<char*>(&intensity_),
+          reinterpret_cast<char*>(&other->intensity_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata GlitterEffectConfig::GetMetadata() const {
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[8]);
+}
 
 // ===================================================================
 
@@ -2669,27 +2509,30 @@ AlternateEffectConfig::_Internal::brightness_mult(const AlternateEffectConfig* m
   return *msg->brightness_mult_;
 }
 void AlternateEffectConfig::clear_hue_offset() {
-  if (GetArena() == nullptr && hue_offset_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && hue_offset_ != nullptr) {
     delete hue_offset_;
   }
   hue_offset_ = nullptr;
 }
 void AlternateEffectConfig::clear_sat_mult() {
-  if (GetArena() == nullptr && sat_mult_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && sat_mult_ != nullptr) {
     delete sat_mult_;
   }
   sat_mult_ = nullptr;
 }
 void AlternateEffectConfig::clear_brightness_mult() {
-  if (GetArena() == nullptr && brightness_mult_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && brightness_mult_ != nullptr) {
     delete brightness_mult_;
   }
   brightness_mult_ = nullptr;
 }
-AlternateEffectConfig::AlternateEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+AlternateEffectConfig::AlternateEffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:AlternateEffectConfig)
 }
 AlternateEffectConfig::AlternateEffectConfig(const AlternateEffectConfig& from)
@@ -2714,22 +2557,22 @@ AlternateEffectConfig::AlternateEffectConfig(const AlternateEffectConfig& from)
   // @@protoc_insertion_point(copy_constructor:AlternateEffectConfig)
 }
 
-void AlternateEffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AlternateEffectConfig_effects_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&hue_offset_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&numberofpixels_) -
-      reinterpret_cast<char*>(&hue_offset_)) + sizeof(numberofpixels_));
+inline void AlternateEffectConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&hue_offset_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&numberofpixels_) -
+    reinterpret_cast<char*>(&hue_offset_)) + sizeof(numberofpixels_));
 }
 
 AlternateEffectConfig::~AlternateEffectConfig() {
   // @@protoc_insertion_point(destructor:AlternateEffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AlternateEffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void AlternateEffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete hue_offset_;
   if (this != internal_default_instance()) delete sat_mult_;
   if (this != internal_default_instance()) delete brightness_mult_;
@@ -2744,27 +2587,22 @@ void AlternateEffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void AlternateEffectConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const AlternateEffectConfig& AlternateEffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AlternateEffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void AlternateEffectConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:AlternateEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && hue_offset_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && hue_offset_ != nullptr) {
     delete hue_offset_;
   }
   hue_offset_ = nullptr;
-  if (GetArena() == nullptr && sat_mult_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && sat_mult_ != nullptr) {
     delete sat_mult_;
   }
   sat_mult_ = nullptr;
-  if (GetArena() == nullptr && brightness_mult_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && brightness_mult_ != nullptr) {
     delete brightness_mult_;
   }
   brightness_mult_ = nullptr;
@@ -2775,74 +2613,78 @@ void AlternateEffectConfig::Clear() {
 const char* AlternateEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // uint32 numberOfPixels = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           numberofpixels_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .FloatFunction hue_offset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_hue_offset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .FloatFunction sat_mult = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_sat_mult(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .FloatFunction brightness_mult = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_brightness_mult(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AlternateEffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AlternateEffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AlternateEffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 numberOfPixels = 1;
-  if (this->numberofpixels() != 0) {
+  if (this->_internal_numberofpixels() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_numberofpixels(), target);
   }
 
   // .FloatFunction hue_offset = 2;
-  if (this->has_hue_offset()) {
+  if (this->_internal_has_hue_offset()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -2850,7 +2692,7 @@ failure:
   }
 
   // .FloatFunction sat_mult = 3;
-  if (this->has_sat_mult()) {
+  if (this->_internal_has_sat_mult()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -2858,7 +2700,7 @@ failure:
   }
 
   // .FloatFunction brightness_mult = 4;
-  if (this->has_brightness_mult()) {
+  if (this->_internal_has_brightness_mult()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -2877,88 +2719,71 @@ size_t AlternateEffectConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:AlternateEffectConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction hue_offset = 2;
-  if (this->has_hue_offset()) {
+  if (this->_internal_has_hue_offset()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *hue_offset_);
   }
 
   // .FloatFunction sat_mult = 3;
-  if (this->has_sat_mult()) {
+  if (this->_internal_has_sat_mult()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *sat_mult_);
   }
 
   // .FloatFunction brightness_mult = 4;
-  if (this->has_brightness_mult()) {
+  if (this->_internal_has_brightness_mult()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *brightness_mult_);
   }
 
   // uint32 numberOfPixels = 1;
-  if (this->numberofpixels() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_numberofpixels());
+  if (this->_internal_numberofpixels() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_numberofpixels());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void AlternateEffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:AlternateEffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AlternateEffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AlternateEffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:AlternateEffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:AlternateEffectConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AlternateEffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    AlternateEffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AlternateEffectConfig::GetClassData() const { return &_class_data_; }
+
+void AlternateEffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<AlternateEffectConfig *>(to)->MergeFrom(
+      static_cast<const AlternateEffectConfig &>(from));
 }
+
 
 void AlternateEffectConfig::MergeFrom(const AlternateEffectConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:AlternateEffectConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_hue_offset()) {
+  if (from._internal_has_hue_offset()) {
     _internal_mutable_hue_offset()->::FloatFunction::MergeFrom(from._internal_hue_offset());
   }
-  if (from.has_sat_mult()) {
+  if (from._internal_has_sat_mult()) {
     _internal_mutable_sat_mult()->::FloatFunction::MergeFrom(from._internal_sat_mult());
   }
-  if (from.has_brightness_mult()) {
+  if (from._internal_has_brightness_mult()) {
     _internal_mutable_brightness_mult()->::FloatFunction::MergeFrom(from._internal_brightness_mult());
   }
-  if (from.numberofpixels() != 0) {
+  if (from._internal_numberofpixels() != 0) {
     _internal_set_numberofpixels(from._internal_numberofpixels());
   }
-}
-
-void AlternateEffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:AlternateEffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AlternateEffectConfig::CopyFrom(const AlternateEffectConfig& from) {
@@ -2974,7 +2799,7 @@ bool AlternateEffectConfig::IsInitialized() const {
 
 void AlternateEffectConfig::InternalSwap(AlternateEffectConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(AlternateEffectConfig, numberofpixels_)
       + sizeof(AlternateEffectConfig::numberofpixels_)
@@ -2984,9 +2809,10 @@ void AlternateEffectConfig::InternalSwap(AlternateEffectConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AlternateEffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[9]);
 }
-
 
 // ===================================================================
 
@@ -2994,19 +2820,25 @@ class EffectConfig::_Internal {
  public:
 };
 
-EffectConfig::EffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+EffectConfig::EffectConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:EffectConfig)
 }
 EffectConfig::EffectConfig(const EffectConfig& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   segments_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    segments_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (!from._internal_segments().empty()) {
     segments_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_segments(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   ::memcpy(&start_time_, &from.start_time_,
     static_cast<size_t>(reinterpret_cast<char*>(&repeat_end_) -
@@ -3014,23 +2846,26 @@ EffectConfig::EffectConfig(const EffectConfig& from)
   // @@protoc_insertion_point(copy_constructor:EffectConfig)
 }
 
-void EffectConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_EffectConfig_effects_2eproto.base);
-  segments_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&start_time_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&repeat_end_) -
-      reinterpret_cast<char*>(&start_time_)) + sizeof(repeat_end_));
+inline void EffectConfig::SharedCtor() {
+segments_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  segments_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
+#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&start_time_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&repeat_end_) -
+    reinterpret_cast<char*>(&start_time_)) + sizeof(repeat_end_));
 }
 
 EffectConfig::~EffectConfig() {
   // @@protoc_insertion_point(destructor:EffectConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void EffectConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void EffectConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   segments_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -3043,15 +2878,10 @@ void EffectConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void EffectConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const EffectConfig& EffectConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_EffectConfig_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void EffectConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:EffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -3065,96 +2895,102 @@ void EffectConfig::Clear() {
 const char* EffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // uint32 start_time = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           start_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // uint32 end_time = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           end_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // string segments = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_segments();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "EffectConfig.segments"));
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float repeat_num = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 37)) {
           repeat_num_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float repeat_start = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 45)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 45)) {
           repeat_start_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float repeat_end = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 53)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 53)) {
           repeat_end_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* EffectConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* EffectConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:EffectConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 start_time = 1;
-  if (this->start_time() != 0) {
+  if (this->_internal_start_time() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_start_time(), target);
   }
 
   // uint32 end_time = 2;
-  if (this->end_time() != 0) {
+  if (this->_internal_end_time() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_end_time(), target);
   }
 
   // string segments = 3;
-  if (this->segments().size() > 0) {
+  if (!this->_internal_segments().empty()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_segments().data(), static_cast<int>(this->_internal_segments().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
@@ -3164,19 +3000,31 @@ failure:
   }
 
   // float repeat_num = 4;
-  if (!(this->repeat_num() <= 0 && this->repeat_num() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_num = this->_internal_repeat_num();
+  uint32_t raw_repeat_num;
+  memcpy(&raw_repeat_num, &tmp_repeat_num, sizeof(tmp_repeat_num));
+  if (raw_repeat_num != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_repeat_num(), target);
   }
 
   // float repeat_start = 5;
-  if (!(this->repeat_start() <= 0 && this->repeat_start() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_start = this->_internal_repeat_start();
+  uint32_t raw_repeat_start;
+  memcpy(&raw_repeat_start, &tmp_repeat_start, sizeof(tmp_repeat_start));
+  if (raw_repeat_start != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_repeat_start(), target);
   }
 
   // float repeat_end = 6;
-  if (!(this->repeat_end() <= 0 && this->repeat_end() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_end = this->_internal_repeat_end();
+  uint32_t raw_repeat_end;
+  memcpy(&raw_repeat_end, &tmp_repeat_end, sizeof(tmp_repeat_end));
+  if (raw_repeat_end != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_repeat_end(), target);
   }
@@ -3193,102 +3041,107 @@ size_t EffectConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:EffectConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // string segments = 3;
-  if (this->segments().size() > 0) {
+  if (!this->_internal_segments().empty()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_segments());
   }
 
   // uint32 start_time = 1;
-  if (this->start_time() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_start_time());
+  if (this->_internal_start_time() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_start_time());
   }
 
   // uint32 end_time = 2;
-  if (this->end_time() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_end_time());
+  if (this->_internal_end_time() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_end_time());
   }
 
   // float repeat_num = 4;
-  if (!(this->repeat_num() <= 0 && this->repeat_num() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_num = this->_internal_repeat_num();
+  uint32_t raw_repeat_num;
+  memcpy(&raw_repeat_num, &tmp_repeat_num, sizeof(tmp_repeat_num));
+  if (raw_repeat_num != 0) {
     total_size += 1 + 4;
   }
 
   // float repeat_start = 5;
-  if (!(this->repeat_start() <= 0 && this->repeat_start() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_start = this->_internal_repeat_start();
+  uint32_t raw_repeat_start;
+  memcpy(&raw_repeat_start, &tmp_repeat_start, sizeof(tmp_repeat_start));
+  if (raw_repeat_start != 0) {
     total_size += 1 + 4;
   }
 
   // float repeat_end = 6;
-  if (!(this->repeat_end() <= 0 && this->repeat_end() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_end = this->_internal_repeat_end();
+  uint32_t raw_repeat_end;
+  memcpy(&raw_repeat_end, &tmp_repeat_end, sizeof(tmp_repeat_end));
+  if (raw_repeat_end != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void EffectConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:EffectConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const EffectConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<EffectConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:EffectConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:EffectConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData EffectConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    EffectConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*EffectConfig::GetClassData() const { return &_class_data_; }
+
+void EffectConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<EffectConfig *>(to)->MergeFrom(
+      static_cast<const EffectConfig &>(from));
 }
+
 
 void EffectConfig::MergeFrom(const EffectConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:EffectConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.segments().size() > 0) {
+  if (!from._internal_segments().empty()) {
     _internal_set_segments(from._internal_segments());
   }
-  if (from.start_time() != 0) {
+  if (from._internal_start_time() != 0) {
     _internal_set_start_time(from._internal_start_time());
   }
-  if (from.end_time() != 0) {
+  if (from._internal_end_time() != 0) {
     _internal_set_end_time(from._internal_end_time());
   }
-  if (!(from.repeat_num() <= 0 && from.repeat_num() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_num = from._internal_repeat_num();
+  uint32_t raw_repeat_num;
+  memcpy(&raw_repeat_num, &tmp_repeat_num, sizeof(tmp_repeat_num));
+  if (raw_repeat_num != 0) {
     _internal_set_repeat_num(from._internal_repeat_num());
   }
-  if (!(from.repeat_start() <= 0 && from.repeat_start() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_start = from._internal_repeat_start();
+  uint32_t raw_repeat_start;
+  memcpy(&raw_repeat_start, &tmp_repeat_start, sizeof(tmp_repeat_start));
+  if (raw_repeat_start != 0) {
     _internal_set_repeat_start(from._internal_repeat_start());
   }
-  if (!(from.repeat_end() <= 0 && from.repeat_end() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeat_end = from._internal_repeat_end();
+  uint32_t raw_repeat_end;
+  memcpy(&raw_repeat_end, &tmp_repeat_end, sizeof(tmp_repeat_end));
+  if (raw_repeat_end != 0) {
     _internal_set_repeat_end(from._internal_repeat_end());
   }
-}
-
-void EffectConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:EffectConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void EffectConfig::CopyFrom(const EffectConfig& from) {
@@ -3304,8 +3157,14 @@ bool EffectConfig::IsInitialized() const {
 
 void EffectConfig::InternalSwap(EffectConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  segments_.Swap(&other->segments_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &segments_, lhs_arena,
+      &other->segments_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(EffectConfig, repeat_end_)
       + sizeof(EffectConfig::repeat_end_)
@@ -3315,9 +3174,10 @@ void EffectConfig::InternalSwap(EffectConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata EffectConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[10]);
 }
-
 
 // ===================================================================
 
@@ -3329,6 +3189,7 @@ class EffectProto::_Internal {
   static const ::BrightnessEffectConfig& brightness(const EffectProto* msg);
   static const ::HueEffectConfig& hue(const EffectProto* msg);
   static const ::SaturationEffectConfig& saturation(const EffectProto* msg);
+  static const ::SnakeEffectConfig& snake(const EffectProto* msg);
 };
 
 const ::EffectConfig&
@@ -3355,12 +3216,16 @@ const ::SaturationEffectConfig&
 EffectProto::_Internal::saturation(const EffectProto* msg) {
   return *msg->effect_.saturation_;
 }
+const ::SnakeEffectConfig&
+EffectProto::_Internal::snake(const EffectProto* msg) {
+  return *msg->effect_.snake_;
+}
 void EffectProto::set_allocated_const_color(::ConstColorEffectConfig* const_color) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_effect();
   if (const_color) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(const_color);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::ConstColorEffectConfig>::GetOwningArena(const_color);
     if (message_arena != submessage_arena) {
       const_color = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, const_color, submessage_arena);
@@ -3371,11 +3236,11 @@ void EffectProto::set_allocated_const_color(::ConstColorEffectConfig* const_colo
   // @@protoc_insertion_point(field_set_allocated:EffectProto.const_color)
 }
 void EffectProto::set_allocated_rainbow(::RainbowEffectConfig* rainbow) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_effect();
   if (rainbow) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(rainbow);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::RainbowEffectConfig>::GetOwningArena(rainbow);
     if (message_arena != submessage_arena) {
       rainbow = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, rainbow, submessage_arena);
@@ -3386,11 +3251,11 @@ void EffectProto::set_allocated_rainbow(::RainbowEffectConfig* rainbow) {
   // @@protoc_insertion_point(field_set_allocated:EffectProto.rainbow)
 }
 void EffectProto::set_allocated_brightness(::BrightnessEffectConfig* brightness) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_effect();
   if (brightness) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(brightness);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::BrightnessEffectConfig>::GetOwningArena(brightness);
     if (message_arena != submessage_arena) {
       brightness = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, brightness, submessage_arena);
@@ -3401,11 +3266,11 @@ void EffectProto::set_allocated_brightness(::BrightnessEffectConfig* brightness)
   // @@protoc_insertion_point(field_set_allocated:EffectProto.brightness)
 }
 void EffectProto::set_allocated_hue(::HueEffectConfig* hue) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_effect();
   if (hue) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(hue);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::HueEffectConfig>::GetOwningArena(hue);
     if (message_arena != submessage_arena) {
       hue = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, hue, submessage_arena);
@@ -3416,11 +3281,11 @@ void EffectProto::set_allocated_hue(::HueEffectConfig* hue) {
   // @@protoc_insertion_point(field_set_allocated:EffectProto.hue)
 }
 void EffectProto::set_allocated_saturation(::SaturationEffectConfig* saturation) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_effect();
   if (saturation) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(saturation);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::SaturationEffectConfig>::GetOwningArena(saturation);
     if (message_arena != submessage_arena) {
       saturation = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, saturation, submessage_arena);
@@ -3430,10 +3295,28 @@ void EffectProto::set_allocated_saturation(::SaturationEffectConfig* saturation)
   }
   // @@protoc_insertion_point(field_set_allocated:EffectProto.saturation)
 }
-EffectProto::EffectProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+void EffectProto::set_allocated_snake(::SnakeEffectConfig* snake) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_effect();
+  if (snake) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::SnakeEffectConfig>::GetOwningArena(snake);
+    if (message_arena != submessage_arena) {
+      snake = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, snake, submessage_arena);
+    }
+    set_has_snake();
+    effect_.snake_ = snake;
+  }
+  // @@protoc_insertion_point(field_set_allocated:EffectProto.snake)
+}
+EffectProto::EffectProto(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:EffectProto)
 }
 EffectProto::EffectProto(const EffectProto& from)
@@ -3466,6 +3349,10 @@ EffectProto::EffectProto(const EffectProto& from)
       _internal_mutable_saturation()->::SaturationEffectConfig::MergeFrom(from._internal_saturation());
       break;
     }
+    case kSnake: {
+      _internal_mutable_snake()->::SnakeEffectConfig::MergeFrom(from._internal_snake());
+      break;
+    }
     case EFFECT_NOT_SET: {
       break;
     }
@@ -3473,20 +3360,20 @@ EffectProto::EffectProto(const EffectProto& from)
   // @@protoc_insertion_point(copy_constructor:EffectProto)
 }
 
-void EffectProto::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_EffectProto_effects_2eproto.base);
-  effect_config_ = nullptr;
-  clear_has_effect();
+inline void EffectProto::SharedCtor() {
+effect_config_ = nullptr;
+clear_has_effect();
 }
 
 EffectProto::~EffectProto() {
   // @@protoc_insertion_point(destructor:EffectProto)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void EffectProto::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void EffectProto::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete effect_config_;
   if (has_effect()) {
     clear_effect();
@@ -3502,42 +3389,43 @@ void EffectProto::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void EffectProto::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const EffectProto& EffectProto::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_EffectProto_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void EffectProto::clear_effect() {
 // @@protoc_insertion_point(one_of_clear_start:EffectProto)
   switch (effect_case()) {
     case kConstColor: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete effect_.const_color_;
       }
       break;
     }
     case kRainbow: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete effect_.rainbow_;
       }
       break;
     }
     case kBrightness: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete effect_.brightness_;
       }
       break;
     }
     case kHue: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete effect_.hue_;
       }
       break;
     }
     case kSaturation: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete effect_.saturation_;
+      }
+      break;
+    }
+    case kSnake: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete effect_.snake_;
       }
       break;
     }
@@ -3551,11 +3439,11 @@ void EffectProto::clear_effect() {
 
 void EffectProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:EffectProto)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && effect_config_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && effect_config_ != nullptr) {
     delete effect_config_;
   }
   effect_config_ = nullptr;
@@ -3566,82 +3454,96 @@ void EffectProto::Clear() {
 const char* EffectProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .EffectConfig effect_config = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_effect_config(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .ConstColorEffectConfig const_color = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_const_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .RainbowEffectConfig rainbow = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_rainbow(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .BrightnessEffectConfig brightness = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_brightness(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .HueEffectConfig hue = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_hue(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .SaturationEffectConfig saturation = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_saturation(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
+      // .SnakeEffectConfig snake = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_snake(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
         continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* EffectProto::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* EffectProto::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:EffectProto)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .EffectConfig effect_config = 1;
-  if (this->has_effect_config()) {
+  if (this->_internal_has_effect_config()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -3688,6 +3590,14 @@ failure:
         6, _Internal::saturation(this), target, stream);
   }
 
+  // .SnakeEffectConfig snake = 7;
+  if (_internal_has_snake()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        7, _Internal::snake(this), target, stream);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -3700,12 +3610,12 @@ size_t EffectProto::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:EffectProto)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .EffectConfig effect_config = 1;
-  if (this->has_effect_config()) {
+  if (this->_internal_has_effect_config()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *effect_config_);
@@ -3747,42 +3657,40 @@ size_t EffectProto::ByteSizeLong() const {
           *effect_.saturation_);
       break;
     }
+    // .SnakeEffectConfig snake = 7;
+    case kSnake: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *effect_.snake_);
+      break;
+    }
     case EFFECT_NOT_SET: {
       break;
     }
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void EffectProto::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:EffectProto)
-  GOOGLE_DCHECK_NE(&from, this);
-  const EffectProto* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<EffectProto>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:EffectProto)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:EffectProto)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData EffectProto::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    EffectProto::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*EffectProto::GetClassData() const { return &_class_data_; }
+
+void EffectProto::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<EffectProto *>(to)->MergeFrom(
+      static_cast<const EffectProto &>(from));
 }
+
 
 void EffectProto::MergeFrom(const EffectProto& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:EffectProto)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_effect_config()) {
+  if (from._internal_has_effect_config()) {
     _internal_mutable_effect_config()->::EffectConfig::MergeFrom(from._internal_effect_config());
   }
   switch (from.effect_case()) {
@@ -3806,17 +3714,15 @@ void EffectProto::MergeFrom(const EffectProto& from) {
       _internal_mutable_saturation()->::SaturationEffectConfig::MergeFrom(from._internal_saturation());
       break;
     }
+    case kSnake: {
+      _internal_mutable_snake()->::SnakeEffectConfig::MergeFrom(from._internal_snake());
+      break;
+    }
     case EFFECT_NOT_SET: {
       break;
     }
   }
-}
-
-void EffectProto::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:EffectProto)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void EffectProto::CopyFrom(const EffectProto& from) {
@@ -3832,16 +3738,17 @@ bool EffectProto::IsInitialized() const {
 
 void EffectProto::InternalSwap(EffectProto* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(effect_config_, other->effect_config_);
   swap(effect_, other->effect_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata EffectProto::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[11]);
 }
-
 
 // ===================================================================
 
@@ -3849,11 +3756,14 @@ class AnimationProto::_Internal {
  public:
 };
 
-AnimationProto::AnimationProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+AnimationProto::AnimationProto(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   effects_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:AnimationProto)
 }
 AnimationProto::AnimationProto(const AnimationProto& from)
@@ -3866,22 +3776,22 @@ AnimationProto::AnimationProto(const AnimationProto& from)
   // @@protoc_insertion_point(copy_constructor:AnimationProto)
 }
 
-void AnimationProto::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AnimationProto_effects_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&duration_ms_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&num_repeats_) -
-      reinterpret_cast<char*>(&duration_ms_)) + sizeof(num_repeats_));
+inline void AnimationProto::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&duration_ms_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&num_repeats_) -
+    reinterpret_cast<char*>(&duration_ms_)) + sizeof(num_repeats_));
 }
 
 AnimationProto::~AnimationProto() {
   // @@protoc_insertion_point(destructor:AnimationProto)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AnimationProto::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void AnimationProto::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void AnimationProto::ArenaDtor(void* object) {
@@ -3893,15 +3803,10 @@ void AnimationProto::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void AnimationProto::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const AnimationProto& AnimationProto::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AnimationProto_effects_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void AnimationProto::Clear() {
 // @@protoc_insertion_point(message_clear_start:AnimationProto)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -3915,13 +3820,12 @@ void AnimationProto::Clear() {
 const char* AnimationProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // repeated .EffectProto effects = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -3929,48 +3833,52 @@ const char* AnimationProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // uint32 duration_ms = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           duration_ms_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // uint32 num_repeats = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           num_repeats_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AnimationProto::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AnimationProto::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AnimationProto)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .EffectProto effects = 1;
@@ -3982,13 +3890,13 @@ failure:
   }
 
   // uint32 duration_ms = 2;
-  if (this->duration_ms() != 0) {
+  if (this->_internal_duration_ms() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_duration_ms(), target);
   }
 
   // uint32 num_repeats = 3;
-  if (this->num_repeats() != 0) {
+  if (this->_internal_num_repeats() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_num_repeats(), target);
   }
@@ -4005,7 +3913,7 @@ size_t AnimationProto::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:AnimationProto)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -4017,64 +3925,45 @@ size_t AnimationProto::ByteSizeLong() const {
   }
 
   // uint32 duration_ms = 2;
-  if (this->duration_ms() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_duration_ms());
+  if (this->_internal_duration_ms() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_duration_ms());
   }
 
   // uint32 num_repeats = 3;
-  if (this->num_repeats() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_num_repeats());
+  if (this->_internal_num_repeats() != 0) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32SizePlusOne(this->_internal_num_repeats());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void AnimationProto::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:AnimationProto)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AnimationProto* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AnimationProto>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:AnimationProto)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:AnimationProto)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AnimationProto::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    AnimationProto::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AnimationProto::GetClassData() const { return &_class_data_; }
+
+void AnimationProto::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<AnimationProto *>(to)->MergeFrom(
+      static_cast<const AnimationProto &>(from));
 }
+
 
 void AnimationProto::MergeFrom(const AnimationProto& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:AnimationProto)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   effects_.MergeFrom(from.effects_);
-  if (from.duration_ms() != 0) {
+  if (from._internal_duration_ms() != 0) {
     _internal_set_duration_ms(from._internal_duration_ms());
   }
-  if (from.num_repeats() != 0) {
+  if (from._internal_num_repeats() != 0) {
     _internal_set_num_repeats(from._internal_num_repeats());
   }
-}
-
-void AnimationProto::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:AnimationProto)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AnimationProto::CopyFrom(const AnimationProto& from) {
@@ -4090,7 +3979,7 @@ bool AnimationProto::IsInitialized() const {
 
 void AnimationProto::InternalSwap(AnimationProto* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   effects_.InternalSwap(&other->effects_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(AnimationProto, num_repeats_)
@@ -4101,9 +3990,10 @@ void AnimationProto::InternalSwap(AnimationProto* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AnimationProto::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_effects_2eproto_getter, &descriptor_table_effects_2eproto_once,
+      file_level_metadata_effects_2eproto[12]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
@@ -4125,14 +4015,14 @@ template<> PROTOBUF_NOINLINE ::HueEffectConfig* Arena::CreateMaybeMessage< ::Hue
 template<> PROTOBUF_NOINLINE ::SaturationEffectConfig* Arena::CreateMaybeMessage< ::SaturationEffectConfig >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SaturationEffectConfig >(arena);
 }
+template<> PROTOBUF_NOINLINE ::SnakeEffectConfig* Arena::CreateMaybeMessage< ::SnakeEffectConfig >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::SnakeEffectConfig >(arena);
+}
 template<> PROTOBUF_NOINLINE ::SegmentEffectConfig* Arena::CreateMaybeMessage< ::SegmentEffectConfig >(Arena* arena) {
   return Arena::CreateMessageInternal< ::SegmentEffectConfig >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GlitterEffectConfig* Arena::CreateMaybeMessage< ::GlitterEffectConfig >(Arena* arena) {
   return Arena::CreateMessageInternal< ::GlitterEffectConfig >(arena);
-}
-template<> PROTOBUF_NOINLINE ::SnakeEffectConfig* Arena::CreateMaybeMessage< ::SnakeEffectConfig >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SnakeEffectConfig >(arena);
 }
 template<> PROTOBUF_NOINLINE ::AlternateEffectConfig* Arena::CreateMaybeMessage< ::AlternateEffectConfig >(Arena* arena) {
   return Arena::CreateMessageInternal< ::AlternateEffectConfig >(arena);

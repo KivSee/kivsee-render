@@ -9,6 +9,8 @@
 #include <effect/brightness.h>
 #include <effect/hue.h>
 #include <effect/saturation.h>
+#include <effect/snake.h>
+
 #include <segments/segments_map.h>
 
 namespace kivsee_render
@@ -72,7 +74,9 @@ namespace kivsee_render
         effectProto.hue.arg = &newEffect;
         effectProto.saturation.funcs.decode = &::kivsee_render::effect::Saturation::InitFromPb;
         effectProto.saturation.arg = &newEffect;
-
+        effectProto.snake.funcs.decode = &::kivsee_render::effect::Snake::InitFromPb;
+        effectProto.snake.arg = &newEffect;
+        
         bool success = pb_decode(stream, EffectProto_fields, &effectProto);
         if (!success)
             return false;

@@ -14,143 +14,133 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_functions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_Comb2FloatFunctionConfig_functions_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_functions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ConstValueFloatFunctionConfig_functions_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_functions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LinearFloatFunctionConfig_functions_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_functions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SinFloatFunctionConfig_functions_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_functions_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_StepsFloatFunctionConfig_functions_2eproto;
-class ConstValueFloatFunctionConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ConstValueFloatFunctionConfig> _instance;
-} _ConstValueFloatFunctionConfig_default_instance_;
-class LinearFloatFunctionConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LinearFloatFunctionConfig> _instance;
-} _LinearFloatFunctionConfig_default_instance_;
-class SinFloatFunctionConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SinFloatFunctionConfig> _instance;
-} _SinFloatFunctionConfig_default_instance_;
-class StepsFloatFunctionConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<StepsFloatFunctionConfig> _instance;
-} _StepsFloatFunctionConfig_default_instance_;
-class RepeatFloatFunctionConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RepeatFloatFunctionConfig> _instance;
-} _RepeatFloatFunctionConfig_default_instance_;
-class HalfFloatFunctionConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<HalfFloatFunctionConfig> _instance;
-} _HalfFloatFunctionConfig_default_instance_;
-class Comb2FloatFunctionConfigDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Comb2FloatFunctionConfig> _instance;
-} _Comb2FloatFunctionConfig_default_instance_;
-class FloatFunctionDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FloatFunction> _instance;
-} _FloatFunction_default_instance_;
-static void InitDefaultsscc_info_Comb2FloatFunctionConfig_functions_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  {
-    void* ptr = &::_RepeatFloatFunctionConfig_default_instance_;
-    new (ptr) ::RepeatFloatFunctionConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  {
-    void* ptr = &::_HalfFloatFunctionConfig_default_instance_;
-    new (ptr) ::HalfFloatFunctionConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  {
-    void* ptr = &::_Comb2FloatFunctionConfig_default_instance_;
-    new (ptr) ::Comb2FloatFunctionConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  {
-    void* ptr = &::_FloatFunction_default_instance_;
-    new (ptr) ::FloatFunction();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_Comb2FloatFunctionConfig_functions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, 0, InitDefaultsscc_info_Comb2FloatFunctionConfig_functions_2eproto}, {
-      &scc_info_ConstValueFloatFunctionConfig_functions_2eproto.base,
-      &scc_info_LinearFloatFunctionConfig_functions_2eproto.base,
-      &scc_info_SinFloatFunctionConfig_functions_2eproto.base,
-      &scc_info_StepsFloatFunctionConfig_functions_2eproto.base,}};
-
-static void InitDefaultsscc_info_ConstValueFloatFunctionConfig_functions_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_ConstValueFloatFunctionConfig_default_instance_;
-    new (ptr) ::ConstValueFloatFunctionConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ConstValueFloatFunctionConfig_functions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ConstValueFloatFunctionConfig_functions_2eproto}, {}};
-
-static void InitDefaultsscc_info_LinearFloatFunctionConfig_functions_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_LinearFloatFunctionConfig_default_instance_;
-    new (ptr) ::LinearFloatFunctionConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LinearFloatFunctionConfig_functions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LinearFloatFunctionConfig_functions_2eproto}, {}};
-
-static void InitDefaultsscc_info_SinFloatFunctionConfig_functions_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_SinFloatFunctionConfig_default_instance_;
-    new (ptr) ::SinFloatFunctionConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SinFloatFunctionConfig_functions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SinFloatFunctionConfig_functions_2eproto}, {}};
-
-static void InitDefaultsscc_info_StepsFloatFunctionConfig_functions_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_StepsFloatFunctionConfig_default_instance_;
-    new (ptr) ::StepsFloatFunctionConfig();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_StepsFloatFunctionConfig_functions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_StepsFloatFunctionConfig_functions_2eproto}, {}};
-
+PROTOBUF_PRAGMA_INIT_SEG
+constexpr ConstValueFloatFunctionConfig::ConstValueFloatFunctionConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : value_(0){}
+struct ConstValueFloatFunctionConfigDefaultTypeInternal {
+  constexpr ConstValueFloatFunctionConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~ConstValueFloatFunctionConfigDefaultTypeInternal() {}
+  union {
+    ConstValueFloatFunctionConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ConstValueFloatFunctionConfigDefaultTypeInternal _ConstValueFloatFunctionConfig_default_instance_;
+constexpr LinearFloatFunctionConfig::LinearFloatFunctionConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : start_(0)
+  , end_(0){}
+struct LinearFloatFunctionConfigDefaultTypeInternal {
+  constexpr LinearFloatFunctionConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~LinearFloatFunctionConfigDefaultTypeInternal() {}
+  union {
+    LinearFloatFunctionConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LinearFloatFunctionConfigDefaultTypeInternal _LinearFloatFunctionConfig_default_instance_;
+constexpr SinFloatFunctionConfig::SinFloatFunctionConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : min_(0)
+  , max_(0)
+  , phase_(0)
+  , repeats_(0){}
+struct SinFloatFunctionConfigDefaultTypeInternal {
+  constexpr SinFloatFunctionConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~SinFloatFunctionConfigDefaultTypeInternal() {}
+  union {
+    SinFloatFunctionConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SinFloatFunctionConfigDefaultTypeInternal _SinFloatFunctionConfig_default_instance_;
+constexpr StepsFloatFunctionConfig::StepsFloatFunctionConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : num_steps_(0)
+  , diff_per_step_(0)
+  , first_step_value_(0){}
+struct StepsFloatFunctionConfigDefaultTypeInternal {
+  constexpr StepsFloatFunctionConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~StepsFloatFunctionConfigDefaultTypeInternal() {}
+  union {
+    StepsFloatFunctionConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StepsFloatFunctionConfigDefaultTypeInternal _StepsFloatFunctionConfig_default_instance_;
+constexpr RepeatFloatFunctionConfig::RepeatFloatFunctionConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : functorepeat_(nullptr)
+  , numberoftimes_(0){}
+struct RepeatFloatFunctionConfigDefaultTypeInternal {
+  constexpr RepeatFloatFunctionConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~RepeatFloatFunctionConfigDefaultTypeInternal() {}
+  union {
+    RepeatFloatFunctionConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT RepeatFloatFunctionConfigDefaultTypeInternal _RepeatFloatFunctionConfig_default_instance_;
+constexpr HalfFloatFunctionConfig::HalfFloatFunctionConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : f1_(nullptr)
+  , f2_(nullptr){}
+struct HalfFloatFunctionConfigDefaultTypeInternal {
+  constexpr HalfFloatFunctionConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~HalfFloatFunctionConfigDefaultTypeInternal() {}
+  union {
+    HalfFloatFunctionConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT HalfFloatFunctionConfigDefaultTypeInternal _HalfFloatFunctionConfig_default_instance_;
+constexpr Comb2FloatFunctionConfig::Comb2FloatFunctionConfig(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : f1_(nullptr)
+  , f2_(nullptr)
+  , amount1_(0)
+  , amount2_(0){}
+struct Comb2FloatFunctionConfigDefaultTypeInternal {
+  constexpr Comb2FloatFunctionConfigDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~Comb2FloatFunctionConfigDefaultTypeInternal() {}
+  union {
+    Comb2FloatFunctionConfig _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Comb2FloatFunctionConfigDefaultTypeInternal _Comb2FloatFunctionConfig_default_instance_;
+constexpr FloatFunction::FloatFunction(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : _oneof_case_{}{}
+struct FloatFunctionDefaultTypeInternal {
+  constexpr FloatFunctionDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~FloatFunctionDefaultTypeInternal() {}
+  union {
+    FloatFunction _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT FloatFunctionDefaultTypeInternal _FloatFunction_default_instance_;
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_functions_2eproto[8];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_functions_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_functions_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_functions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_functions_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ConstValueFloatFunctionConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::ConstValueFloatFunctionConfig, value_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::LinearFloatFunctionConfig, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::LinearFloatFunctionConfig, start_),
   PROTOBUF_FIELD_OFFSET(::LinearFloatFunctionConfig, end_),
   ~0u,  // no _has_bits_
@@ -158,6 +148,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_functions_2eproto::offsets[] P
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SinFloatFunctionConfig, min_),
   PROTOBUF_FIELD_OFFSET(::SinFloatFunctionConfig, max_),
   PROTOBUF_FIELD_OFFSET(::SinFloatFunctionConfig, phase_),
@@ -167,6 +158,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_functions_2eproto::offsets[] P
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::StepsFloatFunctionConfig, num_steps_),
   PROTOBUF_FIELD_OFFSET(::StepsFloatFunctionConfig, diff_per_step_),
   PROTOBUF_FIELD_OFFSET(::StepsFloatFunctionConfig, first_step_value_),
@@ -175,6 +167,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_functions_2eproto::offsets[] P
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::RepeatFloatFunctionConfig, numberoftimes_),
   PROTOBUF_FIELD_OFFSET(::RepeatFloatFunctionConfig, functorepeat_),
   ~0u,  // no _has_bits_
@@ -182,6 +175,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_functions_2eproto::offsets[] P
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::HalfFloatFunctionConfig, f1_),
   PROTOBUF_FIELD_OFFSET(::HalfFloatFunctionConfig, f2_),
   ~0u,  // no _has_bits_
@@ -189,6 +183,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_functions_2eproto::offsets[] P
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::Comb2FloatFunctionConfig, f1_),
   PROTOBUF_FIELD_OFFSET(::Comb2FloatFunctionConfig, amount1_),
   PROTOBUF_FIELD_OFFSET(::Comb2FloatFunctionConfig, f2_),
@@ -198,6 +193,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_functions_2eproto::offsets[] P
   ~0u,  // no _extensions_
   PROTOBUF_FIELD_OFFSET(::FloatFunction, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
   ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
   ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
@@ -208,14 +204,14 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_functions_2eproto::offsets[] P
   PROTOBUF_FIELD_OFFSET(::FloatFunction, function_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::ConstValueFloatFunctionConfig)},
-  { 6, -1, sizeof(::LinearFloatFunctionConfig)},
-  { 13, -1, sizeof(::SinFloatFunctionConfig)},
-  { 22, -1, sizeof(::StepsFloatFunctionConfig)},
-  { 30, -1, sizeof(::RepeatFloatFunctionConfig)},
-  { 37, -1, sizeof(::HalfFloatFunctionConfig)},
-  { 44, -1, sizeof(::Comb2FloatFunctionConfig)},
-  { 53, -1, sizeof(::FloatFunction)},
+  { 0, -1, -1, sizeof(::ConstValueFloatFunctionConfig)},
+  { 7, -1, -1, sizeof(::LinearFloatFunctionConfig)},
+  { 15, -1, -1, sizeof(::SinFloatFunctionConfig)},
+  { 25, -1, -1, sizeof(::StepsFloatFunctionConfig)},
+  { 34, -1, -1, sizeof(::RepeatFloatFunctionConfig)},
+  { 42, -1, -1, sizeof(::HalfFloatFunctionConfig)},
+  { 50, -1, -1, sizeof(::Comb2FloatFunctionConfig)},
+  { 60, -1, -1, sizeof(::FloatFunction)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -255,25 +251,19 @@ const char descriptor_table_protodef_functions_2eproto[] PROTOBUF_SECTION_VARIAB
   "igH\000\022*\n\005comb2\030\007 \001(\0132\031.Comb2FloatFunction"
   "ConfigH\000B\n\n\010functionb\006proto3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_functions_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_functions_2eproto_sccs[5] = {
-  &scc_info_Comb2FloatFunctionConfig_functions_2eproto.base,
-  &scc_info_ConstValueFloatFunctionConfig_functions_2eproto.base,
-  &scc_info_LinearFloatFunctionConfig_functions_2eproto.base,
-  &scc_info_SinFloatFunctionConfig_functions_2eproto.base,
-  &scc_info_StepsFloatFunctionConfig_functions_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_functions_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_functions_2eproto = {
-  false, false, descriptor_table_protodef_functions_2eproto, "functions.proto", 948,
-  &descriptor_table_functions_2eproto_once, descriptor_table_functions_2eproto_sccs, descriptor_table_functions_2eproto_deps, 5, 0,
+  false, false, 948, descriptor_table_protodef_functions_2eproto, "functions.proto", 
+  &descriptor_table_functions_2eproto_once, nullptr, 0, 8,
   schemas, file_default_instances, TableStruct_functions_2eproto::offsets,
-  file_level_metadata_functions_2eproto, 8, file_level_enum_descriptors_functions_2eproto, file_level_service_descriptors_functions_2eproto,
+  file_level_metadata_functions_2eproto, file_level_enum_descriptors_functions_2eproto, file_level_service_descriptors_functions_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_functions_2eproto_getter() {
+  return &descriptor_table_functions_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_functions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_functions_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_functions_2eproto(&descriptor_table_functions_2eproto);
 
 // ===================================================================
 
@@ -281,10 +271,13 @@ class ConstValueFloatFunctionConfig::_Internal {
  public:
 };
 
-ConstValueFloatFunctionConfig::ConstValueFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ConstValueFloatFunctionConfig::ConstValueFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:ConstValueFloatFunctionConfig)
 }
 ConstValueFloatFunctionConfig::ConstValueFloatFunctionConfig(const ConstValueFloatFunctionConfig& from)
@@ -294,18 +287,19 @@ ConstValueFloatFunctionConfig::ConstValueFloatFunctionConfig(const ConstValueFlo
   // @@protoc_insertion_point(copy_constructor:ConstValueFloatFunctionConfig)
 }
 
-void ConstValueFloatFunctionConfig::SharedCtor() {
-  value_ = 0;
+inline void ConstValueFloatFunctionConfig::SharedCtor() {
+value_ = 0;
 }
 
 ConstValueFloatFunctionConfig::~ConstValueFloatFunctionConfig() {
   // @@protoc_insertion_point(destructor:ConstValueFloatFunctionConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void ConstValueFloatFunctionConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void ConstValueFloatFunctionConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void ConstValueFloatFunctionConfig::ArenaDtor(void* object) {
@@ -317,15 +311,10 @@ void ConstValueFloatFunctionConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::A
 void ConstValueFloatFunctionConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ConstValueFloatFunctionConfig& ConstValueFloatFunctionConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ConstValueFloatFunctionConfig_functions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void ConstValueFloatFunctionConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:ConstValueFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -336,47 +325,52 @@ void ConstValueFloatFunctionConfig::Clear() {
 const char* ConstValueFloatFunctionConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // float value = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
           value_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ConstValueFloatFunctionConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ConstValueFloatFunctionConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ConstValueFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float value = 1;
-  if (!(this->value() <= 0 && this->value() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_value = this->_internal_value();
+  uint32_t raw_value;
+  memcpy(&raw_value, &tmp_value, sizeof(tmp_value));
+  if (raw_value != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_value(), target);
   }
@@ -393,56 +387,49 @@ size_t ConstValueFloatFunctionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ConstValueFloatFunctionConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // float value = 1;
-  if (!(this->value() <= 0 && this->value() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_value = this->_internal_value();
+  uint32_t raw_value;
+  memcpy(&raw_value, &tmp_value, sizeof(tmp_value));
+  if (raw_value != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void ConstValueFloatFunctionConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ConstValueFloatFunctionConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ConstValueFloatFunctionConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ConstValueFloatFunctionConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ConstValueFloatFunctionConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ConstValueFloatFunctionConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ConstValueFloatFunctionConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ConstValueFloatFunctionConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ConstValueFloatFunctionConfig::GetClassData() const { return &_class_data_; }
+
+void ConstValueFloatFunctionConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<ConstValueFloatFunctionConfig *>(to)->MergeFrom(
+      static_cast<const ConstValueFloatFunctionConfig &>(from));
 }
+
 
 void ConstValueFloatFunctionConfig::MergeFrom(const ConstValueFloatFunctionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ConstValueFloatFunctionConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!(from.value() <= 0 && from.value() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_value = from._internal_value();
+  uint32_t raw_value;
+  memcpy(&raw_value, &tmp_value, sizeof(tmp_value));
+  if (raw_value != 0) {
     _internal_set_value(from._internal_value());
   }
-}
-
-void ConstValueFloatFunctionConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ConstValueFloatFunctionConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ConstValueFloatFunctionConfig::CopyFrom(const ConstValueFloatFunctionConfig& from) {
@@ -458,14 +445,15 @@ bool ConstValueFloatFunctionConfig::IsInitialized() const {
 
 void ConstValueFloatFunctionConfig::InternalSwap(ConstValueFloatFunctionConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(value_, other->value_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ConstValueFloatFunctionConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_functions_2eproto_getter, &descriptor_table_functions_2eproto_once,
+      file_level_metadata_functions_2eproto[0]);
 }
-
 
 // ===================================================================
 
@@ -473,10 +461,13 @@ class LinearFloatFunctionConfig::_Internal {
  public:
 };
 
-LinearFloatFunctionConfig::LinearFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+LinearFloatFunctionConfig::LinearFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:LinearFloatFunctionConfig)
 }
 LinearFloatFunctionConfig::LinearFloatFunctionConfig(const LinearFloatFunctionConfig& from)
@@ -488,21 +479,22 @@ LinearFloatFunctionConfig::LinearFloatFunctionConfig(const LinearFloatFunctionCo
   // @@protoc_insertion_point(copy_constructor:LinearFloatFunctionConfig)
 }
 
-void LinearFloatFunctionConfig::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&start_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&end_) -
-      reinterpret_cast<char*>(&start_)) + sizeof(end_));
+inline void LinearFloatFunctionConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&start_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&end_) -
+    reinterpret_cast<char*>(&start_)) + sizeof(end_));
 }
 
 LinearFloatFunctionConfig::~LinearFloatFunctionConfig() {
   // @@protoc_insertion_point(destructor:LinearFloatFunctionConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void LinearFloatFunctionConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void LinearFloatFunctionConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void LinearFloatFunctionConfig::ArenaDtor(void* object) {
@@ -514,15 +506,10 @@ void LinearFloatFunctionConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena
 void LinearFloatFunctionConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const LinearFloatFunctionConfig& LinearFloatFunctionConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LinearFloatFunctionConfig_functions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void LinearFloatFunctionConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:LinearFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -535,60 +522,70 @@ void LinearFloatFunctionConfig::Clear() {
 const char* LinearFloatFunctionConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // float start = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
           start_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float end = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
           end_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* LinearFloatFunctionConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* LinearFloatFunctionConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:LinearFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float start = 1;
-  if (!(this->start() <= 0 && this->start() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_start = this->_internal_start();
+  uint32_t raw_start;
+  memcpy(&raw_start, &tmp_start, sizeof(tmp_start));
+  if (raw_start != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_start(), target);
   }
 
   // float end = 2;
-  if (!(this->end() <= 0 && this->end() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_end = this->_internal_end();
+  uint32_t raw_end;
+  memcpy(&raw_end, &tmp_end, sizeof(tmp_end));
+  if (raw_end != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_end(), target);
   }
@@ -605,64 +602,65 @@ size_t LinearFloatFunctionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:LinearFloatFunctionConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // float start = 1;
-  if (!(this->start() <= 0 && this->start() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_start = this->_internal_start();
+  uint32_t raw_start;
+  memcpy(&raw_start, &tmp_start, sizeof(tmp_start));
+  if (raw_start != 0) {
     total_size += 1 + 4;
   }
 
   // float end = 2;
-  if (!(this->end() <= 0 && this->end() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_end = this->_internal_end();
+  uint32_t raw_end;
+  memcpy(&raw_end, &tmp_end, sizeof(tmp_end));
+  if (raw_end != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void LinearFloatFunctionConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:LinearFloatFunctionConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const LinearFloatFunctionConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LinearFloatFunctionConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:LinearFloatFunctionConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:LinearFloatFunctionConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData LinearFloatFunctionConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    LinearFloatFunctionConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*LinearFloatFunctionConfig::GetClassData() const { return &_class_data_; }
+
+void LinearFloatFunctionConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<LinearFloatFunctionConfig *>(to)->MergeFrom(
+      static_cast<const LinearFloatFunctionConfig &>(from));
 }
+
 
 void LinearFloatFunctionConfig::MergeFrom(const LinearFloatFunctionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:LinearFloatFunctionConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!(from.start() <= 0 && from.start() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_start = from._internal_start();
+  uint32_t raw_start;
+  memcpy(&raw_start, &tmp_start, sizeof(tmp_start));
+  if (raw_start != 0) {
     _internal_set_start(from._internal_start());
   }
-  if (!(from.end() <= 0 && from.end() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_end = from._internal_end();
+  uint32_t raw_end;
+  memcpy(&raw_end, &tmp_end, sizeof(tmp_end));
+  if (raw_end != 0) {
     _internal_set_end(from._internal_end());
   }
-}
-
-void LinearFloatFunctionConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:LinearFloatFunctionConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void LinearFloatFunctionConfig::CopyFrom(const LinearFloatFunctionConfig& from) {
@@ -678,7 +676,7 @@ bool LinearFloatFunctionConfig::IsInitialized() const {
 
 void LinearFloatFunctionConfig::InternalSwap(LinearFloatFunctionConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(LinearFloatFunctionConfig, end_)
       + sizeof(LinearFloatFunctionConfig::end_)
@@ -688,9 +686,10 @@ void LinearFloatFunctionConfig::InternalSwap(LinearFloatFunctionConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LinearFloatFunctionConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_functions_2eproto_getter, &descriptor_table_functions_2eproto_once,
+      file_level_metadata_functions_2eproto[1]);
 }
-
 
 // ===================================================================
 
@@ -698,10 +697,13 @@ class SinFloatFunctionConfig::_Internal {
  public:
 };
 
-SinFloatFunctionConfig::SinFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SinFloatFunctionConfig::SinFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:SinFloatFunctionConfig)
 }
 SinFloatFunctionConfig::SinFloatFunctionConfig(const SinFloatFunctionConfig& from)
@@ -713,21 +715,22 @@ SinFloatFunctionConfig::SinFloatFunctionConfig(const SinFloatFunctionConfig& fro
   // @@protoc_insertion_point(copy_constructor:SinFloatFunctionConfig)
 }
 
-void SinFloatFunctionConfig::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&min_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&repeats_) -
-      reinterpret_cast<char*>(&min_)) + sizeof(repeats_));
+inline void SinFloatFunctionConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&min_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&repeats_) -
+    reinterpret_cast<char*>(&min_)) + sizeof(repeats_));
 }
 
 SinFloatFunctionConfig::~SinFloatFunctionConfig() {
   // @@protoc_insertion_point(destructor:SinFloatFunctionConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SinFloatFunctionConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SinFloatFunctionConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void SinFloatFunctionConfig::ArenaDtor(void* object) {
@@ -739,15 +742,10 @@ void SinFloatFunctionConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) 
 void SinFloatFunctionConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const SinFloatFunctionConfig& SinFloatFunctionConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SinFloatFunctionConfig_functions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SinFloatFunctionConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:SinFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -760,86 +758,106 @@ void SinFloatFunctionConfig::Clear() {
 const char* SinFloatFunctionConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // float min = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
           min_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float max = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
           max_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float phase = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 29)) {
           phase_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float repeats = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 37)) {
           repeats_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SinFloatFunctionConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SinFloatFunctionConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SinFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float min = 1;
-  if (!(this->min() <= 0 && this->min() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_min = this->_internal_min();
+  uint32_t raw_min;
+  memcpy(&raw_min, &tmp_min, sizeof(tmp_min));
+  if (raw_min != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_min(), target);
   }
 
   // float max = 2;
-  if (!(this->max() <= 0 && this->max() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max = this->_internal_max();
+  uint32_t raw_max;
+  memcpy(&raw_max, &tmp_max, sizeof(tmp_max));
+  if (raw_max != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_max(), target);
   }
 
   // float phase = 3;
-  if (!(this->phase() <= 0 && this->phase() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_phase = this->_internal_phase();
+  uint32_t raw_phase;
+  memcpy(&raw_phase, &tmp_phase, sizeof(tmp_phase));
+  if (raw_phase != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_phase(), target);
   }
 
   // float repeats = 4;
-  if (!(this->repeats() <= 0 && this->repeats() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeats = this->_internal_repeats();
+  uint32_t raw_repeats;
+  memcpy(&raw_repeats, &tmp_repeats, sizeof(tmp_repeats));
+  if (raw_repeats != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_repeats(), target);
   }
@@ -856,80 +874,97 @@ size_t SinFloatFunctionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:SinFloatFunctionConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // float min = 1;
-  if (!(this->min() <= 0 && this->min() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_min = this->_internal_min();
+  uint32_t raw_min;
+  memcpy(&raw_min, &tmp_min, sizeof(tmp_min));
+  if (raw_min != 0) {
     total_size += 1 + 4;
   }
 
   // float max = 2;
-  if (!(this->max() <= 0 && this->max() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max = this->_internal_max();
+  uint32_t raw_max;
+  memcpy(&raw_max, &tmp_max, sizeof(tmp_max));
+  if (raw_max != 0) {
     total_size += 1 + 4;
   }
 
   // float phase = 3;
-  if (!(this->phase() <= 0 && this->phase() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_phase = this->_internal_phase();
+  uint32_t raw_phase;
+  memcpy(&raw_phase, &tmp_phase, sizeof(tmp_phase));
+  if (raw_phase != 0) {
     total_size += 1 + 4;
   }
 
   // float repeats = 4;
-  if (!(this->repeats() <= 0 && this->repeats() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeats = this->_internal_repeats();
+  uint32_t raw_repeats;
+  memcpy(&raw_repeats, &tmp_repeats, sizeof(tmp_repeats));
+  if (raw_repeats != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void SinFloatFunctionConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SinFloatFunctionConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SinFloatFunctionConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SinFloatFunctionConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SinFloatFunctionConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SinFloatFunctionConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SinFloatFunctionConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SinFloatFunctionConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SinFloatFunctionConfig::GetClassData() const { return &_class_data_; }
+
+void SinFloatFunctionConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<SinFloatFunctionConfig *>(to)->MergeFrom(
+      static_cast<const SinFloatFunctionConfig &>(from));
 }
+
 
 void SinFloatFunctionConfig::MergeFrom(const SinFloatFunctionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SinFloatFunctionConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!(from.min() <= 0 && from.min() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_min = from._internal_min();
+  uint32_t raw_min;
+  memcpy(&raw_min, &tmp_min, sizeof(tmp_min));
+  if (raw_min != 0) {
     _internal_set_min(from._internal_min());
   }
-  if (!(from.max() <= 0 && from.max() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_max = from._internal_max();
+  uint32_t raw_max;
+  memcpy(&raw_max, &tmp_max, sizeof(tmp_max));
+  if (raw_max != 0) {
     _internal_set_max(from._internal_max());
   }
-  if (!(from.phase() <= 0 && from.phase() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_phase = from._internal_phase();
+  uint32_t raw_phase;
+  memcpy(&raw_phase, &tmp_phase, sizeof(tmp_phase));
+  if (raw_phase != 0) {
     _internal_set_phase(from._internal_phase());
   }
-  if (!(from.repeats() <= 0 && from.repeats() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_repeats = from._internal_repeats();
+  uint32_t raw_repeats;
+  memcpy(&raw_repeats, &tmp_repeats, sizeof(tmp_repeats));
+  if (raw_repeats != 0) {
     _internal_set_repeats(from._internal_repeats());
   }
-}
-
-void SinFloatFunctionConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SinFloatFunctionConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SinFloatFunctionConfig::CopyFrom(const SinFloatFunctionConfig& from) {
@@ -945,7 +980,7 @@ bool SinFloatFunctionConfig::IsInitialized() const {
 
 void SinFloatFunctionConfig::InternalSwap(SinFloatFunctionConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SinFloatFunctionConfig, repeats_)
       + sizeof(SinFloatFunctionConfig::repeats_)
@@ -955,9 +990,10 @@ void SinFloatFunctionConfig::InternalSwap(SinFloatFunctionConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SinFloatFunctionConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_functions_2eproto_getter, &descriptor_table_functions_2eproto_once,
+      file_level_metadata_functions_2eproto[2]);
 }
-
 
 // ===================================================================
 
@@ -965,10 +1001,13 @@ class StepsFloatFunctionConfig::_Internal {
  public:
 };
 
-StepsFloatFunctionConfig::StepsFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+StepsFloatFunctionConfig::StepsFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:StepsFloatFunctionConfig)
 }
 StepsFloatFunctionConfig::StepsFloatFunctionConfig(const StepsFloatFunctionConfig& from)
@@ -980,21 +1019,22 @@ StepsFloatFunctionConfig::StepsFloatFunctionConfig(const StepsFloatFunctionConfi
   // @@protoc_insertion_point(copy_constructor:StepsFloatFunctionConfig)
 }
 
-void StepsFloatFunctionConfig::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&num_steps_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&first_step_value_) -
-      reinterpret_cast<char*>(&num_steps_)) + sizeof(first_step_value_));
+inline void StepsFloatFunctionConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&num_steps_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&first_step_value_) -
+    reinterpret_cast<char*>(&num_steps_)) + sizeof(first_step_value_));
 }
 
 StepsFloatFunctionConfig::~StepsFloatFunctionConfig() {
   // @@protoc_insertion_point(destructor:StepsFloatFunctionConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void StepsFloatFunctionConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void StepsFloatFunctionConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void StepsFloatFunctionConfig::ArenaDtor(void* object) {
@@ -1006,15 +1046,10 @@ void StepsFloatFunctionConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*
 void StepsFloatFunctionConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const StepsFloatFunctionConfig& StepsFloatFunctionConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_StepsFloatFunctionConfig_functions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void StepsFloatFunctionConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:StepsFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -1027,73 +1062,88 @@ void StepsFloatFunctionConfig::Clear() {
 const char* StepsFloatFunctionConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // float num_steps = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
           num_steps_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float diff_per_step = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
           diff_per_step_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float first_step_value = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 29)) {
           first_step_value_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StepsFloatFunctionConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StepsFloatFunctionConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:StepsFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float num_steps = 1;
-  if (!(this->num_steps() <= 0 && this->num_steps() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_num_steps = this->_internal_num_steps();
+  uint32_t raw_num_steps;
+  memcpy(&raw_num_steps, &tmp_num_steps, sizeof(tmp_num_steps));
+  if (raw_num_steps != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_num_steps(), target);
   }
 
   // float diff_per_step = 2;
-  if (!(this->diff_per_step() <= 0 && this->diff_per_step() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_diff_per_step = this->_internal_diff_per_step();
+  uint32_t raw_diff_per_step;
+  memcpy(&raw_diff_per_step, &tmp_diff_per_step, sizeof(tmp_diff_per_step));
+  if (raw_diff_per_step != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_diff_per_step(), target);
   }
 
   // float first_step_value = 3;
-  if (!(this->first_step_value() <= 0 && this->first_step_value() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_first_step_value = this->_internal_first_step_value();
+  uint32_t raw_first_step_value;
+  memcpy(&raw_first_step_value, &tmp_first_step_value, sizeof(tmp_first_step_value));
+  if (raw_first_step_value != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_first_step_value(), target);
   }
@@ -1110,72 +1160,81 @@ size_t StepsFloatFunctionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:StepsFloatFunctionConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // float num_steps = 1;
-  if (!(this->num_steps() <= 0 && this->num_steps() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_num_steps = this->_internal_num_steps();
+  uint32_t raw_num_steps;
+  memcpy(&raw_num_steps, &tmp_num_steps, sizeof(tmp_num_steps));
+  if (raw_num_steps != 0) {
     total_size += 1 + 4;
   }
 
   // float diff_per_step = 2;
-  if (!(this->diff_per_step() <= 0 && this->diff_per_step() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_diff_per_step = this->_internal_diff_per_step();
+  uint32_t raw_diff_per_step;
+  memcpy(&raw_diff_per_step, &tmp_diff_per_step, sizeof(tmp_diff_per_step));
+  if (raw_diff_per_step != 0) {
     total_size += 1 + 4;
   }
 
   // float first_step_value = 3;
-  if (!(this->first_step_value() <= 0 && this->first_step_value() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_first_step_value = this->_internal_first_step_value();
+  uint32_t raw_first_step_value;
+  memcpy(&raw_first_step_value, &tmp_first_step_value, sizeof(tmp_first_step_value));
+  if (raw_first_step_value != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void StepsFloatFunctionConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:StepsFloatFunctionConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const StepsFloatFunctionConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<StepsFloatFunctionConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:StepsFloatFunctionConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:StepsFloatFunctionConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StepsFloatFunctionConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    StepsFloatFunctionConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StepsFloatFunctionConfig::GetClassData() const { return &_class_data_; }
+
+void StepsFloatFunctionConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<StepsFloatFunctionConfig *>(to)->MergeFrom(
+      static_cast<const StepsFloatFunctionConfig &>(from));
 }
+
 
 void StepsFloatFunctionConfig::MergeFrom(const StepsFloatFunctionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:StepsFloatFunctionConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!(from.num_steps() <= 0 && from.num_steps() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_num_steps = from._internal_num_steps();
+  uint32_t raw_num_steps;
+  memcpy(&raw_num_steps, &tmp_num_steps, sizeof(tmp_num_steps));
+  if (raw_num_steps != 0) {
     _internal_set_num_steps(from._internal_num_steps());
   }
-  if (!(from.diff_per_step() <= 0 && from.diff_per_step() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_diff_per_step = from._internal_diff_per_step();
+  uint32_t raw_diff_per_step;
+  memcpy(&raw_diff_per_step, &tmp_diff_per_step, sizeof(tmp_diff_per_step));
+  if (raw_diff_per_step != 0) {
     _internal_set_diff_per_step(from._internal_diff_per_step());
   }
-  if (!(from.first_step_value() <= 0 && from.first_step_value() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_first_step_value = from._internal_first_step_value();
+  uint32_t raw_first_step_value;
+  memcpy(&raw_first_step_value, &tmp_first_step_value, sizeof(tmp_first_step_value));
+  if (raw_first_step_value != 0) {
     _internal_set_first_step_value(from._internal_first_step_value());
   }
-}
-
-void StepsFloatFunctionConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:StepsFloatFunctionConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StepsFloatFunctionConfig::CopyFrom(const StepsFloatFunctionConfig& from) {
@@ -1191,7 +1250,7 @@ bool StepsFloatFunctionConfig::IsInitialized() const {
 
 void StepsFloatFunctionConfig::InternalSwap(StepsFloatFunctionConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(StepsFloatFunctionConfig, first_step_value_)
       + sizeof(StepsFloatFunctionConfig::first_step_value_)
@@ -1201,9 +1260,10 @@ void StepsFloatFunctionConfig::InternalSwap(StepsFloatFunctionConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StepsFloatFunctionConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_functions_2eproto_getter, &descriptor_table_functions_2eproto_once,
+      file_level_metadata_functions_2eproto[3]);
 }
-
 
 // ===================================================================
 
@@ -1216,10 +1276,13 @@ const ::FloatFunction&
 RepeatFloatFunctionConfig::_Internal::functorepeat(const RepeatFloatFunctionConfig* msg) {
   return *msg->functorepeat_;
 }
-RepeatFloatFunctionConfig::RepeatFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+RepeatFloatFunctionConfig::RepeatFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:RepeatFloatFunctionConfig)
 }
 RepeatFloatFunctionConfig::RepeatFloatFunctionConfig(const RepeatFloatFunctionConfig& from)
@@ -1234,22 +1297,22 @@ RepeatFloatFunctionConfig::RepeatFloatFunctionConfig(const RepeatFloatFunctionCo
   // @@protoc_insertion_point(copy_constructor:RepeatFloatFunctionConfig)
 }
 
-void RepeatFloatFunctionConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Comb2FloatFunctionConfig_functions_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&functorepeat_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&numberoftimes_) -
-      reinterpret_cast<char*>(&functorepeat_)) + sizeof(numberoftimes_));
+inline void RepeatFloatFunctionConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&functorepeat_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&numberoftimes_) -
+    reinterpret_cast<char*>(&functorepeat_)) + sizeof(numberoftimes_));
 }
 
 RepeatFloatFunctionConfig::~RepeatFloatFunctionConfig() {
   // @@protoc_insertion_point(destructor:RepeatFloatFunctionConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void RepeatFloatFunctionConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void RepeatFloatFunctionConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete functorepeat_;
 }
 
@@ -1262,19 +1325,14 @@ void RepeatFloatFunctionConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena
 void RepeatFloatFunctionConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const RepeatFloatFunctionConfig& RepeatFloatFunctionConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Comb2FloatFunctionConfig_functions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void RepeatFloatFunctionConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:RepeatFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && functorepeat_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && functorepeat_ != nullptr) {
     delete functorepeat_;
   }
   functorepeat_ = nullptr;
@@ -1285,60 +1343,66 @@ void RepeatFloatFunctionConfig::Clear() {
 const char* RepeatFloatFunctionConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // float numberOfTimes = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
           numberoftimes_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .FloatFunction funcToRepeat = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_functorepeat(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RepeatFloatFunctionConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RepeatFloatFunctionConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:RepeatFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // float numberOfTimes = 1;
-  if (!(this->numberoftimes() <= 0 && this->numberoftimes() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_numberoftimes = this->_internal_numberoftimes();
+  uint32_t raw_numberoftimes;
+  memcpy(&raw_numberoftimes, &tmp_numberoftimes, sizeof(tmp_numberoftimes));
+  if (raw_numberoftimes != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_numberoftimes(), target);
   }
 
   // .FloatFunction funcToRepeat = 2;
-  if (this->has_functorepeat()) {
+  if (this->_internal_has_functorepeat()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1357,66 +1421,59 @@ size_t RepeatFloatFunctionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:RepeatFloatFunctionConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction funcToRepeat = 2;
-  if (this->has_functorepeat()) {
+  if (this->_internal_has_functorepeat()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *functorepeat_);
   }
 
   // float numberOfTimes = 1;
-  if (!(this->numberoftimes() <= 0 && this->numberoftimes() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_numberoftimes = this->_internal_numberoftimes();
+  uint32_t raw_numberoftimes;
+  memcpy(&raw_numberoftimes, &tmp_numberoftimes, sizeof(tmp_numberoftimes));
+  if (raw_numberoftimes != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void RepeatFloatFunctionConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RepeatFloatFunctionConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RepeatFloatFunctionConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RepeatFloatFunctionConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RepeatFloatFunctionConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RepeatFloatFunctionConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RepeatFloatFunctionConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    RepeatFloatFunctionConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RepeatFloatFunctionConfig::GetClassData() const { return &_class_data_; }
+
+void RepeatFloatFunctionConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<RepeatFloatFunctionConfig *>(to)->MergeFrom(
+      static_cast<const RepeatFloatFunctionConfig &>(from));
 }
+
 
 void RepeatFloatFunctionConfig::MergeFrom(const RepeatFloatFunctionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:RepeatFloatFunctionConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_functorepeat()) {
+  if (from._internal_has_functorepeat()) {
     _internal_mutable_functorepeat()->::FloatFunction::MergeFrom(from._internal_functorepeat());
   }
-  if (!(from.numberoftimes() <= 0 && from.numberoftimes() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_numberoftimes = from._internal_numberoftimes();
+  uint32_t raw_numberoftimes;
+  memcpy(&raw_numberoftimes, &tmp_numberoftimes, sizeof(tmp_numberoftimes));
+  if (raw_numberoftimes != 0) {
     _internal_set_numberoftimes(from._internal_numberoftimes());
   }
-}
-
-void RepeatFloatFunctionConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RepeatFloatFunctionConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void RepeatFloatFunctionConfig::CopyFrom(const RepeatFloatFunctionConfig& from) {
@@ -1432,7 +1489,7 @@ bool RepeatFloatFunctionConfig::IsInitialized() const {
 
 void RepeatFloatFunctionConfig::InternalSwap(RepeatFloatFunctionConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(RepeatFloatFunctionConfig, numberoftimes_)
       + sizeof(RepeatFloatFunctionConfig::numberoftimes_)
@@ -1442,9 +1499,10 @@ void RepeatFloatFunctionConfig::InternalSwap(RepeatFloatFunctionConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RepeatFloatFunctionConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_functions_2eproto_getter, &descriptor_table_functions_2eproto_once,
+      file_level_metadata_functions_2eproto[4]);
 }
-
 
 // ===================================================================
 
@@ -1462,10 +1520,13 @@ const ::FloatFunction&
 HalfFloatFunctionConfig::_Internal::f2(const HalfFloatFunctionConfig* msg) {
   return *msg->f2_;
 }
-HalfFloatFunctionConfig::HalfFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+HalfFloatFunctionConfig::HalfFloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:HalfFloatFunctionConfig)
 }
 HalfFloatFunctionConfig::HalfFloatFunctionConfig(const HalfFloatFunctionConfig& from)
@@ -1484,22 +1545,22 @@ HalfFloatFunctionConfig::HalfFloatFunctionConfig(const HalfFloatFunctionConfig& 
   // @@protoc_insertion_point(copy_constructor:HalfFloatFunctionConfig)
 }
 
-void HalfFloatFunctionConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Comb2FloatFunctionConfig_functions_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&f1_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&f2_) -
-      reinterpret_cast<char*>(&f1_)) + sizeof(f2_));
+inline void HalfFloatFunctionConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&f1_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&f2_) -
+    reinterpret_cast<char*>(&f1_)) + sizeof(f2_));
 }
 
 HalfFloatFunctionConfig::~HalfFloatFunctionConfig() {
   // @@protoc_insertion_point(destructor:HalfFloatFunctionConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void HalfFloatFunctionConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void HalfFloatFunctionConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete f1_;
   if (this != internal_default_instance()) delete f2_;
 }
@@ -1513,23 +1574,18 @@ void HalfFloatFunctionConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*)
 void HalfFloatFunctionConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const HalfFloatFunctionConfig& HalfFloatFunctionConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Comb2FloatFunctionConfig_functions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void HalfFloatFunctionConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:HalfFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && f1_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && f1_ != nullptr) {
     delete f1_;
   }
   f1_ = nullptr;
-  if (GetArena() == nullptr && f2_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && f2_ != nullptr) {
     delete f2_;
   }
   f2_ = nullptr;
@@ -1539,54 +1595,56 @@ void HalfFloatFunctionConfig::Clear() {
 const char* HalfFloatFunctionConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .FloatFunction f1 = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_f1(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .FloatFunction f2 = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_f2(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* HalfFloatFunctionConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* HalfFloatFunctionConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:HalfFloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .FloatFunction f1 = 1;
-  if (this->has_f1()) {
+  if (this->_internal_has_f1()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1594,7 +1652,7 @@ failure:
   }
 
   // .FloatFunction f2 = 2;
-  if (this->has_f2()) {
+  if (this->_internal_has_f2()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1613,68 +1671,53 @@ size_t HalfFloatFunctionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:HalfFloatFunctionConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction f1 = 1;
-  if (this->has_f1()) {
+  if (this->_internal_has_f1()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *f1_);
   }
 
   // .FloatFunction f2 = 2;
-  if (this->has_f2()) {
+  if (this->_internal_has_f2()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *f2_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void HalfFloatFunctionConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:HalfFloatFunctionConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const HalfFloatFunctionConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<HalfFloatFunctionConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:HalfFloatFunctionConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:HalfFloatFunctionConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData HalfFloatFunctionConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    HalfFloatFunctionConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*HalfFloatFunctionConfig::GetClassData() const { return &_class_data_; }
+
+void HalfFloatFunctionConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<HalfFloatFunctionConfig *>(to)->MergeFrom(
+      static_cast<const HalfFloatFunctionConfig &>(from));
 }
+
 
 void HalfFloatFunctionConfig::MergeFrom(const HalfFloatFunctionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:HalfFloatFunctionConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_f1()) {
+  if (from._internal_has_f1()) {
     _internal_mutable_f1()->::FloatFunction::MergeFrom(from._internal_f1());
   }
-  if (from.has_f2()) {
+  if (from._internal_has_f2()) {
     _internal_mutable_f2()->::FloatFunction::MergeFrom(from._internal_f2());
   }
-}
-
-void HalfFloatFunctionConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:HalfFloatFunctionConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void HalfFloatFunctionConfig::CopyFrom(const HalfFloatFunctionConfig& from) {
@@ -1690,7 +1733,7 @@ bool HalfFloatFunctionConfig::IsInitialized() const {
 
 void HalfFloatFunctionConfig::InternalSwap(HalfFloatFunctionConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(HalfFloatFunctionConfig, f2_)
       + sizeof(HalfFloatFunctionConfig::f2_)
@@ -1700,9 +1743,10 @@ void HalfFloatFunctionConfig::InternalSwap(HalfFloatFunctionConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata HalfFloatFunctionConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_functions_2eproto_getter, &descriptor_table_functions_2eproto_once,
+      file_level_metadata_functions_2eproto[5]);
 }
-
 
 // ===================================================================
 
@@ -1720,10 +1764,13 @@ const ::FloatFunction&
 Comb2FloatFunctionConfig::_Internal::f2(const Comb2FloatFunctionConfig* msg) {
   return *msg->f2_;
 }
-Comb2FloatFunctionConfig::Comb2FloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Comb2FloatFunctionConfig::Comb2FloatFunctionConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:Comb2FloatFunctionConfig)
 }
 Comb2FloatFunctionConfig::Comb2FloatFunctionConfig(const Comb2FloatFunctionConfig& from)
@@ -1745,22 +1792,22 @@ Comb2FloatFunctionConfig::Comb2FloatFunctionConfig(const Comb2FloatFunctionConfi
   // @@protoc_insertion_point(copy_constructor:Comb2FloatFunctionConfig)
 }
 
-void Comb2FloatFunctionConfig::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Comb2FloatFunctionConfig_functions_2eproto.base);
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&f1_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&amount2_) -
-      reinterpret_cast<char*>(&f1_)) + sizeof(amount2_));
+inline void Comb2FloatFunctionConfig::SharedCtor() {
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&f1_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&amount2_) -
+    reinterpret_cast<char*>(&f1_)) + sizeof(amount2_));
 }
 
 Comb2FloatFunctionConfig::~Comb2FloatFunctionConfig() {
   // @@protoc_insertion_point(destructor:Comb2FloatFunctionConfig)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Comb2FloatFunctionConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void Comb2FloatFunctionConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete f1_;
   if (this != internal_default_instance()) delete f2_;
 }
@@ -1774,23 +1821,18 @@ void Comb2FloatFunctionConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*
 void Comb2FloatFunctionConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const Comb2FloatFunctionConfig& Comb2FloatFunctionConfig::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Comb2FloatFunctionConfig_functions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void Comb2FloatFunctionConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:Comb2FloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && f1_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && f1_ != nullptr) {
     delete f1_;
   }
   f1_ = nullptr;
-  if (GetArena() == nullptr && f2_ != nullptr) {
+  if (GetArenaForAllocation() == nullptr && f2_ != nullptr) {
     delete f2_;
   }
   f2_ = nullptr;
@@ -1803,68 +1845,72 @@ void Comb2FloatFunctionConfig::Clear() {
 const char* Comb2FloatFunctionConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .FloatFunction f1 = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_f1(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float amount1 = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
           amount1_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .FloatFunction f2 = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_f2(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float amount2 = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 37)) {
           amount2_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Comb2FloatFunctionConfig::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Comb2FloatFunctionConfig::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Comb2FloatFunctionConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .FloatFunction f1 = 1;
-  if (this->has_f1()) {
+  if (this->_internal_has_f1()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1872,13 +1918,17 @@ failure:
   }
 
   // float amount1 = 2;
-  if (!(this->amount1() <= 0 && this->amount1() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_amount1 = this->_internal_amount1();
+  uint32_t raw_amount1;
+  memcpy(&raw_amount1, &tmp_amount1, sizeof(tmp_amount1));
+  if (raw_amount1 != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_amount1(), target);
   }
 
   // .FloatFunction f2 = 3;
-  if (this->has_f2()) {
+  if (this->_internal_has_f2()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
@@ -1886,7 +1936,11 @@ failure:
   }
 
   // float amount2 = 4;
-  if (!(this->amount2() <= 0 && this->amount2() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_amount2 = this->_internal_amount2();
+  uint32_t raw_amount2;
+  memcpy(&raw_amount2, &tmp_amount2, sizeof(tmp_amount2));
+  if (raw_amount2 != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_amount2(), target);
   }
@@ -1903,84 +1957,85 @@ size_t Comb2FloatFunctionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:Comb2FloatFunctionConfig)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // .FloatFunction f1 = 1;
-  if (this->has_f1()) {
+  if (this->_internal_has_f1()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *f1_);
   }
 
   // .FloatFunction f2 = 3;
-  if (this->has_f2()) {
+  if (this->_internal_has_f2()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *f2_);
   }
 
   // float amount1 = 2;
-  if (!(this->amount1() <= 0 && this->amount1() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_amount1 = this->_internal_amount1();
+  uint32_t raw_amount1;
+  memcpy(&raw_amount1, &tmp_amount1, sizeof(tmp_amount1));
+  if (raw_amount1 != 0) {
     total_size += 1 + 4;
   }
 
   // float amount2 = 4;
-  if (!(this->amount2() <= 0 && this->amount2() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_amount2 = this->_internal_amount2();
+  uint32_t raw_amount2;
+  memcpy(&raw_amount2, &tmp_amount2, sizeof(tmp_amount2));
+  if (raw_amount2 != 0) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void Comb2FloatFunctionConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Comb2FloatFunctionConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Comb2FloatFunctionConfig* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Comb2FloatFunctionConfig>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Comb2FloatFunctionConfig)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Comb2FloatFunctionConfig)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Comb2FloatFunctionConfig::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    Comb2FloatFunctionConfig::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Comb2FloatFunctionConfig::GetClassData() const { return &_class_data_; }
+
+void Comb2FloatFunctionConfig::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<Comb2FloatFunctionConfig *>(to)->MergeFrom(
+      static_cast<const Comb2FloatFunctionConfig &>(from));
 }
+
 
 void Comb2FloatFunctionConfig::MergeFrom(const Comb2FloatFunctionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Comb2FloatFunctionConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_f1()) {
+  if (from._internal_has_f1()) {
     _internal_mutable_f1()->::FloatFunction::MergeFrom(from._internal_f1());
   }
-  if (from.has_f2()) {
+  if (from._internal_has_f2()) {
     _internal_mutable_f2()->::FloatFunction::MergeFrom(from._internal_f2());
   }
-  if (!(from.amount1() <= 0 && from.amount1() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_amount1 = from._internal_amount1();
+  uint32_t raw_amount1;
+  memcpy(&raw_amount1, &tmp_amount1, sizeof(tmp_amount1));
+  if (raw_amount1 != 0) {
     _internal_set_amount1(from._internal_amount1());
   }
-  if (!(from.amount2() <= 0 && from.amount2() >= 0)) {
+  static_assert(sizeof(uint32_t) == sizeof(float), "Code assumes uint32_t and float are the same size.");
+  float tmp_amount2 = from._internal_amount2();
+  uint32_t raw_amount2;
+  memcpy(&raw_amount2, &tmp_amount2, sizeof(tmp_amount2));
+  if (raw_amount2 != 0) {
     _internal_set_amount2(from._internal_amount2());
   }
-}
-
-void Comb2FloatFunctionConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Comb2FloatFunctionConfig)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Comb2FloatFunctionConfig::CopyFrom(const Comb2FloatFunctionConfig& from) {
@@ -1996,7 +2051,7 @@ bool Comb2FloatFunctionConfig::IsInitialized() const {
 
 void Comb2FloatFunctionConfig::InternalSwap(Comb2FloatFunctionConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Comb2FloatFunctionConfig, amount2_)
       + sizeof(Comb2FloatFunctionConfig::amount2_)
@@ -2006,9 +2061,10 @@ void Comb2FloatFunctionConfig::InternalSwap(Comb2FloatFunctionConfig* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Comb2FloatFunctionConfig::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_functions_2eproto_getter, &descriptor_table_functions_2eproto_once,
+      file_level_metadata_functions_2eproto[6]);
 }
-
 
 // ===================================================================
 
@@ -2052,11 +2108,11 @@ FloatFunction::_Internal::comb2(const FloatFunction* msg) {
   return *msg->function_.comb2_;
 }
 void FloatFunction::set_allocated_const_value(::ConstValueFloatFunctionConfig* const_value) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_function();
   if (const_value) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(const_value);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::ConstValueFloatFunctionConfig>::GetOwningArena(const_value);
     if (message_arena != submessage_arena) {
       const_value = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, const_value, submessage_arena);
@@ -2067,11 +2123,11 @@ void FloatFunction::set_allocated_const_value(::ConstValueFloatFunctionConfig* c
   // @@protoc_insertion_point(field_set_allocated:FloatFunction.const_value)
 }
 void FloatFunction::set_allocated_linear(::LinearFloatFunctionConfig* linear) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_function();
   if (linear) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(linear);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::LinearFloatFunctionConfig>::GetOwningArena(linear);
     if (message_arena != submessage_arena) {
       linear = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, linear, submessage_arena);
@@ -2082,11 +2138,11 @@ void FloatFunction::set_allocated_linear(::LinearFloatFunctionConfig* linear) {
   // @@protoc_insertion_point(field_set_allocated:FloatFunction.linear)
 }
 void FloatFunction::set_allocated_sin(::SinFloatFunctionConfig* sin) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_function();
   if (sin) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(sin);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::SinFloatFunctionConfig>::GetOwningArena(sin);
     if (message_arena != submessage_arena) {
       sin = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, sin, submessage_arena);
@@ -2097,11 +2153,11 @@ void FloatFunction::set_allocated_sin(::SinFloatFunctionConfig* sin) {
   // @@protoc_insertion_point(field_set_allocated:FloatFunction.sin)
 }
 void FloatFunction::set_allocated_steps(::StepsFloatFunctionConfig* steps) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_function();
   if (steps) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(steps);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::StepsFloatFunctionConfig>::GetOwningArena(steps);
     if (message_arena != submessage_arena) {
       steps = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, steps, submessage_arena);
@@ -2112,11 +2168,11 @@ void FloatFunction::set_allocated_steps(::StepsFloatFunctionConfig* steps) {
   // @@protoc_insertion_point(field_set_allocated:FloatFunction.steps)
 }
 void FloatFunction::set_allocated_repeat(::RepeatFloatFunctionConfig* repeat) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_function();
   if (repeat) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(repeat);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::RepeatFloatFunctionConfig>::GetOwningArena(repeat);
     if (message_arena != submessage_arena) {
       repeat = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, repeat, submessage_arena);
@@ -2127,11 +2183,11 @@ void FloatFunction::set_allocated_repeat(::RepeatFloatFunctionConfig* repeat) {
   // @@protoc_insertion_point(field_set_allocated:FloatFunction.repeat)
 }
 void FloatFunction::set_allocated_half(::HalfFloatFunctionConfig* half) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_function();
   if (half) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(half);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::HalfFloatFunctionConfig>::GetOwningArena(half);
     if (message_arena != submessage_arena) {
       half = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, half, submessage_arena);
@@ -2142,11 +2198,11 @@ void FloatFunction::set_allocated_half(::HalfFloatFunctionConfig* half) {
   // @@protoc_insertion_point(field_set_allocated:FloatFunction.half)
 }
 void FloatFunction::set_allocated_comb2(::Comb2FloatFunctionConfig* comb2) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   clear_function();
   if (comb2) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(comb2);
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::Comb2FloatFunctionConfig>::GetOwningArena(comb2);
     if (message_arena != submessage_arena) {
       comb2 = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, comb2, submessage_arena);
@@ -2156,10 +2212,13 @@ void FloatFunction::set_allocated_comb2(::Comb2FloatFunctionConfig* comb2) {
   }
   // @@protoc_insertion_point(field_set_allocated:FloatFunction.comb2)
 }
-FloatFunction::FloatFunction(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+FloatFunction::FloatFunction(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:FloatFunction)
 }
 FloatFunction::FloatFunction(const FloatFunction& from)
@@ -2202,19 +2261,19 @@ FloatFunction::FloatFunction(const FloatFunction& from)
   // @@protoc_insertion_point(copy_constructor:FloatFunction)
 }
 
-void FloatFunction::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Comb2FloatFunctionConfig_functions_2eproto.base);
-  clear_has_function();
+inline void FloatFunction::SharedCtor() {
+clear_has_function();
 }
 
 FloatFunction::~FloatFunction() {
   // @@protoc_insertion_point(destructor:FloatFunction)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void FloatFunction::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void FloatFunction::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (has_function()) {
     clear_function();
   }
@@ -2229,53 +2288,48 @@ void FloatFunction::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void FloatFunction::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const FloatFunction& FloatFunction::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Comb2FloatFunctionConfig_functions_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void FloatFunction::clear_function() {
 // @@protoc_insertion_point(one_of_clear_start:FloatFunction)
   switch (function_case()) {
     case kConstValue: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete function_.const_value_;
       }
       break;
     }
     case kLinear: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete function_.linear_;
       }
       break;
     }
     case kSin: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete function_.sin_;
       }
       break;
     }
     case kSteps: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete function_.steps_;
       }
       break;
     }
     case kRepeat: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete function_.repeat_;
       }
       break;
     }
     case kHalf: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete function_.half_;
       }
       break;
     }
     case kComb2: {
-      if (GetArena() == nullptr) {
+      if (GetArenaForAllocation() == nullptr) {
         delete function_.comb2_;
       }
       break;
@@ -2290,7 +2344,7 @@ void FloatFunction::clear_function() {
 
 void FloatFunction::Clear() {
 // @@protoc_insertion_point(message_clear_start:FloatFunction)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2301,85 +2355,92 @@ void FloatFunction::Clear() {
 const char* FloatFunction::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // .ConstValueFloatFunctionConfig const_value = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_const_value(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .LinearFloatFunctionConfig linear = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_linear(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .SinFloatFunctionConfig sin = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_sin(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .StepsFloatFunctionConfig steps = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_steps(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .RepeatFloatFunctionConfig repeat = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_repeat(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .HalfFloatFunctionConfig half = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_half(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // .Comb2FloatFunctionConfig comb2 = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_comb2(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* FloatFunction::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* FloatFunction::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:FloatFunction)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .ConstValueFloatFunctionConfig const_value = 1;
@@ -2450,7 +2511,7 @@ size_t FloatFunction::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:FloatFunction)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
@@ -2508,35 +2569,26 @@ size_t FloatFunction::ByteSizeLong() const {
       break;
     }
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void FloatFunction::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:FloatFunction)
-  GOOGLE_DCHECK_NE(&from, this);
-  const FloatFunction* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FloatFunction>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FloatFunction)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:FloatFunction)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FloatFunction::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    FloatFunction::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FloatFunction::GetClassData() const { return &_class_data_; }
+
+void FloatFunction::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<FloatFunction *>(to)->MergeFrom(
+      static_cast<const FloatFunction &>(from));
 }
+
 
 void FloatFunction::MergeFrom(const FloatFunction& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:FloatFunction)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   switch (from.function_case()) {
@@ -2572,13 +2624,7 @@ void FloatFunction::MergeFrom(const FloatFunction& from) {
       break;
     }
   }
-}
-
-void FloatFunction::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:FloatFunction)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void FloatFunction::CopyFrom(const FloatFunction& from) {
@@ -2594,15 +2640,16 @@ bool FloatFunction::IsInitialized() const {
 
 void FloatFunction::InternalSwap(FloatFunction* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(function_, other->function_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata FloatFunction::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_functions_2eproto_getter, &descriptor_table_functions_2eproto_once,
+      file_level_metadata_functions_2eproto[7]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
