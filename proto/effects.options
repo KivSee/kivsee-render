@@ -20,3 +20,8 @@ HueEffectConfig.offset_factor type:FT_CALLBACK
 // saturation
 EffectProto.saturation type:FT_CALLBACK
 SaturationEffectConfig.mult_factor type:FT_CALLBACK
+
+// snake
+EffectProto.snake type:FT_CALLBACK
+SnakeEffectConfig.head type:FT_CALLBACK
+SnakeEffectConfig.tail_length type:FT_CALLBACK

@@ -14,8 +14,8 @@ http_archive(
 
 http_archive(
     name = "com_google_protobuf",
-    url = "https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protobuf-all-3.14.0.zip",
-    strip_prefix = "protobuf-3.14.0",
+    url = "https://github.com/protocolbuffers/protobuf/releases/download/v3.19.2/protobuf-all-3.19.2.zip",
+    strip_prefix = "protobuf-3.19.2",
 )
 
 # it looks like we shouldn't do it ourselves, but it doesn't work without it
