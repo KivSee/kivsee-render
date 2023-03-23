@@ -21,7 +21,6 @@ namespace kivsee_render
             const float curr_tail_length = tail_length->GetValue(rel_time);
 
             const float curr_head = cyclic ? (curr_config_head - (int)curr_config_head) : curr_config_head;
-            const float curr_tail = curr_config_head - curr_tail_length;
 
             if (curr_tail_length == 0) {
                 for (::kivsee_render::segments::SegmentPixels::const_iterator it = segment_pixels->begin(); it != segment_pixels->end(); ++it)
