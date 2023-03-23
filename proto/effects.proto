@@ -31,6 +31,7 @@ message SaturationEffectConfig {
 message SnakeEffectConfig {
     FloatFunction head = 1;
     FloatFunction tail_length = 2;
+    bool cyclic = 3;
 }
 
 message SegmentEffectConfig {

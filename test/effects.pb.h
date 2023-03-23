@@ -1198,6 +1198,7 @@ class SnakeEffectConfig final :
   enum : int {
     kHeadFieldNumber = 1,
     kTailLengthFieldNumber = 2,
+    kCyclicFieldNumber = 3,
   };
   // .FloatFunction head = 1;
   bool has_head() const;
@@ -1235,6 +1236,15 @@ class SnakeEffectConfig final :
       ::FloatFunction* tail_length);
   ::FloatFunction* unsafe_arena_release_tail_length();
 
+  // bool cyclic = 3;
+  void clear_cyclic();
+  bool cyclic() const;
+  void set_cyclic(bool value);
+  private:
+  bool _internal_cyclic() const;
+  void _internal_set_cyclic(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:SnakeEffectConfig)
  private:
   class _Internal;
@@ -1244,6 +1254,7 @@ class SnakeEffectConfig final :
   typedef void DestructorSkippable_;
   ::FloatFunction* head_;
   ::FloatFunction* tail_length_;
+  bool cyclic_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_effects_2eproto;
 };
@@ -3273,6 +3284,26 @@ inline void SnakeEffectConfig::set_allocated_tail_length(::FloatFunction* tail_l
   }
   tail_length_ = tail_length;
   // @@protoc_insertion_point(field_set_allocated:SnakeEffectConfig.tail_length)
+}
+
+// bool cyclic = 3;
+inline void SnakeEffectConfig::clear_cyclic() {
+  cyclic_ = false;
+}
+inline bool SnakeEffectConfig::_internal_cyclic() const {
+  return cyclic_;
+}
+inline bool SnakeEffectConfig::cyclic() const {
+  // @@protoc_insertion_point(field_get:SnakeEffectConfig.cyclic)
+  return _internal_cyclic();
+}
+inline void SnakeEffectConfig::_internal_set_cyclic(bool value) {
+  
+  cyclic_ = value;
+}
+inline void SnakeEffectConfig::set_cyclic(bool value) {
+  _internal_set_cyclic(value);
+  // @@protoc_insertion_point(field_set:SnakeEffectConfig.cyclic)
 }
 
 // -------------------------------------------------------------------

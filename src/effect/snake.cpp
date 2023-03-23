@@ -5,7 +5,8 @@ namespace kivsee_render
 {
     namespace effect
     {
-        float getBrightnessFactor(float rel_pos, float curr_head, float curr_tail_length, float curr_tail) {
+        float getBrightnessFactor(float rel_pos, float curr_head, float curr_tail_length) {
+            float curr_tail = curr_head - curr_tail_length;
             bool isOutsideRange = (rel_pos > curr_head || rel_pos < curr_tail);
             if (isOutsideRange) {
                 return 0;
@@ -16,9 +17,11 @@ namespace kivsee_render
 
         void Snake::Render(float rel_time, int cycle_index)
         {
-            const float curr_head = head->GetValue(rel_time);
+            const float curr_config_head = head->GetValue(rel_time);
             const float curr_tail_length = tail_length->GetValue(rel_time);
-            const float curr_tail = curr_head - curr_tail_length;
+
+            const float curr_head = cyclic ? (curr_config_head - (int)curr_config_head) : curr_config_head;
+
             if (curr_tail_length == 0) {
                 for (::kivsee_render::segments::SegmentPixels::const_iterator it = segment_pixels->begin(); it != segment_pixels->end(); ++it)
                 {
@@ -30,8 +33,12 @@ namespace kivsee_render
                 {
                     HSV *pixel = it->pixel;
                     float rel_pos = it->relativePositionInSegment;
-                    float returned_val = getBrightnessFactor(rel_pos, curr_head, curr_tail_length, curr_tail);
-                    pixel->val *= getBrightnessFactor(rel_pos, curr_head, curr_tail_length, curr_tail);
+                    float cyclic_head = curr_head;
+                    if(cyclic && rel_pos > curr_head) {
+                        cyclic_head += 1.0;
+                    }
+                    float brightness_factor = getBrightnessFactor(rel_pos, cyclic_head, curr_tail_length);
+                    pixel->val *= brightness_factor;
                 }
             }
         }
@@ -52,7 +59,7 @@ namespace kivsee_render
             {
                 return false;
             }
-            *((Effect **)*arg) = new Snake(head, tail_length);
+            *((Effect **)*arg) = new Snake(head, tail_length, config.cyclic);
             return true;
         }
 

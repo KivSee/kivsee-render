@@ -2,7 +2,7 @@
 # .\protoc --plugin=protoc-gen-nanopb=C:\nanopb-0.4.4-windows-x86\generator\protoc-gen-nanopb.bat --nanopb_out=. --python_out=. functions.proto effects.proto
 # protoc  --plugin=protoc-gen-nanopb=/Users/sapir/nanopb/generator/protoc-gen-nanopb --nanopb_out=. --python_out=. --js_out=import_style=commonjs,binary:. functions.proto effects.proto
 #--nanopb_opt=-L #include "%s"
-protoc --nanopb_out=. --python_out=. --cpp_out=../test functions.proto effects.proto segments.proto
+protoc --plugin=/home/amir/.local/nanopb-nanopb-0.4.5/generator/protoc-gen-nanopb --nanopb_out=. --python_out=. --cpp_out=../test functions.proto effects.proto segments.proto
 
 
 mv functions.pb.c ../src

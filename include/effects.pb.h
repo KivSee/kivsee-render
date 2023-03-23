@@ -28,11 +28,6 @@ typedef struct _SaturationEffectConfig {
     pb_callback_t mult_factor; 
 } SaturationEffectConfig;
 
-typedef struct _SnakeEffectConfig { 
-    pb_callback_t head; 
-    pb_callback_t tail_length; 
-} SnakeEffectConfig;
-
 typedef struct _AlternateEffectConfig { 
     uint32_t numberOfPixels; 
     bool has_hue_offset;
@@ -78,6 +73,12 @@ typedef struct _SegmentEffectConfig {
     FloatFunction end; 
 } SegmentEffectConfig;
 
+typedef struct _SnakeEffectConfig { 
+    pb_callback_t head; 
+    pb_callback_t tail_length; 
+    bool cyclic; 
+} SnakeEffectConfig;
+
 typedef struct _ConstColorEffectConfig { 
     bool has_color;
     HSV color; 
@@ -106,7 +107,7 @@ extern "C" {
 #define BrightnessEffectConfig_init_default      {{{NULL}, NULL}}
 #define HueEffectConfig_init_default             {{{NULL}, NULL}}
 #define SaturationEffectConfig_init_default      {{{NULL}, NULL}}
-#define SnakeEffectConfig_init_default           {{{NULL}, NULL}, {{NULL}, NULL}}
+#define SnakeEffectConfig_init_default           {{{NULL}, NULL}, {{NULL}, NULL}, 0}
 #define SegmentEffectConfig_init_default         {false, FloatFunction_init_default, false, FloatFunction_init_default}
 #define GlitterEffectConfig_init_default         {false, FloatFunction_init_default, false, FloatFunction_init_default}
 #define AlternateEffectConfig_init_default       {0, false, FloatFunction_init_default, false, FloatFunction_init_default, false, FloatFunction_init_default}
@@ -119,7 +120,7 @@ extern "C" {
 #define BrightnessEffectConfig_init_zero         {{{NULL}, NULL}}
 #define HueEffectConfig_init_zero                {{{NULL}, NULL}}
 #define SaturationEffectConfig_init_zero         {{{NULL}, NULL}}
-#define SnakeEffectConfig_init_zero              {{{NULL}, NULL}, {{NULL}, NULL}}
+#define SnakeEffectConfig_init_zero              {{{NULL}, NULL}, {{NULL}, NULL}, 0}
 #define SegmentEffectConfig_init_zero            {false, FloatFunction_init_zero, false, FloatFunction_init_zero}
 #define GlitterEffectConfig_init_zero            {false, FloatFunction_init_zero, false, FloatFunction_init_zero}
 #define AlternateEffectConfig_init_zero          {0, false, FloatFunction_init_zero, false, FloatFunction_init_zero, false, FloatFunction_init_zero}
@@ -133,8 +134,6 @@ extern "C" {
 #define RainbowEffectConfig_hue_start_tag        1
 #define RainbowEffectConfig_hue_end_tag          2
 #define SaturationEffectConfig_mult_factor_tag   1
-#define SnakeEffectConfig_head_tag               1
-#define SnakeEffectConfig_tail_length_tag        2
 #define AlternateEffectConfig_numberOfPixels_tag 1
 #define AlternateEffectConfig_hue_offset_tag     2
 #define AlternateEffectConfig_sat_mult_tag       3
@@ -155,6 +154,9 @@ extern "C" {
 #define HSV_val_tag                              3
 #define SegmentEffectConfig_start_tag            1
 #define SegmentEffectConfig_end_tag              2
+#define SnakeEffectConfig_head_tag               1
+#define SnakeEffectConfig_tail_length_tag        2
+#define SnakeEffectConfig_cyclic_tag             3
 #define ConstColorEffectConfig_color_tag         1
 #define EffectProto_effect_config_tag            1
 #define EffectProto_const_color_tag              2
@@ -206,7 +208,8 @@ X(a, CALLBACK, OPTIONAL, MESSAGE,  mult_factor,       1)
 
 #define SnakeEffectConfig_FIELDLIST(X, a) \
 X(a, CALLBACK, OPTIONAL, MESSAGE,  head,              1) \
-X(a, CALLBACK, OPTIONAL, MESSAGE,  tail_length,       2)
+X(a, CALLBACK, OPTIONAL, MESSAGE,  tail_length,       2) \
+X(a, STATIC,   SINGULAR, BOOL,     cyclic,            3)
 #define SnakeEffectConfig_CALLBACK pb_default_field_callback
 #define SnakeEffectConfig_DEFAULT NULL
 #define SnakeEffectConfig_head_MSGTYPE FloatFunction

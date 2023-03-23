@@ -94,7 +94,8 @@ PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SaturationEffectConfigDefaultTy
 constexpr SnakeEffectConfig::SnakeEffectConfig(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : head_(nullptr)
-  , tail_length_(nullptr){}
+  , tail_length_(nullptr)
+  , cyclic_(false){}
 struct SnakeEffectConfigDefaultTypeInternal {
   constexpr SnakeEffectConfigDefaultTypeInternal()
     : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
@@ -247,6 +248,7 @@ const uint32_t TableStruct_effects_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(
   ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, head_),
   PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, tail_length_),
+  PROTOBUF_FIELD_OFFSET(::SnakeEffectConfig, cyclic_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::SegmentEffectConfig, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -317,12 +319,12 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 31, -1, -1, sizeof(::HueEffectConfig)},
   { 38, -1, -1, sizeof(::SaturationEffectConfig)},
   { 45, -1, -1, sizeof(::SnakeEffectConfig)},
-  { 53, -1, -1, sizeof(::SegmentEffectConfig)},
-  { 61, -1, -1, sizeof(::GlitterEffectConfig)},
-  { 69, -1, -1, sizeof(::AlternateEffectConfig)},
-  { 79, -1, -1, sizeof(::EffectConfig)},
-  { 91, -1, -1, sizeof(::EffectProto)},
-  { 105, -1, -1, sizeof(::AnimationProto)},
+  { 54, -1, -1, sizeof(::SegmentEffectConfig)},
+  { 62, -1, -1, sizeof(::GlitterEffectConfig)},
+  { 70, -1, -1, sizeof(::AlternateEffectConfig)},
+  { 80, -1, -1, sizeof(::EffectConfig)},
+  { 92, -1, -1, sizeof(::EffectProto)},
+  { 106, -1, -1, sizeof(::AnimationProto)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -352,38 +354,38 @@ const char descriptor_table_protodef_effects_2eproto[] PROTOBUF_SECTION_VARIABLE
   "8\n\017HueEffectConfig\022%\n\roffset_factor\030\001 \001("
   "\0132\016.FloatFunction\"=\n\026SaturationEffectCon"
   "fig\022#\n\013mult_factor\030\001 \001(\0132\016.FloatFunction"
-  "\"V\n\021SnakeEffectConfig\022\034\n\004head\030\001 \001(\0132\016.Fl"
+  "\"f\n\021SnakeEffectConfig\022\034\n\004head\030\001 \001(\0132\016.Fl"
   "oatFunction\022#\n\013tail_length\030\002 \001(\0132\016.Float"
-  "Function\"Q\n\023SegmentEffectConfig\022\035\n\005start"
-  "\030\001 \001(\0132\016.FloatFunction\022\033\n\003end\030\002 \001(\0132\016.Fl"
-  "oatFunction\"a\n\023GlitterEffectConfig\022!\n\tin"
-  "tensity\030\001 \001(\0132\016.FloatFunction\022\'\n\017sat_mul"
-  "t_factor\030\002 \001(\0132\016.FloatFunction\"\236\001\n\025Alter"
-  "nateEffectConfig\022\026\n\016numberOfPixels\030\001 \001(\r"
-  "\022\"\n\nhue_offset\030\002 \001(\0132\016.FloatFunction\022 \n\010"
-  "sat_mult\030\003 \001(\0132\016.FloatFunction\022\'\n\017bright"
-  "ness_mult\030\004 \001(\0132\016.FloatFunction\"\204\001\n\014Effe"
-  "ctConfig\022\022\n\nstart_time\030\001 \001(\r\022\020\n\010end_time"
-  "\030\002 \001(\r\022\020\n\010segments\030\003 \001(\t\022\022\n\nrepeat_num\030\004"
-  " \001(\002\022\024\n\014repeat_start\030\005 \001(\002\022\022\n\nrepeat_end"
-  "\030\006 \001(\002\"\272\002\n\013EffectProto\022$\n\reffect_config\030"
-  "\001 \001(\0132\r.EffectConfig\022.\n\013const_color\030\002 \001("
-  "\0132\027.ConstColorEffectConfigH\000\022\'\n\007rainbow\030"
-  "\003 \001(\0132\024.RainbowEffectConfigH\000\022-\n\nbrightn"
-  "ess\030\004 \001(\0132\027.BrightnessEffectConfigH\000\022\037\n\003"
-  "hue\030\005 \001(\0132\020.HueEffectConfigH\000\022-\n\nsaturat"
-  "ion\030\006 \001(\0132\027.SaturationEffectConfigH\000\022#\n\005"
-  "snake\030\007 \001(\0132\022.SnakeEffectConfigH\000B\010\n\006eff"
-  "ect\"Y\n\016AnimationProto\022\035\n\007effects\030\001 \003(\0132\014"
-  ".EffectProto\022\023\n\013duration_ms\030\002 \001(\r\022\023\n\013num"
-  "_repeats\030\003 \001(\rb\006proto3"
+  "Function\022\016\n\006cyclic\030\003 \001(\010\"Q\n\023SegmentEffec"
+  "tConfig\022\035\n\005start\030\001 \001(\0132\016.FloatFunction\022\033"
+  "\n\003end\030\002 \001(\0132\016.FloatFunction\"a\n\023GlitterEf"
+  "fectConfig\022!\n\tintensity\030\001 \001(\0132\016.FloatFun"
+  "ction\022\'\n\017sat_mult_factor\030\002 \001(\0132\016.FloatFu"
+  "nction\"\236\001\n\025AlternateEffectConfig\022\026\n\016numb"
+  "erOfPixels\030\001 \001(\r\022\"\n\nhue_offset\030\002 \001(\0132\016.F"
+  "loatFunction\022 \n\010sat_mult\030\003 \001(\0132\016.FloatFu"
+  "nction\022\'\n\017brightness_mult\030\004 \001(\0132\016.FloatF"
+  "unction\"\204\001\n\014EffectConfig\022\022\n\nstart_time\030\001"
+  " \001(\r\022\020\n\010end_time\030\002 \001(\r\022\020\n\010segments\030\003 \001(\t"
+  "\022\022\n\nrepeat_num\030\004 \001(\002\022\024\n\014repeat_start\030\005 \001"
+  "(\002\022\022\n\nrepeat_end\030\006 \001(\002\"\272\002\n\013EffectProto\022$"
+  "\n\reffect_config\030\001 \001(\0132\r.EffectConfig\022.\n\013"
+  "const_color\030\002 \001(\0132\027.ConstColorEffectConf"
+  "igH\000\022\'\n\007rainbow\030\003 \001(\0132\024.RainbowEffectCon"
+  "figH\000\022-\n\nbrightness\030\004 \001(\0132\027.BrightnessEf"
+  "fectConfigH\000\022\037\n\003hue\030\005 \001(\0132\020.HueEffectCon"
+  "figH\000\022-\n\nsaturation\030\006 \001(\0132\027.SaturationEf"
+  "fectConfigH\000\022#\n\005snake\030\007 \001(\0132\022.SnakeEffec"
+  "tConfigH\000B\010\n\006effect\"Y\n\016AnimationProto\022\035\n"
+  "\007effects\030\001 \003(\0132\014.EffectProto\022\023\n\013duration"
+  "_ms\030\002 \001(\r\022\023\n\013num_repeats\030\003 \001(\rb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_effects_2eproto_deps[1] = {
   &::descriptor_table_functions_2eproto,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_effects_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_effects_2eproto = {
-  false, false, 1382, descriptor_table_protodef_effects_2eproto, "effects.proto", 
+  false, false, 1398, descriptor_table_protodef_effects_2eproto, "effects.proto", 
   &descriptor_table_effects_2eproto_once, descriptor_table_effects_2eproto_deps, 1, 13,
   schemas, file_default_instances, TableStruct_effects_2eproto::offsets,
   file_level_metadata_effects_2eproto, file_level_enum_descriptors_effects_2eproto, file_level_service_descriptors_effects_2eproto,
@@ -1769,14 +1771,15 @@ SnakeEffectConfig::SnakeEffectConfig(const SnakeEffectConfig& from)
   } else {
     tail_length_ = nullptr;
   }
+  cyclic_ = from.cyclic_;
   // @@protoc_insertion_point(copy_constructor:SnakeEffectConfig)
 }
 
 inline void SnakeEffectConfig::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&head_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&tail_length_) -
-    reinterpret_cast<char*>(&head_)) + sizeof(tail_length_));
+    0, static_cast<size_t>(reinterpret_cast<char*>(&cyclic_) -
+    reinterpret_cast<char*>(&head_)) + sizeof(cyclic_));
 }
 
 SnakeEffectConfig::~SnakeEffectConfig() {
@@ -1816,6 +1819,7 @@ void SnakeEffectConfig::Clear() {
     delete tail_length_;
   }
   tail_length_ = nullptr;
+  cyclic_ = false;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1837,6 +1841,14 @@ const char* SnakeEffectConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_tail_length(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // bool cyclic = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          cyclic_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -1886,6 +1898,12 @@ uint8_t* SnakeEffectConfig::_InternalSerialize(
         2, _Internal::tail_length(this), target, stream);
   }
 
+  // bool cyclic = 3;
+  if (this->_internal_cyclic() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_cyclic(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1916,6 +1934,11 @@ size_t SnakeEffectConfig::ByteSizeLong() const {
         *tail_length_);
   }
 
+  // bool cyclic = 3;
+  if (this->_internal_cyclic() != 0) {
+    total_size += 1 + 1;
+  }
+
   return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
@@ -1944,6 +1967,9 @@ void SnakeEffectConfig::MergeFrom(const SnakeEffectConfig& from) {
   if (from._internal_has_tail_length()) {
     _internal_mutable_tail_length()->::FloatFunction::MergeFrom(from._internal_tail_length());
   }
+  if (from._internal_cyclic() != 0) {
+    _internal_set_cyclic(from._internal_cyclic());
+  }
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -1962,8 +1988,8 @@ void SnakeEffectConfig::InternalSwap(SnakeEffectConfig* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SnakeEffectConfig, tail_length_)
-      + sizeof(SnakeEffectConfig::tail_length_)
+      PROTOBUF_FIELD_OFFSET(SnakeEffectConfig, cyclic_)
+      + sizeof(SnakeEffectConfig::cyclic_)
       - PROTOBUF_FIELD_OFFSET(SnakeEffectConfig, head_)>(
           reinterpret_cast<char*>(&head_),
           reinterpret_cast<char*>(&other->head_));

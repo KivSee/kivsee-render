@@ -20,7 +20,7 @@ namespace kivsee_render
 
             static bool InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg);
 
-            Snake(float_functions::IFloatFunction *head, float_functions::IFloatFunction *tail_length): head(head), tail_length(tail_length) {}
+            Snake(float_functions::IFloatFunction *head, float_functions::IFloatFunction *tail_length, bool cyclic): head(head), tail_length(tail_length), cyclic(cyclic) {}
 
             ~Snake()
             {
@@ -35,6 +35,7 @@ namespace kivsee_render
         private:
             const float_functions::IFloatFunction *head = nullptr;
             const float_functions::IFloatFunction *tail_length = nullptr;
+            const bool cyclic = false;
         };
 
     } // namespace effect
