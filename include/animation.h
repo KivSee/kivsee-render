@@ -10,6 +10,11 @@
 namespace kivsee_render
 {
 
+    struct RenderStats {
+        bool is_rendering;
+        uint32_t num_effects_rendered;
+    };
+
     class Animation
     {
 
@@ -23,7 +28,7 @@ namespace kivsee_render
 
         ~Animation();
 
-        bool Render(unsigned long curr_time);
+        RenderStats Render(unsigned long curr_time);
 
     public:
         typedef std::vector<Effect *> EffectsVec;

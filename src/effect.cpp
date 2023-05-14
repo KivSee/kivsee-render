@@ -16,10 +16,10 @@
 namespace kivsee_render
 {
 
-    void Effect::Render(unsigned long curr_time)
+    bool Effect::Render(unsigned long curr_time)
     {
         if (curr_time < this->start_time || curr_time >= this->end_time)
-            return;
+            return false;
 
         float relTime = ((float)(curr_time - start_time) / (float)(end_time - start_time));
         int currCycleIndex = -1;
@@ -38,11 +38,12 @@ namespace kivsee_render
 
             // check if a "repeat" function should be rendered for this time
             if (relTimeInCycle < this->repeat_start || relTimeInCycle > this->repeat_end)
-                return;
+                return false;
 
             relTime = (relTimeInCycle - this->repeat_start) / (this->repeat_end - this->repeat_start);
         }
         Render(relTime, currCycleIndex);
+        return true;
     }
 
     void Effect::Init(const ::kivsee_render::segments::SegmentPixels *segment_pixels, void *&effect_config)
