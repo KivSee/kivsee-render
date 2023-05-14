@@ -22,7 +22,7 @@ namespace kivsee_render
         virtual void NewCycle(int cycleIndex) {}
 
     public:
-        void Render(unsigned long curr_time);
+        bool Render(unsigned long curr_time);
 
         void Init(const ::kivsee_render::segments::SegmentPixels *segment_pixels, void * &effect_config);
 
