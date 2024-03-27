@@ -6,6 +6,11 @@
 
 const int END_TIME = 30;
 
+// create a snake effect with the following configuration:
+// time: 0 -> 30
+// segment: by input
+// head: linear from 0.0 -> 1.0
+// tail_length: const 0.2
 EffectProto testSnakeEffect(const char *segmentName) {
     EffectProto effectProto;
     effectProto.mutable_effect_config()->set_start_time(0);
