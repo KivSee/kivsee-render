@@ -12,4 +12,5 @@ cc_test(
         "@com_google_protobuf//:protobuf",
         "//:kivsee-render",
     ],
+    size="small",
 )

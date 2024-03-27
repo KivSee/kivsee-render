@@ -1,6 +1,7 @@
 #ifndef __EFFECT_SNAKE_H__
 #define __EFFECT_SNAKE_H__
 
+#include <utility>
 #include <hsv.h>
 #include <pb_decode.h>
 #include <effect.h>
@@ -31,6 +32,10 @@ namespace kivsee_render
             }
 
             void Render(float rel_time, int cycle_index) override;
+
+        private:
+            void ClearPixels();
+            std::pair<float, float> ExtractHeadPixels(float curr_head, float curr_tail_length);
 
         private:
             const float_functions::IFloatFunction *head = nullptr;

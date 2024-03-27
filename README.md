@@ -6,5 +6,17 @@ LED render library suitable for esp32 controller
 - simple bulding blocks, that can be easily combined to create more interesting and sophisticated visual effects
 - low level commands. the library api is intended to be used by intermidiate scripts and tools which simplify the usage to human user.
 
+## Running Tests
 
+install bazel
+
+```shell
+brew install bazel
+```
+
+run tests suite
+
+```shell
+bazel test --test_output=all //test:kivsee-render-test
+```
 

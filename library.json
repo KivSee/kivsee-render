@@ -1,8 +1,7 @@
-
 {
     "name": "KivseeRender",
     "keywords": "",
-    "description": "A rendering enginee for addressable LEDs",
+    "description": "A rendering engine for addressable LEDs",
     "homepage": "https://github.com/blumamir/kivsee-render",
     "repository": {
       "type": "git",
