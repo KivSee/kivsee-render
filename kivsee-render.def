@@ -1,0 +1,8 @@
+LIBRARY kivsee-render.dll
+EXPORTS
+    UnityPluginLoad
+    UnityPluginUnload
+    Add
+    Log
+    GetArraySize
+    GetArray

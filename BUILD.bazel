@@ -16,3 +16,24 @@ cc_library(
     copts = ["-Iinclude", "-Iexternal/nanopb"],
     visibility = ["//visibility:public"],
 )
+
+# Windows DLL target for Unity
+cc_binary(
+    name = "kivsee-render-unity",
+    srcs = glob([
+        "unity/*.cpp",
+        "unity/*.h",
+    ]),
+    deps = [":kivsee-render"],
+    linkshared = 1,
+    linkstatic = 1,
+    win_def_file = "kivsee-render.def",
+    copts = [
+        "-Iunity",
+        "-Iinclude",
+        "-Iexternal/nanopb",
+    ] + select({
+        "@platforms//os:windows": ["-DKIVSEE_RENDER_EXPORT=__declspec(dllexport)"],
+        "//conditions:default": ["-DKIVSEE_RENDER_EXPORT="],
+    }),
+)
