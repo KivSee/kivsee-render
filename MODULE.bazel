@@ -1,0 +1,22 @@
+###############################################################################
+# Bazel now uses Bzlmod by default to manage external dependencies.
+# Please consider migrating your external dependencies from WORKSPACE to MODULE.bazel.
+#
+# For more details, please check https://github.com/bazelbuild/bazel/issues/18958
+###############################################################################
+
+module(
+    name = "kivsee-render",
+)
+
+bazel_dep(name = "platforms", version = "0.0.10")
+bazel_dep(name = "googletest", version = "1.14.0")
+bazel_dep(name = "protobuf", version = "29.0")
+
+http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "nanopb",
+    url = "https://github.com/nanopb/nanopb/archive/nanopb-0.4.5.zip",
+    strip_prefix = "nanopb-nanopb-0.4.5",
+)

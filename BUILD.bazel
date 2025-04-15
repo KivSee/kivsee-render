@@ -6,13 +6,18 @@ cc_library(
         "src/**/*.pb.c",
         "src/**/*.cpp",
     ]),
-    hdrs=glob([
+    hdrs = glob([
         "include/**/*.h",
-    ]),
+        "src/**/*.pb.h",
+    ], allow_empty = True),
     deps = [
         "@nanopb//:nanopb"
     ],
-    copts = ["-Iinclude", "-Iexternal/nanopb"],
+    copts = [
+        "-Iinclude", 
+        "-Iexternal/nanopb",
+        "/std:c++20",
+    ],
     visibility = ["//visibility:public"],
 )
 
@@ -21,8 +26,9 @@ cc_binary(
     name = "kivsee-render-unity",
     srcs = glob([
         "unity/*.cpp",
-        "unity/*.h",
-    ]),
+        "unity/**/*.h",
+        "interfaces/**/*.h",
+    ], allow_empty = True),
     deps = [":kivsee-render"],
     linkshared = 1,
     linkstatic = 1,
@@ -31,8 +37,6 @@ cc_binary(
         "-Iunity",
         "-Iinclude",
         "-Iexternal/nanopb",
-    ] + select({
-        "@platforms//os:windows": ["-DKIVSEE_RENDER_EXPORT=__declspec(dllexport)"],
-        "//conditions:default": ["-DKIVSEE_RENDER_EXPORT="],
-    }),
+        "/std:c++20"
+    ],
 )

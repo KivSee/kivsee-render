@@ -1,4 +1,3 @@
-
 cc_test(
     name = "kivsee-render-test",
     srcs = glob([
@@ -6,10 +5,13 @@ cc_test(
         "*.cpp",
         "*.pb.h",
     ]),
-    copts = ["-Iexternal/gtest/include", "-Iinclude"],
+    copts = [
+        "-Iinclude",
+        "/std:c++20",
+    ],
     deps = [
-        "@gtest//:gtest_main",
-        "@com_google_protobuf//:protobuf",
+        "@googletest//:gtest_main",
+        "@protobuf//:protobuf",
         "//:kivsee-render",
     ],
     size="small",
