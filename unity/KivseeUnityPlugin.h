@@ -2,7 +2,7 @@
 #define __KIVSEE_UNITY_PLUGIN_H__
 
 // Unity plugin interface
-#include "IUnityInterface.h"
+#include "interfaces/IUnityInterface.h"
 
 // C99 compatibility
 #ifdef __cplusplus

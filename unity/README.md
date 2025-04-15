@@ -8,9 +8,14 @@ https://docs.unity3d.com/6000.0/Documentation/Manual/plug-ins-native.html
 https://github.com/Unity-Technologies/NativeRenderingPlugin/tree/master
 
 #### Calling Unity from C++
-If you need Unity functionality for whatever reason, this folder in particular (from example repo) might be useful:
-https://github.com/Unity-Technologies/NativeRenderingPlugin/tree/master/PluginSource/source/Unity
+The library (this project) can call unity functions using the Plugin API.
+You can find it in the example repo, but the best way is to grab one from your Unity Editor installation:
+
+`<UNITY_EDITOR_FOLDER>/Data/PluginAPI`
 
 #### C++ function declaration examples
 https://github.com/Unity-Technologies/NativeRenderingPlugin/blob/master/PluginSource/source/RenderingPlugin.cpp
 
+
+#### Usage Within Unity
+https://github.com/Unity-Technologies/NativeRenderingPlugin/blob/master/UnityProject/Assets/UseRenderingPlugin.cs
