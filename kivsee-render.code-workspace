@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.rb": "sonic-pi",
+			"segments.pb.h": "c"
+		}
+	}
+}
