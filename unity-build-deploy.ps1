@@ -4,6 +4,10 @@ param ([string]$UnityDeployDir = $env:UNITY_PLUGIN_DIR)
 # Always build
 Write-Host "Building kivsee-render-unity..."
 bazel build //:kivsee-render-unity
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Error: Build failed" -ForegroundColor Red
+    exit 1
+}
 
 # Only deploy if Unity plugin directory is specified
 if ([string]::IsNullOrEmpty($UnityDeployDir)) {
@@ -24,30 +28,14 @@ if ([string]::IsNullOrEmpty($UnityDeployDir)) {
     
     if ($dllPath) {
         $targetFile = "$UnityDeployDir\kivsee-render-unity.dll"
-        $backupFile = "$UnityDeployDir\kivsee-render-unity.dll.new"
-        
-        # First copy to a temporary file
-        Write-Host "Copying $dllPath to $backupFile"
-        Copy-Item -Path $dllPath -Destination $backupFile -Force
         
         try {
-            # Try to replace the original file
-            if (Test-Path -Path $targetFile) {
-                Write-Host "Replacing existing DLL..."
-                Remove-Item -Path $targetFile -Force -ErrorAction Stop
-                Rename-Item -Path $backupFile -NewName "kivsee-render-unity.dll" -ErrorAction Stop
-                Write-Host "Deployment successful (replaced existing DLL)"
-            } else {
-                # First-time deployment
-                Rename-Item -Path $backupFile -NewName "kivsee-render-unity.dll" -ErrorAction Stop
-                Write-Host "Deployment successful (new installation)"
-            }
+            # Try to copy the DLL directly
+            Copy-Item -Path $dllPath -Destination $targetFile -Force -ErrorAction Stop
+            Write-Host "Deployment successful"
         } catch {
-            Write-Host "Warning: Couldn't replace the DLL file. It might be locked by Unity." -ForegroundColor Yellow
-            Write-Host "A new version has been placed at $backupFile" -ForegroundColor Yellow
-            Write-Host "  1. The new DLL will be used after Unity restarts."
-            Write-Host "  2. Alternatively, you can close Unity and run this script again."
-            Write-Host "  3. Or manually rename the .new file to replace the original when Unity is closed."
+            Write-Host "Error: Couldn't replace the DLL file. It might be locked by Unity." -ForegroundColor Red
+            Write-Host "Error: Close Unity and run this script again to update the DLL."
         }
     } else {
         Write-Host "Error: Could not find kivsee-render-unity.dll in bazel-bin directory" -ForegroundColor Red

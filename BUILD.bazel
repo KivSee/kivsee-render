@@ -30,9 +30,9 @@ cc_binary(
         "interfaces/**/*.h",
     ], allow_empty = True),
     deps = [":kivsee-render"],
-    linkshared = 1,
-    linkstatic = 1,
-    win_def_file = "kivsee-render.def",
+    
+    linkshared = 1, # build a shared library (DLL) instead of an executable
+    linkstatic = 1, # statically link all dependencies into the DLL rather than having external DLL dependencies
     copts = [
         "-Iunity",
         "-Iinclude",

@@ -13,6 +13,10 @@ fi
 # Always build
 echo "Building kivsee-render-unity..."
 bazel build //:kivsee-render-unity
+if [ $? -ne 0 ]; then
+    echo "Error: Build failed" >&2
+    exit 1
+fi
 
 # Only deploy if Unity plugin directory is specified
 if [ -z "$UnityDeployDir" ]; then
@@ -41,30 +45,14 @@ else
     
     if [ -n "$libPath" ]; then
         targetFile="$UnityDeployDir/$libName"
-        backupFile="$UnityDeployDir/$libName.new"
         
-        # First copy to a temporary file
-        echo "Copying $libPath to $backupFile"
-        cp "$libPath" "$backupFile"
-        
-        # Try to replace the original file
-        {
-            if [ -f "$targetFile" ]; then
-                echo "Replacing existing library..."
-                rm "$targetFile" && mv "$backupFile" "$targetFile"
-                echo "Deployment successful (replaced existing library)"
-            else
-                # First-time deployment
-                mv "$backupFile" "$targetFile"
-                echo "Deployment successful (new installation)"
-            fi
-        } || {
-            echo "Warning: Couldn't replace the library file. It might be locked by Unity."
-            echo "A new version has been placed at $backupFile"
-            echo "  1. The new library will be used after Unity restarts."
-            echo "  2. Alternatively, you can close Unity and run this script again."
-            echo "  3. Or manually rename the .new file to replace the original when Unity is closed."
-        }
+        # Try to copy the library file directly
+        if cp "$libPath" "$targetFile" 2>/dev/null; then
+            echo "Deployment successful"
+        else
+            echo "Error: Couldn't replace the library file. It might be locked by Unity." >&2
+            echo "Error: Close Unity and run this script again to update the library." >&2
+        fi
     else
         echo "Error: Could not find $libName in bazel-bin directory"
         exit 1
