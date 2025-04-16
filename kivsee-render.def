@@ -2,7 +2,14 @@ LIBRARY kivsee-render.dll
 EXPORTS
     UnityPluginLoad
     UnityPluginUnload
-    Add
-    Log
-    GetArraySize
-    GetArray
+    TestAdd
+    TestLog
+    TestGetArraySize
+    TestGetArray
+    TestCppExceptionCaught
+    TestCppExceptionUncaught
+    CreateTestSegmentsMap
+    GetTotalLedCount
+    GetLedColors
+    SetSimpleAnimation
+    RenderFrame
