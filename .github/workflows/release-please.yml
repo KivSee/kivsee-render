@@ -52,18 +52,17 @@ jobs:
       - name: Build bindings
         run: |
           bazel build //bindings:all
-          # Create artifacts directory
-          mkdir -p artifacts
-          # Copy built artifacts to a directory
-          cp -r bazel-bin/bindings/* artifacts/
           
-      - name: Upload artifacts to release
+      - name: Upload package files to release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG_NAME: ${{ needs.release-please.outputs.tag_name }}
         run: |
-          # Compress artifacts
-          tar -czf bindings-artifacts.tar.gz -C artifacts .
-          
-          # Upload to the release
-          gh release upload "$TAG_NAME" bindings-artifacts.tar.gz 
+          cd bazel-bin/bindings
+          # Find and upload all package files
+          for pkg in *_pkg.tar; do
+            if [ -f "$pkg" ]; then
+              echo "Uploading $pkg..."
+              gh release upload "$TAG_NAME" "$pkg"
+            fi
+          done
