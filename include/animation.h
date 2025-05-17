@@ -1,7 +1,7 @@
 #ifndef __ANIMATION_H__
 #define __ANIMATION_H__
 
-#include <pb_decode.h>
+#include "pb_decode.h"
 
 #include "segments/segments_map.h"
 #include <effect.h>

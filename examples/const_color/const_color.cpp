@@ -2,7 +2,7 @@
 #include <NeoPixelBus.h>
 
 #include <pb_encode.h>
-#include <pb_decode.h>
+#include "pb_decode.h"
 
 #define DATA_PIN 0
 #define NUM_LEDS 25

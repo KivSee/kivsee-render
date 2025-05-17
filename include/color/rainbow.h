@@ -3,7 +3,7 @@
 
 #include <hsv.h>
 #include <effect.h>
-#include <pb_decode.h>
+#include "pb_decode.h"
 #include <effects.pb.h>
 #include <functions/float_functions/float_functions.h>
 

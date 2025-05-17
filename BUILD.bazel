@@ -5,13 +5,15 @@ cc_library(
     srcs = glob([
         "src/**/*.pb.c",
         "src/**/*.cpp",
-        "src/**/*.pb.h",
     ]),
     hdrs=glob([
         "include/**/*.h",
     ]),
     deps = [
         "@nanopb//:nanopb"
+    ],
+    includes = [
+        "include",
     ],
     copts = ["-Iinclude", "-Iexternal/nanopb"],
     visibility = ["//visibility:public"],
