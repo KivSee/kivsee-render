@@ -17,7 +17,7 @@ jobs:
       - name: Setup bazel
         uses: jwlawson/actions-setup-bazel@v1
         with:
-          bazel-version: '6.4.0'        
-
+          bazel-version: '8.1.1'
+    
       - name: Build py bindings
         run: bazel build //bindings:all
