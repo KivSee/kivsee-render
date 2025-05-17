@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup bazel
+        uses: jwlawson/actions-setup-bazel@v1
+        with:
+          bazel-version: '6.4.0'        
+
+      - name: Build py bindings
+        run: bazel build //bindings:all
