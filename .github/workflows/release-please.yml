@@ -29,7 +29,23 @@ jobs:
   build-and-attach:
     needs: release-please
     if: ${{ needs.release-please.outputs.release_created }}
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            platform: linux_x86_64
+          - os: ubuntu-latest
+            platform: linux_aarch64
+          - os: ubuntu-latest
+            platform: linux_armv7
+          - os: macos-latest
+            platform: macos_x86_64
+          - os: macos-14
+            platform: macos_arm64
+          - os: windows-latest
+            platform: windows_x86_64
+    
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       
@@ -37,21 +53,18 @@ jobs:
         uses: actions/cache@v3
         with:
           path: "~/.cache/bazel"
-          key: bazel-${{ runner.os }}-${{ github.sha }}
-          restore-keys: bazel-${{ runner.os }}-
+          key: bazel-${{ matrix.os }}-${{ github.sha }}
+          restore-keys: bazel-${{ matrix.os }}-
 
       - uses: bazel-contrib/setup-bazel@0.14.0
         with:
-          # Avoid downloading Bazel every time.
           bazelisk-cache: true
-          # Store build cache per workflow.
           disk-cache: ${{ github.workflow }}
-          # Share repository cache between workflows.
           repository-cache: true            
           
-      - name: Build bindings
+      - name: Build platform-specific bindings
         run: |
-          bazel build //bindings:all
+          bazel build //bindings:kivsee_render_${{ matrix.platform }}_pkg
           
       - name: Upload package files to release
         env:
@@ -59,10 +72,5 @@ jobs:
           TAG_NAME: ${{ needs.release-please.outputs.tag_name }}
         run: |
           cd bazel-bin/bindings
-          # Find and upload all package files
-          for pkg in *_pkg.tar; do
-            if [ -f "$pkg" ]; then
-              echo "Uploading $pkg..."
-              gh release upload "$TAG_NAME" "$pkg"
-            fi
-          done
+          # Upload the platform-specific package
+          gh release upload "$TAG_NAME" kivsee_render_${{ matrix.platform }}_pkg.tar
