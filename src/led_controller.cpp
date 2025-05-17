@@ -48,13 +48,8 @@ bool LedController::InitFromProtoBuffers(const uint8_t* animation_buffer, size_t
         return false;
     }
 
+    // Store the animation in the class
     animation_ = (::kivsee_render::Animation *)arg_animation;
-
-    // Initialize effects
-    // for (Animation::EffectsVec::iterator it = animation_->effects.begin(); it != animation_->effects.end(); ++it) {
-    //     Effect* effect = *it;
-    //     effect->Init(&segment_);
-    // }
 
     return true;
 }
