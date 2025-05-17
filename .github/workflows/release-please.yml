@@ -14,10 +14,56 @@ permissions:
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
     steps:
       - uses: actions/checkout@v4
-      - uses: googleapis/release-please-action@v4
+      - id: release
+        uses: googleapis/release-please-action@v4
         with:
           token: ${{ secrets.RELEASE_TOKEN }}
           config-file: .release-please-config.json
-          manifest-file: .release-please-manifest.json 
+          manifest-file: .release-please-manifest.json
+
+  build-and-attach:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Mount bazel cache
+        uses: actions/cache@v3
+        with:
+          path: "~/.cache/bazel"
+          key: bazel-${{ runner.os }}-${{ github.sha }}
+          restore-keys: bazel-${{ runner.os }}-
+
+      - uses: bazel-contrib/setup-bazel@0.14.0
+        with:
+          # Avoid downloading Bazel every time.
+          bazelisk-cache: true
+          # Store build cache per workflow.
+          disk-cache: ${{ github.workflow }}
+          # Share repository cache between workflows.
+          repository-cache: true            
+          
+      - name: Build bindings
+        run: |
+          bazel build //bindings:all
+          # Create artifacts directory
+          mkdir -p artifacts
+          # Copy built artifacts to a directory
+          cp -r bazel-bin/bindings/* artifacts/
+          
+      - name: Upload artifacts to release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG_NAME: ${{ needs.release-please.outputs.tag_name }}
+        run: |
+          # Compress artifacts
+          tar -czf bindings-artifacts.tar.gz -C artifacts .
+          
+          # Upload to the release
+          gh release upload "$TAG_NAME" bindings-artifacts.tar.gz 
