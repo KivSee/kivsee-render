@@ -1,3 +1,5 @@
+name: Build Python Bindings
+
 on:
   push:
     branches:
@@ -7,10 +9,26 @@ on:
       - main
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  build:
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            platform: linux_x86_64
+          - os: ubuntu-latest
+            platform: linux_aarch64
+          - os: ubuntu-latest
+            platform: linux_armv7
+          - os: macos-latest
+            platform: macos_x86_64
+          - os: macos-14
+            platform: macos_arm64
+          - os: windows-latest
+            platform: windows_x86_64
+    
+    runs-on: ${{ matrix.os }}
+    
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -19,5 +37,11 @@ jobs:
         with:
           bazel-version: '8.1.1'
     
-      - name: Build py bindings
-        run: bazel build //bindings:all
+      - name: Build platform-specific bindings
+        run: bazel build //bindings:kivsee_render_${{ matrix.platform }}
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: kivsee-render-${{ matrix.platform }}
+          path: bazel-bin/bindings/kivsee_render_${{ matrix.platform }}.*
