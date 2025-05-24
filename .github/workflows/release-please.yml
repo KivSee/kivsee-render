@@ -44,13 +44,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
         uses: docker/build-push-action@v6
-        env:
-          TAG_NAME: ${{ needs.release-please.outputs.tag_name }}
         with:
           context: .
           platforms: linux/amd64,linux/arm,linux/arm64
           push: true
           tags: |
-            blumamir/simulation-service:$TAG_NAME
+            blumamir/simulation-service:${{ needs.release-please.outputs.tag_name }}
             blumamir/simulation-service:latest
-            blumamir/simulation-service:v$TAG_NAME
