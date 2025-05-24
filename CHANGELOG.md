@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.7](https://github.com/KivSee/kivsee-render/compare/v0.1.6...v0.1.7) (2025-05-24)
+
+
+### Features
+
+* simulation service dockerfile ([#53](https://github.com/KivSee/kivsee-render/issues/53)) ([1bf074c](https://github.com/KivSee/kivsee-render/commit/1bf074c301a40f8a28eb393367f336d6337e708f))
+* simulation-service initial server ([#51](https://github.com/KivSee/kivsee-render/issues/51)) ([953ec06](https://github.com/KivSee/kivsee-render/commit/953ec069f909eeb93b1cd6ca8dee89bab5c4eaae))
+
 ## [0.1.6](https://github.com/KivSee/kivsee-render/compare/v0.1.5...v0.1.6) (2025-05-24)
 
 
