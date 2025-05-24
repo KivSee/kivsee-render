@@ -47,6 +47,7 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/arm,linux/arm64
+          file: simulation-service/Dockerfile
           push: true
           tags: |
             blumamir/simulation-service:${{ needs.release-please.outputs.tag_name }}
