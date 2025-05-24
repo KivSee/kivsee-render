@@ -67,10 +67,22 @@ jobs:
           bazel build //bindings:kivsee_render_${{ matrix.platform }}_pkg
           
       - name: Upload package files to release
+        if: runner.os != 'Windows'
+        shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG_NAME: ${{ needs.release-please.outputs.tag_name }}
         run: |
           cd bazel-bin/bindings
-          # Upload the platform-specific package
           gh release upload "$TAG_NAME" kivsee_render_${{ matrix.platform }}_pkg.tar
+  
+      - name: Upload package files to release (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG_NAME: ${{ needs.release-please.outputs.tag_name }}
+        run: |
+          Set-Location bazel-bin\bindings
+          gh release upload "$env:TAG_NAME" kivsee_render_${{ env:matrix_platform }}_pkg.tar
+  
