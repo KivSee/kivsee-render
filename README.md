@@ -21,7 +21,3 @@ run tests suite
 ```shell
 bazel test --test_output=all //test:kivsee-render-test
 ```
-
-## Python Bindings
-
-To run this code from python, you can run `bazel build //bindings:kivsee_render` to generate `.so` files in the `bazel-bin` directory which you can later import in you py application and render frames.

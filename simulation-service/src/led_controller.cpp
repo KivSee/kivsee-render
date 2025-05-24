@@ -1,10 +1,10 @@
 #include "led_controller.h"
 
-namespace kivsee_render {
+namespace kivsee_simulation {
 
 LedController::LedController(size_t num_leds)
     : num_leds_(num_leds)
-    , leds_(new HSV[num_leds])
+    , leds_(new kivsee_render::HSV[num_leds])
     , segment_(num_leds)
     , animation_(nullptr)
     , segments_map_(nullptr) {
@@ -33,18 +33,18 @@ bool LedController::InitFromProtoBuffers(const uint8_t* animation_buffer, size_t
     pb_istream_t segments_map_stream = pb_istream_from_buffer(segments_map_buffer, segments_map_size);
 
     // Decode segments map
-    segments::SegmentsMapDecodeArgs segments_map_decode_args;
+    kivsee_render::segments::SegmentsMapDecodeArgs segments_map_decode_args;
     segments_map_decode_args.out_segments_map = &segments_map_;
     segments_map_decode_args.leds_array = leds_;
     void* arg = &segments_map_decode_args;
-    if (!segments::DecodeSegmentsMapFromPbStream(&segments_map_stream, nullptr, &arg)) {
+    if (!kivsee_render::segments::DecodeSegmentsMapFromPbStream(&segments_map_stream, nullptr, &arg)) {
         return false;
     }
 
     // Decode animation
     kivsee_render::DecodeAnimationArgs args = { segments_map_ };
     void* arg_animation = &args;
-    if (!DecodeAnimationFromPbStream(&animation_stream, nullptr, &arg_animation)) {
+    if (!kivsee_render::DecodeAnimationFromPbStream(&animation_stream, nullptr, &arg_animation)) {
         return false;
     }
 
@@ -54,10 +54,10 @@ bool LedController::InitFromProtoBuffers(const uint8_t* animation_buffer, size_t
     return true;
 }
 
-const HSV* LedController::Render(unsigned int time_ms) {
+const kivsee_render::HSV* LedController::Render(unsigned int time_ms) {
     // Clear all LEDs
     for (size_t i = 0; i < num_leds_; i++) {
-        HSV& hsvVal = leds_[i];
+        kivsee_render::HSV& hsvVal = leds_[i];
         hsvVal.hue = 0.0f;
         hsvVal.sat = 0.0f;
         hsvVal.val = 0.0f;

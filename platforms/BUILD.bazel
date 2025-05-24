@@ -1,8 +1,0 @@
-load("//platforms:constraints.bzl", "CONSTRAINTS")
-
-package(default_visibility = ["//visibility:public"])
-
-[platform(
-    name = platform_name,
-    constraint_values = constraints,
-) for platform_name, constraints in CONSTRAINTS.items()] 

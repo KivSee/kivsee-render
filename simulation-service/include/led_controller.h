@@ -6,7 +6,7 @@
 #include <segments/segments_map.h>
 #include "pb_decode.h"
 
-namespace kivsee_render {
+namespace kivsee_simulation {
 
 class LedController {
 public:
@@ -18,19 +18,19 @@ public:
                             const uint8_t* segments_map_buffer, size_t segments_map_size);
 
     // Render at the given time and get the LED buffer
-    const HSV* Render(unsigned int time_ms);
+    const kivsee_render::HSV* Render(unsigned int time_ms);
 
     // Get the number of LEDs
     size_t GetNumLeds() const { return num_leds_; }
 
 private:
     const size_t num_leds_;
-    HSV* leds_;
-    std::vector<HSV*> segment_;
-    Animation* animation_;
-    segments::SegmentsMap* segments_map_;
+    kivsee_render::HSV* leds_;
+    std::vector<kivsee_render::HSV*> segment_;
+    kivsee_render::Animation* animation_;
+    kivsee_render::segments::SegmentsMap* segments_map_;
 };
 
-} // namespace kivsee_render
+} // namespace kivsee_simulation
 
 #endif // __LED_CONTROLLER_H__ 

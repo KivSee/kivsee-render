@@ -1,0 +1,23 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
+
+cc_library(
+    name = "led_controller",
+    srcs = ["include/led_controller.h", "src/led_controller.cpp"],
+    includes = ["include"],
+    deps = [
+        "//:kivsee-render",
+    ],
+)
+
+cc_binary(
+    name = "simulation_service",
+    srcs = ["src/main.cpp"],
+    deps = [
+        ":led_controller",
+        "@httplib",
+        "@nlohmann_json",
+        "//:kivsee-render",
+        "@cpp-base64",
+    ],
+    visibility = ["//visibility:public"],
+) 
