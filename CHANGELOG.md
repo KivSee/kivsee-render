@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/KivSee/kivsee-render/compare/v0.1.5...v0.1.6) (2025-05-24)
+
+
+### Bug Fixes
+
+* windows release ([#48](https://github.com/KivSee/kivsee-render/issues/48)) ([ca4d845](https://github.com/KivSee/kivsee-render/commit/ca4d845c0efdaca2f894a3acd3e8e0eae93ac740))
+
 ## [0.1.5](https://github.com/KivSee/kivsee-render/compare/v0.1.4...v0.1.5) (2025-05-24)
 
 
