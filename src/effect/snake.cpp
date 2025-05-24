@@ -63,7 +63,9 @@ namespace kivsee_render
                 return this->ClearPixels();
             }
 
-            auto [current_pixel_head, next_head_pixel] = ExtractHeadPixels(curr_head, curr_tail_length);
+            std::pair<float, float> head_pixels = ExtractHeadPixels(curr_head, curr_tail_length);
+            float current_pixel_head = head_pixels.first;
+            float next_head_pixel = head_pixels.second;
 
             for (::kivsee_render::segments::SegmentPixels::const_iterator it = segment_pixels->begin(); it != segment_pixels->end(); ++it)
             {
