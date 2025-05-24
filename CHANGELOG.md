@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/KivSee/kivsee-render/compare/v0.1.9...v0.1.10) (2025-05-24)
+
+
+### Bug Fixes
+
+* use non platform dependent bazelisk ([#58](https://github.com/KivSee/kivsee-render/issues/58)) ([297f48e](https://github.com/KivSee/kivsee-render/commit/297f48e0fcc75bb801aacf490617559a1f1b2705))
+
 ## [0.1.9](https://github.com/KivSee/kivsee-render/compare/v0.1.8...v0.1.9) (2025-05-24)
 
 
