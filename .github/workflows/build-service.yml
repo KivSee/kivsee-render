@@ -1,0 +1,24 @@
+name: Build simulation service
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-service:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: setup bazel
+        uses: jwlawson/actions-setup-bazel@v1
+        with:
+          bazel-version: "8.1.1"
+
+      - name: build simulation service
+        run: bazel build //simulation-service:simulation_service
