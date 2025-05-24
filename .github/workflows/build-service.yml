@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v4
 
-      - name: Setup bazel
+      - name: setup bazel
         uses: jwlawson/actions-setup-bazel@v1
         with:
-          bazel-version: '6.4.0'        
+          bazel-version: '8.1.1'        
 
-      - name: Run tests
+      - name: build simulation service
         run: bazel build //simulation-service:simulation_service
