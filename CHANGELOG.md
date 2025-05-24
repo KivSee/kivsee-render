@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/KivSee/kivsee-render/compare/v0.1.8...v0.1.9) (2025-05-24)
+
+
+### Bug Fixes
+
+* add missing reference to dockerfile in publish ([#56](https://github.com/KivSee/kivsee-render/issues/56)) ([6d5b81b](https://github.com/KivSee/kivsee-render/commit/6d5b81b0cb0baae5185da55af6f9eb2c7ea1255d))
+
 ## [0.1.8](https://github.com/KivSee/kivsee-render/compare/v0.1.7...v0.1.8) (2025-05-24)
 
 
