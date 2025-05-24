@@ -14,13 +14,17 @@ RUN apt-get update && apt-get install -y \
 RUN curl -L https://github.com/bazelbuild/bazelisk/releases/latest/download/bazelisk-linux-arm64 -o /usr/local/bin/bazelisk \
     && chmod +x /usr/local/bin/bazelisk
 
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+
+RUN apt-get install -y nodejs
+
 WORKDIR /workspace
 
 # Copy the entire project
 COPY . .
 
 # Build the simulation service
-RUN bazelisk build //simulation-service:simulation_service
+RUN npx @bazel/bazelisk build //simulation-service:simulation_service
 
 # Runtime stage
 FROM debian:bullseye-slim
