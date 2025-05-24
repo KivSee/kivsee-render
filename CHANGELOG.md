@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/KivSee/kivsee-render/compare/v0.1.7...v0.1.8) (2025-05-24)
+
+
+### Bug Fixes
+
+* syntax error in sim svc publish ([#54](https://github.com/KivSee/kivsee-render/issues/54)) ([9bb76bc](https://github.com/KivSee/kivsee-render/commit/9bb76bc9920ea4587dfcc3d65fe3a21b9a963f7e))
+
 ## [0.1.7](https://github.com/KivSee/kivsee-render/compare/v0.1.6...v0.1.7) (2025-05-24)
 
 
