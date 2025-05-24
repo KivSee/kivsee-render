@@ -19,5 +19,6 @@ cc_binary(
         "//:kivsee-render",
         "@cpp-base64",
     ],
+    linkopts = ["-pthread"],
     visibility = ["//visibility:public"],
 ) 
