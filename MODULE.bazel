@@ -1,19 +1,12 @@
 module(
     name = "kivsee-render",
-    version = "0.1.4",
+    version = "0.1.6",
 )
 
 # Required dependencies
-bazel_dep(name = "platforms", version = "0.0.11")
 bazel_dep(name = "googletest", version = "1.14.0.bcr.1")
 bazel_dep(name = "protobuf", version = "29.0")
-bazel_dep(name = "pybind11_bazel", version = "2.13.6")
 bazel_dep(name = "rules_cc", version = "0.0.17")
-bazel_dep(name = "rules_python", version = "1.4.1")
-
-# Platform support
-bazel_dep(name = "rules_pkg", version = "0.9.1")
-bazel_dep(name = "bazel_skylib", version = "1.5.0")
 
 # Include nanopb manually via http_archive
 # This needs to go into a MODULE.bazel extension via a module extension (see note below)
@@ -21,6 +14,28 @@ http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "ht
 
 http_archive(
     name = "nanopb",
-    url = "https://github.com/nanopb/nanopb/archive/nanopb-0.4.5.zip",
     strip_prefix = "nanopb-nanopb-0.4.5",
+    url = "https://github.com/nanopb/nanopb/archive/nanopb-0.4.5.zip",
+)
+
+http_archive(
+    name = "nlohmann_json",
+    build_file = "@//simulation-service:nlohmann_json.BUILD",
+    strip_prefix = "json-3.11.2",
+    urls = ["https://github.com/nlohmann/json/archive/v3.11.2.zip"],
+)
+
+http_archive(
+    name = "cpp-base64",
+    build_file = "@//simulation-service:cpp-base64.BUILD",
+    strip_prefix = "cpp-base64-2.rc.08",
+    urls = ["https://github.com/ReneNyffenegger/cpp-base64/archive/V2.rc.08.zip"],
+)
+
+# cpp-httplib
+http_archive(
+    name = "httplib",
+    build_file = "@//simulation-service:httplib.BUILD",
+    strip_prefix = "cpp-httplib-0.14.1",
+    urls = ["https://github.com/yhirose/cpp-httplib/archive/v0.14.1.zip"],
 )

@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.6](https://github.com/KivSee/kivsee-render/compare/v0.1.5...v0.1.6) (2025-05-24)
+
+
+### Bug Fixes
+
+* windows release ([#48](https://github.com/KivSee/kivsee-render/issues/48)) ([ca4d845](https://github.com/KivSee/kivsee-render/commit/ca4d845c0efdaca2f894a3acd3e8e0eae93ac740))
+
+## [0.1.5](https://github.com/KivSee/kivsee-render/compare/v0.1.4...v0.1.5) (2025-05-24)
+
+
+### Bug Fixes
+
+* use of designated initializers requires at least '/std:c++20' ([#46](https://github.com/KivSee/kivsee-render/issues/46)) ([3edc0b2](https://github.com/KivSee/kivsee-render/commit/3edc0b2bf4b75388298d183efd19e2558ec4be6e))
+
 ## [0.1.4](https://github.com/KivSee/kivsee-render/compare/v0.1.3...v0.1.4) (2025-05-17)
 
 

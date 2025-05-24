@@ -26,51 +26,31 @@ jobs:
           config-file: .release-please-config.json
           manifest-file: .release-please-manifest.json
 
-  build-and-attach:
+  publish-simulation-service:
     needs: release-please
     if: ${{ needs.release-please.outputs.release_created }}
-    strategy:
-      matrix:
-        include:
-          - os: ubuntu-latest
-            platform: linux_x86_64
-          - os: ubuntu-latest
-            platform: linux_aarch64
-          - os: ubuntu-latest
-            platform: linux_armv7
-          - os: macos-latest
-            platform: macos_x86_64
-          - os: macos-14
-            platform: macos_arm64
-          - os: windows-latest
-            platform: windows_x86_64
-    
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Mount bazel cache
-        uses: actions/cache@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Login to DockerHub
+        uses: docker/login-action@v3
         with:
-          path: "~/.cache/bazel"
-          key: bazel-${{ matrix.os }}-${{ github.sha }}
-          restore-keys: bazel-${{ matrix.os }}-
-
-      - uses: bazel-contrib/setup-bazel@0.14.0
-        with:
-          bazelisk-cache: true
-          disk-cache: ${{ github.workflow }}
-          repository-cache: true            
-          
-      - name: Build platform-specific bindings
-        run: |
-          bazel build //bindings:kivsee_render_${{ matrix.platform }}_pkg
-          
-      - name: Upload package files to release
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v6
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG_NAME: ${{ needs.release-please.outputs.tag_name }}
-        run: |
-          cd bazel-bin/bindings
-          # Upload the platform-specific package
-          gh release upload "$TAG_NAME" kivsee_render_${{ matrix.platform }}_pkg.tar
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm,linux/arm64
+          push: true
+          tags: |
+            blumamir/simulation-service:$TAG_NAME
+            blumamir/simulation-service:latest
+            blumamir/simulation-service:v$TAG_NAME

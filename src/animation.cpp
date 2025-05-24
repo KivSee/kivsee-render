@@ -22,9 +22,10 @@ namespace kivsee_render
         int time_in_iteration = curr_time % duration_ms;
         if (num_repeats > 0 && iteration >= num_repeats)
         {
-            return {
-                .is_rendering = false,
-                .num_effects_rendered = 0};
+            return RenderStats {
+                false,
+                0
+            };
         }
 
         uint32_t num_effects_rendered = 0;
@@ -38,9 +39,10 @@ namespace kivsee_render
             }
         }
         
-        return {
-            .is_rendering = true,
-            .num_effects_rendered = num_effects_rendered};
+        return RenderStats {
+            true,
+            num_effects_rendered
+        };
     }
 
     bool DecodeAnimationFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg)
