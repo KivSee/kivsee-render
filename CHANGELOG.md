@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.11](https://github.com/KivSee/kivsee-render/compare/v0.1.10...v0.1.11) (2025-05-28)
+
+
+### Miscellaneous Chores
+
+* release 0.1.11 ([#62](https://github.com/KivSee/kivsee-render/issues/62)) ([26a5d5d](https://github.com/KivSee/kivsee-render/commit/26a5d5d7bde4d7a87d4d28fd579d2a54938ae453))
+
 ## [0.1.10](https://github.com/KivSee/kivsee-render/compare/v0.1.9...v0.1.10) (2025-05-24)
 
 
