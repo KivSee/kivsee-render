@@ -10,14 +10,4 @@ LED render library suitable for esp32 controller
 
 ## Running Tests
 
-install bazel
-
-```shell
-brew install bazel
-```
-
 run tests suite
-
-```shell
-bazel test --test_output=all //test:kivsee-render-test
-```

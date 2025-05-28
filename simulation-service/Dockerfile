@@ -1,22 +1,14 @@
 # Build stage
-FROM debian:bullseye-slim AS builder
+FROM alpine:3.19 AS builder
 
 # Install required dependencies
-RUN apt-get update && apt-get install -y \
+RUN apk add --no-cache \
     curl \
     git \
-    build-essential \
+    build-base \
     python3 \
-    libpthread-stubs0-dev \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Bazelisk
-RUN curl -L https://github.com/bazelbuild/bazelisk/releases/latest/download/bazelisk-linux-arm64 -o /usr/local/bin/bazelisk \
-    && chmod +x /usr/local/bin/bazelisk
-
-RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
-
-RUN apt-get install -y nodejs
+    linux-headers \
+    cmake
 
 WORKDIR /workspace
 
@@ -24,15 +16,24 @@ WORKDIR /workspace
 COPY . .
 
 # Build the simulation service
-RUN npx @bazel/bazelisk build //simulation-service:simulation_service
+WORKDIR /workspace/simulation-service
+RUN mkdir build && cd build \
+    && cmake .. \
+    && cmake --build . --config Release \
+    && cmake --install .
 
 # Runtime stage
-FROM debian:bullseye-slim
+FROM alpine:3.19
+
+# Install runtime dependencies
+RUN apk add --no-cache \
+    libstdc++ \
+    libgcc
 
 WORKDIR /app
 
 # Copy the built binary from the builder stage
-COPY --from=builder /workspace/bazel-bin/simulation-service/simulation_service /app/
+COPY --from=builder /workspace/simulation-service/install/bin/simulation_service /app/
 
 # Run the simulation service
 CMD ["./simulation_service"]

@@ -72,16 +72,16 @@ int main()
              {
         try {
             auto json_data = json::parse(req.body);
-            
+
             // Extract time range
             uint32_t time1 = json_data["startTimeMs"].get<uint32_t>();
             uint32_t time2 = json_data["endTimeMs"].get<uint32_t>();
-            
+
             // Parse things array
             std::vector<kivsee_simulation::LedController*> things;
             for (const auto& seq_data : json_data["things"]) {
                 kivsee_simulation::LedController *led_controller = new kivsee_simulation::LedController(144); // Hard coded :()
-                
+
                 std::string sequenceProto = base64_decode(seq_data["sequenceProto"].get<std::string>());
                 std::string objectProto = base64_decode(seq_data["objectProto"].get<std::string>());
 
@@ -119,7 +119,7 @@ int main()
                 {"time_difference", time2 - time1},
                 {"average_brightness", average_brightness}
             };
-            
+
             res.set_content(final_response.dump(), "application/json");
 
             for (auto& controller : things) {
@@ -132,8 +132,8 @@ int main()
             res.set_content(json({{"error", e.what()}}).dump(), "application/json");
         } });
 
-    std::cout << "Server starting on port 8080..." << std::endl;
-    svr.listen("0.0.0.0", 8080);
+    std::cout << "Server starting on port 8084..." << std::endl;
+    svr.listen("0.0.0.0", 8084);
 
     return 0;
 }
