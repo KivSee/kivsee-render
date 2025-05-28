@@ -156,7 +156,7 @@ int main()
     
     // Start server in a non-blocking way
     std::thread server_thread([&svr]() {
-        svr.listen("0.0.0.0", 8084);
+        svr.listen("0.0.0.0", 80);
     });
 
     // Wait for shutdown signal
