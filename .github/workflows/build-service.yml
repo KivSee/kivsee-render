@@ -15,10 +15,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - name: setup bazel
-        uses: jwlawson/actions-setup-bazel@v1
+      - name: setup cmake
+        uses: jwlawson/actions-setup-cmake@v2
         with:
-          bazel-version: "8.1.1"
+          cmake-version: "3.28.1"
 
       - name: build simulation service
-        run: bazel build //simulation-service:simulation_service
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .

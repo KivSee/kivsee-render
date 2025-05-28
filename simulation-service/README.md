@@ -4,17 +4,22 @@ A C++ HTTP server that provides sequence statistics calculations.
 
 ## Prerequisites
 
-- Bazel
+- CMake (version 3.5 or higher)
 - C++17 compatible compiler
 
 ## Building the Project
 
 ```bash
-# Build the project
-bazel build //simulation-service:simulation_service
+# Create and enter build directory
+mkdir build
+cd build
+
+# Configure and build the project
+cmake ..
+cmake --build . --config Release
 
 # Run the server
-bazel run //simulation-service:simulation_service
+./simulation_service
 ```
 
 ## API Endpoints
@@ -78,4 +83,4 @@ Each sequence in the array represents a single "controller" which renders a grou
 
 ## Error Handling
 
-The service returns a 400 status code with an error message if the request is malformed or contains invalid data. 
+The service returns a 400 status code with an error message if the request is malformed or contains invalid data.
