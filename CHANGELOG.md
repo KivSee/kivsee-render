@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.12](https://github.com/KivSee/kivsee-render/compare/v0.1.11...v0.1.12) (2025-05-28)
+
+
+### Bug Fixes
+
+* graceful shutdown on signal ([#64](https://github.com/KivSee/kivsee-render/issues/64)) ([faad7f0](https://github.com/KivSee/kivsee-render/commit/faad7f0dfc0b4f20b5b458dd546834017eba6f04))
+* make service run on port 80 by default ([#66](https://github.com/KivSee/kivsee-render/issues/66)) ([0bb8a96](https://github.com/KivSee/kivsee-render/commit/0bb8a9674e41df21a8a5e8265e86576b59a56578))
+
 ## [0.1.11](https://github.com/KivSee/kivsee-render/compare/v0.1.10...v0.1.11) (2025-05-28)
 
 
