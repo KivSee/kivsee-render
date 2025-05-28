@@ -152,11 +152,11 @@ int main()
             res.set_content(json({{"error", e.what()}}).dump(), "application/json");
         } });
 
-    std::cout << "Server starting on port 8084..." << std::endl;
+    std::cout << "Server starting on port 80..." << std::endl;
     
     // Start server in a non-blocking way
     std::thread server_thread([&svr]() {
-        svr.listen("0.0.0.0", 8084);
+        svr.listen("0.0.0.0", 80);
     });
 
     // Wait for shutdown signal
