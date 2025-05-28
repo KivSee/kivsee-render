@@ -6,10 +6,25 @@
 #include <cmath>
 #include <string>
 #include <algorithm>
+#include <signal.h>
+#include <atomic>
+#include <thread>
 #include "led_controller.h"
 #include "base64.h"
 
 using json = nlohmann::json;
+
+// Global variables for signal handling
+httplib::Server* g_server = nullptr;
+std::atomic<bool> g_running(true);
+
+void signal_handler(int signal) {
+    if ((signal == SIGTERM || signal == SIGINT) && g_server) {
+        std::cout << "Received signal " << signal << ", shutting down gracefully..." << std::endl;
+        g_running = false;
+        g_server->stop();
+    }
+}
 
 struct SequenceStats
 {
@@ -67,6 +82,11 @@ SequenceStats calculateStats(const std::vector<double> &sequence, const std::vec
 int main()
 {
     httplib::Server svr;
+    g_server = &svr;
+
+    // Set up signal handlers
+    signal(SIGTERM, signal_handler);
+    signal(SIGINT, signal_handler);
 
     svr.Post("/sequence/stats", [](const httplib::Request &req, httplib::Response &res)
              {
@@ -133,7 +153,21 @@ int main()
         } });
 
     std::cout << "Server starting on port 8084..." << std::endl;
-    svr.listen("0.0.0.0", 8084);
+    
+    // Start server in a non-blocking way
+    std::thread server_thread([&svr]() {
+        svr.listen("0.0.0.0", 8084);
+    });
+
+    // Wait for shutdown signal
+    while (g_running) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+
+    // Wait for server thread to finish
+    if (server_thread.joinable()) {
+        server_thread.join();
+    }
 
     return 0;
 }
