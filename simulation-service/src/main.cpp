@@ -128,7 +128,7 @@ double cyclicStdDev(const std::vector<double>& values, double mean) {
     return std::sqrt(sum_squared_diff / values.size());
 }
 
-HSVStats calculateHSVStats(const std::vector<kivsee_render::HSV>& frames) {
+HSVStats calculateHSVStats(const std::vector<kivsee_render::HSV>& frames, uint32_t time1, uint32_t time2) {
     HSVStats stats;
     const int num_buckets = 10;
     stats.hue_histogram.resize(num_buckets, 0);
@@ -139,16 +139,16 @@ HSVStats calculateHSVStats(const std::vector<kivsee_render::HSV>& frames) {
     std::vector<double> saturations;
     std::vector<double> values;
 
-    // Collect all values and build histograms
+    // First pass: collect all values and build histograms
     for (const auto& frame : frames) {
         hues.push_back(frame.hue);
         saturations.push_back(frame.sat);
         values.push_back(frame.val);
 
-        // Update histograms
-        stats.hue_histogram[static_cast<int>(frame.hue * num_buckets)]++;
-        stats.saturation_histogram[static_cast<int>(frame.sat * num_buckets)]++;
-        stats.value_histogram[static_cast<int>(frame.val * num_buckets)]++;
+        // Update histograms using modulo to handle values > 1.0
+        stats.hue_histogram[static_cast<int>(std::fmod(frame.hue, 1.0) * num_buckets)]++;
+        stats.saturation_histogram[static_cast<int>(std::fmod(frame.sat, 1.0) * num_buckets)]++;
+        stats.value_histogram[static_cast<int>(std::fmod(frame.val, 1.0) * num_buckets)]++;
     }
 
     // Calculate means
@@ -227,9 +227,11 @@ int main()
             double total_brightness = 0.0;
             int total_leds = 0;
             std::vector<kivsee_render::HSV> all_frames;
+            size_t num_frames = 0;
 
             try {
                 for (uint32_t current_time = time1; current_time <= time2; current_time += 20) {
+                    num_frames++;
                     for (auto& controller : things) {
                         const kivsee_render::HSV* frame = controller->Render(current_time);
                         const int numberOfLeds = controller->GetNumLeds();
@@ -246,7 +248,7 @@ int main()
                 throw;
             }
 
-            std::cout << "Processed " << total_leds << " LEDs across " << all_frames.size() << " frames" << std::endl;
+            std::cout << "Processed " << total_leds << " LEDs across " << num_frames << " frames" << std::endl;
 
             double average_brightness = 0.0;
             if (total_leds > 0) {
@@ -254,27 +256,60 @@ int main()
             }
 
             // Calculate HSV statistics
-            HSVStats hsv_stats = calculateHSVStats(all_frames);
+            HSVStats hsv_stats = calculateHSVStats(all_frames, time1, time2);
             std::cout << "Calculated HSV statistics" << std::endl;
 
             // Add time difference and all statistics to the response
             json final_response = {
-                {"time_difference", time2 - time1},
                 {"average_brightness", average_brightness},
                 {"hsv_stats", {
-                    {"hue_histogram", hsv_stats.hue_histogram},
-                    {"saturation_histogram", hsv_stats.saturation_histogram},
-                    {"value_histogram", hsv_stats.value_histogram},
+                    {"hue_histogram", {
+                        {"0.0-0.1", hsv_stats.hue_histogram[0]},
+                        {"0.1-0.2", hsv_stats.hue_histogram[1]},
+                        {"0.2-0.3", hsv_stats.hue_histogram[2]},
+                        {"0.3-0.4", hsv_stats.hue_histogram[3]},
+                        {"0.4-0.5", hsv_stats.hue_histogram[4]},
+                        {"0.5-0.6", hsv_stats.hue_histogram[5]},
+                        {"0.6-0.7", hsv_stats.hue_histogram[6]},
+                        {"0.7-0.8", hsv_stats.hue_histogram[7]},
+                        {"0.8-0.9", hsv_stats.hue_histogram[8]},
+                        {"0.9-1.0", hsv_stats.hue_histogram[9]}
+                    }},
                     {"mean_hue", hsv_stats.mean_hue},
-                    {"std_dev_hue", hsv_stats.std_dev_hue},
                     {"mean_saturation", hsv_stats.mean_saturation},
-                    {"std_dev_saturation", hsv_stats.std_dev_saturation},
                     {"mean_value", hsv_stats.mean_value},
-                    {"std_dev_value", hsv_stats.std_dev_value},
                     {"prominent_hue", hsv_stats.prominent_hue},
                     {"prominent_saturation", hsv_stats.prominent_saturation},
-                    {"prominent_value", hsv_stats.prominent_value}
-                }}
+                    {"prominent_value", hsv_stats.prominent_value},
+                    {"saturation_histogram", {
+                        {"0.0-0.1", hsv_stats.saturation_histogram[0]},
+                        {"0.1-0.2", hsv_stats.saturation_histogram[1]},
+                        {"0.2-0.3", hsv_stats.saturation_histogram[2]},
+                        {"0.3-0.4", hsv_stats.saturation_histogram[3]},
+                        {"0.4-0.5", hsv_stats.saturation_histogram[4]},
+                        {"0.5-0.6", hsv_stats.saturation_histogram[5]},
+                        {"0.6-0.7", hsv_stats.saturation_histogram[6]},
+                        {"0.7-0.8", hsv_stats.saturation_histogram[7]},
+                        {"0.8-0.9", hsv_stats.saturation_histogram[8]},
+                        {"0.9-1.0", hsv_stats.saturation_histogram[9]}
+                    }},
+                    {"std_dev_hue", hsv_stats.std_dev_hue},
+                    {"std_dev_saturation", hsv_stats.std_dev_saturation},
+                    {"std_dev_value", hsv_stats.std_dev_value},
+                    {"value_histogram", {
+                        {"0.0-0.1", hsv_stats.value_histogram[0]},
+                        {"0.1-0.2", hsv_stats.value_histogram[1]},
+                        {"0.2-0.3", hsv_stats.value_histogram[2]},
+                        {"0.3-0.4", hsv_stats.value_histogram[3]},
+                        {"0.4-0.5", hsv_stats.value_histogram[4]},
+                        {"0.5-0.6", hsv_stats.value_histogram[5]},
+                        {"0.6-0.7", hsv_stats.value_histogram[6]},
+                        {"0.7-0.8", hsv_stats.value_histogram[7]},
+                        {"0.8-0.9", hsv_stats.value_histogram[8]},
+                        {"0.9-1.0", hsv_stats.value_histogram[9]}
+                    }}
+                }},
+                {"time_difference", time2 - time1}
             };
 
             std::cout << "Preparing response" << std::endl;
