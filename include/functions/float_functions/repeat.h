@@ -2,7 +2,7 @@
 #define __REPEAT_FLOAT_FUNC_H__
 
 #include <functions/float_functions/float_functions.h>
-#include <functions.pb.h>
+#include <kivsee/proto/render/v1/functions.pb.h>
 #include <math.h>
 
 namespace kivsee_render
@@ -28,11 +28,11 @@ namespace kivsee_render
                 {
                     Repeat *t = new Repeat();
 
-                    RepeatFloatFunctionConfig config = RepeatFloatFunctionConfig_init_zero;
+                    kivsee_proto_render_v1_RepeatFloatFunctionConfig config = kivsee_proto_render_v1_RepeatFloatFunctionConfig_init_zero;
                     config.funcToRepeat.funcs.decode = &DecodeFloatFunctionFromStream;
                     config.funcToRepeat.arg = &(t->funcToRepeat);
 
-                    if (!pb_decode(stream, RepeatFloatFunctionConfig_fields, &config))
+                    if (!pb_decode(stream, kivsee_proto_render_v1_RepeatFloatFunctionConfig_fields, &config))
                     {
                         delete t;
                         return false;

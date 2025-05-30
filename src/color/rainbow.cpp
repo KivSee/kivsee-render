@@ -1,5 +1,5 @@
 #include <color/rainbow.h>
-#include <effects.pb.h>
+#include <kivsee/proto/render/v1/effects.pb.h>
 
 namespace kivsee_render
 {
@@ -23,7 +23,7 @@ namespace kivsee_render
 
         bool Rainbow::InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg)
         {
-            RainbowEffectConfig config = RainbowEffectConfig_init_zero;
+            kivsee_proto_render_v1_RainbowEffectConfig config = kivsee_proto_render_v1_RainbowEffectConfig_init_zero;
 
             float_functions::IFloatFunction *hue_start;
             float_functions::IFloatFunction *hue_end;
@@ -33,7 +33,7 @@ namespace kivsee_render
             config.hue_end.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
             config.hue_end.arg = &hue_end;
 
-            if (!pb_decode(stream, RainbowEffectConfig_fields, &config))
+            if (!pb_decode(stream, kivsee_proto_render_v1_RainbowEffectConfig_fields, &config))
             {
                 return false;
             }

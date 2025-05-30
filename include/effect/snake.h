@@ -5,7 +5,7 @@
 #include <hsv.h>
 #include "pb_decode.h"
 #include <effect.h>
-#include <effects.pb.h>
+#include <kivsee/proto/render/v1/effects.pb.h>
 #include <functions/float_functions/float_functions.h>
 
 namespace float_functions = kivsee_render::functions::float_functions;

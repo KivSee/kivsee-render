@@ -1,6 +1,6 @@
 #include "segments/segments_map.h"
 
-#include "segments.pb.h"
+#include <kivsee/proto/render/v1/segments.pb.h>
 
 namespace kivsee_render {
     namespace segments {
@@ -13,8 +13,8 @@ namespace kivsee_render {
         bool DecodeSegmentPixelFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg) {
             DecodeSegmentPixelArgs *decodeSegmentIndexArgs = (DecodeSegmentPixelArgs *) *arg;
 
-            kivsee_proto_Pixel pixel = kivsee_proto_Pixel_init_zero;
-            if(!pb_decode(stream, kivsee_proto_Pixel_fields, &pixel)) {
+            kivsee_proto_render_v1_Pixel pixel = kivsee_proto_render_v1_Pixel_init_zero;
+            if(!pb_decode(stream, kivsee_proto_render_v1_Pixel_fields, &pixel)) {
                 return false;
             }
 
@@ -35,7 +35,7 @@ namespace kivsee_render {
             
             Segment segment;
 
-            kivsee_proto_Segment segment_config = kivsee_proto_Segment_init_zero;
+            kivsee_proto_render_v1_Segment segment_config = kivsee_proto_render_v1_Segment_init_zero;
             segment_config.pixels.funcs.decode = &DecodeSegmentPixelFromPbStream;
             DecodeSegmentPixelArgs decodeSegmentIndexArgs {
                 &segment.second,
@@ -43,7 +43,7 @@ namespace kivsee_render {
             };
             segment_config.pixels.arg = &decodeSegmentIndexArgs;
 
-            bool success = pb_decode(stream,  kivsee_proto_Segment_fields, &segment_config);
+            bool success = pb_decode(stream,  kivsee_proto_render_v1_Segment_fields, &segment_config);
             if(!success) return false;
 
             strncpy(segment.first, segment_config.name, SEGMENT_NAME_MAX_LENGTH);
@@ -61,7 +61,7 @@ namespace kivsee_render {
 
             SegmentsMap *segments_map = new SegmentsMap();
 
-            kivsee_proto_ThingSegments segments_map_pb = kivsee_proto_ThingSegments_init_zero;
+            kivsee_proto_render_v1_ThingSegments segments_map_pb = kivsee_proto_render_v1_ThingSegments_init_zero;
             segments_map_pb.segments.funcs.decode = &DecodeSegmentFromPbStream;
             DecodeSegmentArgs args {
                 segments_map,
@@ -69,7 +69,7 @@ namespace kivsee_render {
             };
             segments_map_pb.segments.arg = &args;
 
-            bool success = pb_decode(stream, kivsee_proto_ThingSegments_fields, &segments_map_pb);
+            bool success = pb_decode(stream, kivsee_proto_render_v1_ThingSegments_fields, &segments_map_pb);
             if(!success) return false;
 
             segments_map->guid = segments_map_pb.guid;
@@ -88,8 +88,8 @@ namespace kivsee_render {
         }
 
         uint16_t GetNumberOfPixels(pb_istream_t *stream, const pb_field_t *field, void **arg) {
-            kivsee_proto_ThingSegments segments_map_pb = kivsee_proto_ThingSegments_init_zero;
-            bool success = pb_decode(stream, kivsee_proto_ThingSegments_fields, &segments_map_pb);
+            kivsee_proto_render_v1_ThingSegments segments_map_pb = kivsee_proto_render_v1_ThingSegments_init_zero;
+            bool success = pb_decode(stream, kivsee_proto_render_v1_ThingSegments_fields, &segments_map_pb);
             if(!success) return 0;
             return segments_map_pb.number_of_pixels;
         }

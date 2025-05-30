@@ -1,7 +1,7 @@
 #ifndef __I_FLOAT_FUNC_H__
 #define __I_FLOAT_FUNC_H__
 
-#include <functions.pb.h>
+#include <kivsee/proto/render/v1/functions.pb.h>
 #include "pb_decode.h"
 #include <math.h>
 

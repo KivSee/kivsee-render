@@ -2,7 +2,7 @@
 #define __HALF_FLOAT_FUNC_H__
 
 #include <functions/float_functions/float_functions.h>
-#include <functions.pb.h>
+#include <kivsee/proto/render/v1/functions.pb.h>
 
 namespace kivsee_render
 {
@@ -17,13 +17,13 @@ namespace kivsee_render
                 static bool InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg)
                 {
                     Half *t = new Half();
-                    HalfFloatFunctionConfig config = HalfFloatFunctionConfig_init_zero;
+                    kivsee_proto_render_v1_HalfFloatFunctionConfig config = kivsee_proto_render_v1_HalfFloatFunctionConfig_init_zero;
                     config.f1.funcs.decode = &DecodeFloatFunctionFromStream;
                     config.f1.arg = &(t->f1);
                     config.f2.funcs.decode = &DecodeFloatFunctionFromStream;
                     config.f2.arg = &(t->f2);
 
-                    if (!pb_decode(stream, HalfFloatFunctionConfig_fields, &config))
+                    if (!pb_decode(stream, kivsee_proto_render_v1_HalfFloatFunctionConfig_fields, &config))
                     {
                         delete t;
                         return false;

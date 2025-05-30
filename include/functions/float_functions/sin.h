@@ -2,7 +2,7 @@
 #define __SIN_FLOAT_FUNC_H__
 
 #include <functions/float_functions/float_functions.h>
-#include <functions.pb.h>
+#include <kivsee/proto/render/v1/functions.pb.h>
 #define _USE_MATH_DEFINES
 #include <math.h>
 
@@ -20,8 +20,8 @@ namespace kivsee_render
                 static bool InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg)
                 {
                     Sin *t = new Sin();
-                    SinFloatFunctionConfig config = SinFloatFunctionConfig_init_zero;
-                    if (!pb_decode(stream, SinFloatFunctionConfig_fields, &config))
+                    kivsee_proto_render_v1_SinFloatFunctionConfig config = kivsee_proto_render_v1_SinFloatFunctionConfig_init_zero;
+                    if (!pb_decode(stream, kivsee_proto_render_v1_SinFloatFunctionConfig_fields, &config))
                     {
                         delete t;
                         return false;

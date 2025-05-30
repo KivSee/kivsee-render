@@ -1,6 +1,6 @@
 #include <effect.h>
 
-#include <effects.pb.h>
+#include <kivsee/proto/render/v1/effects.pb.h>
 #include <cmath>
 #include <list>
 
@@ -48,7 +48,7 @@ namespace kivsee_render
 
     void Effect::Init(const ::kivsee_render::segments::SegmentPixels *segment_pixels, void *&effect_config)
     {
-        EffectConfig *local_effect_config = static_cast<EffectConfig *>(effect_config);
+        kivsee_proto_render_v1_EffectConfig *local_effect_config = static_cast<kivsee_proto_render_v1_EffectConfig *>(effect_config);
         this->segment_pixels = segment_pixels;
         this->start_time = local_effect_config->start_time;
         this->end_time = local_effect_config->end_time;
@@ -60,29 +60,29 @@ namespace kivsee_render
     bool DecodeEffectFromPbStream(pb_istream_t *stream, const pb_field_t *field, void **arg)
     {
         kivsee_render::DecodeEffectArgs *effectArgs = (kivsee_render::DecodeEffectArgs *)(*arg);
-        EffectProto effectProto = EffectProto_init_zero;
+        kivsee_proto_render_v1_EffectProto kivsee_proto_render_v1_EffectProto = kivsee_proto_render_v1_EffectProto_init_zero;
         void *effect_pv = NULL;
 
         Effect *newEffect = nullptr;
 
-        effectProto.const_color.funcs.decode = &::kivsee_render::color::ConstColor::InitFromPb;
-        effectProto.const_color.arg = &newEffect;
-        effectProto.rainbow.funcs.decode = &::kivsee_render::color::Rainbow::InitFromPb;
-        effectProto.rainbow.arg = &newEffect;
-        effectProto.brightness.funcs.decode = &::kivsee_render::effect::Brightness::InitFromPb;
-        effectProto.brightness.arg = &newEffect;
-        effectProto.hue.funcs.decode = &::kivsee_render::effect::Hue::InitFromPb;
-        effectProto.hue.arg = &newEffect;
-        effectProto.saturation.funcs.decode = &::kivsee_render::effect::Saturation::InitFromPb;
-        effectProto.saturation.arg = &newEffect;
-        effectProto.snake.funcs.decode = &::kivsee_render::effect::Snake::InitFromPb;
-        effectProto.snake.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.const_color.funcs.decode = &::kivsee_render::color::ConstColor::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.const_color.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.rainbow.funcs.decode = &::kivsee_render::color::Rainbow::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.rainbow.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.brightness.funcs.decode = &::kivsee_render::effect::Brightness::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.brightness.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.hue.funcs.decode = &::kivsee_render::effect::Hue::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.hue.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.saturation.funcs.decode = &::kivsee_render::effect::Saturation::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.saturation.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.snake.funcs.decode = &::kivsee_render::effect::Snake::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.snake.arg = &newEffect;
         
-        bool success = pb_decode(stream, EffectProto_fields, &effectProto);
+        bool success = pb_decode(stream, kivsee_proto_render_v1_EffectProto_fields, &kivsee_proto_render_v1_EffectProto);
         if (!success)
             return false;
 
-        const char *segment = effectProto.effect_config.segments;
+        const char *segment = kivsee_proto_render_v1_EffectProto.effect_config.segments;
         const char *segmentOrAll = segment[0] == '\0' ? "all" : segment;
         ::kivsee_render::segments::SegmentPixels *segmentPixels = effectArgs->segmentsMap->getPixelsForSegment(segmentOrAll);
         if (!segmentPixels)
@@ -91,7 +91,7 @@ namespace kivsee_render
             delete newEffect;
             return false;
         }
-        effect_pv = (void *)(&(effectProto.effect_config));
+        effect_pv = (void *)(&(kivsee_proto_render_v1_EffectProto.effect_config));
         newEffect->Init(segmentPixels, effect_pv);
         effectArgs->effects->push_back(newEffect);
         return true;

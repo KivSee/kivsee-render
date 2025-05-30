@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "effects.pb.h"
+#include <kivsee/proto/render/v1/effects.pb.h>
 #include "effect.h"
 #include "hsv.h"
 

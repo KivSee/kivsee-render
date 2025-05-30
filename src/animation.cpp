@@ -1,6 +1,6 @@
 
 #include "animation.h"
-#include <effects.pb.h>
+#include <kivsee/proto/render/v1/effects.pb.h>
 
 #include <list>
 
@@ -52,14 +52,14 @@ namespace kivsee_render
 
         std::list<Effect *> effects;
 
-        AnimationProto animation = AnimationProto_init_zero;
+        kivsee_proto_render_v1_AnimationProto animation = kivsee_proto_render_v1_AnimationProto_init_zero;
         animation.effects.funcs.decode = &kivsee_render::DecodeEffectFromPbStream;
         kivsee_render::DecodeEffectArgs args = {
             segmentsMap,
             &effects};
         animation.effects.arg = &args;
 
-        bool success = pb_decode(stream, AnimationProto_fields, &animation);
+        bool success = pb_decode(stream, kivsee_proto_render_v1_AnimationProto_fields, &animation);
         if (!success)
             return false;
 

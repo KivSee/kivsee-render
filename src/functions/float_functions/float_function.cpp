@@ -18,7 +18,7 @@ namespace kivsee_render
             bool DecodeFloatFunctionFromStream(pb_istream_t *stream, const pb_field_t *field, void **arg) {
 
                 IFloatFunction **dest = (IFloatFunction **)(*arg);
-                FloatFunction config = FloatFunction_init_zero;
+                kivsee_proto_render_v1_FloatFunction config = kivsee_proto_render_v1_FloatFunction_init_zero;
 
                 config.const_value.funcs.decode = &ConstValue::InitFromPb;
                 config.const_value.arg = dest;
@@ -41,7 +41,7 @@ namespace kivsee_render
                 config.comb2.funcs.decode = &Comb2::InitFromPb;
                 config.comb2.arg = dest;
 
-                if(!pb_decode(stream, FloatFunction_fields, &config)) 
+                if(!pb_decode(stream, kivsee_proto_render_v1_FloatFunction_fields, &config)) 
                     return false;
 
                 if(*dest == nullptr)
