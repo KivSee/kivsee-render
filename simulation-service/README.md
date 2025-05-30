@@ -23,6 +23,18 @@ cmake --install .
 ./install/bin/simulation_service
 ```
 
+## Docker Build and Run
+
+You can also build and run the service using Docker:
+
+```bash
+# Build the Docker image
+docker build -f simulation-service/Dockerfile -t simulation-service .
+
+# Run the container
+docker run -it -p 8084:80 --rm simulation-service
+```
+
 ## API Endpoints
 
 ### POST /sequence/stats
