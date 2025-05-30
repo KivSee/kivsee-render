@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.13](https://github.com/KivSee/kivsee-render/compare/v0.1.12...v0.1.13) (2025-05-30)
+
+
+### Features
+
+* new stats ([#67](https://github.com/KivSee/kivsee-render/issues/67)) ([cb29e93](https://github.com/KivSee/kivsee-render/commit/cb29e938610164170664b3383662434d8e0e8aaf))
+
 ## [0.1.12](https://github.com/KivSee/kivsee-render/compare/v0.1.11...v0.1.12) (2025-05-28)
 
 
