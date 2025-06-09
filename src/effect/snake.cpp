@@ -1,5 +1,5 @@
 #include <effect/snake.h>
-#include <effects.pb.h>
+#include <kivsee/proto/render/v1/effects.pb.h>
 #include <limits>
 
 namespace kivsee_render
@@ -88,7 +88,7 @@ namespace kivsee_render
 
         bool Snake::InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg)
         {
-            SnakeEffectConfig config = SnakeEffectConfig_init_zero;
+            kivsee_proto_render_v1_SnakeEffectConfig config = kivsee_proto_render_v1_SnakeEffectConfig_init_zero;
 
             float_functions::IFloatFunction *head;
             float_functions::IFloatFunction *tail_length;
@@ -98,7 +98,7 @@ namespace kivsee_render
             config.tail_length.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
             config.tail_length.arg = &tail_length;
 
-            if (!pb_decode(stream, SnakeEffectConfig_fields, &config))
+            if (!pb_decode(stream, kivsee_proto_render_v1_SnakeEffectConfig_fields, &config))
             {
                 return false;
             }

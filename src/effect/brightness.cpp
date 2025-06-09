@@ -1,5 +1,5 @@
 #include <effect/brightness.h>
-#include <effects.pb.h>
+#include <kivsee/proto/render/v1/effects.pb.h>
 
 namespace kivsee_render
 {
@@ -18,14 +18,14 @@ namespace kivsee_render
 
         bool Brightness::InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg)
         {
-            BrightnessEffectConfig config = BrightnessEffectConfig_init_zero;
+            kivsee_proto_render_v1_BrightnessEffectConfig config = kivsee_proto_render_v1_BrightnessEffectConfig_init_zero;
 
             float_functions::IFloatFunction *mult_factor;
 
             config.mult_factor.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
             config.mult_factor.arg = &mult_factor;
 
-            if (!pb_decode(stream, BrightnessEffectConfig_fields, &config))
+            if (!pb_decode(stream, kivsee_proto_render_v1_BrightnessEffectConfig_fields, &config))
             {
                 return false;
             }

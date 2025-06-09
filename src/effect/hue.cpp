@@ -1,5 +1,5 @@
 #include <effect/hue.h>
-#include <effects.pb.h>
+#include <kivsee/proto/render/v1/effects.pb.h>
 
 namespace kivsee_render
 {
@@ -18,14 +18,14 @@ namespace kivsee_render
 
         bool Hue::InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg)
         {
-            HueEffectConfig config = HueEffectConfig_init_zero;
+            kivsee_proto_render_v1_HueEffectConfig config = kivsee_proto_render_v1_HueEffectConfig_init_zero;
 
             float_functions::IFloatFunction *offset_factor;
 
             config.offset_factor.funcs.decode = &float_functions::DecodeFloatFunctionFromStream;
             config.offset_factor.arg = &offset_factor;
 
-            if (!pb_decode(stream, HueEffectConfig_fields, &config))
+            if (!pb_decode(stream, kivsee_proto_render_v1_HueEffectConfig_fields, &config))
             {
                 return false;
             }

@@ -1,15 +1,10 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 project(simulation-service VERSION 0.1.10 LANGUAGES C CXX)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
-
-# Set default installation prefix to a local directory
-if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-    set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/install" CACHE PATH "Installation Directory" FORCE)
-endif()
+set(CMAKE_POLICY_VERSION_MINIMUM 3.10) # we are building it with cmake 4.0.2 which works but this silences the error
 
 # Add kivsee-render as a subdirectory
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/.. ${CMAKE_CURRENT_BINARY_DIR}/kivsee-render)
@@ -39,30 +34,21 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(cpp-base64)
 
-# Create cpp-base64 library
+# Create cpp-base64 library. this library does not have CMakeLists.txt, so we need to create it manually.
 add_library(cpp-base64-lib STATIC
     ${cpp-base64_SOURCE_DIR}/base64.cpp
 )
 target_include_directories(cpp-base64-lib PUBLIC ${cpp-base64_SOURCE_DIR})
 
-# Create led_controller library
-add_library(led_controller
-    include/led_controller.h
-    src/led_controller.cpp
-)
-target_include_directories(led_controller PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
-target_link_libraries(led_controller
-    kivsee-render
-)
-
 # Create simulation_service executable
 add_executable(simulation_service
+    src/led_controller.cpp
     src/main.cpp
 )
+target_include_directories(simulation_service PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
 target_link_libraries(simulation_service
-    led_controller
     kivsee-render
     httplib
     nlohmann_json::nlohmann_json

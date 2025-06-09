@@ -2,7 +2,7 @@
 #define __LINEAR_FLOAT_FUNC_H__
 
 #include <functions/float_functions/float_functions.h>
-#include <functions.pb.h>
+#include <kivsee/proto/render/v1/functions.pb.h>
 
 namespace kivsee_render
 {
@@ -22,8 +22,8 @@ namespace kivsee_render
 
                 static bool InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg) {
                     Linear *t = new Linear();
-                    LinearFloatFunctionConfig config = LinearFloatFunctionConfig_init_zero;
-                    if(!pb_decode(stream, LinearFloatFunctionConfig_fields, &config)) {
+                    kivsee_proto_render_v1_LinearFloatFunctionConfig config = kivsee_proto_render_v1_LinearFloatFunctionConfig_init_zero;
+                    if(!pb_decode(stream, kivsee_proto_render_v1_LinearFloatFunctionConfig_fields, &config)) {
                         delete t;
                         return false;
                     }

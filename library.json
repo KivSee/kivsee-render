@@ -13,6 +13,10 @@
     "dependencies": [
       {
           "name": "Nanopb"
+      },
+      {
+        "name": "KivseeProto",
+        "version": "https://github.com/KivSee/kivsee-proto.git#pio-dir"
       }
     ]
   }
