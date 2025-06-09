@@ -17,10 +17,10 @@ COPY . .
 
 # Build the simulation service
 WORKDIR /workspace/simulation-service
-RUN mkdir build && cd build \
-    && cmake .. \
-    && cmake --build . --config Release \
-    && cmake --install .
+RUN mkdir build \
+    && cmake -S . -B build \
+    && cmake --build build --config Release \
+    && cmake --install build
 
 # Runtime stage
 FROM alpine:3.19
@@ -33,7 +33,7 @@ RUN apk add --no-cache \
 WORKDIR /app
 
 # Copy the built binary from the builder stage
-COPY --from=builder /workspace/simulation-service/install/bin/simulation_service /app/
+COPY --from=builder /workspace/simulation-service/build/simulation_service /app/
 
 # Run the simulation service
 CMD ["./simulation_service"]
