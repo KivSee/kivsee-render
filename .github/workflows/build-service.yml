@@ -18,11 +18,10 @@ jobs:
       - name: setup cmake
         uses: jwlawson/actions-setup-cmake@v2
         with:
-          cmake-version: "3.28.1"
+          cmake-version: "4.0.2"
 
       - name: build simulation service
         run: |
-          mkdir build
-          cd build
-          cmake ..
-          cmake --build .
+          mkdir -p build
+          cmake -S . -B build
+          cmake --build build
