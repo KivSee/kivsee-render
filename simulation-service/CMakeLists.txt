@@ -4,12 +4,7 @@ project(simulation-service VERSION 0.1.10 LANGUAGES C CXX)
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_POLICY_VERSION_MINIMUM 3.10)
-
-# Set default installation prefix to a local directory
-# if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-#     set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/install" CACHE PATH "Installation Directory" FORCE)
-# endif()
+set(CMAKE_POLICY_VERSION_MINIMUM 3.10) # we are building it with cmake 4.0.2 which works but this silences the error
 
 # Add kivsee-render as a subdirectory
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/.. ${CMAKE_CURRENT_BINARY_DIR}/kivsee-render)
