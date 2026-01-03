@@ -16,7 +16,7 @@
       },
       {
         "name": "KivseeProto",
-        "version": "https://github.com/KivSee/kivsee-proto.git#pio-dir"
+        "version": "https://github.com/KivSee/kivsee-proto.git"
       }
     ]
   }

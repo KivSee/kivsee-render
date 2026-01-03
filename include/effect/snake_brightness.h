@@ -1,5 +1,5 @@
-#ifndef __EFFECT_SNAKE_H__
-#define __EFFECT_SNAKE_H__
+#ifndef __EFFECT_SNAKE_BRIGHTNESS_H__
+#define __EFFECT_SNAKE_BRIGHTNESS_H__
 
 #include <utility>
 #include <hsv.h>
@@ -15,34 +15,24 @@ namespace kivsee_render
     namespace effect
     {
 
-        inline float getBrightnessFactor(float rel_pos, float curr_head, float curr_tail_length)
-        {
-            float curr_tail = curr_head - curr_tail_length;
-            bool isOutsideRange = (rel_pos > curr_head || rel_pos < curr_tail);
-            if (isOutsideRange)
-            {
-                return 0;
-            }
-            else
-            {
-                return (rel_pos - curr_tail) / curr_tail_length;
-            }
-        }
-
-        class Snake : public Effect
+        class SnakeBrightness : public Effect
         {
         public:
 
             static bool InitFromPb(pb_istream_t *stream, const pb_field_t *field, void **arg);
 
-            Snake(float_functions::IFloatFunction *head, float_functions::IFloatFunction *tail_length, bool cyclic): head(head), tail_length(tail_length), cyclic(cyclic) {}
+            SnakeBrightness(float_functions::IFloatFunction *head, float_functions::IFloatFunction *tail_length, bool cyclic, float repeat_num, float_functions::IFloatFunction *mult_factor_increase, float_functions::IFloatFunction *mult_factor_decrease): head(head), tail_length(tail_length), cyclic(cyclic), repeat_num(repeat_num), mult_factor_increase(mult_factor_increase), mult_factor_decrease(mult_factor_decrease) {}
 
-            ~Snake()
+            ~SnakeBrightness()
             {
                 delete head;
                 head = nullptr;
                 delete tail_length;
                 tail_length = nullptr;
+                delete mult_factor_increase;
+                mult_factor_increase = nullptr;
+                delete mult_factor_decrease;
+                mult_factor_decrease = nullptr;
             }
 
             void Render(float rel_time, int cycle_index) override;
@@ -55,9 +45,13 @@ namespace kivsee_render
             const float_functions::IFloatFunction *head = nullptr;
             const float_functions::IFloatFunction *tail_length = nullptr;
             const bool cyclic = false;
+            const float repeat_num = 0.0f;
+            const float_functions::IFloatFunction *mult_factor_increase = nullptr;
+            const float_functions::IFloatFunction *mult_factor_decrease = nullptr;
         };
 
     } // namespace effect
 } // namespace kivsee_render
 
-#endif // __EFFECT_SNAKE_H__
+#endif // __EFFECT_SNAKE_BRIGHTNESS_H__
+
