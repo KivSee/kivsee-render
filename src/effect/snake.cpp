@@ -6,20 +6,6 @@ namespace kivsee_render
 {
     namespace effect
     {
-        float getBrightnessFactor(float rel_pos, float curr_head, float curr_tail_length)
-        {
-            float curr_tail = curr_head - curr_tail_length;
-            bool isOutsideRange = (rel_pos > curr_head || rel_pos < curr_tail);
-            if (isOutsideRange)
-            {
-                return 0;
-            }
-            else
-            {
-                return (rel_pos - curr_tail) / curr_tail_length;
-            }
-        }
-
         void Snake::ClearPixels()
         {
             for (::kivsee_render::segments::SegmentPixels::const_iterator it = segment_pixels->begin(); it != segment_pixels->end(); ++it)

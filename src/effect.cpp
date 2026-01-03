@@ -10,6 +10,15 @@
 #include <effect/hue.h>
 #include <effect/saturation.h>
 #include <effect/snake.h>
+#include <effect/position_brightness.h>
+#include <effect/position_hue.h>
+#include <effect/position_saturation.h>
+#include <effect/snake_brightness.h>
+#include <effect/snake_hue.h>
+#include <effect/snake_saturation.h>
+#include <effect/timed_brightness.h>
+#include <effect/timed_hue.h>
+#include <effect/timed_saturation.h>
 
 #include <segments/segments_map.h>
 
@@ -77,6 +86,24 @@ namespace kivsee_render
         kivsee_proto_render_v1_EffectProto.saturation.arg = &newEffect;
         kivsee_proto_render_v1_EffectProto.snake.funcs.decode = &::kivsee_render::effect::Snake::InitFromPb;
         kivsee_proto_render_v1_EffectProto.snake.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.position_brightness.funcs.decode = &::kivsee_render::effect::PositionBrightness::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.position_brightness.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.position_hue.funcs.decode = &::kivsee_render::effect::PositionHue::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.position_hue.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.position_saturation.funcs.decode = &::kivsee_render::effect::PositionSaturation::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.position_saturation.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.snake_brightness.funcs.decode = &::kivsee_render::effect::SnakeBrightness::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.snake_brightness.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.snake_hue.funcs.decode = &::kivsee_render::effect::SnakeHue::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.snake_hue.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.snake_saturation.funcs.decode = &::kivsee_render::effect::SnakeSaturation::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.snake_saturation.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.timed_brightness.funcs.decode = &::kivsee_render::effect::TimedBrightness::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.timed_brightness.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.timed_hue.funcs.decode = &::kivsee_render::effect::TimedHue::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.timed_hue.arg = &newEffect;
+        kivsee_proto_render_v1_EffectProto.timed_saturation.funcs.decode = &::kivsee_render::effect::TimedSaturation::InitFromPb;
+        kivsee_proto_render_v1_EffectProto.timed_saturation.arg = &newEffect;
         
         bool success = pb_decode(stream, kivsee_proto_render_v1_EffectProto_fields, &kivsee_proto_render_v1_EffectProto);
         if (!success)
