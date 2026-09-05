@@ -5,6 +5,7 @@
 #include <hsv.h>
 #include "pb_decode.h"
 #include "segments/segments_map.h"
+#include "esp_heap_caps.h"
 
 namespace kivsee_render
 {
@@ -13,6 +14,24 @@ namespace kivsee_render
 
     public:
         virtual ~Effect() {}
+
+        // Effect objects are small (well under the platform's
+        // CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL threshold, so the default allocator
+        // would always place them in scarce internal RAM) but numerous -- a large
+        // decoded animation can hold thousands of them. Force them into PSRAM
+        // (8MB vs ~350KB internal) so effect count is bounded by PSRAM capacity
+        // instead of internal-heap fragmentation. Falls back to the default
+        // allocator if PSRAM is exhausted or unavailable.
+        static void *operator new(size_t size)
+        {
+            void *p = heap_caps_malloc(size, MALLOC_CAP_SPIRAM);
+            return p ? p : ::operator new(size);
+        }
+
+        static void operator delete(void *p)
+        {
+            heap_caps_free(p);
+        }
 
     protected:
         virtual void Render(float rel_time, int cycle_index) = 0;
