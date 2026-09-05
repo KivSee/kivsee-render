@@ -60,11 +60,16 @@ namespace kivsee_render
         animation.effects.arg = &args;
 
         bool success = pb_decode(stream, kivsee_proto_render_v1_AnimationProto_fields, &animation);
-        if (!success)
+        if (!success || animation.duration_ms == 0)
+        {
+            // nanopb does not free FT_CALLBACK submessages on decode failure, and effects
+            // decoded before the failure point are only pushed onto this local list, never
+            // owned by an Animation -- free them here or they leak (and fragment the heap)
+            // on every failed decode.
+            for (Effect *effect : effects)
+                delete effect;
             return false;
-
-        if (animation.duration_ms == 0)
-            return false;
+        }
 
         Animation *newAnimation = new Animation(effects.begin(), effects.end(), animation.duration_ms, animation.num_repeats);
         *arg = (void *)newAnimation;
