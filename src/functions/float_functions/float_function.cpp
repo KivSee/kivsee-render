@@ -7,6 +7,8 @@
 #include <functions/float_functions/repeat.h>
 #include <functions/float_functions/half.h>
 #include <functions/float_functions/comb2.h>
+#include <functions/float_functions/fixed_window.h>
+#include <functions/float_functions/moving_window.h>
 
 
 namespace kivsee_render
@@ -40,6 +42,12 @@ namespace kivsee_render
 
                 config.comb2.funcs.decode = &Comb2::InitFromPb;
                 config.comb2.arg = dest;
+
+                config.fixed_window.funcs.decode = &FixedWindow::InitFromPb;
+                config.fixed_window.arg = dest;
+
+                config.moving_window.funcs.decode = &MovingWindow::InitFromPb;
+                config.moving_window.arg = dest;
 
                 if(!pb_decode(stream, kivsee_proto_render_v1_FloatFunction_fields, &config)) 
                     return false;
